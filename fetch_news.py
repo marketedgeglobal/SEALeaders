@@ -144,6 +144,7 @@ SECTOR_KEYWORDS = {
 
 MAX_ITEMS_PER_SECTOR = int(os.getenv("MAX_ITEMS_PER_SECTOR", "8"))
 MAX_ITEMS_PER_PUBLISHER = int(os.getenv("MAX_ITEMS_PER_PUBLISHER", "3"))
+MAX_ITEMS_PER_COUNTRY = int(os.getenv("MAX_ITEMS_PER_COUNTRY", "6"))
 OUTPUT_PATH = "docs/data/latest.json"
 HTTP_HEADERS = {
     "User-Agent": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/122.0 Safari/537.36"
@@ -211,6 +212,18 @@ MARINE_CONTEXT_MARKERS = (
     "coral",
     "eez",
 )
+
+COUNTRY_HINTS = {
+    "vietnam": ["vietnam", "vietnamplus.vn", "vnanet", "hanoi", "ho chi minh"],
+    "thailand": ["thailand", "bangkok", "thai"],
+    "philippines": ["philippines", "philippine", "manila"],
+    "indonesia": ["indonesia", "jakarta"],
+    "malaysia": ["malaysia", "kuala lumpur"],
+    "myanmar": ["myanmar", "yangon", "burma"],
+    "cambodia": ["cambodia", "phnom penh"],
+    "singapore": ["singapore"],
+    "brunei": ["brunei"],
+}
 
 
 def _to_date_string(value: str) -> str:
@@ -457,6 +470,20 @@ def _extract_article_excerpt(url: str, title: str, publisher: str) -> str:
     return excerpt
 
 
+def _detect_country(title: str, snippet: str, source: str, publisher: str, url: str) -> str:
+    text = f"{title} {snippet} {source} {publisher} {url}".lower()
+    best_country = "regional"
+    best_score = 0
+
+    for country, hints in COUNTRY_HINTS.items():
+        score = sum(1 for hint in hints if hint in text)
+        if score > best_score:
+            best_country = country
+            best_score = score
+
+    return best_country if best_score > 0 else "regional"
+
+
 def _extract_items(feed_name: str, feed_url: str) -> list[dict]:
     parsed = feedparser.parse(feed_url)
     results: list[dict] = []
@@ -471,6 +498,7 @@ def _extract_items(feed_name: str, feed_url: str) -> list[dict]:
         feed_excerpt = _extract_feed_summary_excerpt(summary)
         snippet = excerpt or _best_snippet(feed_excerpt or summary, title, publisher)
         clean_publisher = publisher or _publisher_from_url(verified_url)
+        country = _detect_country(title, snippet, feed_name, clean_publisher, verified_url)
 
         if not title or not link:
             continue
@@ -503,6 +531,7 @@ def _extract_items(feed_name: str, feed_url: str) -> list[dict]:
                 "sourcePublishedAt": _to_date_string(published),
                 "source": feed_name,
                 "sector": sector,
+                "country": country,
                 "snippet": snippet[:320],
             }
         )
@@ -533,26 +562,44 @@ def build_latest_json() -> dict:
     sectors_payload = []
     total = 0
     publisher_usage: dict[str, int] = {}
+    country_usage: dict[str, int] = {}
 
     for sector in SECTORS:
         candidates = [item for item in all_items if item["sector"] == sector]
         selected: list[dict] = []
 
-        for item in candidates:
+        remaining = list(candidates)
+        while remaining and len(selected) < MAX_ITEMS_PER_SECTOR:
+            ranked = sorted(
+                remaining,
+                key=lambda item: (
+                    country_usage.get(str(item.get("country") or "regional").lower(), 0),
+                    publisher_usage.get(str(item.get("publisher") or "unknown").lower(), 0),
+                ),
+            )
+            item = ranked[0]
             publisher = str(item.get("publisher") or "unknown").lower()
+            country = str(item.get("country") or "regional").lower()
+            remaining.remove(item)
+
             if publisher_usage.get(publisher, 0) >= MAX_ITEMS_PER_PUBLISHER:
+                continue
+            if country_usage.get(country, 0) >= MAX_ITEMS_PER_COUNTRY:
                 continue
 
             selected.append(item)
             publisher_usage[publisher] = publisher_usage.get(publisher, 0) + 1
-            if len(selected) >= MAX_ITEMS_PER_SECTOR:
-                break
+            country_usage[country] = country_usage.get(country, 0) + 1
 
         if len(selected) < MAX_ITEMS_PER_SECTOR:
             for item in candidates:
                 if item in selected:
                     continue
                 selected.append(item)
+                publisher = str(item.get("publisher") or "unknown").lower()
+                country = str(item.get("country") or "regional").lower()
+                publisher_usage[publisher] = publisher_usage.get(publisher, 0) + 1
+                country_usage[country] = country_usage.get(country, 0) + 1
                 if len(selected) >= MAX_ITEMS_PER_SECTOR:
                     break
 
