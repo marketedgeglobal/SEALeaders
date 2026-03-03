@@ -1,0 +1,37 @@
+name: Daily News Update
+
+on:
+  schedule:
+    - cron: "0 2 * * *" # Daily at 02:00 UTC
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  update-news:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+
+      - name: Generate latest news dataset
+        run: python3 generate_news_results.py
+
+      - name: Commit and push if changed
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          if [[ -n "$(git status --porcelain docs/news.json)" ]]; then
+            git add docs/news.json
+            git commit -m "chore: daily news refresh"
+            git push
+          else
+            echo "No changes in docs/news.json"
+          fi
