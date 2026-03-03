@@ -2,7 +2,7 @@ name: Daily News Update
 
 on:
   schedule:
-    - cron: "0 2 * * *" # Daily at 02:00 UTC
+    - cron: "0 6,7 * * *" # DST-safe window for 2:00 AM ET
   workflow_dispatch:
 
 permissions:
@@ -16,15 +16,22 @@ jobs:
       - name: Checkout repository
         uses: actions/checkout@v4
 
+      - name: Resolve ET hour
+        id: et_hour
+        run: echo "hour=$(TZ=America/New_York date +%H)" >> "$GITHUB_OUTPUT"
+
       - name: Set up Python
+        if: steps.et_hour.outputs.hour == '02'
         uses: actions/setup-python@v5
         with:
           python-version: "3.11"
 
       - name: Generate latest news dataset
+        if: steps.et_hour.outputs.hour == '02'
         run: python3 generate_news_results.py
 
       - name: Commit and push if changed
+        if: steps.et_hour.outputs.hour == '02'
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
@@ -35,3 +42,7 @@ jobs:
           else
             echo "No changes in docs/news.json"
           fi
+
+      - name: Skip message outside ET target hour
+        if: steps.et_hour.outputs.hour != '02'
+        run: echo "Skipping run because current ET hour is ${{ steps.et_hour.outputs.hour }} (target: 02)."
