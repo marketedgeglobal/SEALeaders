@@ -108,6 +108,76 @@ def _clean_snippet(raw: str) -> str:
     return text
 
 
+def _clean_publisher(raw: str) -> str:
+    text = re.sub(r"\s+", " ", (raw or "")).strip(" -|•\t\n\r")
+    text = re.sub(r"^Google\s+News\s*[:\-]?\s*", "", text, flags=re.IGNORECASE)
+    return text.strip() or ""
+
+
+def _split_title_and_publisher(title: str, fallback_source: str) -> tuple[str, str]:
+    raw_title = re.sub(r"\s+", " ", (title or "")).strip()
+    if not raw_title:
+        return "", _clean_publisher(fallback_source)
+
+    parts = [p.strip() for p in re.split(r"\s+-\s+", raw_title) if p.strip()]
+    if len(parts) >= 2:
+        candidate_publisher = _clean_publisher(parts[-1])
+        if candidate_publisher and len(candidate_publisher) <= 80:
+            clean_title = " - ".join(parts[:-1]).strip()
+            if clean_title:
+                return clean_title, candidate_publisher
+
+    return raw_title, _clean_publisher(fallback_source)
+
+
+def _derive_subtext(title: str) -> str:
+    clean_title = re.sub(r"\s+", " ", (title or "")).strip(" .")
+    if not clean_title:
+        return ""
+
+    if ":" in clean_title:
+        lead, detail = [segment.strip() for segment in clean_title.split(":", 1)]
+        if detail:
+            return detail[0].upper() + detail[1:]
+        return lead
+
+    if ";" in clean_title:
+        pieces = [p.strip() for p in clean_title.split(";") if p.strip()]
+        if len(pieces) > 1:
+            return pieces[1]
+
+    words = clean_title.split()
+    if len(words) > 10:
+        return " ".join(words[6:18]).strip(" ,.")
+    return clean_title
+
+
+def _best_snippet(summary: str, title: str, publisher: str = "") -> str:
+    cleaned_summary = _clean_snippet(summary)
+    if not cleaned_summary:
+        return _derive_subtext(title)
+
+    words = cleaned_summary.split()
+    if len(words) < 5 or len(cleaned_summary) < 36:
+        return _derive_subtext(title)
+
+    if publisher and cleaned_summary.lower() == publisher.lower():
+        return _derive_subtext(title)
+
+    normalized_summary = re.sub(r"\W+", "", cleaned_summary.lower())
+    normalized_title = re.sub(r"\W+", "", title.lower())
+    if normalized_summary and normalized_title and normalized_summary == normalized_title:
+        return _derive_subtext(title)
+
+    if cleaned_summary.lower().startswith(title.lower()):
+        tail = cleaned_summary[len(title):].strip(" .,-–—|")
+        if tail and len(tail) >= 36 and (not publisher or tail.lower() != publisher.lower()):
+            return tail
+        return _derive_subtext(title)
+
+    return cleaned_summary
+
+
 def _first_text(node: ET.Element, paths: list[str]) -> str:
     for path in paths:
         text = _get_text(node, path)
@@ -134,7 +204,8 @@ def _parse_feed(xml_bytes: bytes, source_name: str) -> list[dict]:
     channel_items = root.findall("./channel/item")
     if channel_items:
         for item in channel_items:
-            title = _first_text(item, ["title"])
+            raw_title = _first_text(item, ["title"])
+            title, publisher = _split_title_and_publisher(raw_title, source_name)
             link = _first_text(item, ["link"])
             published = _first_text(item, ["pubDate"])
             summary = _first_text(item, ["description", "content"])
@@ -144,15 +215,17 @@ def _parse_feed(xml_bytes: bytes, source_name: str) -> list[dict]:
                         "title": title,
                         "url": link,
                         "source": source_name,
+                        "publisher": publisher,
                         "published": _parse_datetime(published),
-                        "snippet": _clean_snippet(summary),
+                        "snippet": _best_snippet(summary, title, publisher),
                     }
                 )
         return articles
 
     atom_entries = root.findall("{http://www.w3.org/2005/Atom}entry")
     for entry in atom_entries:
-        title = _first_text(entry, ["{http://www.w3.org/2005/Atom}title"])
+        raw_title = _first_text(entry, ["{http://www.w3.org/2005/Atom}title"])
+        title, publisher = _split_title_and_publisher(raw_title, source_name)
         link = ""
         for link_node in entry.findall("{http://www.w3.org/2005/Atom}link"):
             href = link_node.attrib.get("href", "").strip()
@@ -179,8 +252,9 @@ def _parse_feed(xml_bytes: bytes, source_name: str) -> list[dict]:
                     "title": title,
                     "url": link,
                     "source": source_name,
+                    "publisher": publisher,
                     "published": _parse_datetime(published),
-                    "snippet": _clean_snippet(summary),
+                    "snippet": _best_snippet(summary, title, publisher),
                 }
             )
 

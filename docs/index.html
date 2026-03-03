@@ -328,6 +328,40 @@
         return "regional";
       }
 
+      function cleanPublisherLabel(raw) {
+        const value = String(raw || "").replace(/\s+/g, " ").trim();
+        if (!value) return "";
+        return value.replace(/^Google\s+News\s*[:\-]?\s*/i, "").trim();
+      }
+
+      function splitTitlePublisher(rawTitle) {
+        const value = String(rawTitle || "").replace(/\s+/g, " ").trim();
+        if (!value) return { title: "", publisher: "" };
+        const parts = value.split(/\s+-\s+/).map((part) => part.trim()).filter(Boolean);
+        if (parts.length >= 2) {
+          const candidate = cleanPublisherLabel(parts[parts.length - 1]);
+          if (candidate && candidate.length <= 80) {
+            return {
+              title: parts.slice(0, -1).join(" - ").trim(),
+              publisher: candidate,
+            };
+          }
+        }
+        return { title: value, publisher: "" };
+      }
+
+      function displaySource(item) {
+        const publisher = cleanPublisherLabel(item.publisher || "");
+        if (publisher) return publisher;
+
+        const split = splitTitlePublisher(item.title || "");
+        if (split.publisher) return split.publisher;
+
+        const source = String(item.source || "").trim();
+        if (/^google\s+news/i.test(source)) return "Google News";
+        return source || "Unknown source";
+      }
+
       function sortByDateDesc(items) {
         return [...items].sort((left, right) => {
           const leftDate = Date.parse(left.sourcePublishedAt || left.publishedAt || left.published || "");
@@ -341,7 +375,7 @@
       function pickTopSources(items, max = 5) {
         const counts = new Map();
         items.forEach((item) => {
-          const source = item.source || item.publisher || "Unknown source";
+          const source = displaySource(item);
           counts.set(source, (counts.get(source) || 0) + 1);
         });
         return [...counts.entries()].sort((a, b) => b[1] - a[1]).slice(0, max);
@@ -358,10 +392,32 @@
         return "Why it matters: this is a relevant directional update for monitoring sector-level coastal trends.";
       }
 
-      function synthOneLiner(item) {
-        const source = item.source || item.publisher || "Source";
-        const date = formatDate(item.sourcePublishedAt || item.publishedAt || item.published || "");
-        return `${source}${date ? ` · ${date}` : ""} reports a material update for this topic.`;
+      function buildStorySubtext(item) {
+        const cleanedSnippet = String(item.snippet || "").replace(/\s+/g, " ").trim();
+        const rawTitle = String(item.title || "").replace(/\s+/g, " ").trim();
+        const split = splitTitlePublisher(rawTitle);
+        const cleanTitle = split.title || rawTitle;
+
+        if (cleanedSnippet) {
+          const normalizedSnippet = cleanedSnippet.toLowerCase().replace(/\W+/g, "");
+          const normalizedTitle = cleanTitle.toLowerCase().replace(/\W+/g, "");
+          if (normalizedSnippet && normalizedSnippet !== normalizedTitle) {
+            const sentence = cleanedSnippet.split(/(?<=[.!?])\s+/)[0] || cleanedSnippet;
+            return sentence.length > 200 ? sentence.slice(0, 199).trimEnd() + "…" : sentence;
+          }
+        }
+
+        if (cleanTitle.includes(":")) {
+          const tail = cleanTitle.split(":").slice(1).join(":").trim();
+          if (tail) return tail;
+        }
+
+        const words = cleanTitle.split(/\s+/).filter(Boolean);
+        if (words.length > 12) {
+          return words.slice(6, 18).join(" ").replace(/[,.]$/, "") + "…";
+        }
+
+        return cleanTitle;
       }
 
       function synthSectorSummary(name, items) {
@@ -452,7 +508,7 @@
         const filteredAllItems = filterItemsBySource(allItems);
         const uniqueSources = new Set(
           filteredAllItems
-            .map((item) => item.source || item.publisher || "")
+            .map((item) => displaySource(item))
             .filter(Boolean)
         );
         const counts = CATEGORY_ORDER.map((name) => {
@@ -479,15 +535,16 @@
           const sectorSummary = synthSectorSummary(name, items);
           const cards = items.length
             ? items.slice(0, 8).map((item) => {
-              const source = item.source || item.publisher || "Unknown source";
+              const normalizedTitle = splitTitlePublisher(item.title || "").title || (item.title || "Untitled");
+              const source = displaySource(item);
               const date = formatDate(item.sourcePublishedAt || item.publishedAt || item.published || "");
               const summary = String(item.snippet || "").replace(/\s+/g, " ").trim();
               const clipped = summary.length > 240 ? summary.slice(0, 239).trimEnd() + "…" : summary;
-              const oneLiner = synthOneLiner(item);
+              const oneLiner = buildStorySubtext(item);
               const why = synthWhy(item);
               return `
                 <article class="item-card story-card">
-                  <h5><a href="${esc(item.url || "#")}" target="_blank" rel="noopener">${esc(item.title || "Untitled")}</a></h5>
+                  <h5><a href="${esc(item.url || "#")}" target="_blank" rel="noopener">${esc(normalizedTitle)}</a></h5>
                   <p class="story-oneliner">${esc(oneLiner)}</p>
                   <p class="item-meta">${esc(source)}${date ? ` · ${esc(date)}` : ""}</p>
                   ${clipped ? `<p class="item-desc">${esc(clipped)}</p>` : ""}
