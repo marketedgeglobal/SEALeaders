@@ -392,6 +392,22 @@ def _make_id(url: str, title: str) -> str:
     return hashlib.sha1(raw).hexdigest()[:12]
 
 
+def _canonical_story_url(url: str) -> str:
+    if not url:
+        return ""
+    parsed = urlparse(url.strip())
+    host = (parsed.netloc or "").lower()
+    path = (parsed.path or "").rstrip("/")
+    return f"{host}{path}"
+
+
+def _title_fingerprint(title: str, published_at: str = "") -> str:
+    normalized_title = re.sub(r"\s+", " ", (title or "").strip().lower())
+    normalized_title = re.sub(r"[^a-z0-9 ]+", "", normalized_title)
+    date_bucket = (published_at or "")[:10]
+    return f"{normalized_title}|{date_bucket}"
+
+
 def _categorize(title: str, summary: str = "") -> str | None:
     text = f"{title} {summary}".lower()
     best_sector = None
@@ -591,8 +607,9 @@ def _extract_items(feed_name: str, feed_url: str) -> list[dict]:
             continue
 
         context_text = f"{title} {summary} {verified_url}".lower()
+        has_geo_marker = any(marker in context_text for marker in SEA_CONTEXT_MARKERS)
         has_marine_marker = any(marker in context_text for marker in MARINE_CONTEXT_MARKERS)
-        if not has_marine_marker:
+        if not has_geo_marker or not has_marine_marker:
             continue
 
         sector = _categorize(title, summary)
@@ -601,9 +618,8 @@ def _extract_items(feed_name: str, feed_url: str) -> list[dict]:
 
         is_valid, _, _ = is_relevant(title, summary)
         if not is_valid:
-            has_sea_marker = any(marker in context_text for marker in SEA_CONTEXT_MARKERS)
-            is_direct_context_match = feed_name in REGIONAL_CONTEXT_FEEDS and has_marine_marker
-            if not (is_direct_context_match or has_sea_marker):
+            is_direct_context_match = feed_name in REGIONAL_CONTEXT_FEEDS and has_marine_marker and has_geo_marker
+            if not is_direct_context_match:
                 continue
 
         results.append(
@@ -628,6 +644,7 @@ def _extract_items(feed_name: str, feed_url: str) -> list[dict]:
 def build_latest_json() -> dict:
     all_items: list[dict] = []
     seen_urls: set[str] = set()
+    seen_title_signatures: set[str] = set()
 
     for feed in FEEDS:
         print(f"Fetching {feed['name']} …")
@@ -639,9 +656,17 @@ def build_latest_json() -> dict:
 
         for item in items:
             url = item["url"]
-            if url in seen_urls:
+            canonical_url = _canonical_story_url(url)
+            title_signature = _title_fingerprint(item.get("title", ""), item.get("publishedAt", ""))
+
+            if canonical_url and canonical_url in seen_urls:
                 continue
-            seen_urls.add(url)
+            if title_signature in seen_title_signatures:
+                continue
+
+            if canonical_url:
+                seen_urls.add(canonical_url)
+            seen_title_signatures.add(title_signature)
             all_items.append(item)
 
     all_items.sort(key=lambda i: (i.get("publishedAt") or ""), reverse=True)

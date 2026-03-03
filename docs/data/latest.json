@@ -1,38 +1,10 @@
 {
-  "runAt": "2026-03-03T23:46:30.401908+00:00",
-  "totalItems": 35,
+  "runAt": "2026-03-03T23:55:55.144697+00:00",
+  "totalItems": 22,
   "sectors": [
     {
       "name": "Sustainable Fisheries",
       "items": [
-        {
-          "id": "8f6ba1cb33cb",
-          "title": "PCG nabs 5 for illegal fishing in Romblon town",
-          "url": "https://newsinfo.inquirer.net/2190103/pcg-nabs-5-for-illegal-fishing-in-romblon-town",
-          "originalUrl": "https://newsinfo.inquirer.net/2190103/pcg-nabs-5-for-illegal-fishing-in-romblon-town",
-          "verifiedUrl": "https://newsinfo.inquirer.net/2190103/pcg-nabs-5-for-illegal-fishing-in-romblon-town",
-          "publisher": "Inquirer",
-          "publishedAt": "2026-03-03",
-          "sourcePublishedAt": "2026-03-03",
-          "source": "Inquirer",
-          "sector": "Sustainable Fisheries",
-          "country": "philippines",
-          "snippet": "CALAPAN CITY, ORIENTAL MINDORO — The Philippine Coast Guard (PCG) apprehended five individuals for alleged illegal fishing using a compressor in the waters off Isabel Island in Banton town, Romblon province on March 2. In a report posted on social media on Tuesday, the PCG said personnel of Coast Guard Sub-Station (CGS"
-        },
-        {
-          "id": "ddaceba699b6",
-          "title": "China’s Pacific squid fishery rife with labor, fishing abuses: Report",
-          "url": "https://news.mongabay.com/2026/03/chinas-pacific-squid-fishery-rife-with-labor-fishing-abuses-report/",
-          "originalUrl": "https://news.mongabay.com/2026/03/chinas-pacific-squid-fishery-rife-with-labor-fishing-abuses-report/",
-          "verifiedUrl": "https://news.mongabay.com/2026/03/chinas-pacific-squid-fishery-rife-with-labor-fishing-abuses-report/",
-          "publisher": "Mongabay",
-          "publishedAt": "2026-03-03",
-          "sourcePublishedAt": "2026-03-03",
-          "source": "Mongabay",
-          "sector": "Sustainable Fisheries",
-          "country": "regional",
-          "snippet": "Labor abuses including violence, debt bondage and withheld wages and medical care, overfishing, shark finning, marine mammal killings: A new report exposes bad practices and a weak regulatory framework governing the jumbo flying squid fishery in the Southeast Pacific Ocean. The report was launched on Feb. 19, just days"
-        },
         {
           "id": "cbd85aa7d096",
           "title": "No individual allowed to undermine national efforts to combat IUU fishing: PM",
@@ -60,20 +32,6 @@
           "sector": "Sustainable Fisheries",
           "country": "vietnam",
           "snippet": "Both host and guest agreed to facilitate market access, promptly remove trade barriers and address difficulties in order to meet cooperation needs and fully tap the economic potential of the EAEU and Vietnam."
-        },
-        {
-          "id": "33f22e3b053b",
-          "title": "Displaced for conservation, South Africa’s Thonga try to keep a fishing tradition alive",
-          "url": "https://news.mongabay.com/2026/03/displaced-for-conservation-south-africas-thonga-try-to-keep-unique-fishing-traditions-alive/",
-          "originalUrl": "https://news.mongabay.com/2026/03/displaced-for-conservation-south-africas-thonga-try-to-keep-unique-fishing-traditions-alive/",
-          "verifiedUrl": "https://news.mongabay.com/2026/03/displaced-for-conservation-south-africas-thonga-try-to-keep-unique-fishing-traditions-alive/",
-          "publisher": "Mongabay",
-          "publishedAt": "2026-03-02",
-          "sourcePublishedAt": "2026-03-02",
-          "source": "Mongabay",
-          "sector": "Sustainable Fisheries",
-          "country": "regional",
-          "snippet": "KOSI BAY, South Africa — “There’s a way to hold the spear,” Fano Tembe says, aiming a traditional fishing spear at the sand to show the tourists how they’ll be stabbing a fish in a trap they’re about to visit. “This is your aiming hand.” He cradles the middle of the pole in his left, […]"
         },
         {
           "id": "541516242533",
@@ -137,20 +95,6 @@
           "snippet": "KUCHING: The forests and rich biodiver­sity of Sabah and Sarawak play a central role in Malaysia's climate strategy, says Sarawak Premier Tan Sri Abang Johari Openg."
         },
         {
-          "id": "6fd827286c5a",
-          "title": "Myanmar elections marked by fear as UN warns civilians are coerced from all sides",
-          "url": "https://news.un.org/feed/view/en/story/2025/12/1166662",
-          "originalUrl": "https://news.un.org/feed/view/en/story/2025/12/1166662",
-          "verifiedUrl": "https://news.un.org/feed/view/en/story/2025/12/1166662",
-          "publisher": "UN News Asia Pacific",
-          "publishedAt": "2025-12-23",
-          "sourcePublishedAt": "2025-12-23",
-          "source": "UN News Asia Pacific",
-          "sector": "Climate Change",
-          "country": "myanmar",
-          "snippet": "As Myanmar approaches elections scheduled for 28 December, the UN’s top human rights official has said that civilians are being coerced from all sides – forced by the military to vote and threatened by armed opposition groups to boycott – in a climate of fear, violence and mass repression."
-        },
-        {
           "id": "3ad3d8bec014",
           "title": "Pagasa: El Niño may develop August to October, intense habagat looms",
           "url": "https://newsinfo.inquirer.net/2189947/el-nino-may-develop-in-july-but-pagasa-warns-of-intense-habagat",
@@ -165,94 +109,38 @@
           "snippet": "[Updated March 3, 2026, 7:32 p.m.] MANILA, Philippines — The El Niño phenomenon may start developing by August to October this year, according to the Philippine Atmospheric, Geophysical and Astronomical Services Administration (Pagasa). In an interview with the INQUIRER, Pagasa Climate Monitoring and Prediction Section"
         },
         {
-          "id": "402cb687ddde",
-          "title": "Decades of gains overshadowed as Asia-Pacific falls behind on sustainable development targets",
-          "url": "https://news.un.org/feed/view/en/story/2026/02/1166993",
-          "originalUrl": "https://news.un.org/feed/view/en/story/2026/02/1166993",
-          "verifiedUrl": "https://news.un.org/feed/view/en/story/2026/02/1166993",
+          "id": "6fd827286c5a",
+          "title": "Myanmar elections marked by fear as UN warns civilians are coerced from all sides",
+          "url": "https://news.un.org/feed/view/en/story/2025/12/1166662",
+          "originalUrl": "https://news.un.org/feed/view/en/story/2025/12/1166662",
+          "verifiedUrl": "https://news.un.org/feed/view/en/story/2025/12/1166662",
           "publisher": "UN News Asia Pacific",
-          "publishedAt": "2026-02-18",
-          "sourcePublishedAt": "2026-02-18",
+          "publishedAt": "2025-12-23",
+          "sourcePublishedAt": "2025-12-23",
           "source": "UN News Asia Pacific",
           "sector": "Climate Change",
-          "country": "regional",
-          "snippet": "Climate inaction, biodiversity loss and rising emissions are pushing Asia and the Pacific further off course on the Sustainable Development Goals (SDGs), with the region set to miss nearly nine out of ten targets by 2030, the United Nations has warned."
+          "country": "myanmar",
+          "snippet": "As Myanmar approaches elections scheduled for 28 December, the UN’s top human rights official has said that civilians are being coerced from all sides – forced by the military to vote and threatened by armed opposition groups to boycott – in a climate of fear, violence and mass repression."
         },
         {
-          "id": "b5e25a104046",
-          "title": "America’s national parks face an uncertain future as climate risks mount",
-          "url": "https://news.mongabay.com/2026/03/americas-national-parks-face-an-uncertain-future-as-climate-risks-mount/",
-          "originalUrl": "https://news.mongabay.com/2026/03/americas-national-parks-face-an-uncertain-future-as-climate-risks-mount/",
-          "verifiedUrl": "https://news.mongabay.com/2026/03/americas-national-parks-face-an-uncertain-future-as-climate-risks-mount/",
-          "publisher": "Mongabay",
-          "publishedAt": "2026-03-02",
-          "sourcePublishedAt": "2026-03-02",
-          "source": "Mongabay",
+          "id": "0ba0fe410032",
+          "title": "PMI hits four-month high in February",
+          "url": "https://en.vietnamplus.vn/pmi-hits-four-month-high-in-february-post338555.vnp",
+          "originalUrl": "https://en.vietnamplus.vn/pmi-hits-four-month-high-in-february-post338555.vnp",
+          "verifiedUrl": "https://en.vietnamplus.vn/pmi-hits-four-month-high-in-february-post338555.vnp",
+          "publisher": "VietnamPlus",
+          "publishedAt": "2026-03-03",
+          "sourcePublishedAt": "2026-03-03",
+          "source": "VietnamPlus",
           "sector": "Climate Change",
-          "country": "regional",
-          "snippet": "America’s national parks were conceived as sanctuaries from the forces remaking the rest of the continent. Climate change is now breaching that boundary. A recent assessment of park vulnerability suggests that many of these landscapes are not simply warming or drying in familiar ways. They are being pushed toward ecolo"
-        },
-        {
-          "id": "0dcb1a82ae6b",
-          "title": "Floods, drought and insecurity drive acute hunger for 7.5 million in Pakistan",
-          "url": "https://news.un.org/feed/view/en/story/2026/02/1166991",
-          "originalUrl": "https://news.un.org/feed/view/en/story/2026/02/1166991",
-          "verifiedUrl": "https://news.un.org/feed/view/en/story/2026/02/1166991",
-          "publisher": "UN News Asia Pacific",
-          "publishedAt": "2026-02-18",
-          "sourcePublishedAt": "2026-02-18",
-          "source": "UN News Asia Pacific",
-          "sector": "Climate Change",
-          "country": "regional",
-          "snippet": "After a year that saw heavy monsoon floods, prolonged drought and dry spells, and a surge in violence, 7.5 million people in Pakistan face high levels of food insecurity and malnutrition according to a report from the global hunger monitor."
-        },
-        {
-          "id": "045af51655c0",
-          "title": "Climate change is slowing southern right whale birth rate, 33-year study finds",
-          "url": "https://news.mongabay.com/2026/02/climate-change-is-slowing-southern-right-whale-birth-rate-33-year-study-finds/",
-          "originalUrl": "https://news.mongabay.com/2026/02/climate-change-is-slowing-southern-right-whale-birth-rate-33-year-study-finds/",
-          "verifiedUrl": "https://news.mongabay.com/2026/02/climate-change-is-slowing-southern-right-whale-birth-rate-33-year-study-finds/",
-          "publisher": "Mongabay",
-          "publishedAt": "2026-02-27",
-          "sourcePublishedAt": "2026-02-27",
-          "source": "Mongabay",
-          "sector": "Climate Change",
-          "country": "regional",
-          "snippet": "Southern right whales (Eubalaena australis) off Australia’s southern coast are having calves less often than they used to. A new study links this slowdown to warming water and shrinking sea ice in the Southern Ocean. The study, conducted by researchers at Australian, South African and U.S. institutions and published th"
-        },
-        {
-          "id": "4ffb90465719",
-          "title": "Climate change drives uneven shifts in tree diversity across Amazon and Andes",
-          "url": "https://news.mongabay.com/2026/02/climate-change-drives-uneven-shifts-in-tree-diversity-across-amazon-and-andes/",
-          "originalUrl": "https://news.mongabay.com/2026/02/climate-change-drives-uneven-shifts-in-tree-diversity-across-amazon-and-andes/",
-          "verifiedUrl": "https://news.mongabay.com/2026/02/climate-change-drives-uneven-shifts-in-tree-diversity-across-amazon-and-andes/",
-          "publisher": "Mongabay",
-          "publishedAt": "2026-02-27",
-          "sourcePublishedAt": "2026-02-27",
-          "source": "Mongabay",
-          "sector": "Climate Change",
-          "country": "regional",
-          "snippet": "The tropical forests of the Amazon and Andes are some of the most biodiverse places on the planet, but across both regions, changes in climate and landscape conditions are driving a shift in the number of tree species, recent research has found. Although the overall number of tree species across the Andes and Amazon ha"
+          "country": "vietnam",
+          "snippet": "Manufacturing production increased rapidly in February, with the rate of expansion quickening to a 19-month high. Panellists reported that the preparation of products ahead of delivery to clients and stronger customer demand were behind the latest rise in output."
         }
       ]
     },
     {
       "name": "Maritime Security",
       "items": [
-        {
-          "id": "f19cb4600885",
-          "title": "Trump orders oil tanker insurance support, says Navy could escort ships in Gulf",
-          "url": "https://www.channelnewsasia.com/world/iran-war-trump-oil-tanker-navy-escort-ships-strait-hormuz-5968311",
-          "originalUrl": "https://www.channelnewsasia.com/world/iran-war-trump-oil-tanker-navy-escort-ships-strait-hormuz-5968311",
-          "verifiedUrl": "https://www.channelnewsasia.com/world/iran-war-trump-oil-tanker-navy-escort-ships-strait-hormuz-5968311",
-          "publisher": "Channel News Asia - Asia",
-          "publishedAt": "2026-03-04",
-          "sourcePublishedAt": "2026-03-04",
-          "source": "Channel News Asia - Asia",
-          "sector": "Maritime Security",
-          "country": "singapore",
-          "snippet": "The move aims to protect energy shipments through the Strait of Hormuz and stabilise oil markets amid escalating Middle East tensions."
-        },
         {
           "id": "e76a400bb13f",
           "title": "Takiyuddin apologises for linking maritime op to Memali incident",
@@ -266,34 +154,6 @@
           "sector": "Maritime Security",
           "country": "malaysia",
           "snippet": "Dewan Rakyat speaker accepts the PN chief whip's apology after he admits his error."
-        },
-        {
-          "id": "ed9a8c54d4e8",
-          "title": "Trump Orders Federal Insurance Backstop for Gulf Shipping, Signals Possible Navy Tanker Escorts",
-          "url": "https://gcaptain.com/trump-orders-federal-insurance-backstop-for-gulf-shipping-signals-possible-navy-tanker-escorts/",
-          "originalUrl": "https://gcaptain.com/trump-orders-federal-insurance-backstop-for-gulf-shipping-signals-possible-navy-tanker-escorts/",
-          "verifiedUrl": "https://gcaptain.com/trump-orders-federal-insurance-backstop-for-gulf-shipping-signals-possible-navy-tanker-escorts/",
-          "publisher": "gCaptain",
-          "publishedAt": "2026-03-03",
-          "sourcePublishedAt": "2026-03-03",
-          "source": "gCaptain",
-          "sector": "Maritime Security",
-          "country": "regional",
-          "snippet": "President Donald Trump said Tuesday he has directed the U.S. government to provide political risk insurance and financial guarantees for maritime trade transiting the Persian Gulf, while signaling that U.S...."
-        },
-        {
-          "id": "17bc06b3db9b",
-          "title": "Russian LNG Carrier ‘Arctic Metagaz’ Reportedly Ablaze Off Malta as Maritime Patrol Aircraft Circles",
-          "url": "https://gcaptain.com/russian-lng-carrier-arctic-metagaz-reportedly-ablaze-off-malta-as-maritime-patrol-aircraft-circles/",
-          "originalUrl": "https://gcaptain.com/russian-lng-carrier-arctic-metagaz-reportedly-ablaze-off-malta-as-maritime-patrol-aircraft-circles/",
-          "verifiedUrl": "https://gcaptain.com/russian-lng-carrier-arctic-metagaz-reportedly-ablaze-off-malta-as-maritime-patrol-aircraft-circles/",
-          "publisher": "gCaptain",
-          "publishedAt": "2026-03-03",
-          "sourcePublishedAt": "2026-03-03",
-          "source": "gCaptain",
-          "sector": "Maritime Security",
-          "country": "regional",
-          "snippet": "An LNG carrier identified as the Arctic Metagaz, part of Russia’s emerging shadow fleet transporting sanctioned liquefied natural gas, was reportedly on fire early Tuesday in the central Mediterranean off the coasts of Malta and Libya."
         },
         {
           "id": "fede3cb72c7e",
@@ -336,20 +196,6 @@
           "sector": "Maritime Security",
           "country": "vietnam",
           "snippet": "According to the latest update from the VIMAWA, as of late March 3, Vietnam has eight vessels with 160 crew members operating in the Middle East."
-        },
-        {
-          "id": "fccb2b30e1f4",
-          "title": "Gulf War Risk Insurance Pulled as Reinsurers Exit",
-          "url": "https://gcaptain.com/gulf-war-risk-insurance-pulled-as-reinsurers-exit/",
-          "originalUrl": "https://gcaptain.com/gulf-war-risk-insurance-pulled-as-reinsurers-exit/",
-          "verifiedUrl": "https://gcaptain.com/gulf-war-risk-insurance-pulled-as-reinsurers-exit/",
-          "publisher": "gCaptain",
-          "publishedAt": "2026-03-02",
-          "sourcePublishedAt": "2026-03-02",
-          "source": "gCaptain",
-          "sector": "Maritime Security",
-          "country": "regional",
-          "snippet": "The global marine insurance market is rapidly retrenching from the Persian Gulf as escalating military conflict between the United States, Israel, and Iran pushes the region’s maritime risk profile to..."
         }
       ]
     },
@@ -357,74 +203,18 @@
       "name": "Sustainable Blue Economy",
       "items": [
         {
-          "id": "f30181d59b21",
-          "title": "Alcaraz hingga Sabalenka masuk nominasi Laureus World Sports Awards",
-          "url": "https://www.antaranews.com/berita/5450975/alcaraz-hingga-sabalenka-masuk-nominasi-laureus-world-sports-awards",
-          "originalUrl": "https://www.antaranews.com/berita/5450975/alcaraz-hingga-sabalenka-masuk-nominasi-laureus-world-sports-awards",
-          "verifiedUrl": "https://www.antaranews.com/berita/5450975/alcaraz-hingga-sabalenka-masuk-nominasi-laureus-world-sports-awards",
-          "publisher": "ANTARA Indonesia",
-          "publishedAt": "2026-03-04",
-          "sourcePublishedAt": "2026-03-04",
-          "source": "ANTARA Indonesia",
-          "sector": "Sustainable Blue Economy",
-          "country": "indonesia",
-          "snippet": "Sejumlah petenis dunia mulai dari Carlos Alcaraz, Jannik Sinner, hingga Aryna Sabalenka masuk nominasi Laureus World Sports Awards 2026.Alcaraz dan Sinner ..."
-        },
-        {
-          "id": "4396cb8bdb49",
-          "title": "Corrections: March 2026",
-          "url": "https://www.rappler.com/bulletin-board/corrections/march-2026/",
-          "originalUrl": "https://www.rappler.com/bulletin-board/corrections/march-2026/",
-          "verifiedUrl": "https://www.rappler.com/bulletin-board/corrections/march-2026/",
-          "publisher": "Rappler",
+          "id": "8e5ac0818991",
+          "title": "House bill seeks powers for President to suspend fuel excise tax",
+          "url": "https://newsinfo.inquirer.net/2190138/quimbos-bill-seeks-powers-for-president-to-suspend-excise-taxes",
+          "originalUrl": "https://newsinfo.inquirer.net/2190138/quimbos-bill-seeks-powers-for-president-to-suspend-excise-taxes",
+          "verifiedUrl": "https://newsinfo.inquirer.net/2190138/quimbos-bill-seeks-powers-for-president-to-suspend-excise-taxes",
+          "publisher": "Inquirer",
           "publishedAt": "2026-03-03",
           "sourcePublishedAt": "2026-03-03",
-          "source": "Rappler",
+          "source": "Inquirer",
           "sector": "Sustainable Blue Economy",
           "country": "philippines",
-          "snippet": "Here are the reports with corrections for March 2026"
-        },
-        {
-          "id": "c831726454aa",
-          "title": "Middle East conflict strands 400,000 tons of India’s basmati rice at ports",
-          "url": "https://www.malaymail.com/news/money/2026/03/03/middle-east-conflict-strands-400000-tons-of-indias-basmati-rice-at-ports/211185",
-          "originalUrl": "https://www.malaymail.com/news/money/2026/03/03/middle-east-conflict-strands-400000-tons-of-indias-basmati-rice-at-ports/211185",
-          "verifiedUrl": "https://www.malaymail.com/news/money/2026/03/03/middle-east-conflict-strands-400000-tons-of-indias-basmati-rice-at-ports/211185",
-          "publisher": "Malay Mail",
-          "publishedAt": "2026-03-03",
-          "sourcePublishedAt": "2026-03-03",
-          "source": "Malay Mail",
-          "sector": "Sustainable Blue Economy",
-          "country": "malaysia",
-          "snippet": "MUMBAI, March 3 — About 400,000 metric tons of Indian basmati rice are backed up at ports and in transit, and export deals have dried up as freight rates have more than doubled..."
-        },
-        {
-          "id": "e6004a87f7ab",
-          "title": "Basmati rice cargo stuck at Indian ports as Iran crisis hits flows",
-          "url": "https://www.straitstimes.com/asia/south-asia/basmati-rice-cargo-stuck-at-indian-ports-as-iran-crisis-hits-flows",
-          "originalUrl": "https://www.straitstimes.com/asia/south-asia/basmati-rice-cargo-stuck-at-indian-ports-as-iran-crisis-hits-flows",
-          "verifiedUrl": "https://www.straitstimes.com/asia/south-asia/basmati-rice-cargo-stuck-at-indian-ports-as-iran-crisis-hits-flows",
-          "publisher": "The Straits Times - Asia",
-          "publishedAt": "2026-03-03",
-          "sourcePublishedAt": "2026-03-03",
-          "source": "The Straits Times - Asia",
-          "sector": "Sustainable Blue Economy",
-          "country": "singapore",
-          "snippet": "India is the world’s largest basmati rice exporter, with the Middle East its top market. Read more at straitstimes.com. Read more at straitstimes.com."
-        },
-        {
-          "id": "751478b3670f",
-          "title": "Fuel shortage hits Shan State as imports from Thailand halt over Iran conflict",
-          "url": "https://myanmar-now.org/en/news/fuel-shortage-hits-shan-state-as-imports-from-thailand-halt-over-iran-conflict/",
-          "originalUrl": "https://myanmar-now.org/en/news/fuel-shortage-hits-shan-state-as-imports-from-thailand-halt-over-iran-conflict/",
-          "verifiedUrl": "https://myanmar-now.org/en/news/fuel-shortage-hits-shan-state-as-imports-from-thailand-halt-over-iran-conflict/",
-          "publisher": "Myanmar Now",
-          "publishedAt": "2026-03-03",
-          "sourcePublishedAt": "2026-03-03",
-          "source": "Myanmar Now",
-          "sector": "Sustainable Blue Economy",
-          "country": "myanmar",
-          "snippet": "A protracted war in the Middle East could have a severe impact on energy supplies in Myanmar and the rest of the region"
+          "snippet": "MANILA, Philippines — A bill that seeks to give the President powers to suspend the excise tax on petroleum products when warranted — like during the current conflict in the Middle East —was filed by Marikina Rep. Miro Quimbo on Tuesday. Quimbo, in a statement, said that he supports calls to suspend excise taxes on fue"
         },
         {
           "id": "f96facbc7230",
@@ -441,32 +231,74 @@
           "snippet": "Sunway University’s Yeah Kim Leng says disruptions in shipping due to the ongoing war will have cascading impacts."
         },
         {
-          "id": "71f49d1ca06c",
-          "title": "Marcos seeks emergency powers to cut fuel tax",
-          "url": "https://newsinfo.inquirer.net/2190176/marcos-seeks-emergency-powers-to-cut-fuel-tax",
-          "originalUrl": "https://newsinfo.inquirer.net/2190176/marcos-seeks-emergency-powers-to-cut-fuel-tax",
-          "verifiedUrl": "https://newsinfo.inquirer.net/2190176/marcos-seeks-emergency-powers-to-cut-fuel-tax",
-          "publisher": "Inquirer",
-          "publishedAt": "2026-03-04",
-          "sourcePublishedAt": "2026-03-04",
-          "source": "Inquirer",
+          "id": "751478b3670f",
+          "title": "Fuel shortage hits Shan State as imports from Thailand halt over Iran conflict",
+          "url": "https://myanmar-now.org/en/news/fuel-shortage-hits-shan-state-as-imports-from-thailand-halt-over-iran-conflict/",
+          "originalUrl": "https://myanmar-now.org/en/news/fuel-shortage-hits-shan-state-as-imports-from-thailand-halt-over-iran-conflict/",
+          "verifiedUrl": "https://myanmar-now.org/en/news/fuel-shortage-hits-shan-state-as-imports-from-thailand-halt-over-iran-conflict/",
+          "publisher": "Myanmar Now",
+          "publishedAt": "2026-03-03",
+          "sourcePublishedAt": "2026-03-03",
+          "source": "Myanmar Now",
           "sector": "Sustainable Blue Economy",
-          "country": "philippines",
-          "snippet": "President Marcos is seeking emergency powers from Congress to allow him to reduce the excise tax on petroleum products once prices of oil and gas imports soar as a result of the escalating conflict in the Middle East. At a Palace briefing on Tuesday, the President said he was in talks with leaders of the"
+          "country": "myanmar",
+          "snippet": "A protracted war in the Middle East could have a severe impact on energy supplies in Myanmar and the rest of the region"
         },
         {
-          "id": "9d22be7cefbd",
-          "title": "OpenAI is developing alternative to Microsoft's GitHub, The Information reports",
-          "url": "https://www.channelnewsasia.com/business/openai-developing-alternative-microsofts-github-information-reports-5968411",
-          "originalUrl": "https://www.channelnewsasia.com/business/openai-developing-alternative-microsofts-github-information-reports-5968411",
-          "verifiedUrl": "https://www.channelnewsasia.com/business/openai-developing-alternative-microsofts-github-information-reports-5968411",
-          "publisher": "Channel News Asia - Asia",
-          "publishedAt": "2026-03-04",
-          "sourcePublishedAt": "2026-03-04",
-          "source": "Channel News Asia - Asia",
+          "id": "28a45b9a6b0c",
+          "title": "Empty shelves across Myanmar as Thai imports disappear",
+          "url": "https://myanmar-now.org/en/news/empty-shelves-across-myanmar-as-thai-imports-disappear/",
+          "originalUrl": "https://myanmar-now.org/en/news/empty-shelves-across-myanmar-as-thai-imports-disappear/",
+          "verifiedUrl": "https://myanmar-now.org/en/news/empty-shelves-across-myanmar-as-thai-imports-disappear/",
+          "publisher": "Myanmar Now",
+          "publishedAt": "2026-02-26",
+          "sourcePublishedAt": "2026-02-26",
+          "source": "Myanmar Now",
           "sector": "Sustainable Blue Economy",
-          "country": "singapore",
-          "snippet": "March 3 : OpenAI is developing a new code-hosting platform to rival Microsoft's GitHub, The Information reported on Tuesday, citing a person with knowledge of the project.Engineers from OpenAI encountered a rise in service disruptions that rendered GitHub unavailable in recent months, which ultimately prompte"
+          "country": "myanmar",
+          "snippet": "From snacks to medicine, goods once trucked across the Thai border have vanished following tightened import controls, border gate closures, and a crackdown on “illegal” trade"
+        },
+        {
+          "id": "fad0a9f7c9da",
+          "title": "Vietnam tightens shipping safety, prepares contingency plans over Middle East risks",
+          "url": "https://en.vietnamplus.vn/vietnam-tightens-shipping-safety-prepares-contingency-plans-over-middle-east-risks-post338589.vnp",
+          "originalUrl": "https://en.vietnamplus.vn/vietnam-tightens-shipping-safety-prepares-contingency-plans-over-middle-east-risks-post338589.vnp",
+          "verifiedUrl": "https://en.vietnamplus.vn/vietnam-tightens-shipping-safety-prepares-contingency-plans-over-middle-east-risks-post338589.vnp",
+          "publisher": "VietnamPlus",
+          "publishedAt": "2026-03-03",
+          "sourcePublishedAt": "2026-03-03",
+          "source": "VietnamPlus",
+          "sector": "Sustainable Blue Economy",
+          "country": "vietnam",
+          "snippet": "In a directive issued on March 3, VIMAWA Director Le Do Muoi instructed shipowners, crewing firms and shipping companies to conduct thorough risk assessments and adjust operations as needed, including preparing alternative shipping routes."
+        },
+        {
+          "id": "ff7feadee4e1",
+          "title": "VinFast finalises three strategic vehicle brands, unveils two ultra-luxury models",
+          "url": "https://en.vietnamplus.vn/vinfast-finalises-three-strategic-vehicle-brands-unveils-two-ultra-luxury-models-post338579.vnp",
+          "originalUrl": "https://en.vietnamplus.vn/vinfast-finalises-three-strategic-vehicle-brands-unveils-two-ultra-luxury-models-post338579.vnp",
+          "verifiedUrl": "https://en.vietnamplus.vn/vinfast-finalises-three-strategic-vehicle-brands-unveils-two-ultra-luxury-models-post338579.vnp",
+          "publisher": "VietnamPlus",
+          "publishedAt": "2026-03-03",
+          "sourcePublishedAt": "2026-03-03",
+          "source": "VietnamPlus",
+          "sector": "Sustainable Blue Economy",
+          "country": "vietnam",
+          "snippet": "Under the plan, VinFast’s automotive ecosystem is organised into three distinct brands - Lac Hong for ultra-luxury vehicles, VF for mass-market personal mobility, and Green for transport service operations, each targeting specific customer segments and supporting long-term development."
+        },
+        {
+          "id": "d6964f91aa3f",
+          "title": "Two Indonesian oil tankers stranded in Persian Gulf",
+          "url": "https://en.vietnamplus.vn/two-indonesian-oil-tankers-stranded-in-persian-gulf-post338578.vnp",
+          "originalUrl": "https://en.vietnamplus.vn/two-indonesian-oil-tankers-stranded-in-persian-gulf-post338578.vnp",
+          "verifiedUrl": "https://en.vietnamplus.vn/two-indonesian-oil-tankers-stranded-in-persian-gulf-post338578.vnp",
+          "publisher": "VietnamPlus",
+          "publishedAt": "2026-03-03",
+          "sourcePublishedAt": "2026-03-03",
+          "source": "VietnamPlus",
+          "sector": "Sustainable Blue Economy",
+          "country": "vietnam",
+          "snippet": "PT Pertamina International Shipping (PIS) currently has four vessels operating in the Middle East region. Of these, two vessels – Pertamina Pride and Gamsunoro – remain in the gulf. The other two have been relocated to relatively safer positions."
         }
       ]
     },
@@ -474,18 +306,18 @@
       "name": "Marine Pollution",
       "items": [
         {
-          "id": "d46288fe4920",
-          "title": "China rilis pedoman peningkatkan daur ulang & limbah panel surya",
-          "url": "https://www.antaranews.com/berita/5450883/china-rilis-pedoman-peningkatkan-daur-ulang-limbah-panel-surya",
-          "originalUrl": "https://www.antaranews.com/berita/5450883/china-rilis-pedoman-peningkatkan-daur-ulang-limbah-panel-surya",
-          "verifiedUrl": "https://www.antaranews.com/berita/5450883/china-rilis-pedoman-peningkatkan-daur-ulang-limbah-panel-surya",
-          "publisher": "ANTARA Indonesia",
-          "publishedAt": "2026-03-04",
-          "sourcePublishedAt": "2026-03-04",
-          "source": "ANTARA Indonesia",
+          "id": "54727a295fe7",
+          "title": "Deadly landfill collapse exposes risks faced by Philippines’ waste pickers",
+          "url": "https://news.mongabay.com/2026/03/deadly-landfill-collapse-exposes-risks-faced-by-philippines-waste-pickers/",
+          "originalUrl": "https://news.mongabay.com/2026/03/deadly-landfill-collapse-exposes-risks-faced-by-philippines-waste-pickers/",
+          "verifiedUrl": "https://news.mongabay.com/2026/03/deadly-landfill-collapse-exposes-risks-faced-by-philippines-waste-pickers/",
+          "publisher": "Mongabay",
+          "publishedAt": "2026-03-02",
+          "sourcePublishedAt": "2026-03-02",
+          "source": "Mongabay",
           "sector": "Marine Pollution",
-          "country": "indonesia",
-          "snippet": "Kementerian Perindustrian dan Teknologi Informasi China, bersama dengan lima departemen pemerintah lainnya, merilis pedoman untuk mempromosikan daur ulang dan ..."
+          "country": "philippines",
+          "snippet": "RODRIGUEZ, Philippines — Lenny* recalled freezing when he saw the first heap of garbage collapse underneath the feet of his fellow scavengers on the afternoon of Feb. 20, at a landfill in the town of Rodriguez, in the Philippines’ Rizal province. Moments later, a larger perimeter caved. In an instant, a crater of trash"
         },
         {
           "id": "c23c6e51bf51",
@@ -500,20 +332,6 @@
           "sector": "Marine Pollution",
           "country": "myanmar",
           "snippet": "Wastewater from mines has heavily contained both rivers, according to Karenni State’s resistance-run civilian authority"
-        },
-        {
-          "id": "54727a295fe7",
-          "title": "Deadly landfill collapse exposes risks faced by Philippines’ waste pickers",
-          "url": "https://news.mongabay.com/2026/03/deadly-landfill-collapse-exposes-risks-faced-by-philippines-waste-pickers/",
-          "originalUrl": "https://news.mongabay.com/2026/03/deadly-landfill-collapse-exposes-risks-faced-by-philippines-waste-pickers/",
-          "verifiedUrl": "https://news.mongabay.com/2026/03/deadly-landfill-collapse-exposes-risks-faced-by-philippines-waste-pickers/",
-          "publisher": "Mongabay",
-          "publishedAt": "2026-03-02",
-          "sourcePublishedAt": "2026-03-02",
-          "source": "Mongabay",
-          "sector": "Marine Pollution",
-          "country": "philippines",
-          "snippet": "RODRIGUEZ, Philippines — Lenny* recalled freezing when he saw the first heap of garbage collapse underneath the feet of his fellow scavengers on the afternoon of Feb. 20, at a landfill in the town of Rodriguez, in the Philippines’ Rizal province. Moments later, a larger perimeter caved. In an instant, a crater of trash"
         }
       ]
     }
