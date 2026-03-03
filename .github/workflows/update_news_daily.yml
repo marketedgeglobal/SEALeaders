@@ -26,21 +26,25 @@ jobs:
         with:
           python-version: "3.11"
 
+      - name: Install dependencies
+        if: steps.et_hour.outputs.hour == '02'
+        run: pip install -r requirements.txt
+
       - name: Generate latest news dataset
         if: steps.et_hour.outputs.hour == '02'
-        run: python3 generate_news_results.py
+        run: python3 fetch_news.py
 
       - name: Commit and push if changed
         if: steps.et_hour.outputs.hour == '02'
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          if [[ -n "$(git status --porcelain docs/news.json)" ]]; then
-            git add docs/news.json
+          if [[ -n "$(git status --porcelain docs/data/latest.json)" ]]; then
+            git add docs/data/latest.json
             git commit -m "chore: daily news refresh"
             git push
           else
-            echo "No changes in docs/news.json"
+            echo "No changes in docs/data/latest.json"
           fi
 
       - name: Skip message outside ET target hour

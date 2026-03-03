@@ -218,7 +218,10 @@
         const container = document.getElementById("results-grid");
         container.innerHTML = "";
 
-        const byCategory = payload.by_category || {};
+        const sectors = Array.isArray(payload.sectors) ? payload.sectors : [];
+        const byCategory = Object.fromEntries(
+          sectors.map((sector) => [sector.name, Array.isArray(sector.items) ? sector.items : []])
+        );
 
         CATEGORY_ORDER.forEach((category) => {
           const items = Array.isArray(byCategory[category]) ? byCategory[category] : [];
@@ -251,7 +254,8 @@
 
               const meta = document.createElement("div");
               meta.className = "meta";
-              meta.textContent = item.source || "Unknown source";
+              const source = item.source || item.publisher || "Unknown source";
+              meta.textContent = source;
               li.appendChild(meta);
 
               list.appendChild(li);
@@ -263,11 +267,11 @@
         });
       }
 
-      fetch("./news.json", { cache: "no-store" })
+      fetch("./data/latest.json", { cache: "no-store" })
         .then((response) => response.ok ? response.json() : Promise.reject(new Error("news.json not found")))
         .then(renderResults)
         .catch(() => {
-          renderResults({ by_category: {} });
+          renderResults({ sectors: [] });
         });
     </script>
   </body>
