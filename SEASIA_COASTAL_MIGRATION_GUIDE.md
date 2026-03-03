@@ -126,6 +126,21 @@ MARINE_TOPICS = [
     "mangrove", "coral reef", "seagrass"
 ]
 
+  # Headline inclusion/exclusion rules
+  DISALLOWED_HEADLINE_TERMS = ["venezuela"]
+
+  REQUIRED_HEADLINE_TERMS = [
+    "sea", "southeast asia", "asean", "aec", "ascc", "seafdec",
+    "timor leste", "thailand", "indonesia", "malaysia", "vietnam",
+    "philippines", "singapore", "brunei", "myanmar", "myanamar", "cambodia"
+  ]
+
+  def is_allowed_headline(headline: str) -> bool:
+    h = headline.lower()
+    has_disallowed = any(term in h for term in DISALLOWED_HEADLINE_TERMS)
+    has_required = any(term in h for term in REQUIRED_HEADLINE_TERMS)
+    return (not has_disallowed) and has_required
+
 # Output structure
 README_PATH = "README_SEASIA_COASTAL.md"
 ARCHIVE_PATH = "./data/seasia_coastal/"
@@ -134,6 +149,8 @@ ARCHIVE_PATH = "./data/seasia_coastal/"
 **New filtering logic:**
 - Filter by geographic mentions (country names, provinces)
 - Filter by marine/coastal topic keywords
+- Exclude any article with "Venezuela" in the headline
+- Require headline to include at least one of: SEA, Southeast Asia, ASEAN, AEC, ASCC, SEAFDEC, Timor Leste, Thailand, Indonesia, Malaysia, Vietnam, Philippines, Singapore, Brunei, Myanmar/Myanamar, Cambodia
 - Prioritize local language sources by country
 - Score articles by relevance (topic + geography)
 
@@ -141,7 +158,7 @@ ARCHIVE_PATH = "./data/seasia_coastal/"
 
 The script will:
 1. Fetch feeds for 9 countries
-2. Filter articles by marine/coastal relevance
+2. Filter articles by marine/coastal relevance + headline allowlist/denylist
 3. De-duplicate across feeds
 4. Archive by country + topic
 5. Generate country-specific + regional README files
