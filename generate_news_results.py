@@ -1,6 +1,7 @@
 #!/usr/bin/env python3
 
 import json
+import os
 import urllib.request
 import xml.etree.ElementTree as ET
 from datetime import datetime, timezone
@@ -18,6 +19,17 @@ FEEDS = [
     ("Google News Marine Pollution SEA", "https://news.google.com/rss/search?q=Marine+Pollution+Southeast+Asia"),
     ("SEAFDEC", "https://www.seafdec.org/feed/"),
     ("East Asia Forum", "https://www.eastasiaforum.org/feed/"),
+    ("Google News Vietnam Coastal", "https://news.google.com/rss/search?q=Vietnam+coastal+fisheries+climate"),
+    ("Google News Thailand Coastal", "https://news.google.com/rss/search?q=Thailand+marine+pollution+coastal"),
+    ("Google News Philippines Maritime", "https://news.google.com/rss/search?q=Philippines+maritime+security+fisheries"),
+    ("Google News Indonesia Blue Economy", "https://news.google.com/rss/search?q=Indonesia+blue+economy+coastal"),
+    ("Google News Malaysia Fisheries", "https://news.google.com/rss/search?q=Malaysia+fisheries+marine"),
+    ("Google News Singapore Maritime", "https://news.google.com/rss/search?q=Singapore+maritime+security+ASEAN"),
+    ("Google News Cambodia Mekong Coastal", "https://news.google.com/rss/search?q=Cambodia+coastal+fisheries+Mekong"),
+    ("Google News Myanmar Coastal", "https://news.google.com/rss/search?q=Myanmar+coastal+marine+ASEAN"),
+    ("Google News Brunei Blue Economy", "https://news.google.com/rss/search?q=Brunei+blue+economy+marine"),
+    ("Mongabay", "https://news.mongabay.com/feed/"),
+    ("UN News Asia Pacific", "https://news.un.org/feed/subscribe/en/news/region/asia-pacific/feed/rss.xml"),
 ]
 
 CATEGORY_KEYWORDS = {
@@ -61,7 +73,7 @@ CATEGORY_KEYWORDS = {
     ],
 }
 
-MAX_PER_CATEGORY = 8
+MAX_PER_CATEGORY = int(os.getenv("MAX_PER_CATEGORY", "8"))
 
 
 def _parse_datetime(raw: str | None) -> str:

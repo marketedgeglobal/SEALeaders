@@ -1,201 +1,166 @@
-<!doctype html>
-<html lang="en">
+<!DOCTYPE html>
+<html lang="en-US">
   <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>SEA Leaders</title>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>SEA Leaders | Coastal Insights</title>
     <style>
       :root {
-        --bg: #eef2f7;
-        --card: #ffffff;
-        --text: #15253f;
-        --muted: #5f6f88;
-        --accent: #1e3a8a;
-        --accent-2: #3056d3;
-        --border: #dbe3ef;
+        color-scheme: dark;
+        --me-primary: #1fa6a3;
+        --me-primary-strong: #167c88;
+        --me-accent: #8fd3f4;
+        --me-bg: #0f2233;
+        --me-bg-2: #0b1e2d;
+        --me-surface-top: #17354d;
+        --me-surface-bottom: #122f45;
+        --me-border: rgba(124, 200, 220, 0.2);
+        --me-text: #f2f6f8;
+        --me-muted: #9fb3c2;
+        --me-radius: 14px;
+        --me-shadow: 0 16px 36px rgba(0, 0, 0, 0.32);
       }
       * { box-sizing: border-box; }
       body {
         margin: 0;
-        font-family: Inter, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
-        background: var(--bg);
-        color: var(--text);
+        background: linear-gradient(180deg, var(--me-bg) 0%, var(--me-bg-2) 100%);
+        color: var(--me-text);
+        font-family: Inter, "Segoe UI", Calibri, Arial, Helvetica, sans-serif;
       }
       .container {
         max-width: 1120px;
         margin: 0 auto;
-        padding: 28px 20px 48px;
+        padding: 24px 18px 32px;
       }
-      .hero {
-        background: linear-gradient(140deg, #172a57 0%, #1e3a8a 58%, #3056d3 100%);
-        border-radius: 18px;
-        padding: 26px 24px;
-        color: #fff;
-        margin-bottom: 22px;
-        box-shadow: 0 10px 30px rgba(20, 41, 95, 0.28);
+      .page-head {
+        border: 1px solid var(--me-border);
+        border-radius: var(--me-radius);
+        padding: 20px;
+        background: linear-gradient(180deg, var(--me-surface-top) 0%, var(--me-surface-bottom) 100%);
+        box-shadow: var(--me-shadow);
       }
-      .hero-top {
-        display: flex;
-        align-items: center;
-        justify-content: space-between;
-        gap: 12px;
-        margin-bottom: 14px;
-      }
-      .brand {
-        font-size: 0.78rem;
+      .eyebrow {
+        color: var(--me-muted);
+        font-size: 12px;
         letter-spacing: 0.08em;
         text-transform: uppercase;
-        opacity: 0.9;
-      }
-      .badge {
-        font-size: 0.75rem;
-        font-weight: 600;
-        background: rgba(255, 255, 255, 0.16);
-        border: 1px solid rgba(255, 255, 255, 0.28);
-        border-radius: 999px;
-        padding: 6px 10px;
       }
       h1 {
-        margin: 0 0 8px;
-        font-size: 2.05rem;
-        line-height: 1.2;
+        margin: 8px 0 8px;
+        font-size: clamp(1.5rem, 3vw, 2rem);
       }
       .subtitle {
         margin: 0;
-        max-width: 760px;
-        color: rgba(255, 255, 255, 0.88);
+        color: var(--me-muted);
       }
-      .grid {
+      #app-root {
+        padding: 16px 0 28px;
         display: grid;
-        grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
-        gap: 16px;
-        margin-bottom: 26px;
+        gap: 18px;
       }
-      .card {
-        background: var(--card);
-        border: 1px solid var(--border);
-        border-radius: 14px;
-        padding: 18px;
-        min-height: 104px;
-        box-shadow: 0 3px 12px rgba(15, 33, 70, 0.06);
+      .panel,
+      .sector-block {
+        border: 1px solid var(--me-border);
+        border-radius: var(--me-radius);
+        padding: 16px;
+        background: linear-gradient(180deg, var(--me-surface-top) 0%, var(--me-surface-bottom) 100%);
+        box-shadow: var(--me-shadow);
       }
-      .card h2 {
-        margin: 0;
-        font-size: 1.02rem;
-        line-height: 1.35;
+      .panel h3,
+      .sector-block h3 {
+        margin: 0 0 8px;
+        font-size: clamp(1.05rem, 2vw, 1.25rem);
       }
-      .card .count {
+      .top-row {
+        display: grid;
+        gap: 12px;
+        grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+      }
+      .pill-row {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 8px;
+        margin-top: 10px;
+      }
+      .pill {
         display: inline-block;
-        margin-top: 8px;
-        font-size: 0.8rem;
-        font-weight: 600;
-        color: var(--accent);
+        border: 1px solid var(--me-border);
+        border-radius: 999px;
+        padding: 4px 10px;
+        background: rgba(46, 125, 175, 0.22);
+        font-size: 12px;
+        color: var(--me-accent);
       }
-      .card p {
-        margin: 10px 0 0;
-        font-size: 0.92rem;
-        line-height: 1.4;
-        color: var(--muted);
-      }
-      .section-title {
-        margin: 0 0 12px;
-        font-size: 1.15rem;
-      }
-      .docs {
-        background: #fff;
-        border: 1px solid var(--border);
-        border-radius: 14px;
-        padding: 18px;
-      }
-      .results {
-        background: #fff;
-        border: 1px solid var(--border);
-        border-radius: 14px;
-        padding: 18px;
-        margin-bottom: 18px;
-      }
-      .results-grid {
+      .metric-grid {
         display: grid;
-        grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
-        gap: 14px;
+        gap: 12px;
+        grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
       }
-      .result-col {
-        border: 1px solid var(--border);
-        border-radius: 10px;
+      .metric-card {
+        border: 1px solid var(--me-border);
+        border-radius: 12px;
         padding: 12px;
-        background: #fbfcfe;
+        background: linear-gradient(180deg, rgba(23, 53, 77, 0.96) 0%, rgba(18, 47, 69, 0.96) 100%);
       }
-      .result-col h3 {
-        margin: 0 0 10px;
-        font-size: 0.98rem;
+      .metric-label {
+        font-size: 12px;
+        color: var(--me-muted);
       }
-      .result-col ul {
+      .metric-value {
+        margin-top: 6px;
+        font-weight: 700;
+        font-size: 1.25rem;
+      }
+      .items-grid {
+        display: grid;
+        gap: 12px;
+        grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+      }
+      .item-card {
+        border: 1px solid var(--me-border);
+        border-radius: 12px;
+        padding: 12px;
+        background: linear-gradient(180deg, rgba(23, 53, 77, 0.96) 0%, rgba(18, 47, 69, 0.96) 100%);
+      }
+      .item-card h5 {
         margin: 0;
-        padding-left: 16px;
-      }
-      .result-col li {
-        margin: 8px 0;
         line-height: 1.3;
+        font-size: 1rem;
       }
-      .meta {
-        margin-top: 4px;
-        font-size: 0.78rem;
-        color: var(--muted);
+      .item-meta {
+        margin: 8px 0;
+        color: var(--me-muted);
+        font-size: 12px;
       }
-      ul {
+      .item-desc {
         margin: 0;
-        padding-left: 18px;
+        line-height: 1.45;
+        color: var(--me-text);
       }
-      li { margin: 6px 0; }
+      .docs ul {
+        margin: 8px 0 0;
+        padding-left: 20px;
+      }
       a {
-        color: var(--accent);
-        text-decoration: none;
+        color: var(--me-accent);
       }
-      a:hover { text-decoration: underline; }
+      a:hover {
+        color: #c8ebff;
+      }
+      .error {
+        color: #fb7185;
+      }
     </style>
   </head>
   <body>
     <main class="container">
-      <section class="hero" aria-label="Header">
-        <div class="hero-top">
-          <div class="brand">SEA Leaders / Coastal News Desk</div>
-          <div class="badge">Southeast Asia Focus</div>
-        </div>
-        <h1>SEA Leaders</h1>
-        <p class="subtitle">Latest on coastal communities in Southeast Asia.</p>
+      <section class="page-head">
+        <div class="eyebrow">SEA Leaders · Coastal Intelligence</div>
+        <h1>PartnerAI: Southeast Asia Coastal Insights</h1>
+        <p class="subtitle">Sustainable Fisheries · Climate Change · Maritime Security · Sustainable Blue Economy · Marine Pollution</p>
       </section>
-
-      <h2 class="section-title">Priority News Areas (No Duplicates)</h2>
-      <section class="grid" aria-label="News topic cards">
-        <article class="card"><h2>1) Sustainable Fisheries</h2><span class="count" id="count-fisheries">0 stories</span></article>
-        <article class="card"><h2>2) Climate Change</h2><span class="count" id="count-climate">0 stories</span></article>
-        <article class="card"><h2>3) Maritime Security</h2><span class="count" id="count-security">0 stories</span></article>
-        <article class="card">
-          <h2>4) Sustainable Blue Economy</h2>
-          <span class="count" id="count-blue">0 stories</span>
-          <p>
-            Open to CSOs, NGOs, social enterprises, and other grassroots organizations
-            working across these categories.
-          </p>
-        </article>
-        <article class="card"><h2>5) Marine Pollutiion</h2><span class="count" id="count-pollution">0 stories</span></article>
-      </section>
-
-      <section class="results" aria-label="Latest news results">
-        <h2 class="section-title">Latest News Results</h2>
-        <div class="results-grid" id="results-grid"></div>
-      </section>
-
-      <section class="docs">
-        <h2 class="section-title">Migration Documentation</h2>
-        <ul>
-          <li><a href="../SEASIA_COASTAL_MIGRATION_GUIDE.md">SEASIA Coastal Migration Guide</a></li>
-          <li><a href="../SEASIA_COASTAL_QUICK_START.md">SEASIA Coastal Quick Start</a></li>
-          <li><a href="../IMPLEMENTATION_CHECKLIST.md">Implementation Checklist</a></li>
-          <li><a href="../COMPONENT_MAPPING.md">Component Mapping</a></li>
-          <li><a href="../FILE_MANIFEST.md">File Manifest</a></li>
-        </ul>
-      </section>
+      <div id="app-root" class="sea-app">Loading intelligence dashboard…</div>
     </main>
     <script>
       const CATEGORY_ORDER = [
@@ -203,76 +168,136 @@
         "Climate Change",
         "Maritime Security",
         "Sustainable Blue Economy",
-        "Marine Pollutiion",
+        "Marine Pollution",
       ];
 
-      const COUNT_MAP = {
-        "Sustainable Fisheries": "count-fisheries",
-        "Climate Change": "count-climate",
-        "Maritime Security": "count-security",
-        "Sustainable Blue Economy": "count-blue",
-        "Marine Pollutiion": "count-pollution",
-      };
+      function esc(value) {
+        return String(value || "").replace(/[&<>"']/g, (char) => (
+          { "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;", "'": "&#39;" }[char] || char
+        ));
+      }
 
-      function renderResults(payload) {
-        const container = document.getElementById("results-grid");
-        container.innerHTML = "";
+      function normalizePayload(raw) {
+        if (Array.isArray(raw.sectors)) {
+          return {
+            runAt: raw.runAt || raw.generated_at || "",
+            sectors: raw.sectors.map((sector) => ({
+              name: sector.name,
+              items: Array.isArray(sector.items) ? sector.items : [],
+            })),
+          };
+        }
 
-        const sectors = Array.isArray(payload.sectors) ? payload.sectors : [];
-        const byCategory = Object.fromEntries(
-          sectors.map((sector) => [sector.name, Array.isArray(sector.items) ? sector.items : []])
-        );
+        if (raw.by_category && typeof raw.by_category === "object") {
+          const sectors = Object.entries(raw.by_category).map(([name, items]) => ({
+            name,
+            items: Array.isArray(items) ? items : [],
+          }));
+          return {
+            runAt: raw.runAt || raw.generated_at || "",
+            sectors,
+          };
+        }
 
-        CATEGORY_ORDER.forEach((category) => {
-          const items = Array.isArray(byCategory[category]) ? byCategory[category] : [];
-          const countEl = document.getElementById(COUNT_MAP[category]);
-          if (countEl) {
-            countEl.textContent = `${items.length} ${items.length === 1 ? "story" : "stories"}`;
-          }
+        return { runAt: "", sectors: [] };
+      }
 
-          const col = document.createElement("section");
-          col.className = "result-col";
-
-          const heading = document.createElement("h3");
-          heading.textContent = category;
-          col.appendChild(heading);
-
-          const list = document.createElement("ul");
-          if (items.length === 0) {
-            const li = document.createElement("li");
-            li.textContent = "No stories yet.";
-            list.appendChild(li);
-          } else {
-            items.slice(0, 4).forEach((item) => {
-              const li = document.createElement("li");
-              const link = document.createElement("a");
-              link.textContent = item.title || "Untitled";
-              link.href = item.url || "#";
-              link.target = "_blank";
-              link.rel = "noopener noreferrer";
-              li.appendChild(link);
-
-              const meta = document.createElement("div");
-              meta.className = "meta";
-              const source = item.source || item.publisher || "Unknown source";
-              meta.textContent = source;
-              li.appendChild(meta);
-
-              list.appendChild(li);
-            });
-          }
-
-          col.appendChild(list);
-          container.appendChild(col);
+      function formatDate(raw) {
+        const value = String(raw || "").trim();
+        if (!value) return "";
+        const parsed = Date.parse(value);
+        if (!Number.isFinite(parsed)) return value;
+        return new Date(parsed).toLocaleString("en-US", {
+          month: "short",
+          day: "numeric",
+          year: "numeric",
         });
       }
 
-      fetch("./data/latest.json", { cache: "no-store" })
-        .then((response) => response.ok ? response.json() : Promise.reject(new Error("news.json not found")))
-        .then(renderResults)
-        .catch(() => {
-          renderResults({ sectors: [] });
-        });
+      function render(data) {
+        const root = document.getElementById("app-root");
+        const sectorsByName = Object.fromEntries((data.sectors || []).map((sector) => [sector.name, sector.items || []]));
+        const counts = CATEGORY_ORDER.map((name) => ({ name, count: (sectorsByName[name] || []).length }));
+        const totalStories = counts.reduce((sum, row) => sum + row.count, 0);
+        const lastUpdated = formatDate(data.runAt);
+
+        const topCards = `
+          <section class="top-row">
+            <article class="panel">
+              <h3>Coverage Summary</h3>
+              <div class="metric-grid">
+                <div class="metric-card"><div class="metric-label">Total Stories</div><div class="metric-value">${esc(totalStories)}</div></div>
+                <div class="metric-card"><div class="metric-label">Topics Covered</div><div class="metric-value">5</div></div>
+                <div class="metric-card"><div class="metric-label">Last Refresh</div><div class="metric-value">${esc(lastUpdated || "Pending")}</div></div>
+              </div>
+            </article>
+            <article class="panel">
+              <h3>Topic Filters</h3>
+              <div class="pill-row">
+                ${counts.map((row) => `<span class="pill">${esc(row.name)}: ${esc(row.count)}</span>`).join("")}
+              </div>
+            </article>
+          </section>
+        `;
+
+        const sectorsHtml = CATEGORY_ORDER.map((name) => {
+          const items = sectorsByName[name] || [];
+          const cards = items.length
+            ? items.slice(0, 8).map((item) => {
+              const source = item.source || item.publisher || "Unknown source";
+              const date = formatDate(item.sourcePublishedAt || item.publishedAt || item.published || "");
+              const summary = String(item.snippet || "").replace(/\s+/g, " ").trim();
+              const clipped = summary.length > 240 ? summary.slice(0, 239).trimEnd() + "…" : summary;
+              return `
+                <article class="item-card story-card">
+                  <h5><a href="${esc(item.url || "#")}" target="_blank" rel="noopener">${esc(item.title || "Untitled")}</a></h5>
+                  <p class="item-meta">${esc(source)}${date ? ` · ${esc(date)}` : ""}</p>
+                  ${clipped ? `<p class="item-desc">${esc(clipped)}</p>` : ""}
+                </article>
+              `;
+            }).join("")
+            : "<article class=\"item-card\"><p class=\"item-desc\">No stories available yet for this topic.</p></article>";
+
+          return `
+            <section class="sector-block">
+              <h3>${esc(name)}</h3>
+              <div class="items-grid">${cards}</div>
+            </section>
+          `;
+        }).join("");
+
+        const docsHtml = `
+          <section class="panel docs">
+            <h3>Migration Documentation</h3>
+            <ul>
+              <li><a href="../SEASIA_COASTAL_MIGRATION_GUIDE.md">SEASIA Coastal Migration Guide</a></li>
+              <li><a href="../SEASIA_COASTAL_QUICK_START.md">SEASIA Coastal Quick Start</a></li>
+              <li><a href="../IMPLEMENTATION_CHECKLIST.md">Implementation Checklist</a></li>
+              <li><a href="../COMPONENT_MAPPING.md">Component Mapping</a></li>
+              <li><a href="../FILE_MANIFEST.md">File Manifest</a></li>
+            </ul>
+          </section>
+        `;
+
+        root.innerHTML = `${topCards}${sectorsHtml}${docsHtml}`;
+      }
+
+      async function loadData() {
+        try {
+          const response = await fetch("./data/latest.json", { cache: "no-store" });
+          if (!response.ok) throw new Error("latest.json unavailable");
+          return normalizePayload(await response.json());
+        } catch {
+          const fallbackResponse = await fetch("./news.json", { cache: "no-store" });
+          if (!fallbackResponse.ok) throw new Error("news sources unavailable");
+          return normalizePayload(await fallbackResponse.json());
+        }
+      }
+
+      loadData().then(render).catch((error) => {
+        const root = document.getElementById("app-root");
+        root.innerHTML = `<section class="panel"><p class="error">Unable to load dashboard data: ${esc(error.message)}</p></section>`;
+      });
     </script>
   </body>
 </html>

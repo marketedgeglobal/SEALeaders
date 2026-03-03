@@ -5,6 +5,7 @@ from __future__ import annotations
 
 import hashlib
 import json
+import os
 from datetime import datetime, timezone
 from email.utils import parsedate_to_datetime
 from pathlib import Path
@@ -47,6 +48,50 @@ FEEDS = [
         "name": "East Asia Forum",
         "url": "https://www.eastasiaforum.org/feed/",
     },
+    {
+        "name": "Google News Vietnam Coastal",
+        "url": "https://news.google.com/rss/search?q=Vietnam+coastal+fisheries+climate",
+    },
+    {
+        "name": "Google News Thailand Coastal",
+        "url": "https://news.google.com/rss/search?q=Thailand+marine+pollution+coastal",
+    },
+    {
+        "name": "Google News Philippines Maritime",
+        "url": "https://news.google.com/rss/search?q=Philippines+maritime+security+fisheries",
+    },
+    {
+        "name": "Google News Indonesia Blue Economy",
+        "url": "https://news.google.com/rss/search?q=Indonesia+blue+economy+coastal",
+    },
+    {
+        "name": "Google News Malaysia Fisheries",
+        "url": "https://news.google.com/rss/search?q=Malaysia+fisheries+marine",
+    },
+    {
+        "name": "Google News Singapore Maritime",
+        "url": "https://news.google.com/rss/search?q=Singapore+maritime+security+ASEAN",
+    },
+    {
+        "name": "Google News Cambodia Mekong Coastal",
+        "url": "https://news.google.com/rss/search?q=Cambodia+coastal+fisheries+Mekong",
+    },
+    {
+        "name": "Google News Myanmar Coastal",
+        "url": "https://news.google.com/rss/search?q=Myanmar+coastal+marine+ASEAN",
+    },
+    {
+        "name": "Google News Brunei Blue Economy",
+        "url": "https://news.google.com/rss/search?q=Brunei+blue+economy+marine",
+    },
+    {
+        "name": "Mongabay",
+        "url": "https://news.mongabay.com/feed/",
+    },
+    {
+        "name": "UN News Asia Pacific",
+        "url": "https://news.un.org/feed/subscribe/en/news/region/asia-pacific/feed/rss.xml",
+    },
 ]
 
 SECTORS = [
@@ -65,7 +110,7 @@ SECTOR_KEYWORDS = {
     "Marine Pollution": ["marine pollution", "pollution", "plastic", "microplastic", "oil spill", "waste"],
 }
 
-MAX_ITEMS_PER_SECTOR = 8
+MAX_ITEMS_PER_SECTOR = int(os.getenv("MAX_ITEMS_PER_SECTOR", "8"))
 OUTPUT_PATH = "docs/data/latest.json"
 
 
