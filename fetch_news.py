@@ -7,6 +7,7 @@ import hashlib
 import json
 from datetime import datetime, timezone
 from email.utils import parsedate_to_datetime
+from pathlib import Path
 from urllib.parse import urlparse
 
 import feedparser
@@ -268,9 +269,11 @@ def build_latest_json() -> dict:
 
 def main() -> None:
     payload = build_latest_json()
-    with open(OUTPUT_PATH, "w", encoding="utf-8") as fh:
+    output_path = Path(OUTPUT_PATH)
+    output_path.parent.mkdir(parents=True, exist_ok=True)
+    with output_path.open("w", encoding="utf-8") as fh:
         json.dump(payload, fh, ensure_ascii=False, indent=2)
-    print(f"Wrote {OUTPUT_PATH} with {payload['totalItems']} items")
+    print(f"Wrote {output_path} with {payload['totalItems']} items")
 
 
 if __name__ == "__main__":
