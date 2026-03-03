@@ -389,9 +389,6 @@
         if (!normalizedSummary) return false;
         if (normalizedSummary === normalizedTitle) return false;
         if (normalizedSummary === normalizedSource) return false;
-        if (normalizedTitle && (normalizedSummary.includes(normalizedTitle) || normalizedTitle.includes(normalizedSummary))) {
-          return false;
-        }
         return true;
       }
 
@@ -520,12 +517,13 @@
           const cards = items.length
             ? items.slice(0, 8).map((item) => {
               const normalizedTitle = splitTitlePublisher(item.title || "").title || (item.title || "Untitled");
+              const articleUrl = item.verifiedUrl || item.url || "#";
               const date = formatDate(item.sourcePublishedAt || item.publishedAt || item.published || "");
               const clipped = buildCardSnippet(item);
               return `
                 <article class="item-card story-card">
-                  <h5><a href="${esc(item.url || "#")}" target="_blank" rel="noopener">${esc(normalizedTitle)}</a></h5>
-                  <p class="item-link"><a href="${esc(item.url || "#")}" target="_blank" rel="noopener">Verified article URL</a></p>
+                  <h5><a href="${esc(articleUrl)}" target="_blank" rel="noopener">${esc(normalizedTitle)}</a></h5>
+                  <p class="item-link"><a href="${esc(articleUrl)}" target="_blank" rel="noopener">Verified article URL</a></p>
                   <p class="item-meta">Source date: ${esc(date || "Unknown")}</p>
                   ${clipped ? `<p class="item-desc">${esc(clipped)}</p>` : ""}
                 </article>

@@ -134,31 +134,51 @@ def _normalize_for_compare(text: str) -> str:
     return re.sub(r"[^a-z0-9]+", "", (text or "").lower())
 
 
+def _headline_fallback_summary(title: str) -> str:
+    clean = re.sub(r"\s+", " ", (title or "")).strip(" .")
+    if not clean:
+        return ""
+
+    clean = re.sub(r"^(opinion|analysis|explainer)\s*\|\s*", "", clean, flags=re.IGNORECASE)
+    if ":" in clean:
+        parts = [part.strip() for part in clean.split(":", 1)]
+        if len(parts) == 2 and len(parts[1]) >= 20:
+            clean = parts[1]
+
+    if len(clean) < 24:
+        return ""
+
+    clean = clean[0].lower() + clean[1:] if len(clean) > 1 else clean.lower()
+    sentence = f"The report indicates that {clean}."
+    sentence = sentence.replace("..", ".")
+    return sentence[:280].rstrip()
+
+
 def _best_snippet(summary: str, title: str, publisher: str = "") -> str:
     cleaned_summary = _clean_snippet(summary)
     if not cleaned_summary:
-        return ""
+        return _headline_fallback_summary(title)
 
     words = cleaned_summary.split()
     if len(words) < 5 or len(cleaned_summary) < 36:
-        return ""
+        return _headline_fallback_summary(title)
 
     if publisher and cleaned_summary.lower() == publisher.lower():
-        return ""
+        return _headline_fallback_summary(title)
 
     normalized_summary = _normalize_for_compare(cleaned_summary)
     normalized_title = _normalize_for_compare(title)
     if normalized_summary and normalized_title and normalized_summary == normalized_title:
-        return ""
+        return _headline_fallback_summary(title)
 
     if normalized_title and (normalized_summary in normalized_title or normalized_title in normalized_summary):
-        return ""
+        return _headline_fallback_summary(title)
 
     if cleaned_summary.lower().startswith(title.lower()):
         tail = cleaned_summary[len(title):].strip(" .,-–—|")
         if tail and len(tail) >= 56 and (not publisher or tail.lower() != publisher.lower()):
             return tail
-        return ""
+        return _headline_fallback_summary(title)
 
     return cleaned_summary
 

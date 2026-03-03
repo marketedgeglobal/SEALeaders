@@ -9,8 +9,10 @@ import os
 import re
 from datetime import datetime, timezone
 from email.utils import parsedate_to_datetime
+from html import unescape
 from pathlib import Path
 from urllib.parse import urlparse
+from urllib.request import Request, urlopen
 
 import feedparser
 
@@ -113,6 +115,12 @@ SECTOR_KEYWORDS = {
 
 MAX_ITEMS_PER_SECTOR = int(os.getenv("MAX_ITEMS_PER_SECTOR", "8"))
 OUTPUT_PATH = "docs/data/latest.json"
+HTTP_HEADERS = {
+    "User-Agent": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/122.0 Safari/537.36"
+}
+
+RESOLVED_URL_CACHE: dict[str, str] = {}
+EXCERPT_CACHE: dict[str, str] = {}
 
 
 def _to_date_string(value: str) -> str:
@@ -129,11 +137,72 @@ def _to_date_string(value: str) -> str:
             return value[:10]
 
 
+def _clean_text(value: str) -> str:
+    text = re.sub(r"<[^>]+>", " ", value or " ")
+    text = unescape(text)
+    text = re.sub(r"\s+", " ", text)
+    return text.strip()
+
+
 def _publisher_from_url(url: str) -> str:
     if not url:
         return "unknown"
     host = urlparse(url).netloc.lower()
     return host.replace("www.", "") or "unknown"
+
+
+def _is_google_host(url: str) -> bool:
+    host = urlparse(url).netloc.lower()
+    return host.endswith("google.com") or host.endswith("news.google.com") or host.endswith("googleusercontent.com")
+
+
+def _extract_links_from_summary(summary: str) -> list[str]:
+    if not summary:
+        return []
+
+    raw = unescape(summary)
+    links = re.findall(r"href=[\"'](https?://[^\"']+)[\"']", raw, flags=re.IGNORECASE)
+    cleaned: list[str] = []
+    for link in links:
+        candidate = unescape(link).strip()
+        if candidate and candidate not in cleaned:
+            cleaned.append(candidate)
+    return cleaned
+
+
+def _resolve_google_news_url(url: str) -> str:
+    if not url:
+        return ""
+    if url in RESOLVED_URL_CACHE:
+        return RESOLVED_URL_CACHE[url]
+
+    if not _is_google_host(url):
+        RESOLVED_URL_CACHE[url] = url
+        return url
+
+    resolved = url
+    try:
+        request = Request(url, headers=HTTP_HEADERS)
+        with urlopen(request, timeout=12) as response:
+            resolved = response.geturl() or url
+    except Exception:
+        resolved = url
+
+    RESOLVED_URL_CACHE[url] = resolved
+    return resolved
+
+
+def _resolve_verified_url(feed_url: str, summary: str) -> str:
+    candidates = _extract_links_from_summary(summary)
+    candidates.append(feed_url)
+
+    for candidate in candidates:
+        resolved = _resolve_google_news_url(candidate)
+        if resolved and not _is_google_host(resolved):
+            return resolved
+
+    resolved_feed = _resolve_google_news_url(feed_url)
+    return resolved_feed or feed_url
 
 
 def _make_id(url: str, title: str) -> str:
@@ -175,32 +244,105 @@ def _normalize_for_compare(text: str) -> str:
     return re.sub(r"[^a-z0-9]+", "", (text or "").lower())
 
 
-def _best_snippet(summary: str, title: str, publisher: str = "") -> str:
-    cleaned = re.sub(r"\s+", " ", (summary or "")).strip()
-    if not cleaned:
+def _headline_fallback_summary(title: str) -> str:
+    clean = re.sub(r"\s+", " ", (title or "")).strip(" .")
+    if not clean:
         return ""
+
+    clean = re.sub(r"^(opinion|analysis|explainer)\s*\|\s*", "", clean, flags=re.IGNORECASE)
+    if ":" in clean:
+        parts = [part.strip() for part in clean.split(":", 1)]
+        if len(parts) == 2 and len(parts[1]) >= 20:
+            clean = parts[1]
+
+    if len(clean) < 24:
+        return ""
+
+    clean = clean[0].lower() + clean[1:] if len(clean) > 1 else clean.lower()
+    sentence = f"The report indicates that {clean}."
+    sentence = sentence.replace("..", ".")
+    return sentence[:280].rstrip()
+
+
+def _best_snippet(summary: str, title: str, publisher: str = "") -> str:
+    cleaned = _clean_text(summary)
+    if not cleaned:
+        return _headline_fallback_summary(title)
 
     if len(cleaned) < 36 or len(cleaned.split()) < 5:
-        return ""
+        return _headline_fallback_summary(title)
 
     if publisher and cleaned.lower() == publisher.lower():
-        return ""
+        return _headline_fallback_summary(title)
 
     normalized_summary = _normalize_for_compare(cleaned)
     normalized_title = _normalize_for_compare(title)
     if normalized_summary and normalized_title and normalized_summary == normalized_title:
-        return ""
+        return _headline_fallback_summary(title)
 
     if normalized_title and (normalized_summary in normalized_title or normalized_title in normalized_summary):
-        return ""
+        return _headline_fallback_summary(title)
 
     if cleaned.lower().startswith(title.lower()):
         tail = cleaned[len(title):].strip(" .,-–—|")
         if tail and len(tail) >= 56 and (not publisher or tail.lower() != publisher.lower()):
             return tail
-        return ""
+        return _headline_fallback_summary(title)
 
     return cleaned
+
+
+def _extract_meta_description(html: str) -> str:
+    patterns = [
+        r'<meta[^>]+property=["\']og:description["\'][^>]+content=["\']([^"\']+)["\']',
+        r'<meta[^>]+content=["\']([^"\']+)["\'][^>]+property=["\']og:description["\']',
+        r'<meta[^>]+name=["\']twitter:description["\'][^>]+content=["\']([^"\']+)["\']',
+        r'<meta[^>]+content=["\']([^"\']+)["\'][^>]+name=["\']twitter:description["\']',
+        r'<meta[^>]+name=["\']description["\'][^>]+content=["\']([^"\']+)["\']',
+        r'<meta[^>]+content=["\']([^"\']+)["\'][^>]+name=["\']description["\']',
+    ]
+    for pattern in patterns:
+        match = re.search(pattern, html, flags=re.IGNORECASE)
+        if match:
+            return _clean_text(match.group(1))
+    return ""
+
+
+def _extract_first_paragraph(html: str) -> str:
+    cleaned_html = re.sub(r"<script[\s\S]*?</script>", " ", html, flags=re.IGNORECASE)
+    cleaned_html = re.sub(r"<style[\s\S]*?</style>", " ", cleaned_html, flags=re.IGNORECASE)
+    paragraphs = re.findall(r"<p[^>]*>([\s\S]*?)</p>", cleaned_html, flags=re.IGNORECASE)
+    for paragraph in paragraphs[:12]:
+        text = _clean_text(paragraph)
+        if len(text) >= 90 and len(text.split()) >= 14:
+            return text
+    return ""
+
+
+def _extract_article_excerpt(url: str, title: str, publisher: str) -> str:
+    if not url or _is_google_host(url):
+        return ""
+    if url in EXCERPT_CACHE:
+        return EXCERPT_CACHE[url]
+
+    excerpt = ""
+    try:
+        request = Request(url, headers=HTTP_HEADERS)
+        with urlopen(request, timeout=12) as response:
+            payload = response.read(600_000)
+            html = payload.decode("utf-8", errors="ignore")
+
+        meta_description = _extract_meta_description(html)
+        if meta_description:
+            excerpt = meta_description
+        else:
+            excerpt = _extract_first_paragraph(html)
+    except Exception:
+        excerpt = ""
+
+    excerpt = _best_snippet(excerpt, title, publisher)
+    EXCERPT_CACHE[url] = excerpt
+    return excerpt
 
 
 def _extract_items(feed_name: str, feed_url: str) -> list[dict]:
@@ -209,9 +351,13 @@ def _extract_items(feed_name: str, feed_url: str) -> list[dict]:
     for entry in parsed.entries:
         raw_title = (entry.get("title") or "").strip()
         link = (entry.get("link") or "").strip()
-        summary = (entry.get("summary") or "").strip()
+        summary = (entry.get("summary") or entry.get("description") or "").strip()
         published = (entry.get("published") or entry.get("updated") or "").strip()
         title, publisher = _split_title_and_publisher(raw_title, feed_name)
+        verified_url = _resolve_verified_url(link, summary)
+        excerpt = _extract_article_excerpt(verified_url, title, publisher)
+        snippet = excerpt or _best_snippet(summary, title, publisher)
+        clean_publisher = publisher or _publisher_from_url(verified_url)
 
         if not title or not link:
             continue
@@ -227,13 +373,15 @@ def _extract_items(feed_name: str, feed_url: str) -> list[dict]:
             {
                 "id": _make_id(link, title),
                 "title": title,
-                "url": link,
-                "publisher": publisher or _publisher_from_url(link),
+                "url": verified_url or link,
+                "originalUrl": link,
+                "verifiedUrl": verified_url or link,
+                "publisher": clean_publisher,
                 "publishedAt": _to_date_string(published),
                 "sourcePublishedAt": _to_date_string(published),
                 "source": feed_name,
                 "sector": sector,
-                "snippet": _best_snippet(summary, title, publisher)[:280],
+                "snippet": snippet[:320],
             }
         )
     return results
