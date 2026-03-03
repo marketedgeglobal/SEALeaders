@@ -28,8 +28,36 @@ FEEDS = [
         "url": "https://www.straitstimes.com/news/asia/rss.xml",
     },
     {
+        "name": "Bangkok Post",
+        "url": "https://www.bangkokpost.com/rss/data/topstories.xml",
+    },
+    {
         "name": "BenarNews - English",
         "url": "https://www.benarnews.org/english/rss.xml",
+    },
+    {
+        "name": "Rappler",
+        "url": "https://www.rappler.com/rss/",
+    },
+    {
+        "name": "Inquirer",
+        "url": "https://newsinfo.inquirer.net/feed",
+    },
+    {
+        "name": "Philstar",
+        "url": "https://www.philstar.com/rss/headlines",
+    },
+    {
+        "name": "Malay Mail",
+        "url": "https://www.malaymail.com/feed/rss",
+    },
+    {
+        "name": "The Star Malaysia",
+        "url": "https://www.thestar.com.my/rss/news/nation/",
+    },
+    {
+        "name": "Free Malaysia Today",
+        "url": "https://www.freemalaysiatoday.com/category/nation/feed/",
     },
     {
         "name": "Mongabay",
@@ -84,16 +112,20 @@ FEEDS = [
         "url": "https://seanews.co.uk/feed/",
     },
     {
+        "name": "ANTARA Indonesia",
+        "url": "https://www.antaranews.com/rss/terkini.xml",
+    },
+    {
+        "name": "Tatoli",
+        "url": "https://en.tatoli.tl/feed/",
+    },
+    {
+        "name": "Myanmar Now",
+        "url": "https://myanmar-now.org/en/feed/",
+    },
+    {
         "name": "VietnamPlus",
         "url": "https://en.vietnamplus.vn/rss/home.rss",
-    },
-    {
-        "name": "ANTARA English",
-        "url": "https://en.antaranews.com/rss/latest.xml",
-    },
-    {
-        "name": "Bernama",
-        "url": "https://www.bernama.com/en/rss.php",
     },
 ]
 
@@ -139,6 +171,8 @@ SECTOR_KEYWORDS = {
         "toxic",
         "garbage",
         "wastewater",
+        "sampah",
+        "limbah",
     ],
 }
 
@@ -170,9 +204,17 @@ REGIONAL_CONTEXT_FEEDS = {
     "The Diplomat",
     "Oceanographic Magazine",
     "SeaNews",
+    "Tatoli",
+    "Myanmar Now",
+    "ANTARA Indonesia",
     "VietnamPlus",
-    "ANTARA English",
-    "Bernama",
+    "Rappler",
+    "Inquirer",
+    "Philstar",
+    "Malay Mail",
+    "The Star Malaysia",
+    "Free Malaysia Today",
+    "Bangkok Post",
 }
 
 SEA_CONTEXT_MARKERS = (
@@ -211,6 +253,13 @@ MARINE_CONTEXT_MARKERS = (
     "seagrass",
     "coral",
     "eez",
+    "perikanan",
+    "nelayan",
+    "laut",
+    "pesisir",
+    "maritim",
+    "sampah",
+    "limbah",
 )
 
 COUNTRY_HINTS = {
@@ -223,6 +272,36 @@ COUNTRY_HINTS = {
     "cambodia": ["cambodia", "phnom penh"],
     "singapore": ["singapore"],
     "brunei": ["brunei"],
+}
+
+FEED_COUNTRY_HINTS = {
+    "Rappler": "philippines",
+    "Inquirer": "philippines",
+    "Philstar": "philippines",
+    "Malay Mail": "malaysia",
+    "The Star Malaysia": "malaysia",
+    "Free Malaysia Today": "malaysia",
+    "Bangkok Post": "thailand",
+    "VietnamPlus": "vietnam",
+    "Tatoli": "timor_leste",
+    "Myanmar Now": "myanmar",
+    "ANTARA Indonesia": "indonesia",
+    "Channel News Asia - Asia": "singapore",
+    "The Straits Times - Asia": "singapore",
+}
+
+COUNTRY_PRIORITY_WEIGHT = {
+    "indonesia": 3.0,
+    "philippines": 3.0,
+    "malaysia": 3.0,
+    "vietnam": 2.0,
+    "thailand": 2.0,
+    "timor_leste": 2.0,
+    "myanmar": 1.2,
+    "singapore": 1.2,
+    "brunei": 1.2,
+    "cambodia": 1.0,
+    "regional": 1.0,
 }
 
 
@@ -471,6 +550,10 @@ def _extract_article_excerpt(url: str, title: str, publisher: str) -> str:
 
 
 def _detect_country(title: str, snippet: str, source: str, publisher: str, url: str) -> str:
+    source_hint = FEED_COUNTRY_HINTS.get(source)
+    if source_hint:
+        return source_hint
+
     text = f"{title} {snippet} {source} {publisher} {url}".lower()
     best_country = "regional"
     best_score = 0
@@ -482,6 +565,10 @@ def _detect_country(title: str, snippet: str, source: str, publisher: str, url: 
             best_score = score
 
     return best_country if best_score > 0 else "regional"
+
+
+def _country_weight(country: str) -> float:
+    return float(COUNTRY_PRIORITY_WEIGHT.get(country, 1.0))
 
 
 def _extract_items(feed_name: str, feed_url: str) -> list[dict]:
@@ -573,7 +660,8 @@ def build_latest_json() -> dict:
             ranked = sorted(
                 remaining,
                 key=lambda item: (
-                    country_usage.get(str(item.get("country") or "regional").lower(), 0),
+                    country_usage.get(str(item.get("country") or "regional").lower(), 0)
+                    / max(_country_weight(str(item.get("country") or "regional").lower()), 0.1),
                     publisher_usage.get(str(item.get("publisher") or "unknown").lower(), 0),
                 ),
             )
@@ -590,6 +678,22 @@ def build_latest_json() -> dict:
             selected.append(item)
             publisher_usage[publisher] = publisher_usage.get(publisher, 0) + 1
             country_usage[country] = country_usage.get(country, 0) + 1
+
+        if len(selected) < MAX_ITEMS_PER_SECTOR:
+            for item in candidates:
+                if item in selected:
+                    continue
+                publisher = str(item.get("publisher") or "unknown").lower()
+                country = str(item.get("country") or "regional").lower()
+                if publisher_usage.get(publisher, 0) >= MAX_ITEMS_PER_PUBLISHER + 2:
+                    continue
+                if country_usage.get(country, 0) >= MAX_ITEMS_PER_COUNTRY + 2:
+                    continue
+                selected.append(item)
+                publisher_usage[publisher] = publisher_usage.get(publisher, 0) + 1
+                country_usage[country] = country_usage.get(country, 0) + 1
+                if len(selected) >= MAX_ITEMS_PER_SECTOR:
+                    break
 
         if len(selected) < MAX_ITEMS_PER_SECTOR:
             for item in candidates:

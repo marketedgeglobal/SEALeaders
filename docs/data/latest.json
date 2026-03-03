@@ -1,10 +1,24 @@
 {
-  "runAt": "2026-03-03T23:28:05.518439+00:00",
-  "totalItems": 32,
+  "runAt": "2026-03-03T23:46:30.401908+00:00",
+  "totalItems": 35,
   "sectors": [
     {
       "name": "Sustainable Fisheries",
       "items": [
+        {
+          "id": "8f6ba1cb33cb",
+          "title": "PCG nabs 5 for illegal fishing in Romblon town",
+          "url": "https://newsinfo.inquirer.net/2190103/pcg-nabs-5-for-illegal-fishing-in-romblon-town",
+          "originalUrl": "https://newsinfo.inquirer.net/2190103/pcg-nabs-5-for-illegal-fishing-in-romblon-town",
+          "verifiedUrl": "https://newsinfo.inquirer.net/2190103/pcg-nabs-5-for-illegal-fishing-in-romblon-town",
+          "publisher": "Inquirer",
+          "publishedAt": "2026-03-03",
+          "sourcePublishedAt": "2026-03-03",
+          "source": "Inquirer",
+          "sector": "Sustainable Fisheries",
+          "country": "philippines",
+          "snippet": "CALAPAN CITY, ORIENTAL MINDORO — The Philippine Coast Guard (PCG) apprehended five individuals for alleged illegal fishing using a compressor in the waters off Isabel Island in Banton town, Romblon province on March 2. In a report posted on social media on Tuesday, the PCG said personnel of Coast Guard Sub-Station (CGS"
+        },
         {
           "id": "ddaceba699b6",
           "title": "China’s Pacific squid fishery rife with labor, fishing abuses: Report",
@@ -109,6 +123,20 @@
       "name": "Climate Change",
       "items": [
         {
+          "id": "31a09fa9c9ed",
+          "title": "‘Borneo states key to climate plan’",
+          "url": "https://www.thestar.com.my/news/nation/2026/03/04/borneo-states-key-to-climate-plan",
+          "originalUrl": "https://www.thestar.com.my/news/nation/2026/03/04/borneo-states-key-to-climate-plan",
+          "verifiedUrl": "https://www.thestar.com.my/news/nation/2026/03/04/borneo-states-key-to-climate-plan",
+          "publisher": "The Star Malaysia",
+          "publishedAt": "2026-03-04",
+          "sourcePublishedAt": "2026-03-04",
+          "source": "The Star Malaysia",
+          "sector": "Climate Change",
+          "country": "malaysia",
+          "snippet": "KUCHING: The forests and rich biodiver­sity of Sabah and Sarawak play a central role in Malaysia's climate strategy, says Sarawak Premier Tan Sri Abang Johari Openg."
+        },
+        {
           "id": "6fd827286c5a",
           "title": "Myanmar elections marked by fear as UN warns civilians are coerced from all sides",
           "url": "https://news.un.org/feed/view/en/story/2025/12/1166662",
@@ -121,6 +149,20 @@
           "sector": "Climate Change",
           "country": "myanmar",
           "snippet": "As Myanmar approaches elections scheduled for 28 December, the UN’s top human rights official has said that civilians are being coerced from all sides – forced by the military to vote and threatened by armed opposition groups to boycott – in a climate of fear, violence and mass repression."
+        },
+        {
+          "id": "3ad3d8bec014",
+          "title": "Pagasa: El Niño may develop August to October, intense habagat looms",
+          "url": "https://newsinfo.inquirer.net/2189947/el-nino-may-develop-in-july-but-pagasa-warns-of-intense-habagat",
+          "originalUrl": "https://newsinfo.inquirer.net/2189947/el-nino-may-develop-in-july-but-pagasa-warns-of-intense-habagat",
+          "verifiedUrl": "https://newsinfo.inquirer.net/2189947/el-nino-may-develop-in-july-but-pagasa-warns-of-intense-habagat",
+          "publisher": "Inquirer",
+          "publishedAt": "2026-03-03",
+          "sourcePublishedAt": "2026-03-03",
+          "source": "Inquirer",
+          "sector": "Climate Change",
+          "country": "philippines",
+          "snippet": "[Updated March 3, 2026, 7:32 p.m.] MANILA, Philippines — The El Niño phenomenon may start developing by August to October this year, according to the Philippine Atmospheric, Geophysical and Astronomical Services Administration (Pagasa). In an interview with the INQUIRER, Pagasa Climate Monitoring and Prediction Section"
         },
         {
           "id": "402cb687ddde",
@@ -165,20 +207,6 @@
           "snippet": "After a year that saw heavy monsoon floods, prolonged drought and dry spells, and a surge in violence, 7.5 million people in Pakistan face high levels of food insecurity and malnutrition according to a report from the global hunger monitor."
         },
         {
-          "id": "0ba0fe410032",
-          "title": "PMI hits four-month high in February",
-          "url": "https://en.vietnamplus.vn/pmi-hits-four-month-high-in-february-post338555.vnp",
-          "originalUrl": "https://en.vietnamplus.vn/pmi-hits-four-month-high-in-february-post338555.vnp",
-          "verifiedUrl": "https://en.vietnamplus.vn/pmi-hits-four-month-high-in-february-post338555.vnp",
-          "publisher": "VietnamPlus",
-          "publishedAt": "2026-03-03",
-          "sourcePublishedAt": "2026-03-03",
-          "source": "VietnamPlus",
-          "sector": "Climate Change",
-          "country": "vietnam",
-          "snippet": "Manufacturing production increased rapidly in February, with the rate of expansion quickening to a 19-month high. Panellists reported that the preparation of products ahead of delivery to clients and stronger customer demand were behind the latest rise in output."
-        },
-        {
           "id": "045af51655c0",
           "title": "Climate change is slowing southern right whale birth rate, 33-year study finds",
           "url": "https://news.mongabay.com/2026/02/climate-change-is-slowing-southern-right-whale-birth-rate-33-year-study-finds/",
@@ -205,20 +233,6 @@
           "sector": "Climate Change",
           "country": "regional",
           "snippet": "The tropical forests of the Amazon and Andes are some of the most biodiverse places on the planet, but across both regions, changes in climate and landscape conditions are driving a shift in the number of tree species, recent research has found. Although the overall number of tree species across the Andes and Amazon ha"
-        },
-        {
-          "id": "d43f7a901d4d",
-          "title": "From shelter to strength: How disaster refuges protect lives in Palau",
-          "url": "https://news.un.org/feed/view/en/story/2026/02/1166915",
-          "originalUrl": "https://news.un.org/feed/view/en/story/2026/02/1166915",
-          "verifiedUrl": "https://news.un.org/feed/view/en/story/2026/02/1166915",
-          "publisher": "UN News Asia Pacific",
-          "publishedAt": "2026-02-06",
-          "sourcePublishedAt": "2026-02-06",
-          "source": "UN News Asia Pacific",
-          "sector": "Climate Change",
-          "country": "regional",
-          "snippet": "The small Pacific Ocean island of Palau is helping communities build resilience against the dangers of climate change-driven extreme weather with the establishment of a network of emergency refuges – thanks to support from the United Nations."
         }
       ]
     },
@@ -236,8 +250,22 @@
           "sourcePublishedAt": "2026-03-04",
           "source": "Channel News Asia - Asia",
           "sector": "Maritime Security",
-          "country": "regional",
+          "country": "singapore",
           "snippet": "The move aims to protect energy shipments through the Strait of Hormuz and stabilise oil markets amid escalating Middle East tensions."
+        },
+        {
+          "id": "e76a400bb13f",
+          "title": "Takiyuddin apologises for linking maritime op to Memali incident",
+          "url": "https://www.freemalaysiatoday.com/category/nation/2026/03/03/takiyuddin-apologises-for-linking-maritime-op-to-memali-incident",
+          "originalUrl": "https://www.freemalaysiatoday.com/category/nation/2026/03/03/takiyuddin-apologises-for-linking-maritime-op-to-memali-incident",
+          "verifiedUrl": "https://www.freemalaysiatoday.com/category/nation/2026/03/03/takiyuddin-apologises-for-linking-maritime-op-to-memali-incident",
+          "publisher": "Free Malaysia Today",
+          "publishedAt": "2026-03-03",
+          "sourcePublishedAt": "2026-03-03",
+          "source": "Free Malaysia Today",
+          "sector": "Maritime Security",
+          "country": "malaysia",
+          "snippet": "Dewan Rakyat speaker accepts the PN chief whip's apology after he admits his error."
         },
         {
           "id": "ed9a8c54d4e8",
@@ -322,20 +350,6 @@
           "sector": "Maritime Security",
           "country": "regional",
           "snippet": "The global marine insurance market is rapidly retrenching from the Persian Gulf as escalating military conflict between the United States, Israel, and Iran pushes the region’s maritime risk profile to..."
-        },
-        {
-          "id": "69b554726ba8",
-          "title": "Security Council LIVE: UN raises alarm over deadly Iran protests and ‘possible military strikes’",
-          "url": "https://news.un.org/feed/view/en/story/2026/01/1166769",
-          "originalUrl": "https://news.un.org/feed/view/en/story/2026/01/1166769",
-          "verifiedUrl": "https://news.un.org/feed/view/en/story/2026/01/1166769",
-          "publisher": "UN News Asia Pacific",
-          "publishedAt": "2026-01-15",
-          "sourcePublishedAt": "2026-01-15",
-          "source": "UN News Asia Pacific",
-          "sector": "Maritime Security",
-          "country": "regional",
-          "snippet": "The UN Security Council is meeting in New York in emergency session on Iran, amid escalating concern over reports that hundreds have been killed during weeks of nationwide anti-government protests. The meeting was requested by the United States. Demonstrations that began in late December, fuelled by soaring inflation, "
         }
       ]
     },
@@ -343,32 +357,46 @@
       "name": "Sustainable Blue Economy",
       "items": [
         {
-          "id": "9d22be7cefbd",
-          "title": "OpenAI is developing alternative to Microsoft's GitHub, The Information reports",
-          "url": "https://www.channelnewsasia.com/business/openai-developing-alternative-microsofts-github-information-reports-5968411",
-          "originalUrl": "https://www.channelnewsasia.com/business/openai-developing-alternative-microsofts-github-information-reports-5968411",
-          "verifiedUrl": "https://www.channelnewsasia.com/business/openai-developing-alternative-microsofts-github-information-reports-5968411",
-          "publisher": "Channel News Asia - Asia",
+          "id": "f30181d59b21",
+          "title": "Alcaraz hingga Sabalenka masuk nominasi Laureus World Sports Awards",
+          "url": "https://www.antaranews.com/berita/5450975/alcaraz-hingga-sabalenka-masuk-nominasi-laureus-world-sports-awards",
+          "originalUrl": "https://www.antaranews.com/berita/5450975/alcaraz-hingga-sabalenka-masuk-nominasi-laureus-world-sports-awards",
+          "verifiedUrl": "https://www.antaranews.com/berita/5450975/alcaraz-hingga-sabalenka-masuk-nominasi-laureus-world-sports-awards",
+          "publisher": "ANTARA Indonesia",
           "publishedAt": "2026-03-04",
           "sourcePublishedAt": "2026-03-04",
-          "source": "Channel News Asia - Asia",
+          "source": "ANTARA Indonesia",
           "sector": "Sustainable Blue Economy",
-          "country": "regional",
-          "snippet": "March 3 : OpenAI is developing a new code-hosting platform to rival Microsoft's GitHub, The Information reported on Tuesday, citing a person with knowledge of the project.Engineers from OpenAI encountered a rise in service disruptions that rendered GitHub unavailable in recent months, which ultimately prompte"
+          "country": "indonesia",
+          "snippet": "Sejumlah petenis dunia mulai dari Carlos Alcaraz, Jannik Sinner, hingga Aryna Sabalenka masuk nominasi Laureus World Sports Awards 2026.Alcaraz dan Sinner ..."
         },
         {
-          "id": "21e055869df7",
-          "title": "The watch collector’s checklist: 7 categories that cover every occasion",
-          "url": "https://www.channelnewsasia.com/obsessions/mens-watch-collection-guide-watch-categories-every-occasion-5963406",
-          "originalUrl": "https://www.channelnewsasia.com/obsessions/mens-watch-collection-guide-watch-categories-every-occasion-5963406",
-          "verifiedUrl": "https://www.channelnewsasia.com/obsessions/mens-watch-collection-guide-watch-categories-every-occasion-5963406",
-          "publisher": "Channel News Asia - Asia",
-          "publishedAt": "2026-03-04",
-          "sourcePublishedAt": "2026-03-04",
-          "source": "Channel News Asia - Asia",
+          "id": "4396cb8bdb49",
+          "title": "Corrections: March 2026",
+          "url": "https://www.rappler.com/bulletin-board/corrections/march-2026/",
+          "originalUrl": "https://www.rappler.com/bulletin-board/corrections/march-2026/",
+          "verifiedUrl": "https://www.rappler.com/bulletin-board/corrections/march-2026/",
+          "publisher": "Rappler",
+          "publishedAt": "2026-03-03",
+          "sourcePublishedAt": "2026-03-03",
+          "source": "Rappler",
           "sector": "Sustainable Blue Economy",
-          "country": "regional",
-          "snippet": "One watch is a start – a collection is a point of view. From a clean everyday men’s piece to a dress watch, sports beater, vintage gem and a grail, these are the categories that round out a men’s watch collection."
+          "country": "philippines",
+          "snippet": "Here are the reports with corrections for March 2026"
+        },
+        {
+          "id": "c831726454aa",
+          "title": "Middle East conflict strands 400,000 tons of India’s basmati rice at ports",
+          "url": "https://www.malaymail.com/news/money/2026/03/03/middle-east-conflict-strands-400000-tons-of-indias-basmati-rice-at-ports/211185",
+          "originalUrl": "https://www.malaymail.com/news/money/2026/03/03/middle-east-conflict-strands-400000-tons-of-indias-basmati-rice-at-ports/211185",
+          "verifiedUrl": "https://www.malaymail.com/news/money/2026/03/03/middle-east-conflict-strands-400000-tons-of-indias-basmati-rice-at-ports/211185",
+          "publisher": "Malay Mail",
+          "publishedAt": "2026-03-03",
+          "sourcePublishedAt": "2026-03-03",
+          "source": "Malay Mail",
+          "sector": "Sustainable Blue Economy",
+          "country": "malaysia",
+          "snippet": "MUMBAI, March 3 — About 400,000 metric tons of Indian basmati rice are backed up at ports and in transit, and export deals have dried up as freight rates have more than doubled..."
         },
         {
           "id": "e6004a87f7ab",
@@ -381,84 +409,98 @@
           "sourcePublishedAt": "2026-03-03",
           "source": "The Straits Times - Asia",
           "sector": "Sustainable Blue Economy",
-          "country": "regional",
+          "country": "singapore",
           "snippet": "India is the world’s largest basmati rice exporter, with the Middle East its top market. Read more at straitstimes.com. Read more at straitstimes.com."
         },
         {
-          "id": "df085ddddf47",
-          "title": "White House Weighs U.S. Backstop for Tanker Insurance Amid Gulf Shipping Crisis",
-          "url": "https://gcaptain.com/white-house-weighs-u-s-backstop-for-tanker-insurance-amid-gulf-shipping-crisis/",
-          "originalUrl": "https://gcaptain.com/white-house-weighs-u-s-backstop-for-tanker-insurance-amid-gulf-shipping-crisis/",
-          "verifiedUrl": "https://gcaptain.com/white-house-weighs-u-s-backstop-for-tanker-insurance-amid-gulf-shipping-crisis/",
-          "publisher": "gCaptain",
+          "id": "751478b3670f",
+          "title": "Fuel shortage hits Shan State as imports from Thailand halt over Iran conflict",
+          "url": "https://myanmar-now.org/en/news/fuel-shortage-hits-shan-state-as-imports-from-thailand-halt-over-iran-conflict/",
+          "originalUrl": "https://myanmar-now.org/en/news/fuel-shortage-hits-shan-state-as-imports-from-thailand-halt-over-iran-conflict/",
+          "verifiedUrl": "https://myanmar-now.org/en/news/fuel-shortage-hits-shan-state-as-imports-from-thailand-halt-over-iran-conflict/",
+          "publisher": "Myanmar Now",
           "publishedAt": "2026-03-03",
           "sourcePublishedAt": "2026-03-03",
-          "source": "gCaptain",
+          "source": "Myanmar Now",
           "sector": "Sustainable Blue Economy",
-          "country": "regional",
-          "snippet": "President Donald Trump will review a set of policy options on Tuesday aimed at controlling energy prices during the escalating Middle East conflict, including a proposal for the U.S. government to help oil tankers in the region obtain insurance, two sources said."
+          "country": "myanmar",
+          "snippet": "A protracted war in the Middle East could have a severe impact on energy supplies in Myanmar and the rest of the region"
         },
         {
-          "id": "501e4389a33a",
-          "title": "Container Shipping: Gulf Booking Freeze Triggers Congestion Fears at Global Hubs",
-          "url": "https://gcaptain.com/container-shipping-gulf-booking-freeze-triggers-congestion-fears-at-global-hubs/",
-          "originalUrl": "https://gcaptain.com/container-shipping-gulf-booking-freeze-triggers-congestion-fears-at-global-hubs/",
-          "verifiedUrl": "https://gcaptain.com/container-shipping-gulf-booking-freeze-triggers-congestion-fears-at-global-hubs/",
-          "publisher": "gCaptain",
+          "id": "f96facbc7230",
+          "title": "Iran conflict could push up costs, govt’s fuel subsidy bill, say economists",
+          "url": "https://www.freemalaysiatoday.com/category/nation/2026/03/04/iran-conflict-could-push-up-costs-govts-fuel-subsidy-bill-say-economists",
+          "originalUrl": "https://www.freemalaysiatoday.com/category/nation/2026/03/04/iran-conflict-could-push-up-costs-govts-fuel-subsidy-bill-say-economists",
+          "verifiedUrl": "https://www.freemalaysiatoday.com/category/nation/2026/03/04/iran-conflict-could-push-up-costs-govts-fuel-subsidy-bill-say-economists",
+          "publisher": "Free Malaysia Today",
           "publishedAt": "2026-03-03",
           "sourcePublishedAt": "2026-03-03",
-          "source": "gCaptain",
+          "source": "Free Malaysia Today",
           "sector": "Sustainable Blue Economy",
-          "country": "regional",
-          "snippet": "By Gavin van Marle (The Loadstar) – After ONE cancelled bookings to Middle East Gulf ports yesterday, its chief executive, Jeremy Nixon, told delegates at the S&P Global TPM event in..."
+          "country": "malaysia",
+          "snippet": "Sunway University’s Yeah Kim Leng says disruptions in shipping due to the ongoing war will have cascading impacts."
         },
         {
-          "id": "8eab5891579a",
-          "title": "Asia Scrambles for LNG as Qatar Output Halted, India Begins Gas Rationing",
-          "url": "https://gcaptain.com/asia-scrambles-for-lng-as-qatar-output-halted-india-begins-gas-rationing/",
-          "originalUrl": "https://gcaptain.com/asia-scrambles-for-lng-as-qatar-output-halted-india-begins-gas-rationing/",
-          "verifiedUrl": "https://gcaptain.com/asia-scrambles-for-lng-as-qatar-output-halted-india-begins-gas-rationing/",
-          "publisher": "gCaptain",
-          "publishedAt": "2026-03-03",
-          "sourcePublishedAt": "2026-03-03",
-          "source": "gCaptain",
+          "id": "71f49d1ca06c",
+          "title": "Marcos seeks emergency powers to cut fuel tax",
+          "url": "https://newsinfo.inquirer.net/2190176/marcos-seeks-emergency-powers-to-cut-fuel-tax",
+          "originalUrl": "https://newsinfo.inquirer.net/2190176/marcos-seeks-emergency-powers-to-cut-fuel-tax",
+          "verifiedUrl": "https://newsinfo.inquirer.net/2190176/marcos-seeks-emergency-powers-to-cut-fuel-tax",
+          "publisher": "Inquirer",
+          "publishedAt": "2026-03-04",
+          "sourcePublishedAt": "2026-03-04",
+          "source": "Inquirer",
           "sector": "Sustainable Blue Economy",
-          "country": "regional",
-          "snippet": "India began rationing natural gas on Tuesday while countries around Asia looked to the spot market to replace supplies, activated emergency plans and prepared to step up production, as the conflict in the Middle East curtailed shipping and halted Qatari output."
+          "country": "philippines",
+          "snippet": "President Marcos is seeking emergency powers from Congress to allow him to reduce the excise tax on petroleum products once prices of oil and gas imports soar as a result of the escalating conflict in the Middle East. At a Palace briefing on Tuesday, the President said he was in talks with leaders of the"
         },
         {
-          "id": "05d1672f80d5",
-          "title": "‘Black Swan’ Risks Stalk Container Carriers in Avoiding Iran War",
-          "url": "https://gcaptain.com/iran-conflict-container-shipping-crisis-hormuz/",
-          "originalUrl": "https://gcaptain.com/iran-conflict-container-shipping-crisis-hormuz/",
-          "verifiedUrl": "https://gcaptain.com/iran-conflict-container-shipping-crisis-hormuz/",
-          "publisher": "gCaptain",
-          "publishedAt": "2026-03-03",
-          "sourcePublishedAt": "2026-03-03",
-          "source": "gCaptain",
+          "id": "9d22be7cefbd",
+          "title": "OpenAI is developing alternative to Microsoft's GitHub, The Information reports",
+          "url": "https://www.channelnewsasia.com/business/openai-developing-alternative-microsofts-github-information-reports-5968411",
+          "originalUrl": "https://www.channelnewsasia.com/business/openai-developing-alternative-microsofts-github-information-reports-5968411",
+          "verifiedUrl": "https://www.channelnewsasia.com/business/openai-developing-alternative-microsofts-github-information-reports-5968411",
+          "publisher": "Channel News Asia - Asia",
+          "publishedAt": "2026-03-04",
+          "sourcePublishedAt": "2026-03-04",
+          "source": "Channel News Asia - Asia",
           "sector": "Sustainable Blue Economy",
-          "country": "regional",
-          "snippet": "The Iran conflict has effectively closed the Strait of Hormuz, trapping 750 ships and transforming container shipping from overcapacity to sudden supply crunch. Industry warns of pandemic-style disruptions."
-        },
-        {
-          "id": "05343962ee30",
-          "title": "Strait of Hormuz Shockwaves: Drewry Sees Tanker Spike, LNG Bottlenecks, and Trade Rewiring Across Shipping",
-          "url": "https://gcaptain.com/strait-of-hormuz-shockwaves-drewry-sees-tanker-spike-lng-bottlenecks-and-trade-rewiring-across-shipping/",
-          "originalUrl": "https://gcaptain.com/strait-of-hormuz-shockwaves-drewry-sees-tanker-spike-lng-bottlenecks-and-trade-rewiring-across-shipping/",
-          "verifiedUrl": "https://gcaptain.com/strait-of-hormuz-shockwaves-drewry-sees-tanker-spike-lng-bottlenecks-and-trade-rewiring-across-shipping/",
-          "publisher": "gCaptain",
-          "publishedAt": "2026-03-03",
-          "sourcePublishedAt": "2026-03-03",
-          "source": "gCaptain",
-          "sector": "Sustainable Blue Economy",
-          "country": "regional",
-          "snippet": "The effective shutdown of commercial traffic through the Strait of Hormuz has jolted global shipping markets after coordinated U.S. and Israeli strikes on Iran over the weekend triggered the most..."
+          "country": "singapore",
+          "snippet": "March 3 : OpenAI is developing a new code-hosting platform to rival Microsoft's GitHub, The Information reported on Tuesday, citing a person with knowledge of the project.Engineers from OpenAI encountered a rise in service disruptions that rendered GitHub unavailable in recent months, which ultimately prompte"
         }
       ]
     },
     {
       "name": "Marine Pollution",
       "items": [
+        {
+          "id": "d46288fe4920",
+          "title": "China rilis pedoman peningkatkan daur ulang & limbah panel surya",
+          "url": "https://www.antaranews.com/berita/5450883/china-rilis-pedoman-peningkatkan-daur-ulang-limbah-panel-surya",
+          "originalUrl": "https://www.antaranews.com/berita/5450883/china-rilis-pedoman-peningkatkan-daur-ulang-limbah-panel-surya",
+          "verifiedUrl": "https://www.antaranews.com/berita/5450883/china-rilis-pedoman-peningkatkan-daur-ulang-limbah-panel-surya",
+          "publisher": "ANTARA Indonesia",
+          "publishedAt": "2026-03-04",
+          "sourcePublishedAt": "2026-03-04",
+          "source": "ANTARA Indonesia",
+          "sector": "Marine Pollution",
+          "country": "indonesia",
+          "snippet": "Kementerian Perindustrian dan Teknologi Informasi China, bersama dengan lima departemen pemerintah lainnya, merilis pedoman untuk mempromosikan daur ulang dan ..."
+        },
+        {
+          "id": "c23c6e51bf51",
+          "title": "Karenni IEC warns of ‘toxic’ levels of arsenic in Salween River and Molo Creek",
+          "url": "https://myanmar-now.org/en/news/karenni-iec-warns-of-toxic-levels-of-arsenic-in-salween-river-and-molo-creek/",
+          "originalUrl": "https://myanmar-now.org/en/news/karenni-iec-warns-of-toxic-levels-of-arsenic-in-salween-river-and-molo-creek/",
+          "verifiedUrl": "https://myanmar-now.org/en/news/karenni-iec-warns-of-toxic-levels-of-arsenic-in-salween-river-and-molo-creek/",
+          "publisher": "Myanmar Now",
+          "publishedAt": "2026-02-27",
+          "sourcePublishedAt": "2026-02-27",
+          "source": "Myanmar Now",
+          "sector": "Marine Pollution",
+          "country": "myanmar",
+          "snippet": "Wastewater from mines has heavily contained both rivers, according to Karenni State’s resistance-run civilian authority"
+        },
         {
           "id": "54727a295fe7",
           "title": "Deadly landfill collapse exposes risks faced by Philippines’ waste pickers",
