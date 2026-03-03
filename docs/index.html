@@ -397,11 +397,19 @@
         const rawTitle = String(item.title || "").replace(/\s+/g, " ").trim();
         const split = splitTitlePublisher(rawTitle);
         const cleanTitle = split.title || rawTitle;
+        const source = displaySource(item).toLowerCase();
 
         if (cleanedSnippet) {
+          const snippetWords = cleanedSnippet.split(/\s+/).filter(Boolean).length;
           const normalizedSnippet = cleanedSnippet.toLowerCase().replace(/\W+/g, "");
           const normalizedTitle = cleanTitle.toLowerCase().replace(/\W+/g, "");
-          if (normalizedSnippet && normalizedSnippet !== normalizedTitle) {
+          if (
+            snippetWords >= 5 &&
+            cleanedSnippet.length >= 36 &&
+            normalizedSnippet &&
+            normalizedSnippet !== normalizedTitle &&
+            cleanedSnippet.toLowerCase() !== source
+          ) {
             const sentence = cleanedSnippet.split(/(?<=[.!?])\s+/)[0] || cleanedSnippet;
             return sentence.length > 200 ? sentence.slice(0, 199).trimEnd() + "…" : sentence;
           }
@@ -418,6 +426,15 @@
         }
 
         return cleanTitle;
+      }
+
+      function buildCardSnippet(item) {
+        const cleanedSnippet = String(item.snippet || "").replace(/\s+/g, " ").trim();
+        const source = displaySource(item).toLowerCase();
+        if (!cleanedSnippet || cleanedSnippet.length < 48) return "";
+        if (cleanedSnippet.toLowerCase() === source) return "";
+        const sentence = cleanedSnippet.split(/(?<=[.!?])\s+/)[0] || cleanedSnippet;
+        return sentence.length > 240 ? sentence.slice(0, 239).trimEnd() + "…" : sentence;
       }
 
       function synthSectorSummary(name, items) {
@@ -538,8 +555,7 @@
               const normalizedTitle = splitTitlePublisher(item.title || "").title || (item.title || "Untitled");
               const source = displaySource(item);
               const date = formatDate(item.sourcePublishedAt || item.publishedAt || item.published || "");
-              const summary = String(item.snippet || "").replace(/\s+/g, " ").trim();
-              const clipped = summary.length > 240 ? summary.slice(0, 239).trimEnd() + "…" : summary;
+              const clipped = buildCardSnippet(item);
               const oneLiner = buildStorySubtext(item);
               const why = synthWhy(item);
               return `
