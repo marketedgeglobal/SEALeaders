@@ -114,6 +114,7 @@ SECTOR_KEYWORDS = {
 }
 
 MAX_ITEMS_PER_SECTOR = int(os.getenv("MAX_ITEMS_PER_SECTOR", "8"))
+MAX_ITEMS_PER_PUBLISHER = int(os.getenv("MAX_ITEMS_PER_PUBLISHER", "3"))
 OUTPUT_PATH = "docs/data/latest.json"
 HTTP_HEADERS = {
     "User-Agent": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/122.0 Safari/537.36"
@@ -477,13 +478,35 @@ def build_latest_json() -> dict:
 
     sectors_payload = []
     total = 0
+    publisher_usage: dict[str, int] = {}
+
     for sector in SECTORS:
-        sector_items = [item for item in all_items if item["sector"] == sector][:MAX_ITEMS_PER_SECTOR]
-        total += len(sector_items)
+        candidates = [item for item in all_items if item["sector"] == sector]
+        selected: list[dict] = []
+
+        for item in candidates:
+            publisher = str(item.get("publisher") or "unknown").lower()
+            if publisher_usage.get(publisher, 0) >= MAX_ITEMS_PER_PUBLISHER:
+                continue
+
+            selected.append(item)
+            publisher_usage[publisher] = publisher_usage.get(publisher, 0) + 1
+            if len(selected) >= MAX_ITEMS_PER_SECTOR:
+                break
+
+        if len(selected) < MAX_ITEMS_PER_SECTOR:
+            for item in candidates:
+                if item in selected:
+                    continue
+                selected.append(item)
+                if len(selected) >= MAX_ITEMS_PER_SECTOR:
+                    break
+
+        total += len(selected)
         sectors_payload.append(
             {
                 "name": sector,
-                "items": sector_items,
+                "items": selected,
             }
         )
 
