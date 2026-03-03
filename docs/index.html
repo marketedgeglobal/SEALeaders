@@ -109,6 +109,16 @@
         background: linear-gradient(180deg, var(--me-primary) 0%, var(--me-primary-strong) 100%);
         color: #fff;
       }
+      .filter-select {
+        min-width: 240px;
+        border: 1px solid var(--me-border);
+        background: rgba(46, 125, 175, 0.18);
+        color: var(--me-accent);
+        border-radius: 8px;
+        padding: 7px 10px;
+        font-size: 12px;
+        font-weight: 600;
+      }
       .section-head {
         display: flex;
         justify-content: space-between;
@@ -332,8 +342,8 @@
       }
 
       function renderControls(counts) {
-        const buttons = COUNTRY_FILTERS.map((country) => `
-          <button class="filter-btn ${activeCountryFilter === country.key ? "active" : ""}" data-filter="${esc(country.key)}" type="button">${esc(country.label)}</button>
+        const options = COUNTRY_FILTERS.map((country) => `
+          <option value="${esc(country.key)}" ${activeCountryFilter === country.key ? "selected" : ""}>${esc(country.label)}</option>
         `).join("");
 
         return `
@@ -348,7 +358,9 @@
               <h3>Display Controls</h3>
               <p class="panel-sub">Filter stories by country.</p>
               <div class="filter-row" aria-label="Country filter">
-                ${buttons}
+                <select id="country-filter" class="filter-select" aria-label="Country filter">
+                  ${options}
+                </select>
               </div>
             </article>
           </section>
@@ -443,11 +455,12 @@
         root.innerHTML = `<section class="panel"><p class="error">Unable to load dashboard data: ${esc(error.message)}</p></section>`;
       });
 
-      document.addEventListener("click", (event) => {
+      document.addEventListener("change", (event) => {
         const target = event.target;
         if (!(target instanceof HTMLElement)) return;
-        if (!target.classList.contains("filter-btn")) return;
-        const selected = target.getAttribute("data-filter") || "all";
+        if (!(target instanceof HTMLSelectElement)) return;
+        if (target.id !== "country-filter") return;
+        const selected = target.value || "all";
         const validKeys = COUNTRY_FILTERS.map((country) => country.key);
         if (!validKeys.includes(selected) || selected === activeCountryFilter) return;
 
