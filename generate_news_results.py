@@ -267,12 +267,36 @@ def build_news_payload() -> dict:
     }
 
 
+def _to_latest_payload(news_payload: dict) -> dict:
+    by_category = news_payload.get("by_category") or {}
+    sectors = []
+    for name, items in by_category.items():
+        sectors.append(
+            {
+                "name": name,
+                "items": items if isinstance(items, list) else [],
+            }
+        )
+    return {
+        "runAt": news_payload.get("generated_at") or datetime.now(timezone.utc).isoformat(),
+        "totalItems": int(news_payload.get("total_articles") or 0),
+        "sectors": sectors,
+    }
+
+
 def main() -> None:
     payload = build_news_payload()
-    output_path = Path("docs/news.json")
-    output_path.parent.mkdir(parents=True, exist_ok=True)
-    output_path.write_text(json.dumps(payload, ensure_ascii=False, indent=2), encoding="utf-8")
-    print(f"Wrote {output_path} with {payload['total_articles']} articles")
+
+    news_path = Path("docs/news.json")
+    news_path.parent.mkdir(parents=True, exist_ok=True)
+    news_path.write_text(json.dumps(payload, ensure_ascii=False, indent=2), encoding="utf-8")
+
+    latest_path = Path("docs/data/latest.json")
+    latest_path.parent.mkdir(parents=True, exist_ok=True)
+    latest_payload = _to_latest_payload(payload)
+    latest_path.write_text(json.dumps(latest_payload, ensure_ascii=False, indent=2), encoding="utf-8")
+
+    print(f"Wrote {news_path} and {latest_path} with {payload['total_articles']} articles")
 
 
 if __name__ == "__main__":
