@@ -1,0 +1,106 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>SEA Leaders</title>
+    <style>
+      :root {
+        --bg: #f7fafc;
+        --card: #ffffff;
+        --text: #1a202c;
+        --muted: #4a5568;
+        --accent: #0f766e;
+        --border: #e2e8f0;
+      }
+      * { box-sizing: border-box; }
+      body {
+        margin: 0;
+        font-family: Inter, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+        background: var(--bg);
+        color: var(--text);
+      }
+      .container {
+        max-width: 980px;
+        margin: 0 auto;
+        padding: 32px 20px 48px;
+      }
+      h1 {
+        margin: 0 0 8px;
+        font-size: 2rem;
+      }
+      .subtitle {
+        margin: 0 0 28px;
+        color: var(--muted);
+      }
+      .grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+        gap: 14px;
+        margin-bottom: 28px;
+      }
+      .card {
+        background: var(--card);
+        border: 1px solid var(--border);
+        border-radius: 12px;
+        padding: 16px;
+        min-height: 96px;
+      }
+      .card h2 {
+        margin: 0;
+        font-size: 1rem;
+        line-height: 1.35;
+      }
+      .card p {
+        margin: 10px 0 0;
+        font-size: 0.92rem;
+        line-height: 1.4;
+        color: var(--muted);
+      }
+      .section-title {
+        margin: 0 0 10px;
+        font-size: 1.05rem;
+      }
+      ul {
+        margin: 0;
+        padding-left: 18px;
+      }
+      li { margin: 6px 0; }
+      a {
+        color: var(--accent);
+        text-decoration: none;
+      }
+      a:hover { text-decoration: underline; }
+    </style>
+  </head>
+  <body>
+    <main class="container">
+      <h1>SEA Leaders</h1>
+      <p class="subtitle">Latest on coastal communities in Southeast Asia.</p>
+
+      <h2 class="section-title">Priority News Areas (No Duplicates)</h2>
+      <section class="grid" aria-label="News topic cards">
+        <article class="card"><h2>1) Sustainable Fisheries</h2></article>
+        <article class="card"><h2>2) Climate Change</h2></article>
+        <article class="card"><h2>3) Maritime Security</h2></article>
+        <article class="card">
+          <h2>4) Sustainable Blue Economy</h2>
+          <p>
+            Open to CSOs, NGOs, social enterprises, and other grassroots organizations
+            working across these categories.
+          </p>
+        </article>
+        <article class="card"><h2>5) Marine Pollutiion</h2></article>
+      </section>
+
+      <h2 class="section-title">Migration Documentation</h2>
+      <ul>
+        <li><a href="../SEASIA_COASTAL_MIGRATION_GUIDE.md">SEASIA Coastal Migration Guide</a></li>
+        <li><a href="../SEASIA_COASTAL_QUICK_START.md">SEASIA Coastal Quick Start</a></li>
+        <li><a href="../IMPLEMENTATION_CHECKLIST.md">Implementation Checklist</a></li>
+        <li><a href="../COMPONENT_MAPPING.md">Component Mapping</a></li>
+        <li><a href="../FILE_MANIFEST.md">File Manifest</a></li>
+      </ul>
+    </main>
+  </body>
+</html>
