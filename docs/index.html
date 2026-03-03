@@ -83,6 +83,26 @@
         gap: 8px;
         margin-top: 10px;
       }
+      .filter-row {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 8px;
+        margin-top: 10px;
+      }
+      .filter-btn {
+        border: 1px solid var(--me-border);
+        background: rgba(46, 125, 175, 0.18);
+        color: var(--me-accent);
+        border-radius: 8px;
+        padding: 6px 10px;
+        font-size: 12px;
+        font-weight: 600;
+        cursor: pointer;
+      }
+      .filter-btn.active {
+        background: linear-gradient(180deg, var(--me-primary) 0%, var(--me-primary-strong) 100%);
+        color: #fff;
+      }
       .pill {
         display: inline-block;
         border: 1px solid var(--me-border);
@@ -142,6 +162,11 @@
         margin: 8px 0 0;
         padding-left: 20px;
       }
+      .footer-note {
+        font-size: 12px;
+        color: var(--me-muted);
+        margin: 0;
+      }
       a {
         color: var(--me-accent);
       }
@@ -170,6 +195,8 @@
         "Sustainable Blue Economy",
         "Marine Pollution",
       ];
+      const FILTERS = ["all", "regional", "local"];
+      let activeSourceFilter = "all";
 
       function esc(value) {
         return String(value || "").replace(/[&<>"']/g, (char) => (
@@ -214,9 +241,34 @@
         });
       }
 
+      function classifySource(sourceName) {
+        const value = String(sourceName || "").toLowerCase();
+        const localMarkers = [
+          "vietnam",
+          "thailand",
+          "philippines",
+          "indonesia",
+          "malaysia",
+          "myanmar",
+          "cambodia",
+          "singapore",
+          "brunei",
+          "ttxvn",
+        ];
+
+        if (localMarkers.some((marker) => value.includes(marker))) return "local";
+        return "regional";
+      }
+
       function render(data) {
         const root = document.getElementById("app-root");
         const sectorsByName = Object.fromEntries((data.sectors || []).map((sector) => [sector.name, sector.items || []]));
+        const allItems = (data.sectors || []).flatMap((sector) => sector.items || []);
+        const uniqueSources = new Set(
+          allItems
+            .map((item) => item.source || item.publisher || "")
+            .filter(Boolean)
+        );
         const counts = CATEGORY_ORDER.map((name) => ({ name, count: (sectorsByName[name] || []).length }));
         const totalStories = counts.reduce((sum, row) => sum + row.count, 0);
         const lastUpdated = formatDate(data.runAt);
@@ -232,16 +284,24 @@
               </div>
             </article>
             <article class="panel">
-              <h3>Topic Filters</h3>
+              <h3>Topic Coverage</h3>
               <div class="pill-row">
                 ${counts.map((row) => `<span class="pill">${esc(row.name)}: ${esc(row.count)}</span>`).join("")}
+              </div>
+              <div class="filter-row" aria-label="Source filter">
+                <button class="filter-btn ${activeSourceFilter === "all" ? "active" : ""}" data-filter="all" type="button">All Sources</button>
+                <button class="filter-btn ${activeSourceFilter === "regional" ? "active" : ""}" data-filter="regional" type="button">Regional</button>
+                <button class="filter-btn ${activeSourceFilter === "local" ? "active" : ""}" data-filter="local" type="button">Local</button>
               </div>
             </article>
           </section>
         `;
 
         const sectorsHtml = CATEGORY_ORDER.map((name) => {
-          const items = sectorsByName[name] || [];
+          const items = (sectorsByName[name] || []).filter((item) => {
+            if (activeSourceFilter === "all") return true;
+            return classifySource(item.source || item.publisher) === activeSourceFilter;
+          });
           const cards = items.length
             ? items.slice(0, 8).map((item) => {
               const source = item.source || item.publisher || "Unknown source";
@@ -276,6 +336,7 @@
               <li><a href="../COMPONENT_MAPPING.md">Component Mapping</a></li>
               <li><a href="../FILE_MANIFEST.md">File Manifest</a></li>
             </ul>
+            <p class="footer-note">Updated: ${esc(lastUpdated || "Pending")} · Sources tracked: ${esc(uniqueSources.size)}</p>
           </section>
         `;
 
@@ -297,6 +358,20 @@
       loadData().then(render).catch((error) => {
         const root = document.getElementById("app-root");
         root.innerHTML = `<section class="panel"><p class="error">Unable to load dashboard data: ${esc(error.message)}</p></section>`;
+      });
+
+      document.addEventListener("click", (event) => {
+        const target = event.target;
+        if (!(target instanceof HTMLElement)) return;
+        if (!target.classList.contains("filter-btn")) return;
+        const selected = target.getAttribute("data-filter") || "all";
+        if (!FILTERS.includes(selected) || selected === activeSourceFilter) return;
+
+        activeSourceFilter = selected;
+        loadData().then(render).catch((error) => {
+          const root = document.getElementById("app-root");
+          root.innerHTML = `<section class="panel"><p class="error">Unable to load dashboard data: ${esc(error.message)}</p></section>`;
+        });
       });
     </script>
   </body>
