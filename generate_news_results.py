@@ -1,14 +1,13 @@
 #!/usr/bin/env python3
 
 import json
-import re
 import urllib.request
 import xml.etree.ElementTree as ET
 from datetime import datetime, timezone
 from email.utils import parsedate_to_datetime
 from pathlib import Path
 
-from fetch_news_seasia import is_allowed_headline
+from fetch_news_seasia import is_relevant
 
 FEEDS = [
     ("Google News SEA", "https://news.google.com/rss/search?q=Southeast+Asia+marine"),
@@ -52,7 +51,7 @@ CATEGORY_KEYWORDS = {
         "coastal livelihoods",
         "ocean economy",
     ],
-    "Marine Pollutiion": [
+    "Marine Pollution": [
         "marine pollution",
         "pollution",
         "plastic",
@@ -172,7 +171,8 @@ def build_news_payload() -> dict:
 
         for article in _parse_feed(xml_bytes, source_name):
             headline = article.get("title", "")
-            if not is_allowed_headline(headline):
+            is_valid, _, _ = is_relevant(headline)
+            if not is_valid:
                 continue
 
             category = _categorize(headline)
@@ -235,13 +235,13 @@ def build_news_payload() -> dict:
                     "category": "Sustainable Blue Economy",
                 }
             ],
-            "Marine Pollutiion": [
+            "Marine Pollution": [
                 {
-                    "title": "Marine Pollutiion response initiatives across ASEAN",
+                    "title": "Marine Pollution response initiatives across ASEAN",
                     "url": "#",
                     "source": "Placeholder",
                     "published": "",
-                    "category": "Marine Pollutiion",
+                    "category": "Marine Pollution",
                 }
             ],
         }

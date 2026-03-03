@@ -12,7 +12,7 @@ from urllib.parse import urlparse
 
 import feedparser
 
-from fetch_news_seasia import is_allowed_headline
+from fetch_news_seasia import is_relevant
 
 FEEDS = [
     {
@@ -54,7 +54,7 @@ SECTORS = [
     "Climate Change",
     "Maritime Security",
     "Sustainable Blue Economy",
-    "Marine Pollutiion",
+    "Marine Pollution",
 ]
 
 SECTOR_KEYWORDS = {
@@ -62,7 +62,7 @@ SECTOR_KEYWORDS = {
     "Climate Change": ["climate", "sea level", "coastal erosion", "resilience", "extreme weather"],
     "Maritime Security": ["maritime", "security", "sovereignty", "navy", "patrol", "piracy", "south china sea"],
     "Sustainable Blue Economy": ["blue economy", "shipping", "ports", "coastal livelihoods", "ocean economy"],
-    "Marine Pollutiion": ["marine pollution", "pollution", "plastic", "microplastic", "oil spill", "waste"],
+    "Marine Pollution": ["marine pollution", "pollution", "plastic", "microplastic", "oil spill", "waste"],
 }
 
 MAX_ITEMS_PER_SECTOR = 8
@@ -114,7 +114,8 @@ def _extract_items(feed_name: str, feed_url: str) -> list[dict]:
 
         if not title or not link:
             continue
-        if not is_allowed_headline(title):
+        is_valid, _, _ = is_relevant(title, summary)
+        if not is_valid:
             continue
 
         sector = _categorize(title, summary)
@@ -237,17 +238,17 @@ def build_latest_json() -> dict:
                 ],
             },
             {
-                "name": "Marine Pollutiion",
+                "name": "Marine Pollution",
                 "items": [
                     {
                         "id": "placeholder-pollution",
-                        "title": "Marine Pollutiion response initiatives across ASEAN",
+                        "title": "Marine Pollution response initiatives across ASEAN",
                         "url": "#",
                         "publisher": "placeholder",
                         "publishedAt": datetime.now(timezone.utc).date().isoformat(),
                         "sourcePublishedAt": datetime.now(timezone.utc).date().isoformat(),
                         "source": "Placeholder",
-                        "sector": "Marine Pollutiion",
+                        "sector": "Marine Pollution",
                         "snippet": "Placeholder story shown because no live items passed filters.",
                     }
                 ],
