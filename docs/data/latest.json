@@ -1,5 +1,5 @@
 {
-  "runAt": "2026-03-03T22:35:35.213472+00:00",
+  "runAt": "2026-03-03T22:48:04.526816+00:00",
   "totalItems": 40,
   "sectors": [
     {
@@ -16,7 +16,7 @@
           "sourcePublishedAt": "2026-03-01",
           "source": "Google News Malaysia Fisheries",
           "sector": "Sustainable Fisheries",
-          "snippet": ""
+          "snippet": "The report indicates that finally, a map to protect Malaysia’s seagrass, fisheries resources and marine biodiversity."
         },
         {
           "id": "6b5bda84458d",
@@ -29,7 +29,7 @@
           "sourcePublishedAt": "2026-02-20",
           "source": "Google News Malaysia Fisheries",
           "sector": "Sustainable Fisheries",
-          "snippet": ""
+          "snippet": "The report indicates that 9 Whale & Dolphin Species In Malaysia To Receive Protection Under Fisheries Act Amendment."
         },
         {
           "id": "5aa84150302d",
@@ -42,7 +42,7 @@
           "sourcePublishedAt": "2026-02-19",
           "source": "Google News Malaysia Fisheries",
           "sector": "Sustainable Fisheries",
-          "snippet": ""
+          "snippet": "The report indicates that malaysia to protect nine new marine mammal species under Fisheries Act."
         },
         {
           "id": "a4cba49f4ab7",
@@ -55,7 +55,7 @@
           "sourcePublishedAt": "2026-02-06",
           "source": "Google News SEA",
           "sector": "Sustainable Fisheries",
-          "snippet": ""
+          "snippet": "The report indicates that executive Director of Southeast Asia Fisheries Development Center visited our university."
         },
         {
           "id": "1f810622827c",
@@ -68,7 +68,7 @@
           "sourcePublishedAt": "2026-02-02",
           "source": "Google News Malaysia Fisheries",
           "sector": "Sustainable Fisheries",
-          "snippet": ""
+          "snippet": "The report indicates that due to declining fish stocks, Malaysia fisheries authority calls on fishermen groups to consider aquaculture."
         },
         {
           "id": "801cc92f87f6",
@@ -81,7 +81,7 @@
           "sourcePublishedAt": "2025-11-05",
           "source": "Google News Indonesia Blue Economy",
           "sector": "Sustainable Fisheries",
-          "snippet": ""
+          "snippet": "The report indicates that indonesia launches action plan to boost small-scale fisheries."
         },
         {
           "id": "94eb801cea75",
@@ -94,7 +94,7 @@
           "sourcePublishedAt": "2025-11-02",
           "source": "Google News Philippines Maritime",
           "sector": "Sustainable Fisheries",
-          "snippet": ""
+          "snippet": "The report indicates that australia enhances support for all Asean nations against illegal fishing."
         },
         {
           "id": "db2eb3fb5c50",
@@ -107,7 +107,7 @@
           "sourcePublishedAt": "2025-10-28",
           "source": "Google News Vietnam Coastal",
           "sector": "Sustainable Fisheries",
-          "snippet": ""
+          "snippet": "The report indicates that lessons from Thailand and Vietnam - IDRC."
         }
       ]
     },
@@ -125,20 +125,7 @@
           "sourcePublishedAt": "2025-11-26",
           "source": "Google News Blue Economy SEA",
           "sector": "Climate Change",
-          "snippet": ""
-        },
-        {
-          "id": "1a29e99f89d2",
-          "title": "UNDP: Seagrass meadows, peatlands key to mitigating Southeast Asia’s climate crisis",
-          "url": "https://news.google.com/rss/articles/CBMipAFBVV95cUxNZ2VTV0FXbldtVGJxZGJnTEJBRzFYVGx0RjdjNjVJXzM5eWpnOW9hZnNkVFJxc2xsY1dhYk83UHM0NWFpTTFkNGMxU3daZ3d0ZnpHREpIY1EtZDJNWkMyR2lSSUc3MTc0WE5fak1ySWFYZjh6OXNjWkJLd1pqU0lVc3dVNk5ZZ2hjbmFGVi1NNWZaVktaSWhvUU1nbTJLSkp1LUdONg?oc=5&hl=en-US&gl=US&ceid=US:en",
-          "originalUrl": "https://news.google.com/rss/articles/CBMipAFBVV95cUxNZ2VTV0FXbldtVGJxZGJnTEJBRzFYVGx0RjdjNjVJXzM5eWpnOW9hZnNkVFJxc2xsY1dhYk83UHM0NWFpTTFkNGMxU3daZ3d0ZnpHREpIY1EtZDJNWkMyR2lSSUc3MTc0WE5fak1ySWFYZjh6OXNjWkJLd1pqU0lVc3dVNk5ZZ2hjbmFGVi1NNWZaVktaSWhvUU1nbTJLSkp1LUdONg?oc=5",
-          "verifiedUrl": "https://news.google.com/rss/articles/CBMipAFBVV95cUxNZ2VTV0FXbldtVGJxZGJnTEJBRzFYVGx0RjdjNjVJXzM5eWpnOW9hZnNkVFJxc2xsY1dhYk83UHM0NWFpTTFkNGMxU3daZ3d0ZnpHREpIY1EtZDJNWkMyR2lSSUc3MTc0WE5fak1ySWFYZjh6OXNjWkJLd1pqU0lVc3dVNk5ZZ2hjbmFGVi1NNWZaVktaSWhvUU1nbTJLSkp1LUdONg?oc=5&hl=en-US&gl=US&ceid=US:en",
-          "publisher": "tanahair.net",
-          "publishedAt": "2025-05-26",
-          "sourcePublishedAt": "2025-05-26",
-          "source": "Google News Blue Economy SEA",
-          "sector": "Climate Change",
-          "snippet": ""
+          "snippet": "The report indicates that advancing Indonesia’s blue economy through ocean-based mitigation actions."
         },
         {
           "id": "d9d7b4ac8a39",
@@ -151,7 +138,7 @@
           "sourcePublishedAt": "2025-05-22",
           "source": "Google News Climate SEA",
           "sector": "Climate Change",
-          "snippet": ""
+          "snippet": "The report indicates that solutions to Prevent coastal Erosion in Southeast Asia."
         },
         {
           "id": "b8bba7e5f5b6",
@@ -164,7 +151,7 @@
           "sourcePublishedAt": "2024-12-19",
           "source": "Google News Climate SEA",
           "sector": "Climate Change",
-          "snippet": ""
+          "snippet": "The report indicates that abandoning stagnant policy responses."
         },
         {
           "id": "8964b7d101a9",
@@ -177,7 +164,7 @@
           "sourcePublishedAt": "2024-12-12",
           "source": "Google News Climate SEA",
           "sector": "Climate Change",
-          "snippet": ""
+          "snippet": "The report indicates that sea level rise a clear threat to Malaysia."
         },
         {
           "id": "435c38623f06",
@@ -190,7 +177,7 @@
           "sourcePublishedAt": "2024-10-17",
           "source": "Google News Climate SEA",
           "sector": "Climate Change",
-          "snippet": ""
+          "snippet": "The report indicates that the politics of countering climate change in Southeast Asia."
         },
         {
           "id": "ff03b60bf8bd",
@@ -203,7 +190,7 @@
           "sourcePublishedAt": "2024-08-08",
           "source": "Google News Indonesia Blue Economy",
           "sector": "Climate Change",
-          "snippet": ""
+          "snippet": "The report indicates that protecting mangroves and seagrass could boost Indonesia’s new climate targets."
         },
         {
           "id": "e7b9f53bd881",
@@ -216,7 +203,20 @@
           "sourcePublishedAt": "2024-07-30",
           "source": "Google News Climate SEA",
           "sector": "Climate Change",
-          "snippet": ""
+          "snippet": "The report indicates that climate change means that tropical cyclones in Southeast Asia are developing faster, lasting longer and endangering more coastal communities, finds joint international study."
+        },
+        {
+          "id": "56bf431e465a",
+          "title": "Opinion | Southeast Asia must go all out to fight rising sea levels, even relocate its people",
+          "url": "https://news.google.com/rss/articles/CBMiuwFBVV95cUxNZlAyTVFlcjVmeTVSOWYwMW1PWndSeHNJSFBFNFN4SlVreG43QTNKQU9nR05LWWVSeXFBUnlFMGNLV3hVTmFZSUg0RURnOUF0SWN3QWJWZE9Hck5uZnkweW9VTmd2WGE4dlBfb1NrRnFZbVpXN1JMNFVlaDdkMHdBdDlyTldSQjR1R2tEZ1k1Mzg5bW96NTFrLVJXQXlVelBzbmhPelk1ZFdLUTc4TmRMT1BaSlBqWXIyTmE40gG7AUFVX3lxTE45V0pHcktnczB3djAyZ25rRVpscXNWb2FwcHRSM0U3dUNfUThUOUljeWRla0JqekdEOHQ0WUNFQmdRSVBIUmFVeC1aWnJnU3VpTWcwUG1pTUlnTjBSX01pUWtFUnRYbUJEM2RHenlqUVhKRnZQWmhOZElFWVBXaWJPRjZTZV95dkJ1eUVPOUpXRF9FQ2Y5TWhkdzQyNEhadm1MVUtONGtNd0czT0NTWi1fYUJpNERfUWgxcU0?oc=5&hl=en-US&gl=US&ceid=US:en",
+          "originalUrl": "https://news.google.com/rss/articles/CBMiuwFBVV95cUxNZlAyTVFlcjVmeTVSOWYwMW1PWndSeHNJSFBFNFN4SlVreG43QTNKQU9nR05LWWVSeXFBUnlFMGNLV3hVTmFZSUg0RURnOUF0SWN3QWJWZE9Hck5uZnkweW9VTmd2WGE4dlBfb1NrRnFZbVpXN1JMNFVlaDdkMHdBdDlyTldSQjR1R2tEZ1k1Mzg5bW96NTFrLVJXQXlVelBzbmhPelk1ZFdLUTc4TmRMT1BaSlBqWXIyTmE40gG7AUFVX3lxTE45V0pHcktnczB3djAyZ25rRVpscXNWb2FwcHRSM0U3dUNfUThUOUljeWRla0JqekdEOHQ0WUNFQmdRSVBIUmFVeC1aWnJnU3VpTWcwUG1pTUlnTjBSX01pUWtFUnRYbUJEM2RHenlqUVhKRnZQWmhOZElFWVBXaWJPRjZTZV95dkJ1eUVPOUpXRF9FQ2Y5TWhkdzQyNEhadm1MVUtONGtNd0czT0NTWi1fYUJpNERfUWgxcU0?oc=5",
+          "verifiedUrl": "https://news.google.com/rss/articles/CBMiuwFBVV95cUxNZlAyTVFlcjVmeTVSOWYwMW1PWndSeHNJSFBFNFN4SlVreG43QTNKQU9nR05LWWVSeXFBUnlFMGNLV3hVTmFZSUg0RURnOUF0SWN3QWJWZE9Hck5uZnkweW9VTmd2WGE4dlBfb1NrRnFZbVpXN1JMNFVlaDdkMHdBdDlyTldSQjR1R2tEZ1k1Mzg5bW96NTFrLVJXQXlVelBzbmhPelk1ZFdLUTc4TmRMT1BaSlBqWXIyTmE40gG7AUFVX3lxTE45V0pHcktnczB3djAyZ25rRVpscXNWb2FwcHRSM0U3dUNfUThUOUljeWRla0JqekdEOHQ0WUNFQmdRSVBIUmFVeC1aWnJnU3VpTWcwUG1pTUlnTjBSX01pUWtFUnRYbUJEM2RHenlqUVhKRnZQWmhOZElFWVBXaWJPRjZTZV95dkJ1eUVPOUpXRF9FQ2Y5TWhkdzQyNEhadm1MVUtONGtNd0czT0NTWi1fYUJpNERfUWgxcU0?oc=5&hl=en-US&gl=US&ceid=US:en",
+          "publisher": "South China Morning Post",
+          "publishedAt": "2024-04-02",
+          "sourcePublishedAt": "2024-04-02",
+          "source": "Google News Climate SEA",
+          "sector": "Climate Change",
+          "snippet": "The report indicates that southeast Asia must go all out to fight rising sea levels, even relocate its people."
         }
       ]
     },
@@ -234,7 +234,7 @@
           "sourcePublishedAt": "2026-02-23",
           "source": "Google News ASEAN",
           "sector": "Maritime Security",
-          "snippet": ""
+          "snippet": "The report indicates that china may yet persuade Southeast Asia to support new maritime order."
         },
         {
           "id": "244c835a922a",
@@ -247,7 +247,7 @@
           "sourcePublishedAt": "2026-02-17",
           "source": "Google News ASEAN",
           "sector": "Maritime Security",
-          "snippet": ""
+          "snippet": "The report indicates that why big power rivalry poses ‘main threat’ to Asean maritime security."
         },
         {
           "id": "d7b6c4fbb1dd",
@@ -260,7 +260,7 @@
           "sourcePublishedAt": "2026-02-14",
           "source": "Google News ASEAN",
           "sector": "Maritime Security",
-          "snippet": ""
+          "snippet": "The report indicates that secretary-General of ASEAN delivers remarks in a high-level panel on upholding maritime security in the Indo-Pacific in Munich."
         },
         {
           "id": "526800beebae",
@@ -273,7 +273,7 @@
           "sourcePublishedAt": "2026-02-14",
           "source": "Google News ASEAN",
           "sector": "Maritime Security",
-          "snippet": ""
+          "snippet": "The report indicates that philippines Seeks Stronger ASEAN Maritime Information Sharing Through IORIS Platform."
         },
         {
           "id": "bd99dae797af",
@@ -286,7 +286,7 @@
           "sourcePublishedAt": "2026-02-14",
           "source": "Google News ASEAN",
           "sector": "Maritime Security",
-          "snippet": ""
+          "snippet": "The report indicates that chan Chun Sing urges ASEAN countries to take lead in maritime security in region."
         },
         {
           "id": "2701c5bc4ea9",
@@ -299,7 +299,7 @@
           "sourcePublishedAt": "2026-02-12",
           "source": "Google News ASEAN",
           "sector": "Maritime Security",
-          "snippet": ""
+          "snippet": "The report indicates that jakarta symposium highlights ASEAN-U.S. maritime cooperation."
         },
         {
           "id": "d3d7f0e7edfd",
@@ -312,7 +312,7 @@
           "sourcePublishedAt": "2026-02-02",
           "source": "Google News ASEAN",
           "sector": "Maritime Security",
-          "snippet": ""
+          "snippet": "The report indicates that pHL proposes Asean maritime cooperation | Malou Talosig-Bartolome."
         },
         {
           "id": "e0679d27ede4",
@@ -325,7 +325,7 @@
           "sourcePublishedAt": "2026-02-01",
           "source": "Google News SEA",
           "sector": "Maritime Security",
-          "snippet": ""
+          "snippet": "The report indicates that newly appointed Kristoffersen on steering maritime transition across Southeast Asia, India."
         }
       ]
     },
@@ -343,7 +343,7 @@
           "sourcePublishedAt": "2026-03-01",
           "source": "Google News Indonesia Blue Economy",
           "sector": "Sustainable Blue Economy",
-          "snippet": ""
+          "snippet": "The report indicates that indonesia Boosts Seaweed Potential for Sustainable Blue Economy."
         },
         {
           "id": "5563fd7ad975",
@@ -356,7 +356,7 @@
           "sourcePublishedAt": "2026-01-31",
           "source": "Google News Indonesia Blue Economy",
           "sector": "Sustainable Blue Economy",
-          "snippet": ""
+          "snippet": "The report indicates that indonesia Strengthens Marine Tourism Growth by the Protection of Ocean Ecosystems, Expanding their Coastal Tourism Villages and Advancing Blue Economy."
         },
         {
           "id": "1a6e6e109d34",
@@ -369,7 +369,7 @@
           "sourcePublishedAt": "2025-12-11",
           "source": "Google News Brunei Blue Economy",
           "sector": "Sustainable Blue Economy",
-          "snippet": ""
+          "snippet": "The report indicates that $500 Million ADB Loan to Help Advance the Philippines’ Blue Economy Development."
         },
         {
           "id": "7434d0df2c19",
@@ -382,7 +382,7 @@
           "sourcePublishedAt": "2025-12-05",
           "source": "Google News Blue Economy SEA",
           "sector": "Sustainable Blue Economy",
-          "snippet": ""
+          "snippet": "The report indicates that indonesia's Blue Economy Push Signals a New Era for ESG Investment, Ocean Innovation, and Regional Trade."
         },
         {
           "id": "8869cd2187d4",
@@ -395,7 +395,7 @@
           "sourcePublishedAt": "2025-11-20",
           "source": "Google News Malaysia Fisheries",
           "sector": "Sustainable Blue Economy",
-          "snippet": ""
+          "snippet": "The report indicates that financing the blue economy in Malaysia: A business case for critical environmental protection."
         },
         {
           "id": "04c61cb6d047",
@@ -408,7 +408,7 @@
           "sourcePublishedAt": "2025-10-17",
           "source": "Google News Indonesia Blue Economy",
           "sector": "Sustainable Blue Economy",
-          "snippet": ""
+          "snippet": "The report indicates that indonesia unveils waterfront city plan to boost blue economy."
         },
         {
           "id": "c465c27a6350",
@@ -421,7 +421,7 @@
           "sourcePublishedAt": "2025-09-26",
           "source": "Google News Indonesia Blue Economy",
           "sector": "Sustainable Blue Economy",
-          "snippet": ""
+          "snippet": "The report indicates that indonesia, Kenya Eye stronger blue economy cooperation at Mombasa Summit."
         },
         {
           "id": "b5a837a05901",
@@ -434,7 +434,7 @@
           "sourcePublishedAt": "2025-09-02",
           "source": "Google News Thailand Coastal",
           "sector": "Sustainable Blue Economy",
-          "snippet": ""
+          "snippet": "The report indicates that thailand launches first blue bonds to support sustainable coastal and ocean economy."
         }
       ]
     },
@@ -478,7 +478,7 @@
           "sourcePublishedAt": "2026-01-25",
           "source": "Google News Thailand Coastal",
           "sector": "Marine Pollution",
-          "snippet": ""
+          "snippet": "The report indicates that man Collects Plastic Garbage From Thailand, Myanmar & Malaysia Washed Onto Andaman."
         },
         {
           "id": "015eadfef4f4",
@@ -491,7 +491,7 @@
           "sourcePublishedAt": "2025-12-18",
           "source": "Google News Marine Pollution SEA",
           "sector": "Marine Pollution",
-          "snippet": ""
+          "snippet": "The report indicates that more than 50% of the world’s plastic waste comes from Southeast Asia’s rivers. Here’s how the problem is being tackled."
         },
         {
           "id": "9c190e161f73",
@@ -504,7 +504,7 @@
           "sourcePublishedAt": "2025-12-17",
           "source": "Google News Marine Pollution SEA",
           "sector": "Marine Pollution",
-          "snippet": ""
+          "snippet": "The report indicates that kingspan Partners with Seven Clean Seas, Supporting Ocean Bound Plastic Removal in Southeast Asia - Irish."
         },
         {
           "id": "1b00fd852d76",
@@ -517,7 +517,7 @@
           "sourcePublishedAt": "2025-10-24",
           "source": "Google News Thailand Coastal",
           "sector": "Marine Pollution",
-          "snippet": ""
+          "snippet": "The report indicates that thailand ranks 6th globally for plastic waste in the ocean, impacting environment, economy, and society."
         },
         {
           "id": "b55cc0419c24",
@@ -530,7 +530,7 @@
           "sourcePublishedAt": "2025-08-15",
           "source": "Google News Fisheries SEA",
           "sector": "Marine Pollution",
-          "snippet": ""
+          "snippet": "The report indicates that the challenge of food loss and waste."
         },
         {
           "id": "20130df29432",
@@ -543,7 +543,7 @@
           "sourcePublishedAt": "2025-06-24",
           "source": "Google News Marine Pollution SEA",
           "sector": "Marine Pollution",
-          "snippet": ""
+          "snippet": "The report indicates that norad Grant to Tackle Plastic Waste in Africa and Southeast Asia."
         }
       ]
     }
