@@ -119,6 +119,9 @@ def _split_title_and_publisher(title: str, fallback_source: str) -> tuple[str, s
     if not raw_title:
         return "", _clean_publisher(fallback_source)
 
+    if "google news" not in (fallback_source or "").lower():
+        return raw_title, _clean_publisher(fallback_source)
+
     parts = [p.strip() for p in re.split(r"\s+-\s+", raw_title) if p.strip()]
     if len(parts) >= 2:
         candidate_publisher = _clean_publisher(parts[-1])
@@ -148,39 +151,52 @@ def _headline_fallback_summary(title: str) -> str:
     if len(clean) < 24:
         return ""
 
-    clean = clean[0].lower() + clean[1:] if len(clean) > 1 else clean.lower()
     sentence = f"The report indicates that {clean}."
     sentence = sentence.replace("..", ".")
     return sentence[:280].rstrip()
 
 
-def _best_snippet(summary: str, title: str, publisher: str = "") -> str:
+def _best_snippet(summary: str, title: str, publisher: str = "", allow_fallback: bool = True) -> str:
+    fallback = _headline_fallback_summary(title) if allow_fallback else ""
     cleaned_summary = _clean_snippet(summary)
     if not cleaned_summary:
-        return _headline_fallback_summary(title)
+        return fallback
 
     words = cleaned_summary.split()
     if len(words) < 5 or len(cleaned_summary) < 36:
-        return _headline_fallback_summary(title)
+        return fallback
 
     if publisher and cleaned_summary.lower() == publisher.lower():
-        return _headline_fallback_summary(title)
+        return fallback
 
     normalized_summary = _normalize_for_compare(cleaned_summary)
     normalized_title = _normalize_for_compare(title)
     if normalized_summary and normalized_title and normalized_summary == normalized_title:
-        return _headline_fallback_summary(title)
+        return fallback
 
     if normalized_title and (normalized_summary in normalized_title or normalized_title in normalized_summary):
-        return _headline_fallback_summary(title)
+        return fallback
 
     if cleaned_summary.lower().startswith(title.lower()):
         tail = cleaned_summary[len(title):].strip(" .,-–—|")
         if tail and len(tail) >= 56 and (not publisher or tail.lower() != publisher.lower()):
             return tail
-        return _headline_fallback_summary(title)
+        return fallback
 
     return cleaned_summary
+
+
+def _extract_feed_summary_excerpt(summary_html: str) -> str:
+    if not summary_html:
+        return ""
+
+    paragraphs = re.findall(r"<p[^>]*>([\s\S]*?)</p>", summary_html, flags=re.IGNORECASE)
+    for paragraph in paragraphs[:4]:
+        text = _clean_snippet(paragraph)
+        if len(text) >= 56 and len(text.split()) >= 10:
+            return text
+
+    return _clean_snippet(summary_html)
 
 
 def _first_text(node: ET.Element, paths: list[str]) -> str:
@@ -214,6 +230,7 @@ def _parse_feed(xml_bytes: bytes, source_name: str) -> list[dict]:
             link = _first_text(item, ["link"])
             published = _first_text(item, ["pubDate"])
             summary = _first_text(item, ["description", "content"])
+            feed_excerpt = _extract_feed_summary_excerpt(summary)
             if title and link:
                 articles.append(
                     {
@@ -222,7 +239,7 @@ def _parse_feed(xml_bytes: bytes, source_name: str) -> list[dict]:
                         "source": source_name,
                         "publisher": publisher,
                         "published": _parse_datetime(published),
-                        "snippet": _best_snippet(summary, title, publisher),
+                        "snippet": _best_snippet(feed_excerpt or summary, title, publisher),
                     }
                 )
         return articles
@@ -251,6 +268,7 @@ def _parse_feed(xml_bytes: bytes, source_name: str) -> list[dict]:
                 "{http://www.w3.org/2005/Atom}content",
             ],
         )
+        feed_excerpt = _extract_feed_summary_excerpt(summary)
         if title and link:
             articles.append(
                 {
@@ -259,7 +277,7 @@ def _parse_feed(xml_bytes: bytes, source_name: str) -> list[dict]:
                     "source": source_name,
                     "publisher": publisher,
                     "published": _parse_datetime(published),
-                    "snippet": _best_snippet(summary, title, publisher),
+                    "snippet": _best_snippet(feed_excerpt or summary, title, publisher),
                 }
             )
 
