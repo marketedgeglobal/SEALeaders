@@ -6,6 +6,7 @@ from __future__ import annotations
 import hashlib
 import json
 import os
+import re
 from datetime import datetime, timezone
 from email.utils import parsedate_to_datetime
 from pathlib import Path
@@ -148,14 +149,74 @@ def _categorize(title: str, summary: str = "") -> str | None:
     return None
 
 
+def _clean_publisher(raw: str) -> str:
+    text = re.sub(r"\s+", " ", (raw or "")).strip(" -|•\t\n\r")
+    text = re.sub(r"^Google\s+News\s*[:\-]?\s*", "", text, flags=re.IGNORECASE)
+    return text.strip() or ""
+
+
+def _split_title_and_publisher(title: str, fallback_source: str) -> tuple[str, str]:
+    raw_title = re.sub(r"\s+", " ", (title or "")).strip()
+    if not raw_title:
+        return "", _clean_publisher(fallback_source)
+
+    parts = [p.strip() for p in re.split(r"\s+-\s+", raw_title) if p.strip()]
+    if len(parts) >= 2:
+        candidate_publisher = _clean_publisher(parts[-1])
+        if candidate_publisher and len(candidate_publisher) <= 80:
+            clean_title = " - ".join(parts[:-1]).strip()
+            if clean_title:
+                return clean_title, candidate_publisher
+
+    return raw_title, _clean_publisher(fallback_source)
+
+
+def _derive_subtext(title: str) -> str:
+    clean_title = re.sub(r"\s+", " ", (title or "")).strip(" .")
+    if not clean_title:
+        return ""
+
+    if ":" in clean_title:
+        _, detail = clean_title.split(":", 1)
+        detail = detail.strip()
+        if detail:
+            return detail
+
+    words = clean_title.split()
+    if len(words) > 10:
+        return " ".join(words[6:18]).strip(" ,.")
+    return clean_title
+
+
+def _best_snippet(summary: str, title: str, publisher: str = "") -> str:
+    cleaned = re.sub(r"\s+", " ", (summary or "")).strip()
+    if not cleaned:
+        return _derive_subtext(title)
+
+    if len(cleaned) < 36 or len(cleaned.split()) < 5:
+        return _derive_subtext(title)
+
+    if publisher and cleaned.lower() == publisher.lower():
+        return _derive_subtext(title)
+
+    if cleaned.lower().startswith(title.lower()):
+        tail = cleaned[len(title):].strip(" .,-–—|")
+        if tail and len(tail) >= 36 and (not publisher or tail.lower() != publisher.lower()):
+            return tail
+        return _derive_subtext(title)
+
+    return cleaned
+
+
 def _extract_items(feed_name: str, feed_url: str) -> list[dict]:
     parsed = feedparser.parse(feed_url)
     results: list[dict] = []
     for entry in parsed.entries:
-        title = (entry.get("title") or "").strip()
+        raw_title = (entry.get("title") or "").strip()
         link = (entry.get("link") or "").strip()
         summary = (entry.get("summary") or "").strip()
         published = (entry.get("published") or entry.get("updated") or "").strip()
+        title, publisher = _split_title_and_publisher(raw_title, feed_name)
 
         if not title or not link:
             continue
@@ -172,12 +233,12 @@ def _extract_items(feed_name: str, feed_url: str) -> list[dict]:
                 "id": _make_id(link, title),
                 "title": title,
                 "url": link,
-                "publisher": _publisher_from_url(link),
+                "publisher": publisher or _publisher_from_url(link),
                 "publishedAt": _to_date_string(published),
                 "sourcePublishedAt": _to_date_string(published),
                 "source": feed_name,
                 "sector": sector,
-                "snippet": summary[:280],
+                "snippet": _best_snippet(summary, title, publisher)[:280],
             }
         )
     return results
