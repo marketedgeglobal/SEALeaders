@@ -1,10 +1,23 @@
 {
-  "runAt": "2026-03-03T23:01:58.582095+00:00",
-  "totalItems": 12,
+  "runAt": "2026-03-03T23:11:44.028405+00:00",
+  "totalItems": 32,
   "sectors": [
     {
       "name": "Sustainable Fisheries",
       "items": [
+        {
+          "id": "ddaceba699b6",
+          "title": "China’s Pacific squid fishery rife with labor, fishing abuses: Report",
+          "url": "https://news.mongabay.com/2026/03/chinas-pacific-squid-fishery-rife-with-labor-fishing-abuses-report/",
+          "originalUrl": "https://news.mongabay.com/2026/03/chinas-pacific-squid-fishery-rife-with-labor-fishing-abuses-report/",
+          "verifiedUrl": "https://news.mongabay.com/2026/03/chinas-pacific-squid-fishery-rife-with-labor-fishing-abuses-report/",
+          "publisher": "Mongabay",
+          "publishedAt": "2026-03-03",
+          "sourcePublishedAt": "2026-03-03",
+          "source": "Mongabay",
+          "sector": "Sustainable Fisheries",
+          "snippet": "Labor abuses including violence, debt bondage and withheld wages and medical care, overfishing, shark finning, marine mammal killings: A new report exposes bad practices and a weak regulatory framework governing the jumbo flying squid fishery in the Southeast Pacific Ocean. The report was launched on Feb. 19, just days"
+        },
         {
           "id": "cbd85aa7d096",
           "title": "No individual allowed to undermine national efforts to combat IUU fishing: PM",
@@ -16,7 +29,7 @@
           "sourcePublishedAt": "2026-03-03",
           "source": "VietnamPlus",
           "sector": "Sustainable Fisheries",
-          "snippet": "The report indicates that No individual allowed to undermine national efforts to combat IUU fishing: PM."
+          "snippet": "Prime Minister Pham Minh Chinh has stressed that wrongdoings by any individual or organisation must not be allowed to affect the country’s overall efforts to have the European Commission’s “yellow card” warning lifted."
         },
         {
           "id": "4179ba9e42a5",
@@ -29,20 +42,7 @@
           "sourcePublishedAt": "2026-03-03",
           "source": "VietnamPlus",
           "sector": "Sustainable Fisheries",
-          "snippet": "The report indicates that Acting minister urges EAEU to further open market for Vietnamese aquatic products."
-        },
-        {
-          "id": "fede3cb72c7e",
-          "title": "Vietnam Border Guard - the nation’s steel shield",
-          "url": "https://en.vietnamplus.vn/vietnam-border-guard-the-nations-steel-shield-post338614.vnp",
-          "originalUrl": "https://en.vietnamplus.vn/vietnam-border-guard-the-nations-steel-shield-post338614.vnp",
-          "verifiedUrl": "https://en.vietnamplus.vn/vietnam-border-guard-the-nations-steel-shield-post338614.vnp",
-          "publisher": "VietnamPlus",
-          "publishedAt": "2026-03-03",
-          "sourcePublishedAt": "2026-03-03",
-          "source": "VietnamPlus",
-          "sector": "Sustainable Fisheries",
-          "snippet": "The report indicates that Vietnam Border Guard - the nation’s steel shield."
+          "snippet": "Both host and guest agreed to facilitate market access, promptly remove trade barriers and address difficulties in order to meet cooperation needs and fully tap the economic potential of the EAEU and Vietnam."
         },
         {
           "id": "541516242533",
@@ -55,7 +55,20 @@
           "sourcePublishedAt": "2026-03-03",
           "source": "VietnamPlus",
           "sector": "Sustainable Fisheries",
-          "snippet": "The report indicates that PM chairs 32nd meeting of national steering committee for anti-IUU fishing."
+          "snippet": "The highest objective is to meet the dual requirement of lifting the EC’s yellow-card warning and ensuring the sustainable development of the fisheries sector, PM Chinh underscored."
+        },
+        {
+          "id": "33f22e3b053b",
+          "title": "Displaced for conservation, South Africa’s Thonga try to keep a fishing tradition alive",
+          "url": "https://news.mongabay.com/2026/03/displaced-for-conservation-south-africas-thonga-try-to-keep-unique-fishing-traditions-alive/",
+          "originalUrl": "https://news.mongabay.com/2026/03/displaced-for-conservation-south-africas-thonga-try-to-keep-unique-fishing-traditions-alive/",
+          "verifiedUrl": "https://news.mongabay.com/2026/03/displaced-for-conservation-south-africas-thonga-try-to-keep-unique-fishing-traditions-alive/",
+          "publisher": "Mongabay",
+          "publishedAt": "2026-03-02",
+          "sourcePublishedAt": "2026-03-02",
+          "source": "Mongabay",
+          "sector": "Sustainable Fisheries",
+          "snippet": "KOSI BAY, South Africa — “There’s a way to hold the spear,” Fano Tembe says, aiming a traditional fishing spear at the sand to show the tourists how they’ll be stabbing a fish in a trap they’re about to visit. “This is your aiming hand.” He cradles the middle of the pole in his left, […]"
         },
         {
           "id": "0fb899b87698",
@@ -68,7 +81,7 @@
           "sourcePublishedAt": "2026-03-03",
           "source": "VietnamPlus",
           "sector": "Sustainable Fisheries",
-          "snippet": "The report indicates that Khanh Hoa ensures transparency in data to address IUU fishing."
+          "snippet": "Determined to have the EC’s “yellow card” warning lifted, Khanh Hoa has implemented drastic measures against IUU fishing in recent years."
         },
         {
           "id": "8ec4daf8af6e",
@@ -81,17 +94,187 @@
           "sourcePublishedAt": "2026-03-03",
           "source": "VietnamPlus",
           "sector": "Sustainable Fisheries",
-          "snippet": "The report indicates that Captain charged in illegal fishing case linked to Philippine waters."
+          "snippet": "While operating at sea, fishing vessel PY-96896-TS, captained by Toai, allegedly removed its vessel monitoring system (VMS) device and transferred it to fishing vessel PY-90479-TS, captained by his younger brother, in an attempt to evade supervision and tracking by the Vietnam fisheries surveillance force. Toai then st"
         }
       ]
     },
     {
       "name": "Climate Change",
-      "items": []
+      "items": [
+        {
+          "id": "b5e25a104046",
+          "title": "America’s national parks face an uncertain future as climate risks mount",
+          "url": "https://news.mongabay.com/2026/03/americas-national-parks-face-an-uncertain-future-as-climate-risks-mount/",
+          "originalUrl": "https://news.mongabay.com/2026/03/americas-national-parks-face-an-uncertain-future-as-climate-risks-mount/",
+          "verifiedUrl": "https://news.mongabay.com/2026/03/americas-national-parks-face-an-uncertain-future-as-climate-risks-mount/",
+          "publisher": "Mongabay",
+          "publishedAt": "2026-03-02",
+          "sourcePublishedAt": "2026-03-02",
+          "source": "Mongabay",
+          "sector": "Climate Change",
+          "snippet": "America’s national parks were conceived as sanctuaries from the forces remaking the rest of the continent. Climate change is now breaching that boundary. A recent assessment of park vulnerability suggests that many of these landscapes are not simply warming or drying in familiar ways. They are being pushed toward ecolo"
+        },
+        {
+          "id": "402cb687ddde",
+          "title": "Decades of gains overshadowed as Asia-Pacific falls behind on sustainable development targets",
+          "url": "https://news.un.org/feed/view/en/story/2026/02/1166993",
+          "originalUrl": "https://news.un.org/feed/view/en/story/2026/02/1166993",
+          "verifiedUrl": "https://news.un.org/feed/view/en/story/2026/02/1166993",
+          "publisher": "UN News Asia Pacific",
+          "publishedAt": "2026-02-18",
+          "sourcePublishedAt": "2026-02-18",
+          "source": "UN News Asia Pacific",
+          "sector": "Climate Change",
+          "snippet": "Climate inaction, biodiversity loss and rising emissions are pushing Asia and the Pacific further off course on the Sustainable Development Goals (SDGs), with the region set to miss nearly nine out of ten targets by 2030, the United Nations has warned."
+        },
+        {
+          "id": "0dcb1a82ae6b",
+          "title": "Floods, drought and insecurity drive acute hunger for 7.5 million in Pakistan",
+          "url": "https://news.un.org/feed/view/en/story/2026/02/1166991",
+          "originalUrl": "https://news.un.org/feed/view/en/story/2026/02/1166991",
+          "verifiedUrl": "https://news.un.org/feed/view/en/story/2026/02/1166991",
+          "publisher": "UN News Asia Pacific",
+          "publishedAt": "2026-02-18",
+          "sourcePublishedAt": "2026-02-18",
+          "source": "UN News Asia Pacific",
+          "sector": "Climate Change",
+          "snippet": "After a year that saw heavy monsoon floods, prolonged drought and dry spells, and a surge in violence, 7.5 million people in Pakistan face high levels of food insecurity and malnutrition according to a report from the global hunger monitor."
+        },
+        {
+          "id": "d43f7a901d4d",
+          "title": "From shelter to strength: How disaster refuges protect lives in Palau",
+          "url": "https://news.un.org/feed/view/en/story/2026/02/1166915",
+          "originalUrl": "https://news.un.org/feed/view/en/story/2026/02/1166915",
+          "verifiedUrl": "https://news.un.org/feed/view/en/story/2026/02/1166915",
+          "publisher": "UN News Asia Pacific",
+          "publishedAt": "2026-02-06",
+          "sourcePublishedAt": "2026-02-06",
+          "source": "UN News Asia Pacific",
+          "sector": "Climate Change",
+          "snippet": "The small Pacific Ocean island of Palau is helping communities build resilience against the dangers of climate change-driven extreme weather with the establishment of a network of emergency refuges – thanks to support from the United Nations."
+        },
+        {
+          "id": "0ba0fe410032",
+          "title": "PMI hits four-month high in February",
+          "url": "https://en.vietnamplus.vn/pmi-hits-four-month-high-in-february-post338555.vnp",
+          "originalUrl": "https://en.vietnamplus.vn/pmi-hits-four-month-high-in-february-post338555.vnp",
+          "verifiedUrl": "https://en.vietnamplus.vn/pmi-hits-four-month-high-in-february-post338555.vnp",
+          "publisher": "VietnamPlus",
+          "publishedAt": "2026-03-03",
+          "sourcePublishedAt": "2026-03-03",
+          "source": "VietnamPlus",
+          "sector": "Climate Change",
+          "snippet": "Manufacturing production increased rapidly in February, with the rate of expansion quickening to a 19-month high. Panellists reported that the preparation of products ahead of delivery to clients and stronger customer demand were behind the latest rise in output."
+        },
+        {
+          "id": "045af51655c0",
+          "title": "Climate change is slowing southern right whale birth rate, 33-year study finds",
+          "url": "https://news.mongabay.com/2026/02/climate-change-is-slowing-southern-right-whale-birth-rate-33-year-study-finds/",
+          "originalUrl": "https://news.mongabay.com/2026/02/climate-change-is-slowing-southern-right-whale-birth-rate-33-year-study-finds/",
+          "verifiedUrl": "https://news.mongabay.com/2026/02/climate-change-is-slowing-southern-right-whale-birth-rate-33-year-study-finds/",
+          "publisher": "Mongabay",
+          "publishedAt": "2026-02-27",
+          "sourcePublishedAt": "2026-02-27",
+          "source": "Mongabay",
+          "sector": "Climate Change",
+          "snippet": "Southern right whales (Eubalaena australis) off Australia’s southern coast are having calves less often than they used to. A new study links this slowdown to warming water and shrinking sea ice in the Southern Ocean. The study, conducted by researchers at Australian, South African and U.S. institutions and published th"
+        },
+        {
+          "id": "4ffb90465719",
+          "title": "Climate change drives uneven shifts in tree diversity across Amazon and Andes",
+          "url": "https://news.mongabay.com/2026/02/climate-change-drives-uneven-shifts-in-tree-diversity-across-amazon-and-andes/",
+          "originalUrl": "https://news.mongabay.com/2026/02/climate-change-drives-uneven-shifts-in-tree-diversity-across-amazon-and-andes/",
+          "verifiedUrl": "https://news.mongabay.com/2026/02/climate-change-drives-uneven-shifts-in-tree-diversity-across-amazon-and-andes/",
+          "publisher": "Mongabay",
+          "publishedAt": "2026-02-27",
+          "sourcePublishedAt": "2026-02-27",
+          "source": "Mongabay",
+          "sector": "Climate Change",
+          "snippet": "The tropical forests of the Amazon and Andes are some of the most biodiverse places on the planet, but across both regions, changes in climate and landscape conditions are driving a shift in the number of tree species, recent research has found. Although the overall number of tree species across the Andes and Amazon ha"
+        },
+        {
+          "id": "6fd827286c5a",
+          "title": "Myanmar elections marked by fear as UN warns civilians are coerced from all sides",
+          "url": "https://news.un.org/feed/view/en/story/2025/12/1166662",
+          "originalUrl": "https://news.un.org/feed/view/en/story/2025/12/1166662",
+          "verifiedUrl": "https://news.un.org/feed/view/en/story/2025/12/1166662",
+          "publisher": "UN News Asia Pacific",
+          "publishedAt": "2025-12-23",
+          "sourcePublishedAt": "2025-12-23",
+          "source": "UN News Asia Pacific",
+          "sector": "Climate Change",
+          "snippet": "As Myanmar approaches elections scheduled for 28 December, the UN’s top human rights official has said that civilians are being coerced from all sides – forced by the military to vote and threatened by armed opposition groups to boycott – in a climate of fear, violence and mass repression."
+        }
+      ]
     },
     {
       "name": "Maritime Security",
       "items": [
+        {
+          "id": "f19cb4600885",
+          "title": "Trump orders oil tanker insurance support, says Navy could escort ships in Gulf",
+          "url": "https://www.channelnewsasia.com/world/iran-war-trump-oil-tanker-navy-escort-ships-strait-hormuz-5968311",
+          "originalUrl": "https://www.channelnewsasia.com/world/iran-war-trump-oil-tanker-navy-escort-ships-strait-hormuz-5968311",
+          "verifiedUrl": "https://www.channelnewsasia.com/world/iran-war-trump-oil-tanker-navy-escort-ships-strait-hormuz-5968311",
+          "publisher": "Channel News Asia - Asia",
+          "publishedAt": "2026-03-04",
+          "sourcePublishedAt": "2026-03-04",
+          "source": "Channel News Asia - Asia",
+          "sector": "Maritime Security",
+          "snippet": "The move aims to protect energy shipments through the Strait of Hormuz and stabilise oil markets amid escalating Middle East tensions."
+        },
+        {
+          "id": "ed9a8c54d4e8",
+          "title": "Trump Orders Federal Insurance Backstop for Gulf Shipping, Signals Possible Navy Tanker Escorts",
+          "url": "https://gcaptain.com/trump-orders-federal-insurance-backstop-for-gulf-shipping-signals-possible-navy-tanker-escorts/",
+          "originalUrl": "https://gcaptain.com/trump-orders-federal-insurance-backstop-for-gulf-shipping-signals-possible-navy-tanker-escorts/",
+          "verifiedUrl": "https://gcaptain.com/trump-orders-federal-insurance-backstop-for-gulf-shipping-signals-possible-navy-tanker-escorts/",
+          "publisher": "gCaptain",
+          "publishedAt": "2026-03-03",
+          "sourcePublishedAt": "2026-03-03",
+          "source": "gCaptain",
+          "sector": "Maritime Security",
+          "snippet": "President Donald Trump said Tuesday he has directed the U.S. government to provide political risk insurance and financial guarantees for maritime trade transiting the Persian Gulf, while signaling that U.S...."
+        },
+        {
+          "id": "17bc06b3db9b",
+          "title": "Russian LNG Carrier ‘Arctic Metagaz’ Reportedly Ablaze Off Malta as Maritime Patrol Aircraft Circles",
+          "url": "https://gcaptain.com/russian-lng-carrier-arctic-metagaz-reportedly-ablaze-off-malta-as-maritime-patrol-aircraft-circles/",
+          "originalUrl": "https://gcaptain.com/russian-lng-carrier-arctic-metagaz-reportedly-ablaze-off-malta-as-maritime-patrol-aircraft-circles/",
+          "verifiedUrl": "https://gcaptain.com/russian-lng-carrier-arctic-metagaz-reportedly-ablaze-off-malta-as-maritime-patrol-aircraft-circles/",
+          "publisher": "gCaptain",
+          "publishedAt": "2026-03-03",
+          "sourcePublishedAt": "2026-03-03",
+          "source": "gCaptain",
+          "sector": "Maritime Security",
+          "snippet": "An LNG carrier identified as the Arctic Metagaz, part of Russia’s emerging shadow fleet transporting sanctioned liquefied natural gas, was reportedly on fire early Tuesday in the central Mediterranean off the coasts of Malta and Libya."
+        },
+        {
+          "id": "fccb2b30e1f4",
+          "title": "Gulf War Risk Insurance Pulled as Reinsurers Exit",
+          "url": "https://gcaptain.com/gulf-war-risk-insurance-pulled-as-reinsurers-exit/",
+          "originalUrl": "https://gcaptain.com/gulf-war-risk-insurance-pulled-as-reinsurers-exit/",
+          "verifiedUrl": "https://gcaptain.com/gulf-war-risk-insurance-pulled-as-reinsurers-exit/",
+          "publisher": "gCaptain",
+          "publishedAt": "2026-03-02",
+          "sourcePublishedAt": "2026-03-02",
+          "source": "gCaptain",
+          "sector": "Maritime Security",
+          "snippet": "The global marine insurance market is rapidly retrenching from the Persian Gulf as escalating military conflict between the United States, Israel, and Iran pushes the region’s maritime risk profile to..."
+        },
+        {
+          "id": "fede3cb72c7e",
+          "title": "Vietnam Border Guard - the nation’s steel shield",
+          "url": "https://en.vietnamplus.vn/vietnam-border-guard-the-nations-steel-shield-post338614.vnp",
+          "originalUrl": "https://en.vietnamplus.vn/vietnam-border-guard-the-nations-steel-shield-post338614.vnp",
+          "verifiedUrl": "https://en.vietnamplus.vn/vietnam-border-guard-the-nations-steel-shield-post338614.vnp",
+          "publisher": "VietnamPlus",
+          "publishedAt": "2026-03-03",
+          "sourcePublishedAt": "2026-03-03",
+          "source": "VietnamPlus",
+          "sector": "Maritime Security",
+          "snippet": "On March 3, 1959, the People’s Armed Police Force - now the Vietnam Border Guard - was officially established. The event marked an important milestone in the strategic policy of the Party and the State regarding the protection of national sovereignty and border security."
+        },
         {
           "id": "4be2bb88e712",
           "title": "Vietnam opposes use of force against sovereign nations: Spokesperson",
@@ -103,7 +286,7 @@
           "sourcePublishedAt": "2026-03-03",
           "source": "VietnamPlus",
           "sector": "Maritime Security",
-          "snippet": "The report indicates that Vietnam opposes use of force against sovereign nations: Spokesperson."
+          "snippet": "Vietnam calls upon all parties involved to act with responsibility, strictly adhere to international law, the United Nations Charter and relevant United Nations resolutions, respect the sovereignty and territorial integrity of nations, resume negotiations, and create favourable conditions for dialogue."
         },
         {
           "id": "58d8e5786fcd",
@@ -116,7 +299,20 @@
           "sourcePublishedAt": "2026-03-03",
           "source": "VietnamPlus",
           "sector": "Maritime Security",
-          "snippet": "The report indicates that Vietnamese vessels urged to adopt highest security measures in Middle East waters."
+          "snippet": "According to the latest update from the VIMAWA, as of late March 3, Vietnam has eight vessels with 160 crew members operating in the Middle East."
+        },
+        {
+          "id": "69b554726ba8",
+          "title": "Security Council LIVE: UN raises alarm over deadly Iran protests and ‘possible military strikes’",
+          "url": "https://news.un.org/feed/view/en/story/2026/01/1166769",
+          "originalUrl": "https://news.un.org/feed/view/en/story/2026/01/1166769",
+          "verifiedUrl": "https://news.un.org/feed/view/en/story/2026/01/1166769",
+          "publisher": "UN News Asia Pacific",
+          "publishedAt": "2026-01-15",
+          "sourcePublishedAt": "2026-01-15",
+          "source": "UN News Asia Pacific",
+          "sector": "Maritime Security",
+          "snippet": "The UN Security Council is meeting in New York in emergency session on Iran, amid escalating concern over reports that hundreds have been killed during weeks of nationwide anti-government protests. The meeting was requested by the United States. Demonstrations that began in late December, fuelled by soaring inflation, "
         }
       ]
     },
@@ -124,43 +320,108 @@
       "name": "Sustainable Blue Economy",
       "items": [
         {
-          "id": "fad0a9f7c9da",
-          "title": "Vietnam tightens shipping safety, prepares contingency plans over Middle East risks",
-          "url": "https://en.vietnamplus.vn/vietnam-tightens-shipping-safety-prepares-contingency-plans-over-middle-east-risks-post338589.vnp",
-          "originalUrl": "https://en.vietnamplus.vn/vietnam-tightens-shipping-safety-prepares-contingency-plans-over-middle-east-risks-post338589.vnp",
-          "verifiedUrl": "https://en.vietnamplus.vn/vietnam-tightens-shipping-safety-prepares-contingency-plans-over-middle-east-risks-post338589.vnp",
-          "publisher": "VietnamPlus",
-          "publishedAt": "2026-03-03",
-          "sourcePublishedAt": "2026-03-03",
-          "source": "VietnamPlus",
+          "id": "9d22be7cefbd",
+          "title": "OpenAI is developing alternative to Microsoft's GitHub, The Information reports",
+          "url": "https://www.channelnewsasia.com/business/openai-developing-alternative-microsofts-github-information-reports-5968411",
+          "originalUrl": "https://www.channelnewsasia.com/business/openai-developing-alternative-microsofts-github-information-reports-5968411",
+          "verifiedUrl": "https://www.channelnewsasia.com/business/openai-developing-alternative-microsofts-github-information-reports-5968411",
+          "publisher": "Channel News Asia - Asia",
+          "publishedAt": "2026-03-04",
+          "sourcePublishedAt": "2026-03-04",
+          "source": "Channel News Asia - Asia",
           "sector": "Sustainable Blue Economy",
-          "snippet": "The report indicates that Vietnam tightens shipping safety, prepares contingency plans over Middle East risks."
+          "snippet": "March 3 : OpenAI is developing a new code repository to rival Microsoft's GitHub, The Information reported on Tuesday, citing a person with knowledge of the project."
         },
         {
-          "id": "ff7feadee4e1",
-          "title": "VinFast finalises three strategic vehicle brands, unveils two ultra-luxury models",
-          "url": "https://en.vietnamplus.vn/vinfast-finalises-three-strategic-vehicle-brands-unveils-two-ultra-luxury-models-post338579.vnp",
-          "originalUrl": "https://en.vietnamplus.vn/vinfast-finalises-three-strategic-vehicle-brands-unveils-two-ultra-luxury-models-post338579.vnp",
-          "verifiedUrl": "https://en.vietnamplus.vn/vinfast-finalises-three-strategic-vehicle-brands-unveils-two-ultra-luxury-models-post338579.vnp",
-          "publisher": "VietnamPlus",
-          "publishedAt": "2026-03-03",
-          "sourcePublishedAt": "2026-03-03",
-          "source": "VietnamPlus",
+          "id": "21e055869df7",
+          "title": "The watch collector’s checklist: 7 categories that cover every occasion",
+          "url": "https://www.channelnewsasia.com/obsessions/mens-watch-collection-guide-watch-categories-every-occasion-5963406",
+          "originalUrl": "https://www.channelnewsasia.com/obsessions/mens-watch-collection-guide-watch-categories-every-occasion-5963406",
+          "verifiedUrl": "https://www.channelnewsasia.com/obsessions/mens-watch-collection-guide-watch-categories-every-occasion-5963406",
+          "publisher": "Channel News Asia - Asia",
+          "publishedAt": "2026-03-04",
+          "sourcePublishedAt": "2026-03-04",
+          "source": "Channel News Asia - Asia",
           "sector": "Sustainable Blue Economy",
-          "snippet": "The report indicates that VinFast finalises three strategic vehicle brands, unveils two ultra-luxury models."
+          "snippet": "One watch is a start – a collection is a point of view. From a clean everyday men’s piece to a dress watch, sports beater, vintage gem and a grail, these are the categories that round out a men’s watch collection."
         },
         {
-          "id": "d6964f91aa3f",
-          "title": "Two Indonesian oil tankers stranded in Persian Gulf",
-          "url": "https://en.vietnamplus.vn/two-indonesian-oil-tankers-stranded-in-persian-gulf-post338578.vnp",
-          "originalUrl": "https://en.vietnamplus.vn/two-indonesian-oil-tankers-stranded-in-persian-gulf-post338578.vnp",
-          "verifiedUrl": "https://en.vietnamplus.vn/two-indonesian-oil-tankers-stranded-in-persian-gulf-post338578.vnp",
-          "publisher": "VietnamPlus",
+          "id": "e6004a87f7ab",
+          "title": "Basmati rice cargo stuck at Indian ports as Iran crisis hits flows",
+          "url": "https://www.straitstimes.com/asia/south-asia/basmati-rice-cargo-stuck-at-indian-ports-as-iran-crisis-hits-flows",
+          "originalUrl": "https://www.straitstimes.com/asia/south-asia/basmati-rice-cargo-stuck-at-indian-ports-as-iran-crisis-hits-flows",
+          "verifiedUrl": "https://www.straitstimes.com/asia/south-asia/basmati-rice-cargo-stuck-at-indian-ports-as-iran-crisis-hits-flows",
+          "publisher": "The Straits Times - Asia",
           "publishedAt": "2026-03-03",
           "sourcePublishedAt": "2026-03-03",
-          "source": "VietnamPlus",
+          "source": "The Straits Times - Asia",
           "sector": "Sustainable Blue Economy",
-          "snippet": "The report indicates that Two Indonesian oil tankers stranded in Persian Gulf."
+          "snippet": "India is the world’s largest basmati rice exporter, with the Middle East its top market. Read more at straitstimes.com. Read more at straitstimes.com."
+        },
+        {
+          "id": "bac0c02f3e98",
+          "title": "Japan Is Moving to Expand Defense Exports. Constitutional Revision Is a Bigger Ask.",
+          "url": "https://thediplomat.com/2026/02/japan-is-moving-to-expand-defense-exports-constitutional-revision-is-a-bigger-ask/",
+          "originalUrl": "https://thediplomat.com/2026/02/japan-is-moving-to-expand-defense-exports-constitutional-revision-is-a-bigger-ask/",
+          "verifiedUrl": "https://thediplomat.com/2026/02/japan-is-moving-to-expand-defense-exports-constitutional-revision-is-a-bigger-ask/",
+          "publisher": "The Diplomat",
+          "publishedAt": "2026-02-26",
+          "sourcePublishedAt": "2026-02-26",
+          "source": "The Diplomat",
+          "sector": "Sustainable Blue Economy",
+          "snippet": "While most Japanese lawmakers support revising the constitution, they are more divided on what, exactly, needs to change."
+        },
+        {
+          "id": "8453e760c179",
+          "title": "Japan’s Farm and Food Exports Hit New High As Trade Patterns Shift",
+          "url": "https://thediplomat.com/2026/02/japans-farm-and-food-exports-hit-new-high-as-trade-patterns-shift/",
+          "originalUrl": "https://thediplomat.com/2026/02/japans-farm-and-food-exports-hit-new-high-as-trade-patterns-shift/",
+          "verifiedUrl": "https://thediplomat.com/2026/02/japans-farm-and-food-exports-hit-new-high-as-trade-patterns-shift/",
+          "publisher": "The Diplomat",
+          "publishedAt": "2026-02-25",
+          "sourcePublishedAt": "2026-02-25",
+          "source": "The Diplomat",
+          "sector": "Sustainable Blue Economy",
+          "snippet": "Amid tariffs and geopolitical headwinds, Japan’s trade data shows new patterns emerging – led by food products, tourism-linked consumption, and advanced manufacturing."
+        },
+        {
+          "id": "5790db2cd7cc",
+          "title": "China’s New Export: Aircraft Debt",
+          "url": "https://thediplomat.com/2026/02/chinas-new-export-aircraft-debt/",
+          "originalUrl": "https://thediplomat.com/2026/02/chinas-new-export-aircraft-debt/",
+          "verifiedUrl": "https://thediplomat.com/2026/02/chinas-new-export-aircraft-debt/",
+          "publisher": "The Diplomat",
+          "publishedAt": "2026-02-24",
+          "sourcePublishedAt": "2026-02-24",
+          "source": "The Diplomat",
+          "sector": "Sustainable Blue Economy",
+          "snippet": "COMAC’s aircraft exports have brought healthy competition to a stagnant global aviation duopoly, but how they are financed should raise some concerns."
+        },
+        {
+          "id": "df085ddddf47",
+          "title": "White House Weighs U.S. Backstop for Tanker Insurance Amid Gulf Shipping Crisis",
+          "url": "https://gcaptain.com/white-house-weighs-u-s-backstop-for-tanker-insurance-amid-gulf-shipping-crisis/",
+          "originalUrl": "https://gcaptain.com/white-house-weighs-u-s-backstop-for-tanker-insurance-amid-gulf-shipping-crisis/",
+          "verifiedUrl": "https://gcaptain.com/white-house-weighs-u-s-backstop-for-tanker-insurance-amid-gulf-shipping-crisis/",
+          "publisher": "gCaptain",
+          "publishedAt": "2026-03-03",
+          "sourcePublishedAt": "2026-03-03",
+          "source": "gCaptain",
+          "sector": "Sustainable Blue Economy",
+          "snippet": "President Donald Trump will review a set of policy options on Tuesday aimed at controlling energy prices during the escalating Middle East conflict, including a proposal for the U.S. government to help oil tankers in the region obtain insurance, two sources said."
+        },
+        {
+          "id": "501e4389a33a",
+          "title": "Container Shipping: Gulf Booking Freeze Triggers Congestion Fears at Global Hubs",
+          "url": "https://gcaptain.com/container-shipping-gulf-booking-freeze-triggers-congestion-fears-at-global-hubs/",
+          "originalUrl": "https://gcaptain.com/container-shipping-gulf-booking-freeze-triggers-congestion-fears-at-global-hubs/",
+          "verifiedUrl": "https://gcaptain.com/container-shipping-gulf-booking-freeze-triggers-congestion-fears-at-global-hubs/",
+          "publisher": "gCaptain",
+          "publishedAt": "2026-03-03",
+          "sourcePublishedAt": "2026-03-03",
+          "source": "gCaptain",
+          "sector": "Sustainable Blue Economy",
+          "snippet": "By Gavin van Marle (The Loadstar) – After ONE cancelled bookings to Middle East Gulf ports yesterday, its chief executive, Jeremy Nixon, told delegates at the S&P Global TPM event in..."
         }
       ]
     },

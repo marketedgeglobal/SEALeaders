@@ -107,10 +107,39 @@ SECTORS = [
 
 SECTOR_KEYWORDS = {
     "Sustainable Fisheries": ["fisheries", "fishery", "fishing", "aquaculture", "fish stocks"],
-    "Climate Change": ["climate", "sea level", "coastal erosion", "resilience", "extreme weather"],
+    "Climate Change": [
+        "climate",
+        "sea level",
+        "coastal erosion",
+        "resilience",
+        "extreme weather",
+        "warming",
+        "mitigation",
+        "adaptation",
+        "emission",
+        "net zero",
+        "flood",
+        "drought",
+        "typhoon",
+        "cyclone",
+        "storm surge",
+    ],
     "Maritime Security": ["maritime", "security", "sovereignty", "navy", "patrol", "piracy", "south china sea"],
     "Sustainable Blue Economy": ["blue economy", "shipping", "ports", "coastal livelihoods", "ocean economy"],
-    "Marine Pollution": ["marine pollution", "pollution", "plastic", "microplastic", "oil spill", "waste"],
+    "Marine Pollution": [
+        "marine pollution",
+        "pollution",
+        "plastic",
+        "microplastic",
+        "oil spill",
+        "waste",
+        "landfill",
+        "sewage",
+        "contamination",
+        "toxic",
+        "garbage",
+        "wastewater",
+    ],
 }
 
 MAX_ITEMS_PER_SECTOR = int(os.getenv("MAX_ITEMS_PER_SECTOR", "8"))
@@ -165,6 +194,9 @@ MARINE_CONTEXT_MARKERS = (
     "maritime",
     "ocean",
     "coastal",
+    "climate",
+    "adaptation",
+    "mitigation",
     "sea level",
     "fisher",
     "fishery",
@@ -270,10 +302,16 @@ def _make_id(url: str, title: str) -> str:
 
 def _categorize(title: str, summary: str = "") -> str | None:
     text = f"{title} {summary}".lower()
+    best_sector = None
+    best_score = 0
+
     for sector, keywords in SECTOR_KEYWORDS.items():
-        if any(keyword in text for keyword in keywords):
-            return sector
-    return None
+        score = sum(1 for keyword in keywords if keyword in text)
+        if score > best_score:
+            best_sector = sector
+            best_score = score
+
+    return best_sector if best_score > 0 else None
 
 
 def _clean_publisher(raw: str) -> str:
@@ -324,32 +362,46 @@ def _headline_fallback_summary(title: str) -> str:
     return sentence[:280].rstrip()
 
 
-def _best_snippet(summary: str, title: str, publisher: str = "") -> str:
+def _best_snippet(summary: str, title: str, publisher: str = "", allow_fallback: bool = True) -> str:
+    fallback = _headline_fallback_summary(title) if allow_fallback else ""
     cleaned = _clean_text(summary)
     if not cleaned:
-        return _headline_fallback_summary(title)
+        return fallback
 
     if len(cleaned) < 36 or len(cleaned.split()) < 5:
-        return _headline_fallback_summary(title)
+        return fallback
 
     if publisher and cleaned.lower() == publisher.lower():
-        return _headline_fallback_summary(title)
+        return fallback
 
     normalized_summary = _normalize_for_compare(cleaned)
     normalized_title = _normalize_for_compare(title)
     if normalized_summary and normalized_title and normalized_summary == normalized_title:
-        return _headline_fallback_summary(title)
+        return fallback
 
     if normalized_title and (normalized_summary in normalized_title or normalized_title in normalized_summary):
-        return _headline_fallback_summary(title)
+        return fallback
 
     if cleaned.lower().startswith(title.lower()):
         tail = cleaned[len(title):].strip(" .,-–—|")
         if tail and len(tail) >= 56 and (not publisher or tail.lower() != publisher.lower()):
             return tail
-        return _headline_fallback_summary(title)
+        return fallback
 
     return cleaned
+
+
+def _extract_feed_summary_excerpt(summary_html: str) -> str:
+    if not summary_html:
+        return ""
+
+    paragraphs = re.findall(r"<p[^>]*>([\s\S]*?)</p>", summary_html, flags=re.IGNORECASE)
+    for paragraph in paragraphs[:4]:
+        text = _clean_text(paragraph)
+        if len(text) >= 56 and len(text.split()) >= 10:
+            return text
+
+    return _clean_text(summary_html)
 
 
 def _extract_meta_description(html: str) -> str:
@@ -400,7 +452,7 @@ def _extract_article_excerpt(url: str, title: str, publisher: str) -> str:
     except Exception:
         excerpt = ""
 
-    excerpt = _best_snippet(excerpt, title, publisher)
+    excerpt = _best_snippet(excerpt, title, publisher, allow_fallback=False)
     EXCERPT_CACHE[url] = excerpt
     return excerpt
 
@@ -416,7 +468,8 @@ def _extract_items(feed_name: str, feed_url: str) -> list[dict]:
         title, publisher = _split_title_and_publisher(raw_title, feed_name)
         verified_url = _resolve_verified_url(link, summary)
         excerpt = _extract_article_excerpt(verified_url, title, publisher)
-        snippet = excerpt or _best_snippet(summary, title, publisher)
+        feed_excerpt = _extract_feed_summary_excerpt(summary)
+        snippet = excerpt or _best_snippet(feed_excerpt or summary, title, publisher)
         clean_publisher = publisher or _publisher_from_url(verified_url)
 
         if not title or not link:
@@ -434,7 +487,8 @@ def _extract_items(feed_name: str, feed_url: str) -> list[dict]:
         is_valid, _, _ = is_relevant(title, summary)
         if not is_valid:
             has_sea_marker = any(marker in context_text for marker in SEA_CONTEXT_MARKERS)
-            if not (feed_name in REGIONAL_CONTEXT_FEEDS and has_sea_marker and has_marine_marker):
+            is_direct_context_match = feed_name in REGIONAL_CONTEXT_FEEDS and has_marine_marker
+            if not (is_direct_context_match or has_sea_marker):
                 continue
 
         results.append(
