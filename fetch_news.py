@@ -20,80 +20,80 @@ from fetch_news_seasia import is_relevant
 
 FEEDS = [
     {
-        "name": "Google News SEA",
-        "url": "https://news.google.com/rss/search?q=Southeast+Asia+marine",
+        "name": "Channel News Asia - Asia",
+        "url": "https://www.channelnewsasia.com/rssfeeds/8395986",
     },
     {
-        "name": "Google News ASEAN",
-        "url": "https://news.google.com/rss/search?q=ASEAN+maritime",
+        "name": "The Straits Times - Asia",
+        "url": "https://www.straitstimes.com/news/asia/rss.xml",
     },
     {
-        "name": "Google News Climate SEA",
-        "url": "https://news.google.com/rss/search?q=Climate+Change+Southeast+Asia+coastal",
-    },
-    {
-        "name": "Google News Fisheries SEA",
-        "url": "https://news.google.com/rss/search?q=Sustainable+Fisheries+Southeast+Asia",
-    },
-    {
-        "name": "Google News Blue Economy SEA",
-        "url": "https://news.google.com/rss/search?q=Blue+Economy+Southeast+Asia",
-    },
-    {
-        "name": "Google News Marine Pollution SEA",
-        "url": "https://news.google.com/rss/search?q=Marine+Pollution+Southeast+Asia",
-    },
-    {
-        "name": "SEAFDEC",
-        "url": "https://www.seafdec.org/feed/",
-    },
-    {
-        "name": "East Asia Forum",
-        "url": "https://www.eastasiaforum.org/feed/",
-    },
-    {
-        "name": "Google News Vietnam Coastal",
-        "url": "https://news.google.com/rss/search?q=Vietnam+coastal+fisheries+climate",
-    },
-    {
-        "name": "Google News Thailand Coastal",
-        "url": "https://news.google.com/rss/search?q=Thailand+marine+pollution+coastal",
-    },
-    {
-        "name": "Google News Philippines Maritime",
-        "url": "https://news.google.com/rss/search?q=Philippines+maritime+security+fisheries",
-    },
-    {
-        "name": "Google News Indonesia Blue Economy",
-        "url": "https://news.google.com/rss/search?q=Indonesia+blue+economy+coastal",
-    },
-    {
-        "name": "Google News Malaysia Fisheries",
-        "url": "https://news.google.com/rss/search?q=Malaysia+fisheries+marine",
-    },
-    {
-        "name": "Google News Singapore Maritime",
-        "url": "https://news.google.com/rss/search?q=Singapore+maritime+security+ASEAN",
-    },
-    {
-        "name": "Google News Cambodia Mekong Coastal",
-        "url": "https://news.google.com/rss/search?q=Cambodia+coastal+fisheries+Mekong",
-    },
-    {
-        "name": "Google News Myanmar Coastal",
-        "url": "https://news.google.com/rss/search?q=Myanmar+coastal+marine+ASEAN",
-    },
-    {
-        "name": "Google News Brunei Blue Economy",
-        "url": "https://news.google.com/rss/search?q=Brunei+blue+economy+marine",
+        "name": "BenarNews - English",
+        "url": "https://www.benarnews.org/english/rss.xml",
     },
     {
         "name": "Mongabay",
         "url": "https://news.mongabay.com/feed/",
     },
     {
+        "name": "East Asia Forum",
+        "url": "https://www.eastasiaforum.org/feed/",
+    },
+    {
+        "name": "SEAFDEC",
+        "url": "https://www.seafdec.org/feed/",
+    },
+    {
+        "name": "Maritime Executive",
+        "url": "https://www.maritime-executive.com/rss",
+    },
+    {
+        "name": "gCaptain",
+        "url": "https://gcaptain.com/feed/",
+    },
+    {
         "name": "UN News Asia Pacific",
         "url": "https://news.un.org/feed/subscribe/en/news/region/asia-pacific/feed/rss.xml",
+    },
+    {
+        "name": "UNEP - Oceans",
+        "url": "https://www.unep.org/taxonomy/term/1/feed",
+    },
+    {
+        "name": "FAO - Fisheries",
+        "url": "https://www.fao.org/fishery/news/rss/en",
+    },
+    {
+        "name": "ADB - News",
+        "url": "https://www.adb.org/news/rss.xml",
+    },
+    {
+        "name": "ReliefWeb - Asia Pacific",
+        "url": "https://reliefweb.int/updates?advanced-search=%28PC385%29_%28T4596%29&search=%22Southeast%20Asia%22&format=rss",
+    },
+    {
+        "name": "The Diplomat",
+        "url": "https://thediplomat.com/feed/",
+    },
+    {
+        "name": "Oceanographic Magazine",
+        "url": "https://oceanographicmagazine.com/feed/",
+    },
+    {
+        "name": "SeaNews",
+        "url": "https://seanews.co.uk/feed/",
+    },
+    {
+        "name": "VietnamPlus",
+        "url": "https://en.vietnamplus.vn/rss/home.rss",
+    },
+    {
+        "name": "ANTARA English",
+        "url": "https://en.antaranews.com/rss/latest.xml",
+    },
+    {
+        "name": "Bernama",
+        "url": "https://www.bernama.com/en/rss.php",
     },
 ]
 
@@ -121,6 +121,63 @@ HTTP_HEADERS = {
 
 RESOLVED_URL_CACHE: dict[str, str] = {}
 EXCERPT_CACHE: dict[str, str] = {}
+
+REGIONAL_CONTEXT_FEEDS = {
+    "Channel News Asia - Asia",
+    "The Straits Times - Asia",
+    "BenarNews - English",
+    "Mongabay",
+    "East Asia Forum",
+    "SEAFDEC",
+    "Maritime Executive",
+    "gCaptain",
+    "UN News Asia Pacific",
+    "UNEP - Oceans",
+    "FAO - Fisheries",
+    "ADB - News",
+    "ReliefWeb - Asia Pacific",
+    "The Diplomat",
+    "Oceanographic Magazine",
+    "SeaNews",
+    "VietnamPlus",
+    "ANTARA English",
+    "Bernama",
+}
+
+SEA_CONTEXT_MARKERS = (
+    "southeast asia",
+    "asean",
+    "vietnam",
+    "thailand",
+    "philippines",
+    "indonesia",
+    "malaysia",
+    "myanmar",
+    "cambodia",
+    "singapore",
+    "brunei",
+    "timor leste",
+)
+
+MARINE_CONTEXT_MARKERS = (
+    "marine",
+    "maritime",
+    "ocean",
+    "coastal",
+    "sea level",
+    "fisher",
+    "fishery",
+    "fishing",
+    "aquaculture",
+    "shipping",
+    "port",
+    "pollution",
+    "plastic",
+    "mangrove",
+    "seagrass",
+    "coral",
+    "eez",
+)
 
 
 def _to_date_string(value: str) -> str:
@@ -229,6 +286,9 @@ def _split_title_and_publisher(title: str, fallback_source: str) -> tuple[str, s
     if not raw_title:
         return "", _clean_publisher(fallback_source)
 
+    if "google news" not in (fallback_source or "").lower():
+        return raw_title, _clean_publisher(fallback_source)
+
     parts = [p.strip() for p in re.split(r"\s+-\s+", raw_title) if p.strip()]
     if len(parts) >= 2:
         candidate_publisher = _clean_publisher(parts[-1])
@@ -258,7 +318,6 @@ def _headline_fallback_summary(title: str) -> str:
     if len(clean) < 24:
         return ""
 
-    clean = clean[0].lower() + clean[1:] if len(clean) > 1 else clean.lower()
     sentence = f"The report indicates that {clean}."
     sentence = sentence.replace("..", ".")
     return sentence[:280].rstrip()
@@ -361,13 +420,21 @@ def _extract_items(feed_name: str, feed_url: str) -> list[dict]:
 
         if not title or not link:
             continue
-        is_valid, _, _ = is_relevant(title, summary)
-        if not is_valid:
+
+        context_text = f"{title} {summary} {verified_url}".lower()
+        has_marine_marker = any(marker in context_text for marker in MARINE_CONTEXT_MARKERS)
+        if not has_marine_marker:
             continue
 
         sector = _categorize(title, summary)
         if not sector:
             continue
+
+        is_valid, _, _ = is_relevant(title, summary)
+        if not is_valid:
+            has_sea_marker = any(marker in context_text for marker in SEA_CONTEXT_MARKERS)
+            if not (feed_name in REGIONAL_CONTEXT_FEEDS and has_sea_marker and has_marine_marker):
+                continue
 
         results.append(
             {
