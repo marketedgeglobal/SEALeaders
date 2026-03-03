@@ -84,6 +84,13 @@
         font-size: 1.02rem;
         line-height: 1.35;
       }
+      .card .count {
+        display: inline-block;
+        margin-top: 8px;
+        font-size: 0.8rem;
+        font-weight: 600;
+        color: var(--accent);
+      }
       .card p {
         margin: 10px 0 0;
         font-size: 0.92rem;
@@ -99,6 +106,41 @@
         border: 1px solid var(--border);
         border-radius: 14px;
         padding: 18px;
+      }
+      .results {
+        background: #fff;
+        border: 1px solid var(--border);
+        border-radius: 14px;
+        padding: 18px;
+        margin-bottom: 18px;
+      }
+      .results-grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+        gap: 14px;
+      }
+      .result-col {
+        border: 1px solid var(--border);
+        border-radius: 10px;
+        padding: 12px;
+        background: #fbfcfe;
+      }
+      .result-col h3 {
+        margin: 0 0 10px;
+        font-size: 0.98rem;
+      }
+      .result-col ul {
+        margin: 0;
+        padding-left: 16px;
+      }
+      .result-col li {
+        margin: 8px 0;
+        line-height: 1.3;
+      }
+      .meta {
+        margin-top: 4px;
+        font-size: 0.78rem;
+        color: var(--muted);
       }
       ul {
         margin: 0;
@@ -125,17 +167,23 @@
 
       <h2 class="section-title">Priority News Areas (No Duplicates)</h2>
       <section class="grid" aria-label="News topic cards">
-        <article class="card"><h2>1) Sustainable Fisheries</h2></article>
-        <article class="card"><h2>2) Climate Change</h2></article>
-        <article class="card"><h2>3) Maritime Security</h2></article>
+        <article class="card"><h2>1) Sustainable Fisheries</h2><span class="count" id="count-fisheries">0 stories</span></article>
+        <article class="card"><h2>2) Climate Change</h2><span class="count" id="count-climate">0 stories</span></article>
+        <article class="card"><h2>3) Maritime Security</h2><span class="count" id="count-security">0 stories</span></article>
         <article class="card">
           <h2>4) Sustainable Blue Economy</h2>
+          <span class="count" id="count-blue">0 stories</span>
           <p>
             Open to CSOs, NGOs, social enterprises, and other grassroots organizations
             working across these categories.
           </p>
         </article>
-        <article class="card"><h2>5) Marine Pollutiion</h2></article>
+        <article class="card"><h2>5) Marine Pollutiion</h2><span class="count" id="count-pollution">0 stories</span></article>
+      </section>
+
+      <section class="results" aria-label="Latest news results">
+        <h2 class="section-title">Latest News Results</h2>
+        <div class="results-grid" id="results-grid"></div>
       </section>
 
       <section class="docs">
@@ -149,5 +197,78 @@
         </ul>
       </section>
     </main>
+    <script>
+      const CATEGORY_ORDER = [
+        "Sustainable Fisheries",
+        "Climate Change",
+        "Maritime Security",
+        "Sustainable Blue Economy",
+        "Marine Pollutiion",
+      ];
+
+      const COUNT_MAP = {
+        "Sustainable Fisheries": "count-fisheries",
+        "Climate Change": "count-climate",
+        "Maritime Security": "count-security",
+        "Sustainable Blue Economy": "count-blue",
+        "Marine Pollutiion": "count-pollution",
+      };
+
+      function renderResults(payload) {
+        const container = document.getElementById("results-grid");
+        container.innerHTML = "";
+
+        const byCategory = payload.by_category || {};
+
+        CATEGORY_ORDER.forEach((category) => {
+          const items = Array.isArray(byCategory[category]) ? byCategory[category] : [];
+          const countEl = document.getElementById(COUNT_MAP[category]);
+          if (countEl) {
+            countEl.textContent = `${items.length} ${items.length === 1 ? "story" : "stories"}`;
+          }
+
+          const col = document.createElement("section");
+          col.className = "result-col";
+
+          const heading = document.createElement("h3");
+          heading.textContent = category;
+          col.appendChild(heading);
+
+          const list = document.createElement("ul");
+          if (items.length === 0) {
+            const li = document.createElement("li");
+            li.textContent = "No stories yet.";
+            list.appendChild(li);
+          } else {
+            items.slice(0, 4).forEach((item) => {
+              const li = document.createElement("li");
+              const link = document.createElement("a");
+              link.textContent = item.title || "Untitled";
+              link.href = item.url || "#";
+              link.target = "_blank";
+              link.rel = "noopener noreferrer";
+              li.appendChild(link);
+
+              const meta = document.createElement("div");
+              meta.className = "meta";
+              meta.textContent = item.source || "Unknown source";
+              li.appendChild(meta);
+
+              list.appendChild(li);
+            });
+          }
+
+          col.appendChild(list);
+          container.appendChild(col);
+        });
+      }
+
+      fetch("./news.json", { cache: "no-store" })
+        .then((response) => response.ok ? response.json() : Promise.reject(new Error("news.json not found")))
+        .then(renderResults)
+        .catch(() => {
+          renderResults({ by_category: {} });
+        });
+    </script>
   </body>
 </html>
