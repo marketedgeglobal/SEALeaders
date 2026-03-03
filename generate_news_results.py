@@ -2,10 +2,12 @@
 
 import json
 import os
+import re
 import urllib.request
 import xml.etree.ElementTree as ET
 from datetime import datetime, timezone
 from email.utils import parsedate_to_datetime
+from html import unescape
 from pathlib import Path
 
 from fetch_news_seasia import is_relevant
@@ -95,6 +97,17 @@ def _get_text(node: ET.Element, path: str) -> str:
     return found.text.strip()
 
 
+def _clean_snippet(raw: str) -> str:
+    if not raw:
+        return ""
+    text = re.sub(r"<[^>]+>", " ", raw)
+    text = unescape(text)
+    text = re.sub(r"\s+", " ", text).strip()
+    if len(text) > 420:
+        return text[:419].rstrip() + "…"
+    return text
+
+
 def _first_text(node: ET.Element, paths: list[str]) -> str:
     for path in paths:
         text = _get_text(node, path)
@@ -124,6 +137,7 @@ def _parse_feed(xml_bytes: bytes, source_name: str) -> list[dict]:
             title = _first_text(item, ["title"])
             link = _first_text(item, ["link"])
             published = _first_text(item, ["pubDate"])
+            summary = _first_text(item, ["description", "content"])
             if title and link:
                 articles.append(
                     {
@@ -131,6 +145,7 @@ def _parse_feed(xml_bytes: bytes, source_name: str) -> list[dict]:
                         "url": link,
                         "source": source_name,
                         "published": _parse_datetime(published),
+                        "snippet": _clean_snippet(summary),
                     }
                 )
         return articles
@@ -151,6 +166,13 @@ def _parse_feed(xml_bytes: bytes, source_name: str) -> list[dict]:
                 "{http://www.w3.org/2005/Atom}published",
             ],
         )
+        summary = _first_text(
+            entry,
+            [
+                "{http://www.w3.org/2005/Atom}summary",
+                "{http://www.w3.org/2005/Atom}content",
+            ],
+        )
         if title and link:
             articles.append(
                 {
@@ -158,6 +180,7 @@ def _parse_feed(xml_bytes: bytes, source_name: str) -> list[dict]:
                     "url": link,
                     "source": source_name,
                     "published": _parse_datetime(published),
+                    "snippet": _clean_snippet(summary),
                 }
             )
 
@@ -183,7 +206,8 @@ def build_news_payload() -> dict:
 
         for article in _parse_feed(xml_bytes, source_name):
             headline = article.get("title", "")
-            is_valid, _, _ = is_relevant(headline)
+            summary = article.get("snippet", "")
+            is_valid, _, _ = is_relevant(headline, summary)
             if not is_valid:
                 continue
 
