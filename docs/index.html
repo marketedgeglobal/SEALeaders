@@ -185,26 +185,19 @@
         line-height: 1.3;
         font-size: 1rem;
       }
-      .story-oneliner {
+      .item-link {
         margin: 8px 0 0;
-        color: var(--me-text);
-        font-size: 0.88rem;
+        font-size: 0.86rem;
       }
       .item-meta {
-        margin: 8px 0;
+        margin: 8px 0 0;
         color: var(--me-muted);
         font-size: 12px;
       }
       .item-desc {
-        margin: 0;
+        margin: 10px 0 0;
         line-height: 1.45;
         color: var(--me-text);
-      }
-      .item-why {
-        margin: 10px 0 0;
-        color: var(--me-accent);
-        font-size: 12px;
-        line-height: 1.45;
       }
       .bottom-row {
         display: grid;
@@ -381,58 +374,32 @@
         return [...counts.entries()].sort((a, b) => b[1] - a[1]).slice(0, max);
       }
 
-      function synthWhy(item) {
-        const text = `${item.title || ""} ${item.snippet || ""}`.toLowerCase();
-        if (/(risk|threat|decline|erosion|pollution|dispute|piracy)/.test(text)) {
-          return "Why it matters: this highlights a near-term risk signal for coastal communities and policy response.";
-        }
-        if (/(cooperation|launch|fund|investment|support|strategy|roadmap)/.test(text)) {
-          return "Why it matters: this points to implementation momentum and potential partnership opportunities.";
-        }
-        return "Why it matters: this is a relevant directional update for monitoring sector-level coastal trends.";
+      function normalizeText(value) {
+        return String(value || "").toLowerCase().replace(/[^a-z0-9]+/g, "").trim();
       }
 
-      function buildStorySubtext(item) {
-        const cleanedSnippet = String(item.snippet || "").replace(/\s+/g, " ").trim();
-        const rawTitle = String(item.title || "").replace(/\s+/g, " ").trim();
-        const split = splitTitlePublisher(rawTitle);
-        const cleanTitle = split.title || rawTitle;
-        const source = displaySource(item).toLowerCase();
+      function isNarrativeUseful(text, title, source) {
+        const cleaned = String(text || "").replace(/\s+/g, " ").trim();
+        if (!cleaned) return false;
+        if (cleaned.length < 56 || cleaned.split(/\s+/).length < 9) return false;
 
-        if (cleanedSnippet) {
-          const snippetWords = cleanedSnippet.split(/\s+/).filter(Boolean).length;
-          const normalizedSnippet = cleanedSnippet.toLowerCase().replace(/\W+/g, "");
-          const normalizedTitle = cleanTitle.toLowerCase().replace(/\W+/g, "");
-          if (
-            snippetWords >= 5 &&
-            cleanedSnippet.length >= 36 &&
-            normalizedSnippet &&
-            normalizedSnippet !== normalizedTitle &&
-            cleanedSnippet.toLowerCase() !== source
-          ) {
-            const sentence = cleanedSnippet.split(/(?<=[.!?])\s+/)[0] || cleanedSnippet;
-            return sentence.length > 200 ? sentence.slice(0, 199).trimEnd() + "…" : sentence;
-          }
+        const normalizedSummary = normalizeText(cleaned);
+        const normalizedTitle = normalizeText(title);
+        const normalizedSource = normalizeText(source);
+        if (!normalizedSummary) return false;
+        if (normalizedSummary === normalizedTitle) return false;
+        if (normalizedSummary === normalizedSource) return false;
+        if (normalizedTitle && (normalizedSummary.includes(normalizedTitle) || normalizedTitle.includes(normalizedSummary))) {
+          return false;
         }
-
-        if (cleanTitle.includes(":")) {
-          const tail = cleanTitle.split(":").slice(1).join(":").trim();
-          if (tail) return tail;
-        }
-
-        const words = cleanTitle.split(/\s+/).filter(Boolean);
-        if (words.length > 12) {
-          return words.slice(6, 18).join(" ").replace(/[,.]$/, "") + "…";
-        }
-
-        return cleanTitle;
+        return true;
       }
 
       function buildCardSnippet(item) {
+        const title = splitTitlePublisher(item.title || "").title || (item.title || "Untitled");
+        const source = displaySource(item);
         const cleanedSnippet = String(item.snippet || "").replace(/\s+/g, " ").trim();
-        const source = displaySource(item).toLowerCase();
-        if (!cleanedSnippet || cleanedSnippet.length < 48) return "";
-        if (cleanedSnippet.toLowerCase() === source) return "";
+        if (!isNarrativeUseful(cleanedSnippet, title, source)) return "";
         const sentence = cleanedSnippet.split(/(?<=[.!?])\s+/)[0] || cleanedSnippet;
         return sentence.length > 240 ? sentence.slice(0, 239).trimEnd() + "…" : sentence;
       }
@@ -553,18 +520,14 @@
           const cards = items.length
             ? items.slice(0, 8).map((item) => {
               const normalizedTitle = splitTitlePublisher(item.title || "").title || (item.title || "Untitled");
-              const source = displaySource(item);
               const date = formatDate(item.sourcePublishedAt || item.publishedAt || item.published || "");
               const clipped = buildCardSnippet(item);
-              const oneLiner = buildStorySubtext(item);
-              const why = synthWhy(item);
               return `
                 <article class="item-card story-card">
                   <h5><a href="${esc(item.url || "#")}" target="_blank" rel="noopener">${esc(normalizedTitle)}</a></h5>
-                  <p class="story-oneliner">${esc(oneLiner)}</p>
-                  <p class="item-meta">${esc(source)}${date ? ` · ${esc(date)}` : ""}</p>
+                  <p class="item-link"><a href="${esc(item.url || "#")}" target="_blank" rel="noopener">Verified article URL</a></p>
+                  <p class="item-meta">Source date: ${esc(date || "Unknown")}</p>
                   ${clipped ? `<p class="item-desc">${esc(clipped)}</p>` : ""}
-                  <p class="item-why">${esc(why)}</p>
                 </article>
               `;
             }).join("")

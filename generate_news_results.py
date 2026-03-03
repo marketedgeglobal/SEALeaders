@@ -130,50 +130,35 @@ def _split_title_and_publisher(title: str, fallback_source: str) -> tuple[str, s
     return raw_title, _clean_publisher(fallback_source)
 
 
-def _derive_subtext(title: str) -> str:
-    clean_title = re.sub(r"\s+", " ", (title or "")).strip(" .")
-    if not clean_title:
-        return ""
-
-    if ":" in clean_title:
-        lead, detail = [segment.strip() for segment in clean_title.split(":", 1)]
-        if detail:
-            return detail[0].upper() + detail[1:]
-        return lead
-
-    if ";" in clean_title:
-        pieces = [p.strip() for p in clean_title.split(";") if p.strip()]
-        if len(pieces) > 1:
-            return pieces[1]
-
-    words = clean_title.split()
-    if len(words) > 10:
-        return " ".join(words[6:18]).strip(" ,.")
-    return clean_title
+def _normalize_for_compare(text: str) -> str:
+    return re.sub(r"[^a-z0-9]+", "", (text or "").lower())
 
 
 def _best_snippet(summary: str, title: str, publisher: str = "") -> str:
     cleaned_summary = _clean_snippet(summary)
     if not cleaned_summary:
-        return _derive_subtext(title)
+        return ""
 
     words = cleaned_summary.split()
     if len(words) < 5 or len(cleaned_summary) < 36:
-        return _derive_subtext(title)
+        return ""
 
     if publisher and cleaned_summary.lower() == publisher.lower():
-        return _derive_subtext(title)
+        return ""
 
-    normalized_summary = re.sub(r"\W+", "", cleaned_summary.lower())
-    normalized_title = re.sub(r"\W+", "", title.lower())
+    normalized_summary = _normalize_for_compare(cleaned_summary)
+    normalized_title = _normalize_for_compare(title)
     if normalized_summary and normalized_title and normalized_summary == normalized_title:
-        return _derive_subtext(title)
+        return ""
+
+    if normalized_title and (normalized_summary in normalized_title or normalized_title in normalized_summary):
+        return ""
 
     if cleaned_summary.lower().startswith(title.lower()):
         tail = cleaned_summary[len(title):].strip(" .,-–—|")
-        if tail and len(tail) >= 36 and (not publisher or tail.lower() != publisher.lower()):
+        if tail and len(tail) >= 56 and (not publisher or tail.lower() != publisher.lower()):
             return tail
-        return _derive_subtext(title)
+        return ""
 
     return cleaned_summary
 

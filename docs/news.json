@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-03-03T22:21:32.705413+00:00",
+  "generated_at": "2026-03-03T22:27:55.358546+00:00",
   "total_articles": 40,
   "by_category": {
     "Sustainable Fisheries": [
@@ -9,7 +9,7 @@
         "source": "Google News Malaysia Fisheries",
         "publisher": "Malay Mail",
         "published": "2026-03-01T07:07:30+00:00",
-        "snippet": "seagrass, fisheries resources and marine biodiversity",
+        "snippet": "",
         "category": "Sustainable Fisheries"
       },
       {
@@ -18,7 +18,7 @@
         "source": "Google News Malaysia Fisheries",
         "publisher": "says.com",
         "published": "2026-02-20T05:26:00+00:00",
-        "snippet": "Malaysia To Receive Protection Under Fisheries Act Amendment",
+        "snippet": "",
         "category": "Sustainable Fisheries"
       },
       {
@@ -27,7 +27,7 @@
         "source": "Google News Malaysia Fisheries",
         "publisher": "The Sun Malaysia",
         "published": "2026-02-19T08:00:00+00:00",
-        "snippet": "mammal species under Fisheries Act",
+        "snippet": "",
         "category": "Sustainable Fisheries"
       },
       {
@@ -36,7 +36,7 @@
         "source": "Google News SEA",
         "publisher": "kaiyodai.ac.jp",
         "published": "2026-02-06T12:07:51+00:00",
-        "snippet": "Development Center visited our university",
+        "snippet": "",
         "category": "Sustainable Fisheries"
       },
       {
@@ -45,7 +45,7 @@
         "source": "Google News Malaysia Fisheries",
         "publisher": "SeafoodSource",
         "published": "2026-02-02T08:00:00+00:00",
-        "snippet": "fisheries authority calls on fishermen groups to consider aquaculture",
+        "snippet": "",
         "category": "Sustainable Fisheries"
       },
       {
@@ -54,7 +54,7 @@
         "source": "Google News Indonesia Blue Economy",
         "publisher": "ANTARA News",
         "published": "2025-11-05T08:00:00+00:00",
-        "snippet": "Indonesia launches action plan to boost small-scale fisheries",
+        "snippet": "",
         "category": "Sustainable Fisheries"
       },
       {
@@ -63,7 +63,7 @@
         "source": "Google News Philippines Maritime",
         "publisher": "The Star | Malaysia",
         "published": "2025-11-02T07:00:00+00:00",
-        "snippet": "Australia enhances support for all Asean nations against illegal fishing",
+        "snippet": "",
         "category": "Sustainable Fisheries"
       },
       {
@@ -72,27 +72,18 @@
         "source": "Google News Vietnam Coastal",
         "publisher": "International Development Research Centre",
         "published": "2025-10-28T07:00:00+00:00",
-        "snippet": "Aquaculture, gender and adaptation: Lessons from Thailand and Vietnam IDRC - International Development Research Centre",
+        "snippet": "",
         "category": "Sustainable Fisheries"
       }
     ],
     "Climate Change": [
-      {
-        "title": "UNDP: Seagrass meadows, peatlands key to mitigating Southeast Asia’s climate crisis",
-        "url": "https://news.google.com/rss/articles/CBMipAFBVV95cUxNZ2VTV0FXbldtVGJxZGJnTEJBRzFYVGx0RjdjNjVJXzM5eWpnOW9hZnNkVFJxc2xsY1dhYk83UHM0NWFpTTFkNGMxU3daZ3d0ZnpHREpIY1EtZDJNWkMyR2lSSUc3MTc0WE5fak1ySWFYZjh6OXNjWkJLd1pqU0lVc3dVNk5ZZ2hjbmFGVi1NNWZaVktaSWhvUU1nbTJLSkp1LUdONg?oc=5",
-        "source": "Google News Blue Economy SEA",
-        "publisher": "tanahair.net",
-        "published": "2025-05-26T07:00:00+00:00",
-        "snippet": "Seagrass meadows, peatlands key to mitigating Southeast Asia’s climate crisis",
-        "category": "Climate Change"
-      },
       {
         "title": "Solutions to Prevent coastal Erosion in Southeast Asia",
         "url": "https://news.google.com/rss/articles/CBMirwFBVV95cUxQUDJ3Q09KaGxWSVZoR1FDUFFmQ1lOaHRTVk9SRk5faUNtd25BTkI3eG9vcEE4U0hXOGd6dmR6cEQ2N2lKR0Z4NnN3WnpQWU4zSzFzeURLNTRYMVJGanR1OFhtRnFMcjBZVTJHRHlKcXY5VTlhR3BoZVd5aEYwbUtFVkh4SUt6UVRNZlpZLVBVWmpqOGxrejhqUUh4NDRWMU43SmNaZ1lQalFQTmJ4cEw4?oc=5",
         "source": "Google News Climate SEA",
         "publisher": "Thông tấn xã Việt Nam (TTXVN)",
         "published": "2025-05-22T14:29:57+00:00",
-        "snippet": "Solutions to Prevent coastal Erosion in Southeast Asia",
+        "snippet": "",
         "category": "Climate Change"
       },
       {
@@ -101,7 +92,16 @@
         "source": "Google News Climate SEA",
         "publisher": "Frontiers",
         "published": "2024-12-19T08:00:00+00:00",
-        "snippet": "Abandoning stagnant policy responses",
+        "snippet": "",
+        "category": "Climate Change"
+      },
+      {
+        "title": "Cambodia's giant lake shrinks as climate change, Mekong dams cut fish supply",
+        "url": "https://news.google.com/rss/articles/CBMivgFBVV95cUxQMDhEQXktU0s4SFk4WG14LVlxVi0wcDROZE9XZ3JXdHNqdktmN2RBdGFtaDBMNEx6d3Z0a0pRQmtQNzJ2c1ltSVk2ZUpZRUlvVHpDd3hTdFF6aXhJcGQyU2NORklsRzBTSG5zLTE0QTRmMlZlMDdhWXlyYnhUR2NCMWFTUGVfVFBKTGc0THd3Zlk0clNKdnFOSEFCVGw0OGJnVUN6MjFBaVFQTDBfLUtKRW92YTViWWllR1ZudWNB?oc=5",
+        "source": "Google News Cambodia Mekong Coastal",
+        "publisher": "Nikkei Asia",
+        "published": "2024-12-14T08:00:00+00:00",
+        "snippet": "",
         "category": "Climate Change"
       },
       {
@@ -110,7 +110,7 @@
         "source": "Google News Climate SEA",
         "publisher": "Eco-Business",
         "published": "2024-12-12T08:00:00+00:00",
-        "snippet": "Sea level rise a clear threat to Malaysia",
+        "snippet": "",
         "category": "Climate Change"
       },
       {
@@ -119,7 +119,7 @@
         "source": "Google News Climate SEA",
         "publisher": "Frontiers",
         "published": "2024-10-17T00:58:04+00:00",
-        "snippet": "The politics of countering climate change in Southeast Asia",
+        "snippet": "",
         "category": "Climate Change"
       },
       {
@@ -128,7 +128,7 @@
         "source": "Google News Indonesia Blue Economy",
         "publisher": "Climateworks Centre",
         "published": "2024-08-08T07:00:00+00:00",
-        "snippet": "Protecting mangroves and seagrass could boost Indonesia’s new climate targets",
+        "snippet": "",
         "category": "Climate Change"
       },
       {
@@ -137,7 +137,7 @@
         "source": "Google News Climate SEA",
         "publisher": "EurekAlert!",
         "published": "2024-07-30T07:00:00+00:00",
-        "snippet": "in Southeast Asia are developing faster, lasting longer and endangering more coastal",
+        "snippet": "",
         "category": "Climate Change"
       },
       {
@@ -146,7 +146,7 @@
         "source": "Google News Climate SEA",
         "publisher": "South China Morning Post",
         "published": "2024-04-02T07:00:00+00:00",
-        "snippet": "all out to fight rising sea levels, even relocate its people",
+        "snippet": "",
         "category": "Climate Change"
       }
     ],
@@ -157,7 +157,16 @@
         "source": "Google News ASEAN",
         "publisher": "The Strategist | ASPI's analysis and commentary site",
         "published": "2026-02-23T08:00:00+00:00",
-        "snippet": "to support new maritime order",
+        "snippet": "",
+        "category": "Maritime Security"
+      },
+      {
+        "title": "Border, Maritime Disputes Challenge Cambodia’s Position in ASEAN",
+        "url": "https://news.google.com/rss/articles/CBMimwFBVV95cUxOR3h6RkJ4U1VudlZ6aElseFhZRmNsUHFwT05GOW11VFpnSHlNTVl3bmtjVVJLd2ZvRWwxVkNOTmZrR05YNVMtQzhreHBvSnNlSGtBMlJQc1hYajRsZGx3N292Nmxyc3BPSm9fRUhQZkhXdmZiXzF0THBXTnc3TElqSl9tWUljV0NMQ0RZZ09YVVBCbkZJbWdiMlVDZw?oc=5",
+        "source": "Google News ASEAN",
+        "publisher": "Cambodianess",
+        "published": "2026-02-18T12:18:26+00:00",
+        "snippet": "",
         "category": "Maritime Security"
       },
       {
@@ -166,16 +175,25 @@
         "source": "Google News ASEAN",
         "publisher": "South China Morning Post",
         "published": "2026-02-17T08:00:00+00:00",
-        "snippet": "threat’ to Asean maritime security",
+        "snippet": "",
         "category": "Maritime Security"
       },
       {
-        "title": "PHILIPPINES SEEKS STRONGER ASEAN MARITIME INFORMATION SHARING THROUGH IORIS PLATFORM",
-        "url": "https://news.google.com/rss/articles/CBMiZkFVX3lxTE83a1A3REtXdzRpSkhid3pfM0pkVWhOMFNTMFRUOG5WMlFwWUpOMGhKdzhBamgzbk9iRmhnUzFlRkhtcUpLdDRRdkFCX0l2Ym95c3dpN3MxZkNERWJJajRvN0Y0UTFpUQ?oc=5",
+        "title": "ASEAN, India reaffirm maritime cooperation",
+        "url": "https://news.google.com/rss/articles/CBMiUEFVX3lxTE5jNU1oY0pBTkhjS2M3eFlQVHZ0ei1RMkZaalJmTDZkU0JJWGF1d19kczlXZlg5R2t6TnV4eURXTmROZHZaenRseUdzcFEtNTA5?oc=5",
+        "source": "Google News ASEAN",
+        "publisher": "Manila Standard",
+        "published": "2026-02-17T08:00:00+00:00",
+        "snippet": "",
+        "category": "Maritime Security"
+      },
+      {
+        "title": "Philippines Seeks Stronger ASEAN Maritime Information Sharing Through IORIS Platform",
+        "url": "https://news.google.com/rss/articles/CBMiYkFVX3lxTE94aHg4cWlleDlrOXpURlhXSVNOdVMzMWZHQ2dNTmxVYjRFaTFQWm5CaXlNSzVsdmRvNnd2LTZXZll0TnpxNjFuZ1BDNlJkUjFWUHo0X3lCNGRPYVY3eHdqdGpR?oc=5",
         "source": "Google News ASEAN",
         "publisher": "bernama",
-        "published": "2026-02-14T13:51:10+00:00",
-        "snippet": "PHILIPPINES SEEKS STRONGER ASEAN MARITIME INFORMATION SHARING THROUGH IORIS PLATFORM",
+        "published": "2026-02-14T08:00:00+00:00",
+        "snippet": "",
         "category": "Maritime Security"
       },
       {
@@ -184,7 +202,7 @@
         "source": "Google News ASEAN",
         "publisher": "CNA",
         "published": "2026-02-14T08:00:00+00:00",
-        "snippet": "to take lead in maritime security in region",
+        "snippet": "",
         "category": "Maritime Security"
       },
       {
@@ -193,7 +211,7 @@
         "source": "Google News ASEAN",
         "publisher": "ASEAN Main Portal",
         "published": "2026-02-14T00:38:28+00:00",
-        "snippet": "a high-level panel on upholding maritime security in the Indo-Pacific in Munich",
+        "snippet": "",
         "category": "Maritime Security"
       },
       {
@@ -202,25 +220,7 @@
         "source": "Google News ASEAN",
         "publisher": "Indo-Pacific Defense FORUM",
         "published": "2026-02-12T14:00:22+00:00",
-        "snippet": "Jakarta symposium highlights ASEAN-U.S. maritime cooperation",
-        "category": "Maritime Security"
-      },
-      {
-        "title": "Beijing’s Bid for High Seas Treaty Secretariat Tests ASEAN Faith in Maritime Rules",
-        "url": "https://news.google.com/rss/articles/CBMitAFBVV95cUxOcEtkcFdPQXhTbVduTUIyN3gzZVFZZjd6RnM3VXkyNjFxMzJYbUhCTXhKdzFYeE00dFEtNVRLUkZqVjVOT18zazZyVjllNWU1bXZ5S0pSLXExN1U3d3dnOFItYi0yNmMxU3JvZ2cwT0pjamFkRldXa3cyX2hpTXFpbWRoSU5yV1RGd1NXWG9CUFZ1aFctclNCNzJIdW9vQnlFX09BWEJEZlRCQ19YSGVONXltV2U?oc=5",
-        "source": "Google News ASEAN",
-        "publisher": "Cambodianess",
-        "published": "2026-02-04T08:00:00+00:00",
-        "snippet": "Secretariat Tests ASEAN Faith in Maritime Rules",
-        "category": "Maritime Security"
-      },
-      {
-        "title": "PHL proposes Asean maritime cooperation | Malou Talosig-Bartolome",
-        "url": "https://news.google.com/rss/articles/CBMiiAFBVV95cUxNTGhJbHhJX3kwX2NHQnFCenV2NkhmNmcwZFpIaUlxVERjSUZDN3l3Qm9wU2xST0VZbE5NTVVFNEV2SW0tZ2h1eVRuc0c3ZDlldVVVWUZQeUVQV0ZlU2Q4QUN0ckZjV29IVmNjU3pjQ2p5NjhFbXdwb0lxZ0NxY3dLR0F4TVVneHV1?oc=5",
-        "source": "Google News ASEAN",
-        "publisher": "BusinessMirror",
-        "published": "2026-02-02T08:00:00+00:00",
-        "snippet": "PHL proposes Asean maritime cooperation | Malou Talosig-Bartolome",
+        "snippet": "",
         "category": "Maritime Security"
       }
     ],
@@ -231,7 +231,7 @@
         "source": "Google News Indonesia Blue Economy",
         "publisher": "RRI.co.id",
         "published": "2026-03-01T04:28:56+00:00",
-        "snippet": "Indonesia Boosts Seaweed Potential for Sustainable Blue Economy",
+        "snippet": "",
         "category": "Sustainable Blue Economy"
       },
       {
@@ -240,7 +240,7 @@
         "source": "Google News Indonesia Blue Economy",
         "publisher": "Travel And Tour World",
         "published": "2026-01-31T08:00:00+00:00",
-        "snippet": "the Protection of Ocean Ecosystems, Expanding their Coastal Tourism Villages and Advancing",
+        "snippet": "",
         "category": "Sustainable Blue Economy"
       },
       {
@@ -249,7 +249,7 @@
         "source": "Google News Brunei Blue Economy",
         "publisher": "Asian Development Bank",
         "published": "2025-12-11T15:21:15+00:00",
-        "snippet": "Advance the Philippines’ Blue Economy Development",
+        "snippet": "",
         "category": "Sustainable Blue Economy"
       },
       {
@@ -258,7 +258,7 @@
         "source": "Google News Blue Economy SEA",
         "publisher": "EBC Financial Group",
         "published": "2025-12-05T08:00:00+00:00",
-        "snippet": "New Era for ESG Investment, Ocean Innovation, and Regional Trade",
+        "snippet": "",
         "category": "Sustainable Blue Economy"
       },
       {
@@ -267,7 +267,7 @@
         "source": "Google News Blue Economy SEA",
         "publisher": "Climateworks Centre",
         "published": "2025-11-26T08:00:00+00:00",
-        "snippet": "Advancing Indonesia’s blue economy through ocean-based mitigation actions",
+        "snippet": "",
         "category": "Sustainable Blue Economy"
       },
       {
@@ -276,7 +276,7 @@
         "source": "Google News Malaysia Fisheries",
         "publisher": "The Edge Malaysia",
         "published": "2025-11-20T08:00:00+00:00",
-        "snippet": "Financing the blue economy in Malaysia: A business case for critical environmental protection",
+        "snippet": "",
         "category": "Sustainable Blue Economy"
       },
       {
@@ -285,7 +285,7 @@
         "source": "Google News Indonesia Blue Economy",
         "publisher": "ANTARA News",
         "published": "2025-10-17T07:00:00+00:00",
-        "snippet": "Indonesia unveils waterfront city plan to boost blue economy",
+        "snippet": "",
         "category": "Sustainable Blue Economy"
       },
       {
@@ -294,7 +294,7 @@
         "source": "Google News Indonesia Blue Economy",
         "publisher": "Capitalfm.co.ke",
         "published": "2025-09-26T07:00:00+00:00",
-        "snippet": "Indonesia, Kenya Eye stronger blue economy cooperation at Mombasa Summit",
+        "snippet": "",
         "category": "Sustainable Blue Economy"
       }
     ],
@@ -305,7 +305,7 @@
         "source": "Google News Thailand Coastal",
         "publisher": "Free Press Journal",
         "published": "2026-01-25T08:00:00+00:00",
-        "snippet": "Man Collects Plastic Garbage From Thailand, Myanmar & Malaysia Washed Onto Andaman",
+        "snippet": "",
         "category": "Marine Pollution"
       },
       {
@@ -314,7 +314,7 @@
         "source": "Google News Marine Pollution SEA",
         "publisher": "Mothership",
         "published": "2025-12-18T08:00:00+00:00",
-        "snippet": "plastic waste comes from Southeast Asia’s rivers. Here’s how the problem is",
+        "snippet": "",
         "category": "Marine Pollution"
       },
       {
@@ -323,7 +323,7 @@
         "source": "Google News Marine Pollution SEA",
         "publisher": "Irish Tech News",
         "published": "2025-12-17T16:00:56+00:00",
-        "snippet": "Supporting Ocean Bound Plastic Removal in Southeast Asia - Irish",
+        "snippet": "",
         "category": "Marine Pollution"
       },
       {
@@ -332,7 +332,7 @@
         "source": "Google News Thailand Coastal",
         "publisher": "Nation Thailand",
         "published": "2025-10-24T07:00:00+00:00",
-        "snippet": "waste in the ocean, impacting environment, economy, and society",
+        "snippet": "",
         "category": "Marine Pollution"
       },
       {
@@ -341,7 +341,7 @@
         "source": "Google News Fisheries SEA",
         "publisher": "Stockholm Environment Institute",
         "published": "2025-08-15T07:00:00+00:00",
-        "snippet": "The challenge of food loss and waste",
+        "snippet": "",
         "category": "Marine Pollution"
       },
       {
@@ -350,7 +350,7 @@
         "source": "Google News Marine Pollution SEA",
         "publisher": "fundsforNGOs",
         "published": "2025-06-24T05:46:22+00:00",
-        "snippet": "in Africa and Southeast Asia",
+        "snippet": "",
         "category": "Marine Pollution"
       },
       {
@@ -359,7 +359,7 @@
         "source": "Google News Marine Pollution SEA",
         "publisher": "The World Economic Forum",
         "published": "2025-06-23T07:00:00+00:00",
-        "snippet": "How ASEAN can lead the world on plastic pollution",
+        "snippet": "",
         "category": "Marine Pollution"
       },
       {
@@ -368,7 +368,7 @@
         "source": "Google News Marine Pollution SEA",
         "publisher": "Agence Française de Développement",
         "published": "2024-11-04T08:00:00+00:00",
-        "snippet": "Tracking the Path of Ocean Plastic Pollution in Southeast Asia AFD - Agence Française de Développement",
+        "snippet": "",
         "category": "Marine Pollution"
       }
     ]
