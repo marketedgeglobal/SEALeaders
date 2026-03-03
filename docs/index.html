@@ -83,22 +83,6 @@
         gap: 12px;
         grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
       }
-      .exec-row {
-        border: 1px solid var(--me-border);
-        border-radius: 10px;
-        padding: 10px;
-        margin-top: 10px;
-        background: linear-gradient(180deg, rgba(25, 57, 83, 0.95) 0%, rgba(17, 43, 64, 0.95) 100%);
-      }
-      .exec-label {
-        font-size: 12px;
-        color: var(--me-muted);
-        margin-bottom: 6px;
-      }
-      .exec-text {
-        margin: 0;
-        line-height: 1.45;
-      }
       .pill-row {
         display: flex;
         flex-wrap: wrap;
@@ -134,11 +118,6 @@
       .section-meta {
         color: var(--me-muted);
         font-size: 12px;
-      }
-      .sector-synth {
-        margin: 0 0 12px;
-        color: var(--me-muted);
-        line-height: 1.45;
       }
       .pill {
         display: inline-block;
@@ -199,28 +178,6 @@
         line-height: 1.45;
         color: var(--me-text);
       }
-      .bottom-row {
-        display: grid;
-        gap: 12px;
-        grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
-      }
-      .source-list {
-        margin: 8px 0 0;
-        padding-left: 18px;
-      }
-      .source-list li {
-        margin: 6px 0;
-        color: var(--me-text);
-      }
-      .docs ul {
-        margin: 8px 0 0;
-        padding-left: 20px;
-      }
-      .footer-note {
-        font-size: 12px;
-        color: var(--me-muted);
-        margin: 0;
-      }
       a {
         color: var(--me-accent);
       }
@@ -249,8 +206,19 @@
         "Sustainable Blue Economy",
         "Marine Pollution",
       ];
-      const FILTERS = ["all", "regional", "local"];
-      let activeSourceFilter = "all";
+      const COUNTRY_FILTERS = [
+        { key: "all", label: "All Countries", patterns: [] },
+        { key: "vietnam", label: "Vietnam", patterns: ["vietnam"] },
+        { key: "thailand", label: "Thailand", patterns: ["thailand"] },
+        { key: "philippines", label: "Philippines", patterns: ["philippines"] },
+        { key: "indonesia", label: "Indonesia", patterns: ["indonesia"] },
+        { key: "malaysia", label: "Malaysia", patterns: ["malaysia"] },
+        { key: "myanmar", label: "Myanmar", patterns: ["myanmar"] },
+        { key: "cambodia", label: "Cambodia", patterns: ["cambodia"] },
+        { key: "singapore", label: "Singapore", patterns: ["singapore"] },
+        { key: "brunei", label: "Brunei", patterns: ["brunei"] },
+      ];
+      let activeCountryFilter = "all";
       let cachedPayload = null;
 
       function esc(value) {
@@ -302,25 +270,6 @@
         );
       }
 
-      function classifySource(sourceName) {
-        const value = String(sourceName || "").toLowerCase();
-        const localMarkers = [
-          "vietnam",
-          "thailand",
-          "philippines",
-          "indonesia",
-          "malaysia",
-          "myanmar",
-          "cambodia",
-          "singapore",
-          "brunei",
-          "ttxvn",
-        ];
-
-        if (localMarkers.some((marker) => value.includes(marker))) return "local";
-        return "regional";
-      }
-
       function cleanPublisherLabel(raw) {
         const value = String(raw || "").replace(/\s+/g, " ").trim();
         if (!value) return "";
@@ -355,25 +304,6 @@
         return source || "Unknown source";
       }
 
-      function sortByDateDesc(items) {
-        return [...items].sort((left, right) => {
-          const leftDate = Date.parse(left.sourcePublishedAt || left.publishedAt || left.published || "");
-          const rightDate = Date.parse(right.sourcePublishedAt || right.publishedAt || right.published || "");
-          const leftScore = Number.isFinite(leftDate) ? leftDate : 0;
-          const rightScore = Number.isFinite(rightDate) ? rightDate : 0;
-          return rightScore - leftScore;
-        });
-      }
-
-      function pickTopSources(items, max = 5) {
-        const counts = new Map();
-        items.forEach((item) => {
-          const source = displaySource(item);
-          counts.set(source, (counts.get(source) || 0) + 1);
-        });
-        return [...counts.entries()].sort((a, b) => b[1] - a[1]).slice(0, max);
-      }
-
       function normalizeText(value) {
         return String(value || "").toLowerCase().replace(/[^a-z0-9]+/g, "").trim();
       }
@@ -401,35 +331,11 @@
         return sentence.length > 240 ? sentence.slice(0, 239).trimEnd() + "…" : sentence;
       }
 
-      function synthSectorSummary(name, items) {
-        if (!items.length) return "No current stories for this sector under the selected filter.";
-        const newest = sortByDateDesc(items)[0];
-        const newestDate = formatDate(newest.sourcePublishedAt || newest.publishedAt || newest.published || "");
-        return `${items.length} tracked stories. Latest signal${newestDate ? ` (${newestDate})` : ""}: ${newest.title || "Untitled"}.`;
-      }
-
-      function renderExecutiveBrief(items, lastUpdated) {
-        const topThree = sortByDateDesc(items).slice(0, 3);
-        const rows = topThree.map((item, index) => `
-          <article class="exec-row">
-            <div class="exec-label">Priority Signal ${index + 1}</div>
-            <p class="exec-text">${esc(item.title || "Untitled")}</p>
-          </article>
+      function renderControls(counts) {
+        const buttons = COUNTRY_FILTERS.map((country) => `
+          <button class="filter-btn ${activeCountryFilter === country.key ? "active" : ""}" data-filter="${esc(country.key)}" type="button">${esc(country.label)}</button>
         `).join("");
 
-        return `
-          <section class="panel exec-card">
-            <div class="section-head">
-              <h3>Executive Rapid Brief</h3>
-              <span class="section-meta">Updated: ${esc(lastUpdated || "Pending")}</span>
-            </div>
-            <p class="panel-sub">Top cross-sector signals for Southeast Asia coastal leaders, aligned to the five priority topics.</p>
-            ${rows || "<article class=\"exec-row\"><p class=\"exec-text\">No items available to summarize yet.</p></article>"}
-          </section>
-        `;
-      }
-
-      function renderControls(counts) {
         return `
           <section class="top-row">
             <article class="panel">
@@ -440,45 +346,25 @@
             </article>
             <article class="panel">
               <h3>Display Controls</h3>
-              <p class="panel-sub">Filter stories by source class, similar to VZLA dashboard controls.</p>
-              <div class="filter-row" aria-label="Source filter">
-                <button class="filter-btn ${activeSourceFilter === "all" ? "active" : ""}" data-filter="all" type="button">All Sources</button>
-                <button class="filter-btn ${activeSourceFilter === "regional" ? "active" : ""}" data-filter="regional" type="button">Regional</button>
-                <button class="filter-btn ${activeSourceFilter === "local" ? "active" : ""}" data-filter="local" type="button">Local</button>
+              <p class="panel-sub">Filter stories by country.</p>
+              <div class="filter-row" aria-label="Country filter">
+                ${buttons}
               </div>
             </article>
           </section>
         `;
       }
 
-      function renderBottomPanels(lastUpdated, topSources, uniqueSourceCount) {
-        return `
-          <section class="bottom-row">
-            <section class="panel">
-              <h3>Coverage Metadata</h3>
-              <p class="footer-note">Updated: ${esc(lastUpdated || "Pending")}</p>
-              <p class="footer-note">Unique sources tracked: ${esc(uniqueSourceCount)}</p>
-              <ul class="source-list">
-                ${topSources.map(([name, count]) => `<li>${esc(name)} · ${esc(count)} stories</li>`).join("")}
-              </ul>
-            </section>
-            <section class="panel docs">
-              <h3>Migration Documentation</h3>
-              <ul>
-                <li><a href="../SEASIA_COASTAL_MIGRATION_GUIDE.md">SEASIA Coastal Migration Guide</a></li>
-                <li><a href="../SEASIA_COASTAL_QUICK_START.md">SEASIA Coastal Quick Start</a></li>
-                <li><a href="../IMPLEMENTATION_CHECKLIST.md">Implementation Checklist</a></li>
-                <li><a href="../COMPONENT_MAPPING.md">Component Mapping</a></li>
-                <li><a href="../FILE_MANIFEST.md">File Manifest</a></li>
-              </ul>
-            </section>
-          </section>
-        `;
+      function itemMatchesCountry(item, countryKey) {
+        if (countryKey === "all") return true;
+        const country = COUNTRY_FILTERS.find((entry) => entry.key === countryKey);
+        if (!country) return true;
+        const text = `${item.title || ""} ${item.snippet || ""} ${item.publisher || ""} ${item.source || ""} ${item.url || ""}`.toLowerCase();
+        return country.patterns.some((pattern) => text.includes(pattern));
       }
 
-      function filterItemsBySource(items) {
-        if (activeSourceFilter === "all") return items;
-        return items.filter((item) => classifySource(item.source || item.publisher) === activeSourceFilter);
+      function filterItemsByCountry(items) {
+        return (items || []).filter((item) => itemMatchesCountry(item, activeCountryFilter));
       }
 
       function render(data) {
@@ -486,19 +372,13 @@
         cachedPayload = data;
         const sectorsByName = Object.fromEntries((data.sectors || []).map((sector) => [sector.name, sector.items || []]));
         const allItems = flattenItems(data.sectors || []);
-        const filteredAllItems = filterItemsBySource(allItems);
-        const uniqueSources = new Set(
-          filteredAllItems
-            .map((item) => displaySource(item))
-            .filter(Boolean)
-        );
+        const filteredAllItems = filterItemsByCountry(allItems);
         const counts = CATEGORY_ORDER.map((name) => {
-          const filtered = filterItemsBySource(sectorsByName[name] || []);
+          const filtered = filterItemsByCountry(sectorsByName[name] || []);
           return { name, count: filtered.length };
         });
         const totalStories = counts.reduce((sum, row) => sum + row.count, 0);
         const lastUpdated = formatDate(data.runAt);
-        const topSources = pickTopSources(filteredAllItems);
 
         const summaryCard = `
           <section class="panel">
@@ -512,8 +392,7 @@
         `;
 
         const sectorsHtml = CATEGORY_ORDER.map((name) => {
-          const items = filterItemsBySource(sectorsByName[name] || []);
-          const sectorSummary = synthSectorSummary(name, items);
+          const items = filterItemsByCountry(sectorsByName[name] || []);
           const cards = items.length
             ? items.slice(0, 8).map((item) => {
               const normalizedTitle = splitTitlePublisher(item.title || "").title || (item.title || "Untitled");
@@ -537,17 +416,14 @@
                 <h3>${esc(name)}</h3>
                 <span class="section-meta">${esc(items.length)} stories</span>
               </div>
-              <p class="sector-synth">${esc(sectorSummary)}</p>
               <div class="items-grid">${cards}</div>
             </section>
           `;
         }).join("");
 
-        const execBrief = renderExecutiveBrief(filteredAllItems, lastUpdated);
         const controls = renderControls(counts);
-        const bottomPanels = renderBottomPanels(lastUpdated, topSources, uniqueSources.size);
 
-        root.innerHTML = `${execBrief}${summaryCard}${controls}${sectorsHtml}${bottomPanels}`;
+        root.innerHTML = `${summaryCard}${controls}${sectorsHtml}`;
       }
 
       async function loadData() {
@@ -572,9 +448,10 @@
         if (!(target instanceof HTMLElement)) return;
         if (!target.classList.contains("filter-btn")) return;
         const selected = target.getAttribute("data-filter") || "all";
-        if (!FILTERS.includes(selected) || selected === activeSourceFilter) return;
+        const validKeys = COUNTRY_FILTERS.map((country) => country.key);
+        if (!validKeys.includes(selected) || selected === activeCountryFilter) return;
 
-        activeSourceFilter = selected;
+        activeCountryFilter = selected;
         if (cachedPayload) {
           render(cachedPayload);
           return;
