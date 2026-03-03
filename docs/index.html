@@ -6,12 +6,13 @@
     <title>SEA Leaders</title>
     <style>
       :root {
-        --bg: #f7fafc;
+        --bg: #eef2f7;
         --card: #ffffff;
-        --text: #1a202c;
-        --muted: #4a5568;
-        --accent: #0f766e;
-        --border: #e2e8f0;
+        --text: #15253f;
+        --muted: #5f6f88;
+        --accent: #1e3a8a;
+        --accent-2: #3056d3;
+        --border: #dbe3ef;
       }
       * { box-sizing: border-box; }
       body {
@@ -21,34 +22,66 @@
         color: var(--text);
       }
       .container {
-        max-width: 980px;
+        max-width: 1120px;
         margin: 0 auto;
-        padding: 32px 20px 48px;
+        padding: 28px 20px 48px;
+      }
+      .hero {
+        background: linear-gradient(140deg, #172a57 0%, #1e3a8a 58%, #3056d3 100%);
+        border-radius: 18px;
+        padding: 26px 24px;
+        color: #fff;
+        margin-bottom: 22px;
+        box-shadow: 0 10px 30px rgba(20, 41, 95, 0.28);
+      }
+      .hero-top {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        gap: 12px;
+        margin-bottom: 14px;
+      }
+      .brand {
+        font-size: 0.78rem;
+        letter-spacing: 0.08em;
+        text-transform: uppercase;
+        opacity: 0.9;
+      }
+      .badge {
+        font-size: 0.75rem;
+        font-weight: 600;
+        background: rgba(255, 255, 255, 0.16);
+        border: 1px solid rgba(255, 255, 255, 0.28);
+        border-radius: 999px;
+        padding: 6px 10px;
       }
       h1 {
         margin: 0 0 8px;
-        font-size: 2rem;
+        font-size: 2.05rem;
+        line-height: 1.2;
       }
       .subtitle {
-        margin: 0 0 28px;
-        color: var(--muted);
+        margin: 0;
+        max-width: 760px;
+        color: rgba(255, 255, 255, 0.88);
       }
       .grid {
         display: grid;
-        grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
-        gap: 14px;
-        margin-bottom: 28px;
+        grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+        gap: 16px;
+        margin-bottom: 26px;
       }
       .card {
         background: var(--card);
         border: 1px solid var(--border);
-        border-radius: 12px;
-        padding: 16px;
-        min-height: 96px;
+        border-radius: 14px;
+        padding: 18px;
+        min-height: 104px;
+        box-shadow: 0 3px 12px rgba(15, 33, 70, 0.06);
       }
       .card h2 {
         margin: 0;
-        font-size: 1rem;
+        font-size: 1.02rem;
         line-height: 1.35;
       }
       .card p {
@@ -58,8 +91,14 @@
         color: var(--muted);
       }
       .section-title {
-        margin: 0 0 10px;
-        font-size: 1.05rem;
+        margin: 0 0 12px;
+        font-size: 1.15rem;
+      }
+      .docs {
+        background: #fff;
+        border: 1px solid var(--border);
+        border-radius: 14px;
+        padding: 18px;
       }
       ul {
         margin: 0;
@@ -75,8 +114,14 @@
   </head>
   <body>
     <main class="container">
-      <h1>SEA Leaders</h1>
-      <p class="subtitle">Latest on coastal communities in Southeast Asia.</p>
+      <section class="hero" aria-label="Header">
+        <div class="hero-top">
+          <div class="brand">SEA Leaders / Coastal News Desk</div>
+          <div class="badge">Southeast Asia Focus</div>
+        </div>
+        <h1>SEA Leaders</h1>
+        <p class="subtitle">Latest on coastal communities in Southeast Asia.</p>
+      </section>
 
       <h2 class="section-title">Priority News Areas (No Duplicates)</h2>
       <section class="grid" aria-label="News topic cards">
@@ -93,14 +138,16 @@
         <article class="card"><h2>5) Marine Pollutiion</h2></article>
       </section>
 
-      <h2 class="section-title">Migration Documentation</h2>
-      <ul>
-        <li><a href="../SEASIA_COASTAL_MIGRATION_GUIDE.md">SEASIA Coastal Migration Guide</a></li>
-        <li><a href="../SEASIA_COASTAL_QUICK_START.md">SEASIA Coastal Quick Start</a></li>
-        <li><a href="../IMPLEMENTATION_CHECKLIST.md">Implementation Checklist</a></li>
-        <li><a href="../COMPONENT_MAPPING.md">Component Mapping</a></li>
-        <li><a href="../FILE_MANIFEST.md">File Manifest</a></li>
-      </ul>
+      <section class="docs">
+        <h2 class="section-title">Migration Documentation</h2>
+        <ul>
+          <li><a href="../SEASIA_COASTAL_MIGRATION_GUIDE.md">SEASIA Coastal Migration Guide</a></li>
+          <li><a href="../SEASIA_COASTAL_QUICK_START.md">SEASIA Coastal Quick Start</a></li>
+          <li><a href="../IMPLEMENTATION_CHECKLIST.md">Implementation Checklist</a></li>
+          <li><a href="../COMPONENT_MAPPING.md">Component Mapping</a></li>
+          <li><a href="../FILE_MANIFEST.md">File Manifest</a></li>
+        </ul>
+      </section>
     </main>
   </body>
 </html>
