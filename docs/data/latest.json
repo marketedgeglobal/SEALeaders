@@ -1,5 +1,5 @@
 {
-  "runAt": "2026-03-03T23:16:58.996429+00:00",
+  "runAt": "2026-03-03T23:28:05.518439+00:00",
   "totalItems": 32,
   "sectors": [
     {
@@ -16,6 +16,7 @@
           "sourcePublishedAt": "2026-03-03",
           "source": "Mongabay",
           "sector": "Sustainable Fisheries",
+          "country": "regional",
           "snippet": "Labor abuses including violence, debt bondage and withheld wages and medical care, overfishing, shark finning, marine mammal killings: A new report exposes bad practices and a weak regulatory framework governing the jumbo flying squid fishery in the Southeast Pacific Ocean. The report was launched on Feb. 19, just days"
         },
         {
@@ -29,6 +30,7 @@
           "sourcePublishedAt": "2026-03-03",
           "source": "VietnamPlus",
           "sector": "Sustainable Fisheries",
+          "country": "vietnam",
           "snippet": "Prime Minister Pham Minh Chinh has stressed that wrongdoings by any individual or organisation must not be allowed to affect the country’s overall efforts to have the European Commission’s “yellow card” warning lifted."
         },
         {
@@ -42,20 +44,8 @@
           "sourcePublishedAt": "2026-03-03",
           "source": "VietnamPlus",
           "sector": "Sustainable Fisheries",
+          "country": "vietnam",
           "snippet": "Both host and guest agreed to facilitate market access, promptly remove trade barriers and address difficulties in order to meet cooperation needs and fully tap the economic potential of the EAEU and Vietnam."
-        },
-        {
-          "id": "541516242533",
-          "title": "PM chairs 32nd meeting of national steering committee for anti-IUU fishing",
-          "url": "https://en.vietnamplus.vn/pm-chairs-32nd-meeting-of-national-steering-committee-for-anti-iuu-fishing-post338612.vnp",
-          "originalUrl": "https://en.vietnamplus.vn/pm-chairs-32nd-meeting-of-national-steering-committee-for-anti-iuu-fishing-post338612.vnp",
-          "verifiedUrl": "https://en.vietnamplus.vn/pm-chairs-32nd-meeting-of-national-steering-committee-for-anti-iuu-fishing-post338612.vnp",
-          "publisher": "VietnamPlus",
-          "publishedAt": "2026-03-03",
-          "sourcePublishedAt": "2026-03-03",
-          "source": "VietnamPlus",
-          "sector": "Sustainable Fisheries",
-          "snippet": "The highest objective is to meet the dual requirement of lifting the EC’s yellow-card warning and ensuring the sustainable development of the fisheries sector, PM Chinh underscored."
         },
         {
           "id": "33f22e3b053b",
@@ -68,7 +58,22 @@
           "sourcePublishedAt": "2026-03-02",
           "source": "Mongabay",
           "sector": "Sustainable Fisheries",
+          "country": "regional",
           "snippet": "KOSI BAY, South Africa — “There’s a way to hold the spear,” Fano Tembe says, aiming a traditional fishing spear at the sand to show the tourists how they’ll be stabbing a fish in a trap they’re about to visit. “This is your aiming hand.” He cradles the middle of the pole in his left, […]"
+        },
+        {
+          "id": "541516242533",
+          "title": "PM chairs 32nd meeting of national steering committee for anti-IUU fishing",
+          "url": "https://en.vietnamplus.vn/pm-chairs-32nd-meeting-of-national-steering-committee-for-anti-iuu-fishing-post338612.vnp",
+          "originalUrl": "https://en.vietnamplus.vn/pm-chairs-32nd-meeting-of-national-steering-committee-for-anti-iuu-fishing-post338612.vnp",
+          "verifiedUrl": "https://en.vietnamplus.vn/pm-chairs-32nd-meeting-of-national-steering-committee-for-anti-iuu-fishing-post338612.vnp",
+          "publisher": "VietnamPlus",
+          "publishedAt": "2026-03-03",
+          "sourcePublishedAt": "2026-03-03",
+          "source": "VietnamPlus",
+          "sector": "Sustainable Fisheries",
+          "country": "vietnam",
+          "snippet": "The highest objective is to meet the dual requirement of lifting the EC’s yellow-card warning and ensuring the sustainable development of the fisheries sector, PM Chinh underscored."
         },
         {
           "id": "0fb899b87698",
@@ -81,6 +86,7 @@
           "sourcePublishedAt": "2026-03-03",
           "source": "VietnamPlus",
           "sector": "Sustainable Fisheries",
+          "country": "vietnam",
           "snippet": "Determined to have the EC’s “yellow card” warning lifted, Khanh Hoa has implemented drastic measures against IUU fishing in recent years."
         },
         {
@@ -94,6 +100,7 @@
           "sourcePublishedAt": "2026-03-03",
           "source": "VietnamPlus",
           "sector": "Sustainable Fisheries",
+          "country": "vietnam",
           "snippet": "While operating at sea, fishing vessel PY-96896-TS, captained by Toai, allegedly removed its vessel monitoring system (VMS) device and transferred it to fishing vessel PY-90479-TS, captained by his younger brother, in an attempt to evade supervision and tracking by the Vietnam fisheries surveillance force. Toai then st"
         }
       ]
@@ -102,17 +109,18 @@
       "name": "Climate Change",
       "items": [
         {
-          "id": "b5e25a104046",
-          "title": "America’s national parks face an uncertain future as climate risks mount",
-          "url": "https://news.mongabay.com/2026/03/americas-national-parks-face-an-uncertain-future-as-climate-risks-mount/",
-          "originalUrl": "https://news.mongabay.com/2026/03/americas-national-parks-face-an-uncertain-future-as-climate-risks-mount/",
-          "verifiedUrl": "https://news.mongabay.com/2026/03/americas-national-parks-face-an-uncertain-future-as-climate-risks-mount/",
-          "publisher": "Mongabay",
-          "publishedAt": "2026-03-02",
-          "sourcePublishedAt": "2026-03-02",
-          "source": "Mongabay",
+          "id": "6fd827286c5a",
+          "title": "Myanmar elections marked by fear as UN warns civilians are coerced from all sides",
+          "url": "https://news.un.org/feed/view/en/story/2025/12/1166662",
+          "originalUrl": "https://news.un.org/feed/view/en/story/2025/12/1166662",
+          "verifiedUrl": "https://news.un.org/feed/view/en/story/2025/12/1166662",
+          "publisher": "UN News Asia Pacific",
+          "publishedAt": "2025-12-23",
+          "sourcePublishedAt": "2025-12-23",
+          "source": "UN News Asia Pacific",
           "sector": "Climate Change",
-          "snippet": "America’s national parks were conceived as sanctuaries from the forces remaking the rest of the continent. Climate change is now breaching that boundary. A recent assessment of park vulnerability suggests that many of these landscapes are not simply warming or drying in familiar ways. They are being pushed toward ecolo"
+          "country": "myanmar",
+          "snippet": "As Myanmar approaches elections scheduled for 28 December, the UN’s top human rights official has said that civilians are being coerced from all sides – forced by the military to vote and threatened by armed opposition groups to boycott – in a climate of fear, violence and mass repression."
         },
         {
           "id": "402cb687ddde",
@@ -125,7 +133,22 @@
           "sourcePublishedAt": "2026-02-18",
           "source": "UN News Asia Pacific",
           "sector": "Climate Change",
+          "country": "regional",
           "snippet": "Climate inaction, biodiversity loss and rising emissions are pushing Asia and the Pacific further off course on the Sustainable Development Goals (SDGs), with the region set to miss nearly nine out of ten targets by 2030, the United Nations has warned."
+        },
+        {
+          "id": "b5e25a104046",
+          "title": "America’s national parks face an uncertain future as climate risks mount",
+          "url": "https://news.mongabay.com/2026/03/americas-national-parks-face-an-uncertain-future-as-climate-risks-mount/",
+          "originalUrl": "https://news.mongabay.com/2026/03/americas-national-parks-face-an-uncertain-future-as-climate-risks-mount/",
+          "verifiedUrl": "https://news.mongabay.com/2026/03/americas-national-parks-face-an-uncertain-future-as-climate-risks-mount/",
+          "publisher": "Mongabay",
+          "publishedAt": "2026-03-02",
+          "sourcePublishedAt": "2026-03-02",
+          "source": "Mongabay",
+          "sector": "Climate Change",
+          "country": "regional",
+          "snippet": "America’s national parks were conceived as sanctuaries from the forces remaking the rest of the continent. Climate change is now breaching that boundary. A recent assessment of park vulnerability suggests that many of these landscapes are not simply warming or drying in familiar ways. They are being pushed toward ecolo"
         },
         {
           "id": "0dcb1a82ae6b",
@@ -138,20 +161,8 @@
           "sourcePublishedAt": "2026-02-18",
           "source": "UN News Asia Pacific",
           "sector": "Climate Change",
+          "country": "regional",
           "snippet": "After a year that saw heavy monsoon floods, prolonged drought and dry spells, and a surge in violence, 7.5 million people in Pakistan face high levels of food insecurity and malnutrition according to a report from the global hunger monitor."
-        },
-        {
-          "id": "d43f7a901d4d",
-          "title": "From shelter to strength: How disaster refuges protect lives in Palau",
-          "url": "https://news.un.org/feed/view/en/story/2026/02/1166915",
-          "originalUrl": "https://news.un.org/feed/view/en/story/2026/02/1166915",
-          "verifiedUrl": "https://news.un.org/feed/view/en/story/2026/02/1166915",
-          "publisher": "UN News Asia Pacific",
-          "publishedAt": "2026-02-06",
-          "sourcePublishedAt": "2026-02-06",
-          "source": "UN News Asia Pacific",
-          "sector": "Climate Change",
-          "snippet": "The small Pacific Ocean island of Palau is helping communities build resilience against the dangers of climate change-driven extreme weather with the establishment of a network of emergency refuges – thanks to support from the United Nations."
         },
         {
           "id": "0ba0fe410032",
@@ -164,6 +175,7 @@
           "sourcePublishedAt": "2026-03-03",
           "source": "VietnamPlus",
           "sector": "Climate Change",
+          "country": "vietnam",
           "snippet": "Manufacturing production increased rapidly in February, with the rate of expansion quickening to a 19-month high. Panellists reported that the preparation of products ahead of delivery to clients and stronger customer demand were behind the latest rise in output."
         },
         {
@@ -177,6 +189,7 @@
           "sourcePublishedAt": "2026-02-27",
           "source": "Mongabay",
           "sector": "Climate Change",
+          "country": "regional",
           "snippet": "Southern right whales (Eubalaena australis) off Australia’s southern coast are having calves less often than they used to. A new study links this slowdown to warming water and shrinking sea ice in the Southern Ocean. The study, conducted by researchers at Australian, South African and U.S. institutions and published th"
         },
         {
@@ -190,20 +203,22 @@
           "sourcePublishedAt": "2026-02-27",
           "source": "Mongabay",
           "sector": "Climate Change",
+          "country": "regional",
           "snippet": "The tropical forests of the Amazon and Andes are some of the most biodiverse places on the planet, but across both regions, changes in climate and landscape conditions are driving a shift in the number of tree species, recent research has found. Although the overall number of tree species across the Andes and Amazon ha"
         },
         {
-          "id": "6fd827286c5a",
-          "title": "Myanmar elections marked by fear as UN warns civilians are coerced from all sides",
-          "url": "https://news.un.org/feed/view/en/story/2025/12/1166662",
-          "originalUrl": "https://news.un.org/feed/view/en/story/2025/12/1166662",
-          "verifiedUrl": "https://news.un.org/feed/view/en/story/2025/12/1166662",
+          "id": "d43f7a901d4d",
+          "title": "From shelter to strength: How disaster refuges protect lives in Palau",
+          "url": "https://news.un.org/feed/view/en/story/2026/02/1166915",
+          "originalUrl": "https://news.un.org/feed/view/en/story/2026/02/1166915",
+          "verifiedUrl": "https://news.un.org/feed/view/en/story/2026/02/1166915",
           "publisher": "UN News Asia Pacific",
-          "publishedAt": "2025-12-23",
-          "sourcePublishedAt": "2025-12-23",
+          "publishedAt": "2026-02-06",
+          "sourcePublishedAt": "2026-02-06",
           "source": "UN News Asia Pacific",
           "sector": "Climate Change",
-          "snippet": "As Myanmar approaches elections scheduled for 28 December, the UN’s top human rights official has said that civilians are being coerced from all sides – forced by the military to vote and threatened by armed opposition groups to boycott – in a climate of fear, violence and mass repression."
+          "country": "regional",
+          "snippet": "The small Pacific Ocean island of Palau is helping communities build resilience against the dangers of climate change-driven extreme weather with the establishment of a network of emergency refuges – thanks to support from the United Nations."
         }
       ]
     },
@@ -221,6 +236,7 @@
           "sourcePublishedAt": "2026-03-04",
           "source": "Channel News Asia - Asia",
           "sector": "Maritime Security",
+          "country": "regional",
           "snippet": "The move aims to protect energy shipments through the Strait of Hormuz and stabilise oil markets amid escalating Middle East tensions."
         },
         {
@@ -234,6 +250,7 @@
           "sourcePublishedAt": "2026-03-03",
           "source": "gCaptain",
           "sector": "Maritime Security",
+          "country": "regional",
           "snippet": "President Donald Trump said Tuesday he has directed the U.S. government to provide political risk insurance and financial guarantees for maritime trade transiting the Persian Gulf, while signaling that U.S...."
         },
         {
@@ -247,20 +264,8 @@
           "sourcePublishedAt": "2026-03-03",
           "source": "gCaptain",
           "sector": "Maritime Security",
+          "country": "regional",
           "snippet": "An LNG carrier identified as the Arctic Metagaz, part of Russia’s emerging shadow fleet transporting sanctioned liquefied natural gas, was reportedly on fire early Tuesday in the central Mediterranean off the coasts of Malta and Libya."
-        },
-        {
-          "id": "fccb2b30e1f4",
-          "title": "Gulf War Risk Insurance Pulled as Reinsurers Exit",
-          "url": "https://gcaptain.com/gulf-war-risk-insurance-pulled-as-reinsurers-exit/",
-          "originalUrl": "https://gcaptain.com/gulf-war-risk-insurance-pulled-as-reinsurers-exit/",
-          "verifiedUrl": "https://gcaptain.com/gulf-war-risk-insurance-pulled-as-reinsurers-exit/",
-          "publisher": "gCaptain",
-          "publishedAt": "2026-03-02",
-          "sourcePublishedAt": "2026-03-02",
-          "source": "gCaptain",
-          "sector": "Maritime Security",
-          "snippet": "The global marine insurance market is rapidly retrenching from the Persian Gulf as escalating military conflict between the United States, Israel, and Iran pushes the region’s maritime risk profile to..."
         },
         {
           "id": "fede3cb72c7e",
@@ -273,6 +278,7 @@
           "sourcePublishedAt": "2026-03-03",
           "source": "VietnamPlus",
           "sector": "Maritime Security",
+          "country": "vietnam",
           "snippet": "On March 3, 1959, the People’s Armed Police Force - now the Vietnam Border Guard - was officially established. The event marked an important milestone in the strategic policy of the Party and the State regarding the protection of national sovereignty and border security."
         },
         {
@@ -286,6 +292,7 @@
           "sourcePublishedAt": "2026-03-03",
           "source": "VietnamPlus",
           "sector": "Maritime Security",
+          "country": "vietnam",
           "snippet": "Vietnam calls upon all parties involved to act with responsibility, strictly adhere to international law, the United Nations Charter and relevant United Nations resolutions, respect the sovereignty and territorial integrity of nations, resume negotiations, and create favourable conditions for dialogue."
         },
         {
@@ -299,7 +306,22 @@
           "sourcePublishedAt": "2026-03-03",
           "source": "VietnamPlus",
           "sector": "Maritime Security",
+          "country": "vietnam",
           "snippet": "According to the latest update from the VIMAWA, as of late March 3, Vietnam has eight vessels with 160 crew members operating in the Middle East."
+        },
+        {
+          "id": "fccb2b30e1f4",
+          "title": "Gulf War Risk Insurance Pulled as Reinsurers Exit",
+          "url": "https://gcaptain.com/gulf-war-risk-insurance-pulled-as-reinsurers-exit/",
+          "originalUrl": "https://gcaptain.com/gulf-war-risk-insurance-pulled-as-reinsurers-exit/",
+          "verifiedUrl": "https://gcaptain.com/gulf-war-risk-insurance-pulled-as-reinsurers-exit/",
+          "publisher": "gCaptain",
+          "publishedAt": "2026-03-02",
+          "sourcePublishedAt": "2026-03-02",
+          "source": "gCaptain",
+          "sector": "Maritime Security",
+          "country": "regional",
+          "snippet": "The global marine insurance market is rapidly retrenching from the Persian Gulf as escalating military conflict between the United States, Israel, and Iran pushes the region’s maritime risk profile to..."
         },
         {
           "id": "69b554726ba8",
@@ -312,6 +334,7 @@
           "sourcePublishedAt": "2026-01-15",
           "source": "UN News Asia Pacific",
           "sector": "Maritime Security",
+          "country": "regional",
           "snippet": "The UN Security Council is meeting in New York in emergency session on Iran, amid escalating concern over reports that hundreds have been killed during weeks of nationwide anti-government protests. The meeting was requested by the United States. Demonstrations that began in late December, fuelled by soaring inflation, "
         }
       ]
@@ -330,7 +353,8 @@
           "sourcePublishedAt": "2026-03-04",
           "source": "Channel News Asia - Asia",
           "sector": "Sustainable Blue Economy",
-          "snippet": "March 3 : OpenAI is developing a new code repository to rival Microsoft's GitHub, The Information reported on Tuesday, citing a person with knowledge of the project."
+          "country": "regional",
+          "snippet": "March 3 : OpenAI is developing a new code-hosting platform to rival Microsoft's GitHub, The Information reported on Tuesday, citing a person with knowledge of the project.Engineers from OpenAI encountered a rise in service disruptions that rendered GitHub unavailable in recent months, which ultimately prompte"
         },
         {
           "id": "21e055869df7",
@@ -343,6 +367,7 @@
           "sourcePublishedAt": "2026-03-04",
           "source": "Channel News Asia - Asia",
           "sector": "Sustainable Blue Economy",
+          "country": "regional",
           "snippet": "One watch is a start – a collection is a point of view. From a clean everyday men’s piece to a dress watch, sports beater, vintage gem and a grail, these are the categories that round out a men’s watch collection."
         },
         {
@@ -356,46 +381,8 @@
           "sourcePublishedAt": "2026-03-03",
           "source": "The Straits Times - Asia",
           "sector": "Sustainable Blue Economy",
+          "country": "regional",
           "snippet": "India is the world’s largest basmati rice exporter, with the Middle East its top market. Read more at straitstimes.com. Read more at straitstimes.com."
-        },
-        {
-          "id": "bac0c02f3e98",
-          "title": "Japan Is Moving to Expand Defense Exports. Constitutional Revision Is a Bigger Ask.",
-          "url": "https://thediplomat.com/2026/02/japan-is-moving-to-expand-defense-exports-constitutional-revision-is-a-bigger-ask/",
-          "originalUrl": "https://thediplomat.com/2026/02/japan-is-moving-to-expand-defense-exports-constitutional-revision-is-a-bigger-ask/",
-          "verifiedUrl": "https://thediplomat.com/2026/02/japan-is-moving-to-expand-defense-exports-constitutional-revision-is-a-bigger-ask/",
-          "publisher": "The Diplomat",
-          "publishedAt": "2026-02-26",
-          "sourcePublishedAt": "2026-02-26",
-          "source": "The Diplomat",
-          "sector": "Sustainable Blue Economy",
-          "snippet": "While most Japanese lawmakers support revising the constitution, they are more divided on what, exactly, needs to change."
-        },
-        {
-          "id": "8453e760c179",
-          "title": "Japan’s Farm and Food Exports Hit New High As Trade Patterns Shift",
-          "url": "https://thediplomat.com/2026/02/japans-farm-and-food-exports-hit-new-high-as-trade-patterns-shift/",
-          "originalUrl": "https://thediplomat.com/2026/02/japans-farm-and-food-exports-hit-new-high-as-trade-patterns-shift/",
-          "verifiedUrl": "https://thediplomat.com/2026/02/japans-farm-and-food-exports-hit-new-high-as-trade-patterns-shift/",
-          "publisher": "The Diplomat",
-          "publishedAt": "2026-02-25",
-          "sourcePublishedAt": "2026-02-25",
-          "source": "The Diplomat",
-          "sector": "Sustainable Blue Economy",
-          "snippet": "Amid tariffs and geopolitical headwinds, Japan’s trade data shows new patterns emerging – led by food products, tourism-linked consumption, and advanced manufacturing."
-        },
-        {
-          "id": "5790db2cd7cc",
-          "title": "China’s New Export: Aircraft Debt",
-          "url": "https://thediplomat.com/2026/02/chinas-new-export-aircraft-debt/",
-          "originalUrl": "https://thediplomat.com/2026/02/chinas-new-export-aircraft-debt/",
-          "verifiedUrl": "https://thediplomat.com/2026/02/chinas-new-export-aircraft-debt/",
-          "publisher": "The Diplomat",
-          "publishedAt": "2026-02-24",
-          "sourcePublishedAt": "2026-02-24",
-          "source": "The Diplomat",
-          "sector": "Sustainable Blue Economy",
-          "snippet": "COMAC’s aircraft exports have brought healthy competition to a stagnant global aviation duopoly, but how they are financed should raise some concerns."
         },
         {
           "id": "df085ddddf47",
@@ -408,6 +395,7 @@
           "sourcePublishedAt": "2026-03-03",
           "source": "gCaptain",
           "sector": "Sustainable Blue Economy",
+          "country": "regional",
           "snippet": "President Donald Trump will review a set of policy options on Tuesday aimed at controlling energy prices during the escalating Middle East conflict, including a proposal for the U.S. government to help oil tankers in the region obtain insurance, two sources said."
         },
         {
@@ -421,7 +409,50 @@
           "sourcePublishedAt": "2026-03-03",
           "source": "gCaptain",
           "sector": "Sustainable Blue Economy",
+          "country": "regional",
           "snippet": "By Gavin van Marle (The Loadstar) – After ONE cancelled bookings to Middle East Gulf ports yesterday, its chief executive, Jeremy Nixon, told delegates at the S&P Global TPM event in..."
+        },
+        {
+          "id": "8eab5891579a",
+          "title": "Asia Scrambles for LNG as Qatar Output Halted, India Begins Gas Rationing",
+          "url": "https://gcaptain.com/asia-scrambles-for-lng-as-qatar-output-halted-india-begins-gas-rationing/",
+          "originalUrl": "https://gcaptain.com/asia-scrambles-for-lng-as-qatar-output-halted-india-begins-gas-rationing/",
+          "verifiedUrl": "https://gcaptain.com/asia-scrambles-for-lng-as-qatar-output-halted-india-begins-gas-rationing/",
+          "publisher": "gCaptain",
+          "publishedAt": "2026-03-03",
+          "sourcePublishedAt": "2026-03-03",
+          "source": "gCaptain",
+          "sector": "Sustainable Blue Economy",
+          "country": "regional",
+          "snippet": "India began rationing natural gas on Tuesday while countries around Asia looked to the spot market to replace supplies, activated emergency plans and prepared to step up production, as the conflict in the Middle East curtailed shipping and halted Qatari output."
+        },
+        {
+          "id": "05d1672f80d5",
+          "title": "‘Black Swan’ Risks Stalk Container Carriers in Avoiding Iran War",
+          "url": "https://gcaptain.com/iran-conflict-container-shipping-crisis-hormuz/",
+          "originalUrl": "https://gcaptain.com/iran-conflict-container-shipping-crisis-hormuz/",
+          "verifiedUrl": "https://gcaptain.com/iran-conflict-container-shipping-crisis-hormuz/",
+          "publisher": "gCaptain",
+          "publishedAt": "2026-03-03",
+          "sourcePublishedAt": "2026-03-03",
+          "source": "gCaptain",
+          "sector": "Sustainable Blue Economy",
+          "country": "regional",
+          "snippet": "The Iran conflict has effectively closed the Strait of Hormuz, trapping 750 ships and transforming container shipping from overcapacity to sudden supply crunch. Industry warns of pandemic-style disruptions."
+        },
+        {
+          "id": "05343962ee30",
+          "title": "Strait of Hormuz Shockwaves: Drewry Sees Tanker Spike, LNG Bottlenecks, and Trade Rewiring Across Shipping",
+          "url": "https://gcaptain.com/strait-of-hormuz-shockwaves-drewry-sees-tanker-spike-lng-bottlenecks-and-trade-rewiring-across-shipping/",
+          "originalUrl": "https://gcaptain.com/strait-of-hormuz-shockwaves-drewry-sees-tanker-spike-lng-bottlenecks-and-trade-rewiring-across-shipping/",
+          "verifiedUrl": "https://gcaptain.com/strait-of-hormuz-shockwaves-drewry-sees-tanker-spike-lng-bottlenecks-and-trade-rewiring-across-shipping/",
+          "publisher": "gCaptain",
+          "publishedAt": "2026-03-03",
+          "sourcePublishedAt": "2026-03-03",
+          "source": "gCaptain",
+          "sector": "Sustainable Blue Economy",
+          "country": "regional",
+          "snippet": "The effective shutdown of commercial traffic through the Strait of Hormuz has jolted global shipping markets after coordinated U.S. and Israeli strikes on Iran over the weekend triggered the most..."
         }
       ]
     },
@@ -439,6 +470,7 @@
           "sourcePublishedAt": "2026-03-02",
           "source": "Mongabay",
           "sector": "Marine Pollution",
+          "country": "philippines",
           "snippet": "RODRIGUEZ, Philippines — Lenny* recalled freezing when he saw the first heap of garbage collapse underneath the feet of his fellow scavengers on the afternoon of Feb. 20, at a landfill in the town of Rodriguez, in the Philippines’ Rizal province. Moments later, a larger perimeter caved. In an instant, a crater of trash"
         }
       ]
