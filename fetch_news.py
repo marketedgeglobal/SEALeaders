@@ -872,7 +872,22 @@ def _to_date_string(value: str) -> str:
             dt = datetime.fromisoformat(value.replace("Z", "+00:00"))
             return dt.date().isoformat()
         except Exception:
-            return value[:10]
+            cleaned = re.sub(r"\s+", " ", str(value)).strip()
+            fmts = (
+                "%d %B %Y",
+                "%d %b %Y",
+                "%B %d, %Y",
+                "%b %d, %Y",
+                "%Y/%m/%d",
+                "%d/%m/%Y",
+                "%m/%d/%Y",
+            )
+            for fmt in fmts:
+                try:
+                    return datetime.strptime(cleaned, fmt).date().isoformat()
+                except Exception:
+                    continue
+            return ""
 
 
 def _is_within_recent_window(date_value: str, max_age_days: int = MAX_ITEM_AGE_DAYS) -> bool:
@@ -1155,6 +1170,36 @@ def _extract_published_date_from_html(html: str) -> str:
         if not match:
             continue
         parsed = _to_date_string(match.group(1))
+        if parsed:
+            return parsed
+
+    text = _clean_text(html)
+    text = text[:20000]
+
+    iso_match = re.search(r"\b(20\d{2}-\d{2}-\d{2})\b", text)
+    if iso_match:
+        parsed = _to_date_string(iso_match.group(1))
+        if parsed:
+            return parsed
+
+    month_match = re.search(
+        r"\b(?:published\s+on\s+|updated\s+on\s+|date\s*[:\-]\s*)?"
+        r"((?:jan|feb|mar|apr|may|jun|jul|aug|sep|sept|oct|nov|dec)[a-z]*\s+\d{1,2},\s*20\d{2})\b",
+        text,
+        flags=re.IGNORECASE,
+    )
+    if month_match:
+        parsed = _to_date_string(month_match.group(1))
+        if parsed:
+            return parsed
+
+    alt_month_match = re.search(
+        r"\b(\d{1,2}\s+(?:jan|feb|mar|apr|may|jun|jul|aug|sep|sept|oct|nov|dec)[a-z]*\s+20\d{2})\b",
+        text,
+        flags=re.IGNORECASE,
+    )
+    if alt_month_match:
+        parsed = _to_date_string(alt_month_match.group(1))
         if parsed:
             return parsed
 
