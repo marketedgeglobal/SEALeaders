@@ -195,6 +195,26 @@ FEEDS = [
         "url": "https://www.wri.org/insights/rss.xml",
     },
     {
+        "name": "Mongabay - Oceans (Web)",
+        "url": "https://news.mongabay.com/list/oceans/",
+        "mode": "web",
+    },
+    {
+        "name": "Mongabay - Fisheries (Web)",
+        "url": "https://news.mongabay.com/list/fisheries/",
+        "mode": "web",
+    },
+    {
+        "name": "SEAFDEC - News (Web)",
+        "url": "https://www.seafdec.org/news/",
+        "mode": "web",
+    },
+    {
+        "name": "ADB - Ocean Health & Blue Economy (Web)",
+        "url": "https://www.adb.org/topics/ocean-health-blue-economy/main",
+        "mode": "web",
+    },
+    {
         "name": "Google News - ASEAN Fisheries",
         "url": "https://news.google.com/rss/search?q=ASEAN+fisheries+aquaculture+Southeast+Asia&hl=en-US&gl=US&ceid=US:en",
     },
@@ -397,6 +417,10 @@ REGIONAL_CONTEXT_FEEDS = {
     "AMTI - CSIS",
     "Stimson Center",
     "WRI - Insights",
+    "Mongabay - Oceans (Web)",
+    "Mongabay - Fisheries (Web)",
+    "SEAFDEC - News (Web)",
+    "ADB - Ocean Health & Blue Economy (Web)",
     "Google News - ASEAN Fisheries",
     "Google News - SEA Coastal Fisheries",
     "Google News - SEA Seafood Trade",
@@ -642,6 +666,10 @@ FEED_COUNTRY_HINTS = {
     "AMTI - CSIS": "regional",
     "Stimson Center": "regional",
     "WRI - Insights": "regional",
+    "Mongabay - Oceans (Web)": "regional",
+    "Mongabay - Fisheries (Web)": "regional",
+    "SEAFDEC - News (Web)": "regional",
+    "ADB - Ocean Health & Blue Economy (Web)": "regional",
     "Google News - ASEAN Fisheries": "regional",
     "Google News - SEA Coastal Fisheries": "regional",
     "Google News - SEA Seafood Trade": "regional",
@@ -1041,6 +1069,28 @@ def _extract_meta_description(html: str) -> str:
     return ""
 
 
+def _extract_published_date_from_html(html: str) -> str:
+    patterns = [
+        r'<meta[^>]+property=["\']article:published_time["\'][^>]+content=["\']([^"\']+)["\']',
+        r'<meta[^>]+content=["\']([^"\']+)["\'][^>]+property=["\']article:published_time["\']',
+        r'<meta[^>]+name=["\']pubdate["\'][^>]+content=["\']([^"\']+)["\']',
+        r'<meta[^>]+content=["\']([^"\']+)["\'][^>]+name=["\']pubdate["\']',
+        r'<meta[^>]+itemprop=["\']datePublished["\'][^>]+content=["\']([^"\']+)["\']',
+        r'<meta[^>]+content=["\']([^"\']+)["\'][^>]+itemprop=["\']datePublished["\']',
+        r'"datePublished"\s*:\s*"([^"]+)"',
+    ]
+
+    for pattern in patterns:
+        match = re.search(pattern, html, flags=re.IGNORECASE)
+        if not match:
+            continue
+        parsed = _to_date_string(match.group(1))
+        if parsed:
+            return parsed
+
+    return ""
+
+
 def _extract_first_paragraph(html: str) -> str:
     cleaned_html = re.sub(r"<script[\s\S]*?</script>", " ", html, flags=re.IGNORECASE)
     cleaned_html = re.sub(r"<style[\s\S]*?</style>", " ", cleaned_html, flags=re.IGNORECASE)
@@ -1076,6 +1126,29 @@ def _extract_article_excerpt(url: str, title: str, publisher: str) -> str:
     excerpt = _best_snippet(excerpt, title, publisher, allow_fallback=False)
     EXCERPT_CACHE[url] = excerpt
     return excerpt
+
+
+def _extract_article_excerpt_and_date(url: str, title: str, publisher: str) -> tuple[str, str]:
+    if not url or _is_google_host(url):
+        return "", ""
+
+    excerpt = ""
+    published_at = ""
+    try:
+        request = Request(url, headers=HTTP_HEADERS)
+        with urlopen(request, timeout=12) as response:
+            payload = response.read(600_000)
+            html = payload.decode("utf-8", errors="ignore")
+
+        meta_description = _extract_meta_description(html)
+        excerpt = meta_description or _extract_first_paragraph(html)
+        published_at = _extract_published_date_from_html(html)
+    except Exception:
+        excerpt = ""
+        published_at = ""
+
+    excerpt = _best_snippet(excerpt, title, publisher, allow_fallback=False)
+    return excerpt, published_at
 
 
 def _extract_web_candidates(source_url: str, max_links: int = 20) -> list[tuple[str, str]]:
@@ -1128,8 +1201,9 @@ def _extract_items_from_web_page(feed_name: str, source_url: str) -> list[dict]:
     for index, (title, article_url) in enumerate(candidates):
         publisher = _publisher_from_url(article_url)
         excerpt = ""
-        if ENABLE_ARTICLE_EXCERPT_FETCH and index < 8:
-            excerpt = _extract_article_excerpt(article_url, title, publisher)
+        published_at = ""
+        if ENABLE_ARTICLE_EXCERPT_FETCH and index < 12:
+            excerpt, published_at = _extract_article_excerpt_and_date(article_url, title, publisher)
         snippet = excerpt or ""
         if not _has_supporting_detail(snippet):
             continue
@@ -1157,8 +1231,8 @@ def _extract_items_from_web_page(feed_name: str, source_url: str) -> list[dict]:
                 "originalUrl": article_url,
                 "verifiedUrl": article_url,
                 "publisher": publisher,
-                "publishedAt": "",
-                "sourcePublishedAt": "",
+                "publishedAt": published_at,
+                "sourcePublishedAt": published_at,
                 "source": feed_name,
                 "sector": sector,
                 "country": country,

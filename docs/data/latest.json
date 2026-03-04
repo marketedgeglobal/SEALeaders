@@ -1,6 +1,6 @@
 {
-  "runAt": "2026-03-04T01:42:08.608677+00:00",
-  "totalItems": 14,
+  "runAt": "2026-03-04T01:47:36.463972+00:00",
+  "totalItems": 15,
   "sectors": [
     {
       "name": "Blue Economy",
@@ -8,7 +8,22 @@
     },
     {
       "name": "Sustainable Fisheries",
-      "items": []
+      "items": [
+        {
+          "id": "47700b88212a",
+          "title": "Migrant fishers’ deaths at sea tied to unchecked captain power, study shows Basten Gokkon 20 Feb 2026",
+          "url": "https://news.mongabay.com/2026/02/migrant-fishers-deaths-at-sea-tied-to-unchecked-captain-power-study-shows/",
+          "originalUrl": "https://news.mongabay.com/2026/02/migrant-fishers-deaths-at-sea-tied-to-unchecked-captain-power-study-shows/",
+          "verifiedUrl": "https://news.mongabay.com/2026/02/migrant-fishers-deaths-at-sea-tied-to-unchecked-captain-power-study-shows/",
+          "publisher": "news.mongabay.com",
+          "publishedAt": "2026-02-20",
+          "sourcePublishedAt": "2026-02-20",
+          "source": "Mongabay - Fisheries (Web)",
+          "sector": "Sustainable Fisheries",
+          "country": "indonesia",
+          "snippet": "The deaths of migrant fishers at sea are largely driven by structural labor and governance failures, rather than by safety or compliance issues alone, a new study shows. Migrant sea workers, especially those recruited from low-wage Southeast Asian countries such as Indonesia, often experience violence and fatal abuse w"
+        }
+      ]
     },
     {
       "name": "Climate Change",
@@ -26,6 +41,20 @@
           "sector": "Climate Change",
           "country": "regional",
           "snippet": "Insurance companies increasingly worry that escalating climate extremes could destabilise financial systems, not their balance sheets – an anxiety felt acutely in Asia Pacific, a MSCI study finds."
+        },
+        {
+          "id": "0d575665ab8e",
+          "title": "Low emissions to enhance the value of Vietnamese rice: agriculture experts",
+          "url": "https://vietnamnews.vn/environment/1766567/viet-nam-enhances-conservation-activities-for-world-wildlife-day.html",
+          "originalUrl": "https://vietnamnews.vn/environment/1766357/low-emissions-to-enhance-the-value-of-vietnamese-rice-agriculture-experts.html",
+          "verifiedUrl": "https://vietnamnews.vn/environment/1766567/viet-nam-enhances-conservation-activities-for-world-wildlife-day.html",
+          "publisher": "Vietnam News - Environment",
+          "publishedAt": "2026-02-26",
+          "sourcePublishedAt": "2026-02-26",
+          "source": "Vietnam News - Environment",
+          "sector": "Climate Change",
+          "country": "vietnam",
+          "snippet": "Forest management and protection of natural habitats are being promoted, combined with ecosystem restoration and the development of nature reserves."
         },
         {
           "id": "6fd827286c5a",
@@ -82,20 +111,6 @@
           "sector": "Climate Change",
           "country": "regional",
           "snippet": "Climate inaction, biodiversity loss and rising emissions are pushing Asia and the Pacific further off course on the Sustainable Development Goals (SDGs), with the region set to miss nearly nine out of ten targets by 2030, the United Nations has warned."
-        },
-        {
-          "id": "078a4fc2e68c",
-          "title": "What's the Climate Cost of Growing Crops?",
-          "url": "https://www.nature.com/articles/s41558-026-02558-4",
-          "originalUrl": "https://www.wri.org/insights/climate-emissions-growing-crops",
-          "verifiedUrl": "https://www.nature.com/articles/s41558-026-02558-4",
-          "publisher": "WRI - Insights",
-          "publishedAt": "2026-02-13",
-          "sourcePublishedAt": "2026-02-13",
-          "source": "WRI - Insights",
-          "sector": "Climate Change",
-          "country": "regional",
-          "snippet": "Emissions from croplands are an important source of GHG emissions that can be shaped by management. This study presents maps of emissions globally for different crops, showing that drained peatlands, rice paddies and fertilizer were the main drivers, and highlights differences in emission intensity."
         }
       ]
     },
@@ -117,18 +132,18 @@
           "snippet": "For years, China has promoted the idea of “shelving disputes” in the South China Sea and focusing on areas of cooperation. Southeast Asian claimants—Brunei, Malaysia, the Philippines, and Vietnam—have been receptive to this approach to varying degrees. While this strategy brings significant economic benefits, it carrie"
         },
         {
-          "id": "0be45ecf8896",
-          "title": "Reassessing the Legal Grounds of Freedom of Navigation in Indonesia’s Archipelagic Waters",
-          "url": "https://amti.csis.org/reassessing-the-legal-grounds-of-freedom-of-navigation-in-indonesias-archipelagic-waters/",
-          "originalUrl": "https://amti.csis.org/reassessing-the-legal-grounds-of-freedom-of-navigation-in-indonesias-archipelagic-waters/",
-          "verifiedUrl": "https://amti.csis.org/reassessing-the-legal-grounds-of-freedom-of-navigation-in-indonesias-archipelagic-waters/",
-          "publisher": "AMTI - CSIS",
-          "publishedAt": "2026-01-22",
-          "sourcePublishedAt": "2026-01-22",
-          "source": "AMTI - CSIS",
+          "id": "47700b88212a",
+          "title": "Migrant fishers’ deaths at sea tied to unchecked captain power, study shows Basten Gokkon 20 Feb 2026",
+          "url": "https://news.mongabay.com/2026/02/migrant-fishers-deaths-at-sea-tied-to-unchecked-captain-power-study-shows/",
+          "originalUrl": "https://news.mongabay.com/2026/02/migrant-fishers-deaths-at-sea-tied-to-unchecked-captain-power-study-shows/",
+          "verifiedUrl": "https://news.mongabay.com/2026/02/migrant-fishers-deaths-at-sea-tied-to-unchecked-captain-power-study-shows/",
+          "publisher": "news.mongabay.com",
+          "publishedAt": "2026-02-20",
+          "sourcePublishedAt": "2026-02-20",
+          "source": "Mongabay - Fisheries (Web)",
           "sector": "Maritime Security",
           "country": "indonesia",
-          "snippet": "This article is written in response to Navigating the Divide: Why the U.S. Navy Must Resume FONOPs in Indonesia by Patrick Panjeti, Military Fellow at the CSIS Defence and Security Department. 1. Introduction: Misrepresenting Indonesia’s Legal Commitments In his essay “Navigating the Divide,” Patrick Panjeti presents a"
+          "snippet": "The deaths of migrant fishers at sea are largely driven by structural labor and governance failures, rather than by safety or compliance issues alone, a new study shows. Migrant sea workers, especially those recruited from low-wage Southeast Asian countries such as Indonesia, often experience violence and fatal abuse w"
         },
         {
           "id": "6962f27b04e1",
@@ -159,6 +174,20 @@
           "snippet": "Introduction On September 10, China approved the establishment of a nature reserve at Scarborough Shoal, also known as Bajo de Masinloc in Tagalog or Huangyan Dao in Chinese, a coral atoll whose sovereignty is under dispute between China and the Philippines. According to Beijing, the reserve covers approximately one ac"
         },
         {
+          "id": "ad1f4ff54240",
+          "title": "Missiles Over Fleets: How A2/AD is Redefining Maritime Power in Southeast Asia",
+          "url": "https://amti.csis.org/missiles-over-fleets-how-a2-ad-is-redefining-maritime-power-in-southeast-asia/",
+          "originalUrl": "https://amti.csis.org/missiles-over-fleets-how-a2-ad-is-redefining-maritime-power-in-southeast-asia/",
+          "verifiedUrl": "https://amti.csis.org/missiles-over-fleets-how-a2-ad-is-redefining-maritime-power-in-southeast-asia/",
+          "publisher": "AMTI - CSIS",
+          "publishedAt": "2026-01-21",
+          "sourcePublishedAt": "2026-01-21",
+          "source": "AMTI - CSIS",
+          "sector": "Maritime Security",
+          "country": "philippines",
+          "snippet": "Southeast Asia is quietly entering a new strategic era, one defined not by the size of a navy’s fleet, but by the range of its missiles. Across the region, an emerging pattern is becoming visible. Vietnam, the Philippines, and Indonesia are each moving rapidly to establish anti-access/area-denial (A2/AD) postures. For "
+        },
+        {
           "id": "c23c6e51bf51",
           "title": "Karenni IEC warns of ‘toxic’ levels of arsenic in Salween River and Molo Creek",
           "url": "https://myanmar-now.org/en/news/karenni-iec-warns-of-toxic-levels-of-arsenic-in-salween-river-and-molo-creek/",
@@ -171,20 +200,6 @@
           "sector": "Maritime Security",
           "country": "myanmar",
           "snippet": "Wastewater from mines has heavily contained both rivers, according to Karenni State’s resistance-run civilian authority"
-        },
-        {
-          "id": "ce25583d12dd",
-          "title": "Climate Action Can Be One of the World’s Biggest Job Creators",
-          "url": "https://www.wri.org/research/jobs-skills-new-economy-action-agenda",
-          "originalUrl": "https://www.wri.org/insights/climate-action-job-creation",
-          "verifiedUrl": "https://www.wri.org/research/jobs-skills-new-economy-action-agenda",
-          "publisher": "WRI - Insights",
-          "publishedAt": "2026-02-12",
-          "sourcePublishedAt": "2026-02-12",
-          "source": "WRI - Insights",
-          "sector": "Maritime Security",
-          "country": "regional",
-          "snippet": "A new economy is unfolding, one with profound implications for people’s jobs and livelihoods. Against wider trends of digitalization, demographic shifts, and geopolitics, the climate transition is an increasingly important element shaping this new economy. Yet appreciation of the impacts of the transition on people and"
         }
       ]
     },
