@@ -343,7 +343,7 @@ MAX_ITEMS_PER_SECTOR = min(int(os.getenv("MAX_ITEMS_PER_SECTOR", "6")), 6)
 MAX_ITEMS_PER_PUBLISHER = int(os.getenv("MAX_ITEMS_PER_PUBLISHER", "3"))
 MAX_ITEMS_PER_COUNTRY = int(os.getenv("MAX_ITEMS_PER_COUNTRY", "6"))
 MAX_FEED_ENTRIES_PER_SOURCE = int(os.getenv("MAX_FEED_ENTRIES_PER_SOURCE", "36"))
-ENABLE_ARTICLE_EXCERPT_FETCH = os.getenv("ENABLE_ARTICLE_EXCERPT_FETCH", "0") == "1"
+ENABLE_ARTICLE_EXCERPT_FETCH = os.getenv("ENABLE_ARTICLE_EXCERPT_FETCH", "1") == "1"
 ENABLE_URL_RESOLVE = os.getenv("ENABLE_URL_RESOLVE", "0") == "1"
 OUTPUT_PATH = "docs/data/latest.json"
 HTTP_HEADERS = {
@@ -960,12 +960,9 @@ def _headline_fallback_summary(title: str) -> str:
 
 
 def _best_snippet(summary: str, title: str, publisher: str = "", allow_fallback: bool = True) -> str:
-    fallback = _headline_fallback_summary(title) if allow_fallback else ""
+    fallback = ""
     cleaned = _clean_text(summary)
     if not cleaned:
-        return fallback
-
-    if len(cleaned) < 36 or len(cleaned.split()) < 5:
         return fallback
 
     if publisher and cleaned.lower() == publisher.lower():
@@ -981,8 +978,11 @@ def _best_snippet(summary: str, title: str, publisher: str = "", allow_fallback:
 
     if cleaned.lower().startswith(title.lower()):
         tail = cleaned[len(title):].strip(" .,-–—|")
-        if tail and len(tail) >= 56 and (not publisher or tail.lower() != publisher.lower()):
+        if tail and len(tail) >= 24 and len(tail.split()) >= 4 and (not publisher or tail.lower() != publisher.lower()):
             return tail
+        return fallback
+
+    if len(cleaned) < 24 or len(cleaned.split()) < 4:
         return fallback
 
     return cleaned
@@ -1106,7 +1106,7 @@ def _extract_items_from_web_page(feed_name: str, source_url: str) -> list[dict]:
         excerpt = ""
         if ENABLE_ARTICLE_EXCERPT_FETCH and index < 8:
             excerpt = _extract_article_excerpt(article_url, title, publisher)
-        snippet = excerpt or _headline_fallback_summary(title)
+        snippet = excerpt or ""
         summary = snippet or ""
 
         if not _passes_sow_focus(title, summary, snippet):

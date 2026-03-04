@@ -1,5 +1,5 @@
 {
-  "runAt": "2026-03-04T01:25:08.250081+00:00",
+  "runAt": "2026-03-04T01:30:58.010292+00:00",
   "totalItems": 30,
   "sectors": [
     {
@@ -17,7 +17,7 @@
           "source": "Google News - ASEAN Blue Economy Finance",
           "sector": "Blue Economy",
           "country": "indonesia",
-          "snippet": "The report indicates that Indonesia's Blue Economy Push Signals a New Era for ESG Investment, Ocean Innovation, and Regional Trade."
+          "snippet": ""
         },
         {
           "id": "d8e86430cb40",
@@ -31,7 +31,7 @@
           "source": "Google News - ASEAN Blue Economy Finance",
           "sector": "Blue Economy",
           "country": "regional",
-          "snippet": "The report indicates that The Triple-Return Ocean Economy."
+          "snippet": ""
         },
         {
           "id": "b5a837a05901",
@@ -45,7 +45,7 @@
           "source": "Google News - ASEAN Blue Economy Finance",
           "sector": "Blue Economy",
           "country": "thailand",
-          "snippet": "The report indicates that Thailand launches first blue bonds to support sustainable coastal and ocean economy."
+          "snippet": ""
         },
         {
           "id": "10984bfa7725",
@@ -59,21 +59,7 @@
           "source": "Google News - ASEAN Blue Economy Finance",
           "sector": "Blue Economy",
           "country": "malaysia",
-          "snippet": "The report indicates that Sabah’s Blue Economy set to generate RM3.25 billion annually from marine yields | Malaysia."
-        },
-        {
-          "id": "48f2c6684af3",
-          "title": "In Thailand, a coral cryobank tries to buy time for dying reefs Neelanjana Rai 20 Feb 2026",
-          "url": "https://news.mongabay.com/2026/02/in-thailand-a-coral-cryobank-tries-to-buy-time-for-dying-reefs/",
-          "originalUrl": "https://news.mongabay.com/2026/02/in-thailand-a-coral-cryobank-tries-to-buy-time-for-dying-reefs/",
-          "verifiedUrl": "https://news.mongabay.com/2026/02/in-thailand-a-coral-cryobank-tries-to-buy-time-for-dying-reefs/",
-          "publisher": "news.mongabay.com",
-          "publishedAt": "",
-          "sourcePublishedAt": "",
-          "source": "Mongabay - Asia",
-          "sector": "Blue Economy",
-          "country": "thailand",
-          "snippet": "The report indicates that In Thailand, a coral cryobank tries to buy time for dying reefs Neelanjana Rai 20 Feb 2026."
+          "snippet": ""
         },
         {
           "id": "ff599fce6d96",
@@ -87,7 +73,21 @@
           "source": "Google News - ASEAN Blue Economy Finance",
           "sector": "Blue Economy",
           "country": "regional",
-          "snippet": "The report indicates that A new age of innovative blue finance to protect Southeast Asia’s ocean."
+          "snippet": ""
+        },
+        {
+          "id": "d42b7be0dbc4",
+          "title": "ASEAN Blue Economy forum convenes as Govt champions regional marine sustainability in Sabah",
+          "url": "https://news.google.com/rss/articles/CBMi0wFBVV95cUxQakNxY1lnd0kyMENxTEY2eUFBbnRJTUVaY3dtX2lYczd3VXlYVjFvZkRlSFc3RlYxLUtOckJQb2NuNHVTbHFBU0lyZm55UWozbC1BUjhxVVhMSDlGOWsyLWpUSE5VcUJ6OTM3Rnp6Z1dXTW1pNFpTQTd5M0VlR2hfLW11dWtQcGRZNlNHaWRsU2h6dnVRcHlwMjR6d3BEZ1lTN3NHNFIyc0xfUGFDWkVuZTJSQXMwLVYteE5OdWUzenpOVndLclEtbjM1VjZIcG5tWUk0?oc=5",
+          "originalUrl": "https://news.google.com/rss/articles/CBMi0wFBVV95cUxQakNxY1lnd0kyMENxTEY2eUFBbnRJTUVaY3dtX2lYczd3VXlYVjFvZkRlSFc3RlYxLUtOckJQb2NuNHVTbHFBU0lyZm55UWozbC1BUjhxVVhMSDlGOWsyLWpUSE5VcUJ6OTM3Rnp6Z1dXTW1pNFpTQTd5M0VlR2hfLW11dWtQcGRZNlNHaWRsU2h6dnVRcHlwMjR6d3BEZ1lTN3NHNFIyc0xfUGFDWkVuZTJSQXMwLVYteE5OdWUzenpOVndLclEtbjM1VjZIcG5tWUk0?oc=5",
+          "verifiedUrl": "https://news.google.com/rss/articles/CBMi0wFBVV95cUxQakNxY1lnd0kyMENxTEY2eUFBbnRJTUVaY3dtX2lYczd3VXlYVjFvZkRlSFc3RlYxLUtOckJQb2NuNHVTbHFBU0lyZm55UWozbC1BUjhxVVhMSDlGOWsyLWpUSE5VcUJ6OTM3Rnp6Z1dXTW1pNFpTQTd5M0VlR2hfLW11dWtQcGRZNlNHaWRsU2h6dnVRcHlwMjR6d3BEZ1lTN3NHNFIyc0xfUGFDWkVuZTJSQXMwLVYteE5OdWUzenpOVndLclEtbjM1VjZIcG5tWUk0?oc=5",
+          "publisher": "The Vibes",
+          "publishedAt": "2025-09-29",
+          "sourcePublishedAt": "2025-09-29",
+          "source": "Google News - ASEAN Blue Economy Finance",
+          "sector": "Blue Economy",
+          "country": "regional",
+          "snippet": ""
         }
       ]
     },
@@ -106,7 +106,7 @@
           "source": "Google News - ASEAN Fisheries",
           "sector": "Sustainable Fisheries",
           "country": "philippines",
-          "snippet": "The report indicates that Southeast Asian Fisheries Development Center (SEAFDEC) Aquaculture Department Chief Dan Baliao voiced support for Senate Bill No. 522, or the proposed Municipal Fisherfolk Protection Act, during a Feb. 18 hearing at the Philippine Senate."
+          "snippet": ""
         },
         {
           "id": "036d1c9f6cf8",
@@ -120,7 +120,7 @@
           "source": "Google News - SEA Coastal Fisheries",
           "sector": "Sustainable Fisheries",
           "country": "cambodia",
-          "snippet": "The report indicates that Illegal fishing and land grabs push Cambodian coastal communities to the brink."
+          "snippet": ""
         },
         {
           "id": "f0bfd511b33b",
@@ -134,21 +134,7 @@
           "source": "Google News - SEA Seafood Trade",
           "sector": "Sustainable Fisheries",
           "country": "myanmar",
-          "snippet": "The report indicates that Myanmar experiences Q2 2025 seafood export dip, even with shortened fishing ban."
-        },
-        {
-          "id": "e436b17be73b",
-          "title": "Vietnam Urges US to Rethink Seafood Ban as Trade Talks Grind On",
-          "url": "https://news.google.com/rss/articles/CBMitAFBVV95cUxPaFNHakJTR3hldjhLX2dpc1pZaVYwNWlfd084SkFkbmc0M0dDS3p1NzEzWXhwUzFNNlFMVEVjUXV2bHdzWlhHZnlnajlQcmMxYU1CLUFHX3pGZXYyS0JZNmVmcVBkUko4Zl9QRmowU0tySWpaaENzdy1SQV9ucFZQaDZaQnVpUDY3b2N0MlFSY1FRYU44T2RPRmhVTURfNHhoUTNoMHRURWo4eUoxLUtnUDhjOHc?oc=5",
-          "originalUrl": "https://news.google.com/rss/articles/CBMitAFBVV95cUxPaFNHakJTR3hldjhLX2dpc1pZaVYwNWlfd084SkFkbmc0M0dDS3p1NzEzWXhwUzFNNlFMVEVjUXV2bHdzWlhHZnlnajlQcmMxYU1CLUFHX3pGZXYyS0JZNmVmcVBkUko4Zl9QRmowU0tySWpaaENzdy1SQV9ucFZQaDZaQnVpUDY3b2N0MlFSY1FRYU44T2RPRmhVTURfNHhoUTNoMHRURWo4eUoxLUtnUDhjOHc?oc=5",
-          "verifiedUrl": "https://news.google.com/rss/articles/CBMitAFBVV95cUxPaFNHakJTR3hldjhLX2dpc1pZaVYwNWlfd084SkFkbmc0M0dDS3p1NzEzWXhwUzFNNlFMVEVjUXV2bHdzWlhHZnlnajlQcmMxYU1CLUFHX3pGZXYyS0JZNmVmcVBkUko4Zl9QRmowU0tySWpaaENzdy1SQV9ucFZQaDZaQnVpUDY3b2N0MlFSY1FRYU44T2RPRmhVTURfNHhoUTNoMHRURWo4eUoxLUtnUDhjOHc?oc=5",
-          "publisher": "Bloomberg.com",
-          "publishedAt": "2025-09-15",
-          "sourcePublishedAt": "2025-09-15",
-          "source": "Google News - SEA Seafood Trade",
-          "sector": "Sustainable Fisheries",
-          "country": "vietnam",
-          "snippet": "The report indicates that Vietnam Urges US to Rethink Seafood Ban as Trade Talks Grind On."
+          "snippet": ""
         },
         {
           "id": "8e97da79a868",
@@ -162,7 +148,7 @@
           "source": "Google News - SEA Illegal Fishing Communities",
           "sector": "Sustainable Fisheries",
           "country": "indonesia",
-          "snippet": "The report indicates that Indonesian fishers mount a community-led fight against destructive fishing."
+          "snippet": ""
         },
         {
           "id": "c52e27ce0f11",
@@ -176,27 +162,27 @@
           "source": "Google News - SEA Coastal Fisheries",
           "sector": "Sustainable Fisheries",
           "country": "philippines",
-          "snippet": "The report indicates that Fishing Communities in the Philippines Are Fighting for their Future as Waters Rise."
+          "snippet": ""
+        },
+        {
+          "id": "d7e200b0963f",
+          "title": "Chinese companies sign on to build Malaysia fishery, aquaculture project",
+          "url": "https://news.google.com/rss/articles/CBMiuwFBVV95cUxQanlsM1ZrOUF3OGJ0dUthMF80T3d4TWVKRjdia2Q1TnNYSkptZ0xoNGtTM2RBUGpleVpYZThOLTdpaElOZjRoYkhQekl1bTdia1F5azA5b1pUNkFLTFJLcDVKaUR3TXhNbVYzT0JjWF9yWkppaG5sMnlQdUlfY2oySUJpUmJ6dzZzZDNGbjVFbHZLTnlyS3haRTFDTUlVX0NRN0NKTWllekdjMzhlRE9ZNHNTb0RZVmozNmFN?oc=5",
+          "originalUrl": "https://news.google.com/rss/articles/CBMiuwFBVV95cUxQanlsM1ZrOUF3OGJ0dUthMF80T3d4TWVKRjdia2Q1TnNYSkptZ0xoNGtTM2RBUGpleVpYZThOLTdpaElOZjRoYkhQekl1bTdia1F5azA5b1pUNkFLTFJLcDVKaUR3TXhNbVYzT0JjWF9yWkppaG5sMnlQdUlfY2oySUJpUmJ6dzZzZDNGbjVFbHZLTnlyS3haRTFDTUlVX0NRN0NKTWllekdjMzhlRE9ZNHNTb0RZVmozNmFN?oc=5",
+          "verifiedUrl": "https://news.google.com/rss/articles/CBMiuwFBVV95cUxQanlsM1ZrOUF3OGJ0dUthMF80T3d4TWVKRjdia2Q1TnNYSkptZ0xoNGtTM2RBUGpleVpYZThOLTdpaElOZjRoYkhQekl1bTdia1F5azA5b1pUNkFLTFJLcDVKaUR3TXhNbVYzT0JjWF9yWkppaG5sMnlQdUlfY2oySUJpUmJ6dzZzZDNGbjVFbHZLTnlyS3haRTFDTUlVX0NRN0NKTWllekdjMzhlRE9ZNHNTb0RZVmozNmFN?oc=5",
+          "publisher": "SeafoodSource",
+          "publishedAt": "2024-07-05",
+          "sourcePublishedAt": "2024-07-05",
+          "source": "Google News - SEA Seafood Trade",
+          "sector": "Sustainable Fisheries",
+          "country": "malaysia",
+          "snippet": ""
         }
       ]
     },
     {
       "name": "Climate Change",
       "items": [
-        {
-          "id": "6962f27b04e1",
-          "title": "Malaysia to integrate water pricing into national adaptation plan, says environment ministry",
-          "url": "https://www.eco-business.com/news/malaysia-to-integrate-water-pricing-into-national-adaptation-plan-says-environment-ministry/",
-          "originalUrl": "https://www.eco-business.com/news/malaysia-to-integrate-water-pricing-into-national-adaptation-plan-says-environment-ministry/",
-          "verifiedUrl": "https://www.eco-business.com/news/malaysia-to-integrate-water-pricing-into-national-adaptation-plan-says-environment-ministry/",
-          "publisher": "Eco-Business - News",
-          "publishedAt": "2026-03-02",
-          "sourcePublishedAt": "2026-03-02",
-          "source": "Eco-Business - News",
-          "sector": "Climate Change",
-          "country": "malaysia",
-          "snippet": "The impacts of deforestation must also be counted towards the true cost of water, the ministry’s secretary-general said. The country's first fair share carbon budget report could help strengthen the government’s forest conservation efforts."
-        },
         {
           "id": "0d575665ab8e",
           "title": "Low emissions to enhance the value of Vietnamese rice: agriculture experts",
@@ -209,21 +195,21 @@
           "source": "Vietnam News - Environment",
           "sector": "Climate Change",
           "country": "vietnam",
-          "snippet": "The programme receives technical support from the Fertilise Right project funded by the United States Department of Agriculture (USDA)."
+          "snippet": "Forest management and protection of natural habitats are being promoted, combined with ecosystem restoration and the development of nature reserves."
         },
         {
-          "id": "3ad3d8bec014",
-          "title": "Pagasa: El Niño may develop August to October, intense habagat looms",
-          "url": "https://newsinfo.inquirer.net/2189947/el-nino-may-develop-in-july-but-pagasa-warns-of-intense-habagat",
-          "originalUrl": "https://newsinfo.inquirer.net/2189947/el-nino-may-develop-in-july-but-pagasa-warns-of-intense-habagat",
-          "verifiedUrl": "https://newsinfo.inquirer.net/2189947/el-nino-may-develop-in-july-but-pagasa-warns-of-intense-habagat",
-          "publisher": "Inquirer",
-          "publishedAt": "2026-03-03",
-          "sourcePublishedAt": "2026-03-03",
-          "source": "Inquirer",
+          "id": "6962f27b04e1",
+          "title": "Malaysia to integrate water pricing into national adaptation plan, says environment ministry",
+          "url": "https://www.eco-business.com/news/malaysia-to-integrate-water-pricing-into-national-adaptation-plan-says-environment-ministry/",
+          "originalUrl": "https://www.eco-business.com/news/malaysia-to-integrate-water-pricing-into-national-adaptation-plan-says-environment-ministry/",
+          "verifiedUrl": "https://www.eco-business.com/news/malaysia-to-integrate-water-pricing-into-national-adaptation-plan-says-environment-ministry/",
+          "publisher": "Eco-Business - News",
+          "publishedAt": "2026-03-02",
+          "sourcePublishedAt": "2026-03-02",
+          "source": "Eco-Business - News",
           "sector": "Climate Change",
-          "country": "philippines",
-          "snippet": "[Updated March 3, 2026, 7:32 p.m.] MANILA, Philippines — The El Niño phenomenon may start developing by August to October this year, according to the Philippine Atmospheric, Geophysical and Astronomical Services Administration (Pagasa). In an interview with the INQUIRER, Pagasa Climate Monitoring and Prediction Section"
+          "country": "malaysia",
+          "snippet": "The impacts of deforestation must also be counted towards the true cost of water, the ministry’s secretary-general said. The country's first fair share carbon budget report could help strengthen the..."
         },
         {
           "id": "4973d75b3157",
@@ -237,7 +223,7 @@
           "source": "Google News - ASEAN Blue Economy Finance",
           "sector": "Climate Change",
           "country": "indonesia",
-          "snippet": "The report indicates that Advancing Indonesia’s blue economy through ocean-based mitigation actions."
+          "snippet": ""
         },
         {
           "id": "6fd827286c5a",
@@ -254,18 +240,32 @@
           "snippet": "As Myanmar approaches elections scheduled for 28 December, the UN’s top human rights official has said that civilians are being coerced from all sides – forced by the military to vote and threatened by armed opposition groups to boycott – in a climate of fear, violence and mass repression."
         },
         {
-          "id": "034fcb40bb48",
-          "title": "Philippines Super Typhoon Rai death toll surges",
-          "url": "https://news.google.com/rss/articles/CBMiV0FVX3lxTFBfbm1wWGJXal9xMGR1X3hGZFppbllwbFI3T1l0RjNjZFRsMWNzWDF3cXZyZ3FnTFlPa1dkV0FqaE92Ujh0eGJDaHF6eFN2SGx1enpTOTNFRQ?oc=5",
-          "originalUrl": "https://news.google.com/rss/articles/CBMiV0FVX3lxTFBfbm1wWGJXal9xMGR1X3hGZFppbllwbFI3T1l0RjNjZFRsMWNzWDF3cXZyZ3FnTFlPa1dkV0FqaE92Ujh0eGJDaHF6eFN2SGx1enpTOTNFRQ?oc=5",
-          "verifiedUrl": "https://news.google.com/rss/articles/CBMiV0FVX3lxTFBfbm1wWGJXal9xMGR1X3hGZFppbllwbFI3T1l0RjNjZFRsMWNzWDF3cXZyZ3FnTFlPa1dkV0FqaE92Ujh0eGJDaHF6eFN2SGx1enpTOTNFRQ?oc=5",
-          "publisher": "BBC",
-          "publishedAt": "2021-12-20",
-          "sourcePublishedAt": "2021-12-20",
-          "source": "Google News - SEA Coast Guard Fisher Safety",
+          "id": "8460a8e29f30",
+          "title": "Agriculture Is Taking Over Grasslands, Wetlands and Other Overlooked Ecosystems",
+          "url": "https://www.wri.org/insights/cropland-expansion-impacts-people-planet",
+          "originalUrl": "https://www.wri.org/insights/global-ecosystem-conversion-grassland-wetland-savanna-to-agriculture",
+          "verifiedUrl": "https://www.wri.org/insights/cropland-expansion-impacts-people-planet",
+          "publisher": "WRI - Insights",
+          "publishedAt": "2026-02-25",
+          "sourcePublishedAt": "2026-02-25",
+          "source": "WRI - Insights",
           "sector": "Climate Change",
-          "country": "philippines",
-          "snippet": "The report indicates that Philippines Super Typhoon Rai death toll surges."
+          "country": "regional",
+          "snippet": "According to a landmark new study, 102 million hectares (Mha) (252 million acres) of land — an area the size of Egypt — have been converted to crops since the start of the 21st century. To put this into perspective, while it took more than 8,000 years for humanity to convert 1.1 billion hectares (2.8 billion acres) of "
+        },
+        {
+          "id": "72b2f2237568",
+          "title": "Southeast Asian countries advance climate-smart agriculture through regional cooperation",
+          "url": "https://news.google.com/rss/articles/CBMi1wFBVV95cUxPZVJaZkI2UUtKdU5XSTA5LWdWVWpoS2xqMFNFSnBUb001WXlzYkVfdG9ySndtVkZUYWRkaXByLWV0ckdoTjFVM3hoeDkyUXFYN0xhcUJ1Q2ljeUhpMDVMRXJ0aU84YUphNExEUUNXdi1Dd2lESkNXNlE4VTI0M29FQWhGdFBNQVdtblZWZk9kd28zRF9jS2RVTmxickJodzJEbzltU2pXN3d2Z2t5bU9mUnAzakFmblZPMXVlQ2lBSkh0SjdhdnlFc2Q2ek9hODhTTnEwNGtZYw?oc=5",
+          "originalUrl": "https://news.google.com/rss/articles/CBMi1wFBVV95cUxPZVJaZkI2UUtKdU5XSTA5LWdWVWpoS2xqMFNFSnBUb001WXlzYkVfdG9ySndtVkZUYWRkaXByLWV0ckdoTjFVM3hoeDkyUXFYN0xhcUJ1Q2ljeUhpMDVMRXJ0aU84YUphNExEUUNXdi1Dd2lESkNXNlE4VTI0M29FQWhGdFBNQVdtblZWZk9kd28zRF9jS2RVTmxickJodzJEbzltU2pXN3d2Z2t5bU9mUnAzakFmblZPMXVlQ2lBSkh0SjdhdnlFc2Q2ek9hODhTTnEwNGtZYw?oc=5",
+          "verifiedUrl": "https://news.google.com/rss/articles/CBMi1wFBVV95cUxPZVJaZkI2UUtKdU5XSTA5LWdWVWpoS2xqMFNFSnBUb001WXlzYkVfdG9ySndtVkZUYWRkaXByLWV0ckdoTjFVM3hoeDkyUXFYN0xhcUJ1Q2ljeUhpMDVMRXJ0aU84YUphNExEUUNXdi1Dd2lESkNXNlE4VTI0M29FQWhGdFBNQVdtblZWZk9kd28zRF9jS2RVTmxickJodzJEbzltU2pXN3d2Z2t5bU9mUnAzakFmblZPMXVlQ2lBSkh0SjdhdnlFc2Q2ek9hODhTTnEwNGtZYw?oc=5",
+          "publisher": "Food and Agriculture Organization",
+          "publishedAt": "2025-01-24",
+          "sourcePublishedAt": "2025-01-24",
+          "source": "Google News - ASEAN Fisheries",
+          "sector": "Climate Change",
+          "country": "regional",
+          "snippet": ""
         }
       ]
     },
@@ -273,32 +273,46 @@
       "name": "Maritime Security",
       "items": [
         {
-          "id": "4ad8066353b0",
-          "title": "The Persistence of Piracy and Armed Robbery against Ships in the Straits of Malacca and Singapore",
-          "url": "https://news.google.com/rss/articles/CBMi0gFBVV95cUxNdnR3UFhmZDNfRG9EUXRmdHBqSHF3VWc0c3V4Snd6Ymx5Rjc2cVFYb1FIMlg1ZFNBOGhHNlI1bnBMRncwQUN4UWFzTWVUN1ZGN2RnQ2VJWnZLMmY4RV8tc0lrTlJYZDBYQ1Q1Rm9uMHRVcnZkQzRXeU5ld0FDbkZOUEhZS0w1clViU2JselN5SG9rMkYzZGhSRmt0MGpSaHgtZE1oeG41ckxPQ2E0cWJ5Z2QyaE5pSU5KVWxuRG5sTXJhZnY2SEh6UzU3Ym9nM3FGeXc?oc=5",
-          "originalUrl": "https://news.google.com/rss/articles/CBMi0gFBVV95cUxNdnR3UFhmZDNfRG9EUXRmdHBqSHF3VWc0c3V4Snd6Ymx5Rjc2cVFYb1FIMlg1ZFNBOGhHNlI1bnBMRncwQUN4UWFzTWVUN1ZGN2RnQ2VJWnZLMmY4RV8tc0lrTlJYZDBYQ1Q1Rm9uMHRVcnZkQzRXeU5ld0FDbkZOUEhZS0w1clViU2JselN5SG9rMkYzZGhSRmt0MGpSaHgtZE1oeG41ckxPQ2E0cWJ5Z2QyaE5pSU5KVWxuRG5sTXJhZnY2SEh6UzU3Ym9nM3FGeXc?oc=5",
-          "verifiedUrl": "https://news.google.com/rss/articles/CBMi0gFBVV95cUxNdnR3UFhmZDNfRG9EUXRmdHBqSHF3VWc0c3V4Snd6Ymx5Rjc2cVFYb1FIMlg1ZFNBOGhHNlI1bnBMRncwQUN4UWFzTWVUN1ZGN2RnQ2VJWnZLMmY4RV8tc0lrTlJYZDBYQ1Q1Rm9uMHRVcnZkQzRXeU5ld0FDbkZOUEhZS0w1clViU2JselN5SG9rMkYzZGhSRmt0MGpSaHgtZE1oeG41ckxPQ2E0cWJ5Z2QyaE5pSU5KVWxuRG5sTXJhZnY2SEh6UzU3Ym9nM3FGeXc?oc=5",
-          "publisher": "Modern Diplomacy",
-          "publishedAt": "2021-07-19",
-          "sourcePublishedAt": "2021-07-19",
-          "source": "Google News - SEA Maritime Trafficking Coastal",
+          "id": "df998f707467",
+          "title": "“We were born by the sea and want to die by the sea”: Meet the “aunties” who are leading Thailand’s fishing communities",
+          "url": "https://news.google.com/rss/articles/CBMi-wFBVV95cUxQYTRHZG1wbmJwclVwWjRFX0JtUDNHY0NfcF9xbXZEc3ZvV2x6eGVsMUZLUldCVTRBZEZOYVloUzFOenhsdzNyeGFSNkpyb0NXcW1LMkJGTzdJaExWSnNLalVOVTlldzVNckFfVU1PeEoyd253RHZQdTNKRWZnQWVYaXV0TU9OTUdzRUExTFRNU0JRU0R4bXZneHBpdUwtZnJBQW9DeEI5OXNvSUFFOGJ6QWhhYzRBNjVvRWFOTU5KanYxbTBRX3hpN3NNT1U1WHkxSlpEVlNNUTBSdHRRV0FFZVFPUEJIWTNkS094enZqMjRkbTc3U2kyYk40cw?oc=5",
+          "originalUrl": "https://news.google.com/rss/articles/CBMi-wFBVV95cUxQYTRHZG1wbmJwclVwWjRFX0JtUDNHY0NfcF9xbXZEc3ZvV2x6eGVsMUZLUldCVTRBZEZOYVloUzFOenhsdzNyeGFSNkpyb0NXcW1LMkJGTzdJaExWSnNLalVOVTlldzVNckFfVU1PeEoyd253RHZQdTNKRWZnQWVYaXV0TU9OTUdzRUExTFRNU0JRU0R4bXZneHBpdUwtZnJBQW9DeEI5OXNvSUFFOGJ6QWhhYzRBNjVvRWFOTU5KanYxbTBRX3hpN3NNT1U1WHkxSlpEVlNNUTBSdHRRV0FFZVFPUEJIWTNkS094enZqMjRkbTc3U2kyYk40cw?oc=5",
+          "verifiedUrl": "https://news.google.com/rss/articles/CBMi-wFBVV95cUxQYTRHZG1wbmJwclVwWjRFX0JtUDNHY0NfcF9xbXZEc3ZvV2x6eGVsMUZLUldCVTRBZEZOYVloUzFOenhsdzNyeGFSNkpyb0NXcW1LMkJGTzdJaExWSnNLalVOVTlldzVNckFfVU1PeEoyd253RHZQdTNKRWZnQWVYaXV0TU9OTUdzRUExTFRNU0JRU0R4bXZneHBpdUwtZnJBQW9DeEI5OXNvSUFFOGJ6QWhhYzRBNjVvRWFOTU5KanYxbTBRX3hpN3NNT1U1WHkxSlpEVlNNUTBSdHRRV0FFZVFPUEJIWTNkS094enZqMjRkbTc3U2kyYk40cw?oc=5",
+          "publisher": "greenpeace.org",
+          "publishedAt": "2023-10-18",
+          "sourcePublishedAt": "2023-10-18",
+          "source": "Google News - SEA Coastal Fisheries",
           "sector": "Maritime Security",
-          "country": "singapore",
-          "snippet": "The report indicates that The Persistence of Piracy and Armed Robbery against Ships in the Straits of Malacca and Singapore."
+          "country": "thailand",
+          "snippet": ""
         },
         {
-          "id": "c76b124624ae",
-          "title": "Malaysia moves to toughen fisheries law, minimize IUU losses",
-          "url": "https://news.google.com/rss/articles/CBMiqwFBVV95cUxPUkxJbDZuN3p3R1lFcDNRYlhrNGo2Q0RYakE1NmRhVW54bnM2RHF3QndEX1JhRW5YS0NYTGxJX3dkaWRfUFZNaVByR1pWc01TT191NHpWYzg2dzhNQmpWZU9HZVhpVTFrQXB3dDlVT3daOTdWTk4xckhjZWlCWFQyV2tHLTctQzB3SktldWJWbXB2SjFucXlDZGFEMWcwRjZXY1VTZS1NaHNGcTA?oc=5",
-          "originalUrl": "https://news.google.com/rss/articles/CBMiqwFBVV95cUxPUkxJbDZuN3p3R1lFcDNRYlhrNGo2Q0RYakE1NmRhVW54bnM2RHF3QndEX1JhRW5YS0NYTGxJX3dkaWRfUFZNaVByR1pWc01TT191NHpWYzg2dzhNQmpWZU9HZVhpVTFrQXB3dDlVT3daOTdWTk4xckhjZWlCWFQyV2tHLTctQzB3SktldWJWbXB2SjFucXlDZGFEMWcwRjZXY1VTZS1NaHNGcTA?oc=5",
-          "verifiedUrl": "https://news.google.com/rss/articles/CBMiqwFBVV95cUxPUkxJbDZuN3p3R1lFcDNRYlhrNGo2Q0RYakE1NmRhVW54bnM2RHF3QndEX1JhRW5YS0NYTGxJX3dkaWRfUFZNaVByR1pWc01TT191NHpWYzg2dzhNQmpWZU9HZVhpVTFrQXB3dDlVT3daOTdWTk4xckhjZWlCWFQyV2tHLTctQzB3SktldWJWbXB2SjFucXlDZGFEMWcwRjZXY1VTZS1NaHNGcTA?oc=5",
-          "publisher": "SeafoodSource",
-          "publishedAt": "2025-08-11",
-          "sourcePublishedAt": "2025-08-11",
-          "source": "Google News - SEA Seafood Trade",
+          "id": "7ae178edf9ad",
+          "title": "PCG deepens maritime cooperation with Vietnam",
+          "url": "https://news.google.com/rss/articles/CBMiUEFVX3lxTFA0VFFaem8td1dXN1FHalRuTXgwMHlkMFd1YjU4MjRKLXViQmFBaWVDRDZudWgwX3o0MWdxNW51a0FQaDBuVnFuM1hma0xjWDcw?oc=5",
+          "originalUrl": "https://news.google.com/rss/articles/CBMiUEFVX3lxTFA0VFFaem8td1dXN1FHalRuTXgwMHlkMFd1YjU4MjRKLXViQmFBaWVDRDZudWgwX3o0MWdxNW51a0FQaDBuVnFuM1hma0xjWDcw?oc=5",
+          "verifiedUrl": "https://news.google.com/rss/articles/CBMiUEFVX3lxTFA0VFFaem8td1dXN1FHalRuTXgwMHlkMFd1YjU4MjRKLXViQmFBaWVDRDZudWgwX3o0MWdxNW51a0FQaDBuVnFuM1hma0xjWDcw?oc=5",
+          "publisher": "Philippine News Agency",
+          "publishedAt": "2025-04-17",
+          "sourcePublishedAt": "2025-04-17",
+          "source": "Google News - SEA Coast Guard Fisher Safety",
           "sector": "Maritime Security",
-          "country": "malaysia",
-          "snippet": "The report indicates that Malaysia moves to toughen fisheries law, minimize IUU losses."
+          "country": "vietnam",
+          "snippet": ""
+        },
+        {
+          "id": "1c4f7dff7f22",
+          "title": "Southeast Asian Fisheries Development Center (SEAFDEC) Aquaculture Department Chief Dan Baliao voiced support for Senate Bill No. 522, or the proposed Municipal Fisherfolk Protection Act, during a Feb. 18 hearing at the Philippine Senate.",
+          "url": "https://news.google.com/rss/articles/CBMi3gFBVV95cUxQSi1LczRIVlVTRjdXd2tWQlZScnl2VER0RkFRQUlNbFB1YnU1R2J5SFk0NVVtdVh1dGNYMUYwLU85azhKbVdyNlNZVFVmVnF6VmpBT3VzUjdBMlkwUlBpWk9CRjgwV0xMRmhUVWdXTGpHeFF2VElqSnB1STdYZ1ZobG9hQk5PaWlIVU90OW9QLWc5eGxpTU54YkNuQklfR0JZVXJtQzhiM0VpRjc2a2lfRlQ5eFJ0VmxHOGxJMjZHMTJqckNGZ2JZYkE0Rjh6WGFRSkluQzhSNzZWb1dBdnc?oc=5",
+          "originalUrl": "https://news.google.com/rss/articles/CBMi3gFBVV95cUxQSi1LczRIVlVTRjdXd2tWQlZScnl2VER0RkFRQUlNbFB1YnU1R2J5SFk0NVVtdVh1dGNYMUYwLU85azhKbVdyNlNZVFVmVnF6VmpBT3VzUjdBMlkwUlBpWk9CRjgwV0xMRmhUVWdXTGpHeFF2VElqSnB1STdYZ1ZobG9hQk5PaWlIVU90OW9QLWc5eGxpTU54YkNuQklfR0JZVXJtQzhiM0VpRjc2a2lfRlQ5eFJ0VmxHOGxJMjZHMTJqckNGZ2JZYkE0Rjh6WGFRSkluQzhSNzZWb1dBdnc?oc=5",
+          "verifiedUrl": "https://news.google.com/rss/articles/CBMi3gFBVV95cUxQSi1LczRIVlVTRjdXd2tWQlZScnl2VER0RkFRQUlNbFB1YnU1R2J5SFk0NVVtdVh1dGNYMUYwLU85azhKbVdyNlNZVFVmVnF6VmpBT3VzUjdBMlkwUlBpWk9CRjgwV0xMRmhUVWdXTGpHeFF2VElqSnB1STdYZ1ZobG9hQk5PaWlIVU90OW9QLWc5eGxpTU54YkNuQklfR0JZVXJtQzhiM0VpRjc2a2lfRlQ5eFJ0VmxHOGxJMjZHMTJqckNGZ2JZYkE0Rjh6WGFRSkluQzhSNzZWb1dBdnc?oc=5",
+          "publisher": "Facebook",
+          "publishedAt": "2026-03-03",
+          "sourcePublishedAt": "2026-03-03",
+          "source": "Google News - ASEAN Fisheries",
+          "sector": "Maritime Security",
+          "country": "philippines",
+          "snippet": ""
         },
         {
           "id": "036d1c9f6cf8",
@@ -312,49 +326,35 @@
           "source": "Google News - SEA Coastal Fisheries",
           "sector": "Maritime Security",
           "country": "cambodia",
-          "snippet": "The report indicates that Illegal fishing and land grabs push Cambodian coastal communities to the brink."
+          "snippet": ""
         },
         {
-          "id": "df998f707467",
-          "title": "“We were born by the sea and want to die by the sea”: Meet the “aunties” who are leading Thailand’s fishing communities",
-          "url": "https://news.google.com/rss/articles/CBMi-wFBVV95cUxQYTRHZG1wbmJwclVwWjRFX0JtUDNHY0NfcF9xbXZEc3ZvV2x6eGVsMUZLUldCVTRBZEZOYVloUzFOenhsdzNyeGFSNkpyb0NXcW1LMkJGTzdJaExWSnNLalVOVTlldzVNckFfVU1PeEoyd253RHZQdTNKRWZnQWVYaXV0TU9OTUdzRUExTFRNU0JRU0R4bXZneHBpdUwtZnJBQW9DeEI5OXNvSUFFOGJ6QWhhYzRBNjVvRWFOTU5KanYxbTBRX3hpN3NNT1U1WHkxSlpEVlNNUTBSdHRRV0FFZVFPUEJIWTNkS094enZqMjRkbTc3U2kyYk40cw?oc=5",
-          "originalUrl": "https://news.google.com/rss/articles/CBMi-wFBVV95cUxQYTRHZG1wbmJwclVwWjRFX0JtUDNHY0NfcF9xbXZEc3ZvV2x6eGVsMUZLUldCVTRBZEZOYVloUzFOenhsdzNyeGFSNkpyb0NXcW1LMkJGTzdJaExWSnNLalVOVTlldzVNckFfVU1PeEoyd253RHZQdTNKRWZnQWVYaXV0TU9OTUdzRUExTFRNU0JRU0R4bXZneHBpdUwtZnJBQW9DeEI5OXNvSUFFOGJ6QWhhYzRBNjVvRWFOTU5KanYxbTBRX3hpN3NNT1U1WHkxSlpEVlNNUTBSdHRRV0FFZVFPUEJIWTNkS094enZqMjRkbTc3U2kyYk40cw?oc=5",
-          "verifiedUrl": "https://news.google.com/rss/articles/CBMi-wFBVV95cUxQYTRHZG1wbmJwclVwWjRFX0JtUDNHY0NfcF9xbXZEc3ZvV2x6eGVsMUZLUldCVTRBZEZOYVloUzFOenhsdzNyeGFSNkpyb0NXcW1LMkJGTzdJaExWSnNLalVOVTlldzVNckFfVU1PeEoyd253RHZQdTNKRWZnQWVYaXV0TU9OTUdzRUExTFRNU0JRU0R4bXZneHBpdUwtZnJBQW9DeEI5OXNvSUFFOGJ6QWhhYzRBNjVvRWFOTU5KanYxbTBRX3hpN3NNT1U1WHkxSlpEVlNNUTBSdHRRV0FFZVFPUEJIWTNkS094enZqMjRkbTc3U2kyYk40cw?oc=5",
-          "publisher": "greenpeace.org",
-          "publishedAt": "2023-10-18",
-          "sourcePublishedAt": "2023-10-18",
-          "source": "Google News - SEA Coastal Fisheries",
+          "id": "b5a837a05901",
+          "title": "Thailand launches first blue bonds to support sustainable coastal and ocean economy",
+          "url": "https://news.google.com/rss/articles/CBMiZ0FVX3lxTE51eGQ0VVJGQnlnRmZFTm5Zb0hvaHVUN2pwU2tlc2ZNUFdqSVFWNXhocUhIdlBoYWh5OUxXaTBwdjdyUnQtTlliNlRHWExRV1ZuaEE5MmlKRWI2dFFSWU8ybTBZQVRqVXM?oc=5",
+          "originalUrl": "https://news.google.com/rss/articles/CBMiZ0FVX3lxTE51eGQ0VVJGQnlnRmZFTm5Zb0hvaHVUN2pwU2tlc2ZNUFdqSVFWNXhocUhIdlBoYWh5OUxXaTBwdjdyUnQtTlliNlRHWExRV1ZuaEE5MmlKRWI2dFFSWU8ybTBZQVRqVXM?oc=5",
+          "verifiedUrl": "https://news.google.com/rss/articles/CBMiZ0FVX3lxTE51eGQ0VVJGQnlnRmZFTm5Zb0hvaHVUN2pwU2tlc2ZNUFdqSVFWNXhocUhIdlBoYWh5OUxXaTBwdjdyUnQtTlliNlRHWExRV1ZuaEE5MmlKRWI2dFFSWU8ybTBZQVRqVXM?oc=5",
+          "publisher": "Nation Thailand",
+          "publishedAt": "2025-09-02",
+          "sourcePublishedAt": "2025-09-02",
+          "source": "Google News - ASEAN Blue Economy Finance",
           "sector": "Maritime Security",
           "country": "thailand",
-          "snippet": "The report indicates that Meet the “aunties” who are leading Thailand’s fishing communities."
+          "snippet": ""
         },
         {
-          "id": "dbd88854909e",
-          "title": "Climate change and overfishing hit Indonesia tuna catch",
-          "url": "https://news.google.com/rss/articles/CBMilAFBVV95cUxPX0tMbmlJd1dwN0RpcHVBZ1MwSUt1d0hvamdlMUFTREpkbEFvaDdfdUxMQUlzbzZWQkRiV3RSRWctVEFrRHRBeF9jcmZoYTFydVg5Qjh0UHZnSS1lZjVLU1IyTktpTzRGN01kSWg5ZERBWW1qeHpHamtLQ3gzUTd6cm1EcTdBWnBfelVwRkl1bW5LS2lO?oc=5",
-          "originalUrl": "https://news.google.com/rss/articles/CBMilAFBVV95cUxPX0tMbmlJd1dwN0RpcHVBZ1MwSUt1d0hvamdlMUFTREpkbEFvaDdfdUxMQUlzbzZWQkRiV3RSRWctVEFrRHRBeF9jcmZoYTFydVg5Qjh0UHZnSS1lZjVLU1IyTktpTzRGN01kSWg5ZERBWW1qeHpHamtLQ3gzUTd6cm1EcTdBWnBfelVwRkl1bW5LS2lO?oc=5",
-          "verifiedUrl": "https://news.google.com/rss/articles/CBMilAFBVV95cUxPX0tMbmlJd1dwN0RpcHVBZ1MwSUt1d0hvamdlMUFTREpkbEFvaDdfdUxMQUlzbzZWQkRiV3RSRWctVEFrRHRBeF9jcmZoYTFydVg5Qjh0UHZnSS1lZjVLU1IyTktpTzRGN01kSWg5ZERBWW1qeHpHamtLQ3gzUTd6cm1EcTdBWnBfelVwRkl1bW5LS2lO?oc=5",
-          "publisher": "Eco-Business",
-          "publishedAt": "2025-02-12",
-          "sourcePublishedAt": "2025-02-12",
+          "id": "c52e27ce0f11",
+          "title": "Fishing Communities in the Philippines Are Fighting for their Future as Waters Rise",
+          "url": "https://news.google.com/rss/articles/CBMiekFVX3lxTE5VQTd6eDFRR243NnNOUVZTcWJYUmpyR1JaNmZxd2JBMWVhNUUwcm1GZUFoVDU3ZktjZmhpTkx6OFEtT2pRRmtsQVliQnprX2NGYlNtYkN5SFhZdW5oQmpXb2JCNWcxQjctb20zNWc4OHQ3dHEzY2JIdnNB?oc=5",
+          "originalUrl": "https://news.google.com/rss/articles/CBMiekFVX3lxTE5VQTd6eDFRR243NnNOUVZTcWJYUmpyR1JaNmZxd2JBMWVhNUUwcm1GZUFoVDU3ZktjZmhpTkx6OFEtT2pRRmtsQVliQnprX2NGYlNtYkN5SFhZdW5oQmpXb2JCNWcxQjctb20zNWc4OHQ3dHEzY2JIdnNB?oc=5",
+          "verifiedUrl": "https://news.google.com/rss/articles/CBMiekFVX3lxTE5VQTd6eDFRR243NnNOUVZTcWJYUmpyR1JaNmZxd2JBMWVhNUUwcm1GZUFoVDU3ZktjZmhpTkx6OFEtT2pRRmtsQVliQnprX2NGYlNtYkN5SFhZdW5oQmpXb2JCNWcxQjctb20zNWc4OHQ3dHEzY2JIdnNB?oc=5",
+          "publisher": "Time Magazine",
+          "publishedAt": "2025-06-05",
+          "sourcePublishedAt": "2025-06-05",
           "source": "Google News - SEA Coastal Fisheries",
           "sector": "Maritime Security",
-          "country": "indonesia",
-          "snippet": "The report indicates that Climate change and overfishing hit Indonesia tuna catch."
-        },
-        {
-          "id": "6962f27b04e1",
-          "title": "Malaysia to integrate water pricing into national adaptation plan, says environment ministry",
-          "url": "https://www.eco-business.com/news/malaysia-to-integrate-water-pricing-into-national-adaptation-plan-says-environment-ministry/",
-          "originalUrl": "https://www.eco-business.com/news/malaysia-to-integrate-water-pricing-into-national-adaptation-plan-says-environment-ministry/",
-          "verifiedUrl": "https://www.eco-business.com/news/malaysia-to-integrate-water-pricing-into-national-adaptation-plan-says-environment-ministry/",
-          "publisher": "Eco-Business - News",
-          "publishedAt": "2026-03-02",
-          "sourcePublishedAt": "2026-03-02",
-          "source": "Eco-Business - News",
-          "sector": "Maritime Security",
-          "country": "malaysia",
-          "snippet": "The impacts of deforestation must also be counted towards the true cost of water, the ministry’s secretary-general said. The country's first fair share carbon budget report could help strengthen the government’s forest conservation efforts."
+          "country": "philippines",
+          "snippet": ""
         }
       ]
     },
@@ -373,7 +373,21 @@
           "source": "Google News - SEA Ocean Circular Economy",
           "sector": "Marine Pollution",
           "country": "indonesia",
-          "snippet": "The report indicates that ADB Signs $44.2 Million Blue Loan with ALBA to Reduce Ocean Plastic Waste in Indonesia."
+          "snippet": ""
+        },
+        {
+          "id": "e3141b5712b4",
+          "title": "United States Announces Partnership to Reduce Ocean Plastic Pollution in Indonesia",
+          "url": "https://news.google.com/rss/articles/CBMirAFBVV95cUxNV2NxQzNMN3pHVGVfMVZoUnNZWkhYQzRUUG11TS1WckNrTHFqd1FDQkxzSHFJVVl6ZWh5UTUtSFI3OXlZNC1fM3RfbmVzTWJVckhBUFVXbkRkWjFCakRPWUdXSjM5NkJBbWxqaDI2NkhPdGtzU1N4Mm16QzRaQVV3cTF5SG9zUHBXVjFRUjNvcG43YW43Y19tSmxxVmYxejRDUVVhUEJRVW5rRkYt?oc=5",
+          "originalUrl": "https://news.google.com/rss/articles/CBMirAFBVV95cUxNV2NxQzNMN3pHVGVfMVZoUnNZWkhYQzRUUG11TS1WckNrTHFqd1FDQkxzSHFJVVl6ZWh5UTUtSFI3OXlZNC1fM3RfbmVzTWJVckhBUFVXbkRkWjFCakRPWUdXSjM5NkJBbWxqaDI2NkhPdGtzU1N4Mm16QzRaQVV3cTF5SG9zUHBXVjFRUjNvcG43YW43Y19tSmxxVmYxejRDUVVhUEJRVW5rRkYt?oc=5",
+          "verifiedUrl": "https://news.google.com/rss/articles/CBMirAFBVV95cUxNV2NxQzNMN3pHVGVfMVZoUnNZWkhYQzRUUG11TS1WckNrTHFqd1FDQkxzSHFJVVl6ZWh5UTUtSFI3OXlZNC1fM3RfbmVzTWJVckhBUFVXbkRkWjFCakRPWUdXSjM5NkJBbWxqaDI2NkhPdGtzU1N4Mm16QzRaQVV3cTF5SG9zUHBXVjFRUjNvcG43YW43Y19tSmxxVmYxejRDUVVhUEJRVW5rRkYt?oc=5",
+          "publisher": "U.S. Embassy & Consulates in Indonesia (.gov)",
+          "publishedAt": "2022-07-27",
+          "sourcePublishedAt": "2022-07-27",
+          "source": "Google News - SEA Ocean Circular Economy",
+          "sector": "Marine Pollution",
+          "country": "indonesia",
+          "snippet": ""
         },
         {
           "id": "8f55437cb4ee",
@@ -387,7 +401,7 @@
           "source": "Google News - SEA Ocean Circular Economy",
           "sector": "Marine Pollution",
           "country": "philippines",
-          "snippet": "The report indicates that Plastics Circularity Opportunities and Barriers."
+          "snippet": ""
         },
         {
           "id": "c23c6e51bf51",
@@ -404,34 +418,6 @@
           "snippet": "Wastewater from mines has heavily contained both rivers, according to Karenni State’s resistance-run civilian authority"
         },
         {
-          "id": "e3141b5712b4",
-          "title": "United States Announces Partnership to Reduce Ocean Plastic Pollution in Indonesia",
-          "url": "https://news.google.com/rss/articles/CBMirAFBVV95cUxNV2NxQzNMN3pHVGVfMVZoUnNZWkhYQzRUUG11TS1WckNrTHFqd1FDQkxzSHFJVVl6ZWh5UTUtSFI3OXlZNC1fM3RfbmVzTWJVckhBUFVXbkRkWjFCakRPWUdXSjM5NkJBbWxqaDI2NkhPdGtzU1N4Mm16QzRaQVV3cTF5SG9zUHBXVjFRUjNvcG43YW43Y19tSmxxVmYxejRDUVVhUEJRVW5rRkYt?oc=5",
-          "originalUrl": "https://news.google.com/rss/articles/CBMirAFBVV95cUxNV2NxQzNMN3pHVGVfMVZoUnNZWkhYQzRUUG11TS1WckNrTHFqd1FDQkxzSHFJVVl6ZWh5UTUtSFI3OXlZNC1fM3RfbmVzTWJVckhBUFVXbkRkWjFCakRPWUdXSjM5NkJBbWxqaDI2NkhPdGtzU1N4Mm16QzRaQVV3cTF5SG9zUHBXVjFRUjNvcG43YW43Y19tSmxxVmYxejRDUVVhUEJRVW5rRkYt?oc=5",
-          "verifiedUrl": "https://news.google.com/rss/articles/CBMirAFBVV95cUxNV2NxQzNMN3pHVGVfMVZoUnNZWkhYQzRUUG11TS1WckNrTHFqd1FDQkxzSHFJVVl6ZWh5UTUtSFI3OXlZNC1fM3RfbmVzTWJVckhBUFVXbkRkWjFCakRPWUdXSjM5NkJBbWxqaDI2NkhPdGtzU1N4Mm16QzRaQVV3cTF5SG9zUHBXVjFRUjNvcG43YW43Y19tSmxxVmYxejRDUVVhUEJRVW5rRkYt?oc=5",
-          "publisher": "U.S. Embassy & Consulates in Indonesia (.gov)",
-          "publishedAt": "2022-07-27",
-          "sourcePublishedAt": "2022-07-27",
-          "source": "Google News - SEA Ocean Circular Economy",
-          "sector": "Marine Pollution",
-          "country": "indonesia",
-          "snippet": "The report indicates that United States Announces Partnership to Reduce Ocean Plastic Pollution in Indonesia."
-        },
-        {
-          "id": "b55cc0419c24",
-          "title": "Transforming food systems in Southeast Asia: the challenge of food loss and waste",
-          "url": "https://news.google.com/rss/articles/CBMickFVX3lxTE5nRi1LNUZJSEhGTXFYel9Cc3ZNR19iV1hqMnR0ME11S2ZrSU5jZHBMYWZkM3FtZ0hDMDllaFRvQ192ZXdRRWdlSkJhWVpKOG01cHFvUWRtUl9KSHVBaFFST2I5LVFpaS1ZS3NQMGlLVXp1QQ?oc=5",
-          "originalUrl": "https://news.google.com/rss/articles/CBMickFVX3lxTE5nRi1LNUZJSEhGTXFYel9Cc3ZNR19iV1hqMnR0ME11S2ZrSU5jZHBMYWZkM3FtZ0hDMDllaFRvQ192ZXdRRWdlSkJhWVpKOG01cHFvUWRtUl9KSHVBaFFST2I5LVFpaS1ZS3NQMGlLVXp1QQ?oc=5",
-          "verifiedUrl": "https://news.google.com/rss/articles/CBMickFVX3lxTE5nRi1LNUZJSEhGTXFYel9Cc3ZNR19iV1hqMnR0ME11S2ZrSU5jZHBMYWZkM3FtZ0hDMDllaFRvQ192ZXdRRWdlSkJhWVpKOG01cHFvUWRtUl9KSHVBaFFST2I5LVFpaS1ZS3NQMGlLVXp1QQ?oc=5",
-          "publisher": "Stockholm Environment Institute",
-          "publishedAt": "2025-08-15",
-          "sourcePublishedAt": "2025-08-15",
-          "source": "Google News - ASEAN Fisheries",
-          "sector": "Marine Pollution",
-          "country": "regional",
-          "snippet": "The report indicates that the challenge of food loss and waste."
-        },
-        {
           "id": "20130df29432",
           "title": "Norad Grant to Tackle Plastic Waste in Africa and Southeast Asia",
           "url": "https://news.google.com/rss/articles/CBMi0AFBVV95cUxPTTIzeGljMXJJQVRCZnpFQUNHUzRfeWZ6S1hfZFNja2NrSjU4T2hSTkJEY2JYd1VpVDRpZGFKOWZaelFIV0JqWXBJenRiek16TEx2RW8zRGlNQTRWVVFxWmtIMWc1U21JS1JENFVMUFFOYkdGeGFocGFPWmd1QVd4T3RiWUxhVWlrdU83aW01MnFiTXBxY2hmc2lCbzlVZE1GTjZRUjgtLWh4b0ZTRktlbUFCdWdMMmJGMHBGcm1kWDhLY1ZNUG9iQnpIZ0I2aUgz0gHWAUFVX3lxTE84ellBdm80endFWjlmM0xtOG9ESWZEQm8xWG5yZ2dFcW5Kc25nX0pRSm1IdmRaV2VzVGh2YXVDVjhXT1c3dXF6cGJYWXZsbUZPaEg4NEROY0J6TlF3NEVKRlpVRzNobVJoaFlrU056QnB0eXFFLUN5anF5SjcwWGlmeVEzTFViNHBydklMS3htcFAyN0NMNHljRzdXNEtVNjRpTWM3UzZ6ekNIVkcxM1UxV0RpVkNEY25DQ2ljMl9hWWZHU2ZnQ0o5S1VnVWx0WDkySFZWS0E?oc=5",
@@ -443,7 +429,21 @@
           "source": "Google News - SEA Ocean Circular Economy",
           "sector": "Marine Pollution",
           "country": "regional",
-          "snippet": "The report indicates that Norad Grant to Tackle Plastic Waste in Africa and Southeast Asia."
+          "snippet": ""
+        },
+        {
+          "id": "54727a295fe7",
+          "title": "Deadly landfill collapse exposes risks faced by Philippines’ waste pickers",
+          "url": "https://news.mongabay.com/2026/03/deadly-landfill-collapse-exposes-risks-faced-by-philippines-waste-pickers/",
+          "originalUrl": "https://news.mongabay.com/2026/03/deadly-landfill-collapse-exposes-risks-faced-by-philippines-waste-pickers/",
+          "verifiedUrl": "https://news.mongabay.com/2026/03/deadly-landfill-collapse-exposes-risks-faced-by-philippines-waste-pickers/",
+          "publisher": "Mongabay",
+          "publishedAt": "2026-03-02",
+          "sourcePublishedAt": "2026-03-02",
+          "source": "Mongabay",
+          "sector": "Marine Pollution",
+          "country": "philippines",
+          "snippet": "RODRIGUEZ, Philippines — Lenny* recalled freezing when he saw the first heap of garbage collapse underneath the feet of his fellow scavengers on the afternoon of Feb. 20, at a landfill in the town of Rodriguez, in the Philippines’ Rizal province. Moments later, a larger perimeter caved. In an instant, a crater of trash"
         }
       ]
     }
