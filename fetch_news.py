@@ -1,4 +1,4 @@
-#!/usr/bin/env python3
+https://www.mangrovealliance.org/newsroom#!/usr/bin/env python3
 """Fetch Southeast Asia coastal news and write docs/data/latest.json."""
 
 from __future__ import annotations
