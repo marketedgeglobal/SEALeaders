@@ -234,9 +234,9 @@ FEEDS = [
 
 SECTORS = [
     "Blue Economy",
+    "Sustainable Fisheries",
     "Climate Change",
     "Maritime Security",
-    "Sustainable Fisheries",
     "Marine Pollution",
 ]
 
@@ -339,7 +339,7 @@ SECTOR_KEYWORDS = {
     ],
 }
 
-MAX_ITEMS_PER_SECTOR = int(os.getenv("MAX_ITEMS_PER_SECTOR", "8"))
+MAX_ITEMS_PER_SECTOR = min(int(os.getenv("MAX_ITEMS_PER_SECTOR", "6")), 6)
 MAX_ITEMS_PER_PUBLISHER = int(os.getenv("MAX_ITEMS_PER_PUBLISHER", "3"))
 MAX_ITEMS_PER_COUNTRY = int(os.getenv("MAX_ITEMS_PER_COUNTRY", "6"))
 MAX_FEED_ENTRIES_PER_SOURCE = int(os.getenv("MAX_FEED_ENTRIES_PER_SOURCE", "36"))
@@ -1424,6 +1424,22 @@ def build_latest_json() -> dict:
     if total == 0:
         fallback = [
             {
+                "name": "Blue Economy",
+                "items": [
+                    {
+                        "id": "placeholder-blue",
+                        "title": "Southeast Asia blue economy initiatives for grassroots groups",
+                        "url": "#",
+                        "publisher": "placeholder",
+                        "publishedAt": datetime.now(timezone.utc).date().isoformat(),
+                        "sourcePublishedAt": datetime.now(timezone.utc).date().isoformat(),
+                        "source": "Placeholder",
+                        "sector": "Blue Economy",
+                        "snippet": "Placeholder story shown because no live items passed filters.",
+                    }
+                ],
+            },
+            {
                 "name": "Sustainable Fisheries",
                 "items": [
                     {
@@ -1467,22 +1483,6 @@ def build_latest_json() -> dict:
                         "sourcePublishedAt": datetime.now(timezone.utc).date().isoformat(),
                         "source": "Placeholder",
                         "sector": "Maritime Security",
-                        "snippet": "Placeholder story shown because no live items passed filters.",
-                    }
-                ],
-            },
-            {
-                "name": "Blue Economy",
-                "items": [
-                    {
-                        "id": "placeholder-blue",
-                        "title": "Southeast Asia blue economy initiatives for grassroots groups",
-                        "url": "#",
-                        "publisher": "placeholder",
-                        "publishedAt": datetime.now(timezone.utc).date().isoformat(),
-                        "sourcePublishedAt": datetime.now(timezone.utc).date().isoformat(),
-                        "source": "Placeholder",
-                        "sector": "Blue Economy",
                         "snippet": "Placeholder story shown because no live items passed filters.",
                     }
                 ],
