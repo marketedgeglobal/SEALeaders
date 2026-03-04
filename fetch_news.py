@@ -218,6 +218,18 @@ FEEDS = [
         "name": "Google News - SEA Ocean Circular Economy",
         "url": "https://news.google.com/rss/search?q=Southeast+Asia+ocean+circular+economy+plastic+waste+reduction&hl=en-US&gl=US&ceid=US:en",
     },
+    {
+        "name": "Google News - SEA Illegal Fishing Communities",
+        "url": "https://news.google.com/rss/search?q=Southeast+Asia+illegal+fishing+coastal+communities+fishers&hl=en-US&gl=US&ceid=US:en",
+    },
+    {
+        "name": "Google News - SEA Coast Guard Fisher Safety",
+        "url": "https://news.google.com/rss/search?q=Southeast+Asia+coast+guard+fisher+safety+search+and+rescue&hl=en-US&gl=US&ceid=US:en",
+    },
+    {
+        "name": "Google News - SEA Maritime Trafficking Coastal",
+        "url": "https://news.google.com/rss/search?q=Southeast+Asia+maritime+trafficking+coastal+communities&hl=en-US&gl=US&ceid=US:en",
+    },
 ]
 
 SECTORS = [
@@ -268,7 +280,26 @@ SECTOR_KEYWORDS = {
         "cyclone",
         "storm surge",
     ],
-    "Maritime Security": ["maritime", "security", "sovereignty", "navy", "patrol", "piracy", "south china sea"],
+    "Maritime Security": [
+        "maritime",
+        "security",
+        "coastal safety",
+        "fisher safety",
+        "fishing safety",
+        "coast guard",
+        "search and rescue",
+        "piracy",
+        "illegal fishing",
+        "iuu",
+        "smuggling",
+        "trafficking",
+        "port safety",
+        "vessel safety",
+        "south china sea",
+        "patrol",
+        "sovereignty",
+        "navy",
+    ],
     "Blue Economy": [
         "blue economy",
         "ocean economy",
@@ -371,6 +402,9 @@ REGIONAL_CONTEXT_FEEDS = {
     "Google News - ASEAN Blue Economy Finance",
     "Google News - SEA Marine Ecotourism",
     "Google News - SEA Ocean Circular Economy",
+    "Google News - SEA Illegal Fishing Communities",
+    "Google News - SEA Coast Guard Fisher Safety",
+    "Google News - SEA Maritime Trafficking Coastal",
 }
 
 SEA_CONTEXT_MARKERS = (
@@ -479,6 +513,54 @@ FISHERIES_COMMERCIAL_MARKERS = (
     "market",
 )
 
+MARITIME_COMMUNITY_SECURITY_MARKERS = (
+    "coastal",
+    "community",
+    "communities",
+    "fishers",
+    "fisherfolk",
+    "small-scale",
+    "livelihood",
+    "livelihoods",
+    "coastal safety",
+    "fisher safety",
+    "fishing safety",
+    "search and rescue",
+    "coast guard",
+    "illegal fishing",
+    "iuu",
+    "smuggling",
+    "trafficking",
+    "port safety",
+    "vessel safety",
+)
+
+MARITIME_DEFENSE_POLICY_MARKERS = (
+    "navy",
+    "warship",
+    "military",
+    "missile",
+    "defence",
+    "defense",
+    "geopolitics",
+    "doctrine",
+    "exercise",
+    "minister",
+    "summit",
+    "treaty",
+    "policy",
+    "sovereignty",
+)
+
+MARITIME_POLICY_SOURCE_MARKERS = (
+    "amti",
+    "csis",
+    "stimson",
+    "iseas",
+    "rsis",
+    "diplomat",
+)
+
 BLUE_ECONOMY_MARINE_ANCHOR_PATTERN = re.compile(r"\b(ocean|sea|marine|fish\w*|coral|reef)\b", re.IGNORECASE)
 
 BLUE_ECONOMY_ECONOMIC_MARKERS = (
@@ -565,6 +647,9 @@ FEED_COUNTRY_HINTS = {
     "Google News - ASEAN Blue Economy Finance": "regional",
     "Google News - SEA Marine Ecotourism": "regional",
     "Google News - SEA Ocean Circular Economy": "regional",
+    "Google News - SEA Illegal Fishing Communities": "regional",
+    "Google News - SEA Coast Guard Fisher Safety": "regional",
+    "Google News - SEA Maritime Trafficking Coastal": "regional",
 }
 
 WEB_SOURCE_BLOCKLIST = (
@@ -1113,6 +1198,25 @@ def _fisheries_priority_score(item: dict) -> int:
     return score
 
 
+def _maritime_priority_score(item: dict) -> int:
+    text = f"{item.get('title', '')} {item.get('snippet', '')}".lower()
+    source_text = f"{item.get('source', '')} {item.get('publisher', '')}".lower()
+    community_hits = sum(1 for marker in MARITIME_COMMUNITY_SECURITY_MARKERS if marker in text)
+    defense_hits = sum(1 for marker in MARITIME_DEFENSE_POLICY_MARKERS if marker in text)
+    has_coastal_community = any(marker in text for marker in COASTAL_COMMUNITY_MARKERS)
+    policy_source_hits = sum(1 for marker in MARITIME_POLICY_SOURCE_MARKERS if marker in source_text)
+
+    score = community_hits
+    if has_coastal_community:
+        score += 3
+    if defense_hits and community_hits == 0 and not has_coastal_community:
+        score -= min(defense_hits, 3)
+    if policy_source_hits and community_hits == 0 and not has_coastal_community:
+        score -= min(policy_source_hits, 2)
+
+    return score
+
+
 def _passes_sow_focus(title: str, summary: str, snippet: str = "") -> bool:
     text = f"{title} {summary} {snippet}".lower()
 
@@ -1228,6 +1332,31 @@ def build_latest_json() -> dict:
         candidates = [item for item in all_items if item["sector"] == sector]
         if sector == "Sustainable Fisheries":
             candidates = sorted(candidates, key=_fisheries_priority_score, reverse=True)
+        if sector == "Maritime Security":
+            maritime_pool: list[dict] = []
+            maritime_seen_ids: set[str] = set()
+
+            for item in all_items:
+                score = _maritime_priority_score(item)
+                if score < 2:
+                    continue
+                item_id = str(item.get("id") or "")
+                if item_id in maritime_seen_ids:
+                    continue
+
+                candidate = dict(item)
+                candidate["sector"] = "Maritime Security"
+                maritime_pool.append(candidate)
+                maritime_seen_ids.add(item_id)
+
+            for item in candidates:
+                item_id = str(item.get("id") or "")
+                if item_id in maritime_seen_ids:
+                    continue
+                maritime_pool.append(item)
+                maritime_seen_ids.add(item_id)
+
+            candidates = sorted(maritime_pool, key=_maritime_priority_score, reverse=True)
         selected: list[dict] = []
 
         remaining = list(candidates)
@@ -1238,6 +1367,7 @@ def build_latest_json() -> dict:
                     country_usage.get(str(item.get("country") or "regional").lower(), 0)
                     / max(_country_weight(str(item.get("country") or "regional").lower()), 0.1),
                     -_fisheries_priority_score(item) if sector == "Sustainable Fisheries" else 0,
+                    -_maritime_priority_score(item) if sector == "Maritime Security" else 0,
                     publisher_usage.get(str(item.get("publisher") or "unknown").lower(), 0),
                 ),
             )
