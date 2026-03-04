@@ -171,6 +171,14 @@ FEEDS = [
         "url": "https://en.vietnamplus.vn/rss/home.rss",
     },
     {
+        "name": "VNExpress International",
+        "url": "https://e.vnexpress.net/rss/news.rss",
+    },
+    {
+        "name": "Vietnam News - Environment",
+        "url": "https://vietnamnews.vn/rss/environment.rss",
+    },
+    {
         "name": "ISEAS Commentaries",
         "url": "https://www.iseas.edu.sg/category/commentaries/feed/",
     },
@@ -272,6 +280,8 @@ REGIONAL_CONTEXT_FEEDS = {
     "Myanmar Now",
     "ANTARA Indonesia",
     "VietnamPlus",
+    "VNExpress International",
+    "Vietnam News - Environment",
     "Rappler",
     "Inquirer",
     "Philstar",
@@ -400,6 +410,8 @@ FEED_COUNTRY_HINTS = {
     "Bangkok Post": "thailand",
     "Nation Thailand": "thailand",
     "VietnamPlus": "vietnam",
+    "VNExpress International": "vietnam",
+    "Vietnam News - Environment": "vietnam",
     "Tatoli": "timor_leste",
     "Myanmar Now": "myanmar",
     "ANTARA Indonesia": "indonesia",
@@ -458,16 +470,21 @@ COUNTRY_MAX_CAPS = {
 }
 
 OPPORTUNITY_PORTALS = [
-    {"id": "adb-proc", "title": "ADB Procurement Opportunities", "url": "https://www.adb.org/work-with-us/procurement", "source": "ADB", "country": "regional", "type": "Portal"},
-    {"id": "ungm-notices", "title": "UNGM Tender Notices", "url": "https://www.ungm.org/Public/Notice", "source": "UNGM", "country": "regional", "type": "Tender Portal"},
-    {"id": "undp-proc", "title": "UNDP Procurement Notices", "url": "https://procurement-notices.undp.org/", "source": "UNDP", "country": "regional", "type": "Solicitations"},
-    {"id": "worldbank-proc", "title": "World Bank Procurement", "url": "https://projects.worldbank.org/en/projects-operations/procurement", "source": "World Bank", "country": "regional", "type": "Procurement"},
-    {"id": "vn-eproc", "title": "Vietnam e-Procurement Portal", "url": "https://muasamcong.mpi.gov.vn/", "source": "Government", "country": "vietnam", "type": "RFP/RFQ"},
-    {"id": "th-egp", "title": "Thailand e-GP", "url": "https://www.gprocurement.go.th/", "source": "Government", "country": "thailand", "type": "RFP/RFQ"},
-    {"id": "ph-philgeps", "title": "PhilGEPS Opportunities", "url": "https://notices.philgeps.gov.ph/", "source": "Government", "country": "philippines", "type": "Bids"},
-    {"id": "id-lpse", "title": "Indonesia LPSE e-Procurement", "url": "https://lpse.lkpp.go.id/eproc4", "source": "Government", "country": "indonesia", "type": "RFP/RFQ"},
-    {"id": "my-eperolehan", "title": "Malaysia ePerolehan", "url": "https://www.eperolehan.gov.my/", "source": "Government", "country": "malaysia", "type": "Tenders"},
-    {"id": "sg-gebiz", "title": "Singapore GeBIZ", "url": "https://www.gebiz.gov.sg/", "source": "Government", "country": "singapore", "type": "Quotations/Tenders"},
+    {"id": "adb-proc", "title": "ADB Procurement Opportunities", "url": "https://www.adb.org/work-with-us/procurement", "source": "ADB", "country": "regional", "type": "Portal", "deadline": "Rolling / check notice"},
+    {"id": "ungm-notices", "title": "UNGM Tender Notices", "url": "https://www.ungm.org/Public/Notice", "source": "UNGM", "country": "regional", "type": "Tender Portal", "deadline": "Varies by notice"},
+    {"id": "undp-proc", "title": "UNDP Procurement Notices", "url": "https://procurement-notices.undp.org/", "source": "UNDP", "country": "regional", "type": "Solicitations", "deadline": "Varies by notice"},
+    {"id": "worldbank-proc", "title": "World Bank Procurement", "url": "https://projects.worldbank.org/en/projects-operations/procurement", "source": "World Bank", "country": "regional", "type": "Procurement", "deadline": "Varies by notice"},
+    {"id": "reliefweb-asia-updates", "title": "ReliefWeb Asia Updates", "url": "https://reliefweb.int/updates?advanced-search=%28PC385%29", "source": "ReliefWeb", "country": "regional", "type": "Funding/Calls", "deadline": "Varies by posting"},
+    {"id": "reliefweb-asia-jobs", "title": "ReliefWeb Asia Jobs", "url": "https://reliefweb.int/jobs?advanced-search=%28PC385%29", "source": "ReliefWeb", "country": "regional", "type": "Consultancies/Jobs", "deadline": "Varies by posting"},
+    {"id": "thaingo-board", "title": "ThaiNGO Network Opportunities", "url": "https://www.thaingo.org/", "source": "ThaiNGO", "country": "thailand", "type": "NGO Opportunities", "deadline": "Check latest posts"},
+    {"id": "fundsforngos", "title": "FundsforNGOs Opportunities", "url": "https://www2.fundsforngos.org/", "source": "FundsforNGOs", "country": "regional", "type": "Grant Calls", "deadline": "Varies by call"},
+    {"id": "devex-funding", "title": "Devex Funding Overview", "url": "https://www.devex.com/funding-overview", "source": "Devex", "country": "regional", "type": "Funding Tracker", "deadline": "Varies by call"},
+    {"id": "vn-eproc", "title": "Vietnam e-Procurement Portal", "url": "https://muasamcong.mpi.gov.vn/", "source": "Government", "country": "vietnam", "type": "RFP/RFQ", "deadline": "Varies by tender"},
+    {"id": "th-egp", "title": "Thailand e-GP", "url": "https://www.gprocurement.go.th/", "source": "Government", "country": "thailand", "type": "RFP/RFQ", "deadline": "Varies by tender"},
+    {"id": "ph-philgeps", "title": "PhilGEPS Opportunities", "url": "https://notices.philgeps.gov.ph/", "source": "Government", "country": "philippines", "type": "Bids", "deadline": "Varies by bid"},
+    {"id": "id-lpse", "title": "Indonesia LPSE e-Procurement", "url": "https://lpse.lkpp.go.id/eproc4", "source": "Government", "country": "indonesia", "type": "RFP/RFQ", "deadline": "Varies by tender"},
+    {"id": "my-eperolehan", "title": "Malaysia ePerolehan", "url": "https://www.eperolehan.gov.my/", "source": "Government", "country": "malaysia", "type": "Tenders", "deadline": "Varies by tender"},
+    {"id": "sg-gebiz", "title": "Singapore GeBIZ", "url": "https://www.gebiz.gov.sg/", "source": "Government", "country": "singapore", "type": "Quotations/Tenders", "deadline": "Varies by tender"},
 ]
 
 OPPORTUNITY_SEARCH_COUNTRIES = [
@@ -496,6 +513,7 @@ def _build_opportunity_searches() -> list[dict]:
                 "source": "Search",
                 "country": key,
                 "type": "Live Search",
+                "deadline": "Rolling",
             }
         )
 
@@ -507,13 +525,20 @@ def _build_opportunity_searches() -> list[dict]:
             "source": "Search",
             "country": "regional",
             "type": "Live Search",
+            "deadline": "Rolling",
         }
     )
     return items
 
 
 def _build_opportunities() -> list[dict]:
-    return OPPORTUNITY_PORTALS + _build_opportunity_searches()
+    opportunities = OPPORTUNITY_PORTALS + _build_opportunity_searches()
+    normalized: list[dict] = []
+    for item in opportunities:
+        payload = dict(item)
+        payload["deadline"] = str(payload.get("deadline") or "Check notice")
+        normalized.append(payload)
+    return normalized
 
 
 def _to_date_string(value: str) -> str:
@@ -1194,6 +1219,46 @@ def build_latest_json() -> dict:
             "sectors": fallback,
             "opportunities": _build_opportunities(),
         }
+
+    has_vietnam_selected = any(
+        str(item.get("country") or "").lower() == "vietnam"
+        for sector in sectors_payload
+        for item in sector.get("items", [])
+    )
+    if not has_vietnam_selected:
+        vietnam_candidates = [
+            item
+            for item in all_items
+            if str(item.get("country") or "").lower() == "vietnam"
+        ]
+        vietnam_candidates.sort(key=lambda i: (i.get("publishedAt") or ""), reverse=True)
+
+        for candidate in vietnam_candidates:
+            sector_name = candidate.get("sector")
+            target_sector = next((s for s in sectors_payload if s.get("name") == sector_name), None)
+            if not target_sector:
+                continue
+
+            target_items = target_sector.get("items", [])
+            if any(existing.get("id") == candidate.get("id") for existing in target_items):
+                continue
+
+            if len(target_items) < MAX_ITEMS_PER_SECTOR:
+                target_items.append(candidate)
+                total += 1
+                break
+
+            replace_index = next(
+                (
+                    index
+                    for index, existing in enumerate(target_items)
+                    if str(existing.get("country") or "").lower() != "vietnam"
+                ),
+                None,
+            )
+            if replace_index is not None:
+                target_items[replace_index] = candidate
+                break
 
     return {
         "runAt": datetime.now(timezone.utc).isoformat(),

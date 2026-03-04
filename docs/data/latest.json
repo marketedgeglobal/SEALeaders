@@ -1,14 +1,43 @@
 {
-  "runAt": "2026-03-04T00:55:53.039792+00:00",
-  "totalItems": 11,
+  "runAt": "2026-03-04T01:04:43.203870+00:00",
+  "totalItems": 19,
   "sectors": [
     {
       "name": "Sustainable Blue Economy",
-      "items": []
+      "items": [
+        {
+          "id": "28a45b9a6b0c",
+          "title": "Empty shelves across Myanmar as Thai imports disappear",
+          "url": "https://myanmar-now.org/en/news/empty-shelves-across-myanmar-as-thai-imports-disappear/",
+          "originalUrl": "https://myanmar-now.org/en/news/empty-shelves-across-myanmar-as-thai-imports-disappear/",
+          "verifiedUrl": "https://myanmar-now.org/en/news/empty-shelves-across-myanmar-as-thai-imports-disappear/",
+          "publisher": "Myanmar Now",
+          "publishedAt": "2026-02-26",
+          "sourcePublishedAt": "2026-02-26",
+          "source": "Myanmar Now",
+          "sector": "Sustainable Blue Economy",
+          "country": "thailand",
+          "snippet": "From snacks to medicine, goods once trucked across the Thai border have vanished following tightened import controls, border gate closures, and a crackdown on “illegal” trade"
+        }
+      ]
     },
     {
       "name": "Climate Change",
       "items": [
+        {
+          "id": "3ad3d8bec014",
+          "title": "Pagasa: El Niño may develop August to October, intense habagat looms",
+          "url": "https://newsinfo.inquirer.net/2189947/el-nino-may-develop-in-july-but-pagasa-warns-of-intense-habagat",
+          "originalUrl": "https://newsinfo.inquirer.net/2189947/el-nino-may-develop-in-july-but-pagasa-warns-of-intense-habagat",
+          "verifiedUrl": "https://newsinfo.inquirer.net/2189947/el-nino-may-develop-in-july-but-pagasa-warns-of-intense-habagat",
+          "publisher": "Inquirer",
+          "publishedAt": "2026-03-03",
+          "sourcePublishedAt": "2026-03-03",
+          "source": "Inquirer",
+          "sector": "Climate Change",
+          "country": "philippines",
+          "snippet": "[Updated March 3, 2026, 7:32 p.m.] MANILA, Philippines — The El Niño phenomenon may start developing by August to October this year, according to the Philippine Atmospheric, Geophysical and Astronomical Services Administration (Pagasa). In an interview with the INQUIRER, Pagasa Climate Monitoring and Prediction Section"
+        },
         {
           "id": "6962f27b04e1",
           "title": "Malaysia to integrate water pricing into national adaptation plan, says environment ministry",
@@ -24,6 +53,20 @@
           "snippet": "The impacts of deforestation must also be counted towards the true cost of water, the ministry’s secretary-general said. The country's first fair share carbon budget report could help strengthen the government’s forest conservation efforts."
         },
         {
+          "id": "0d575665ab8e",
+          "title": "Low emissions to enhance the value of Vietnamese rice: agriculture experts",
+          "url": "https://vietnamnews.vn/environment/1766567/viet-nam-enhances-conservation-activities-for-world-wildlife-day.html",
+          "originalUrl": "https://vietnamnews.vn/environment/1766357/low-emissions-to-enhance-the-value-of-vietnamese-rice-agriculture-experts.html",
+          "verifiedUrl": "https://vietnamnews.vn/environment/1766567/viet-nam-enhances-conservation-activities-for-world-wildlife-day.html",
+          "publisher": "Vietnam News - Environment",
+          "publishedAt": "2026-02-26",
+          "sourcePublishedAt": "2026-02-26",
+          "source": "Vietnam News - Environment",
+          "sector": "Climate Change",
+          "country": "vietnam",
+          "snippet": "The programme receives technical support from the Fertilise Right project funded by the United States Department of Agriculture (USDA)."
+        },
+        {
           "id": "8460a8e29f30",
           "title": "Agriculture Is Taking Over Grasslands, Wetlands and Other Overlooked Ecosystems",
           "url": "https://www.wri.org/insights/cropland-expansion-impacts-people-planet",
@@ -36,6 +79,62 @@
           "sector": "Climate Change",
           "country": "regional",
           "snippet": "Across the world, farmland is replacing some of our most important ecosystems."
+        },
+        {
+          "id": "6fd827286c5a",
+          "title": "Myanmar elections marked by fear as UN warns civilians are coerced from all sides",
+          "url": "https://news.un.org/feed/view/en/story/2025/12/1166662",
+          "originalUrl": "https://news.un.org/feed/view/en/story/2025/12/1166662",
+          "verifiedUrl": "https://news.un.org/feed/view/en/story/2025/12/1166662",
+          "publisher": "UN News Asia Pacific",
+          "publishedAt": "2025-12-23",
+          "sourcePublishedAt": "2025-12-23",
+          "source": "UN News Asia Pacific",
+          "sector": "Climate Change",
+          "country": "myanmar",
+          "snippet": "As Myanmar approaches elections scheduled for 28 December, the UN’s top human rights official has said that civilians are being coerced from all sides – forced by the military to vote and threatened by armed opposition groups to boycott – in a climate of fear, violence and mass repression."
+        },
+        {
+          "id": "4f4a891b8dad",
+          "title": "Indonesia faces scrutiny over permit revocations following deadly floods and landslides Hans Nicholas Jong 20 Feb 2026",
+          "url": "https://news.mongabay.com/2026/02/indonesia-faces-scrutiny-over-permit-revocations-following-deadly-floods-and-landslides/",
+          "originalUrl": "https://news.mongabay.com/2026/02/indonesia-faces-scrutiny-over-permit-revocations-following-deadly-floods-and-landslides/",
+          "verifiedUrl": "https://news.mongabay.com/2026/02/indonesia-faces-scrutiny-over-permit-revocations-following-deadly-floods-and-landslides/",
+          "publisher": "news.mongabay.com",
+          "publishedAt": "",
+          "sourcePublishedAt": "",
+          "source": "Mongabay - Asia",
+          "sector": "Climate Change",
+          "country": "indonesia",
+          "snippet": "The report indicates that Indonesia faces scrutiny over permit revocations following deadly floods and landslides Hans Nicholas Jong 20 Feb 2026."
+        },
+        {
+          "id": "078a4fc2e68c",
+          "title": "What's the Climate Cost of Growing Crops?",
+          "url": "https://www.nature.com/articles/s41558-026-02558-4",
+          "originalUrl": "https://www.wri.org/insights/climate-emissions-growing-crops",
+          "verifiedUrl": "https://www.nature.com/articles/s41558-026-02558-4",
+          "publisher": "WRI - Insights",
+          "publishedAt": "2026-02-13",
+          "sourcePublishedAt": "2026-02-13",
+          "source": "WRI - Insights",
+          "sector": "Climate Change",
+          "country": "regional",
+          "snippet": "Emissions from land used to grow crops for food, animal feed, fiber, fuel and more, known as croplands, are often overlooked. But they are far from insignificant. New maps of crop emissions from a global collaboration of universities and international research institutions, led by Cornell University and Land & Carbon L"
+        },
+        {
+          "id": "ce25583d12dd",
+          "title": "Climate Action Can Be One of the World’s Biggest Job Creators",
+          "url": "https://www.wri.org/research/jobs-skills-new-economy-action-agenda",
+          "originalUrl": "https://www.wri.org/insights/climate-action-job-creation",
+          "verifiedUrl": "https://www.wri.org/research/jobs-skills-new-economy-action-agenda",
+          "publisher": "WRI - Insights",
+          "publishedAt": "2026-02-12",
+          "sourcePublishedAt": "2026-02-12",
+          "source": "WRI - Insights",
+          "sector": "Climate Change",
+          "country": "regional",
+          "snippet": "We are in the midst of a great economic shift — one that will shape livelihoods and growth for decades to come."
         }
       ]
     },
@@ -71,6 +170,20 @@
           "snippet": "Southeast Asia is quietly entering a new strategic era, one defined not by the size of a navy’s fleet, but by the range of its missiles. Across the region, an emerging pattern is becoming visible. Vietnam, the Philippines, and Indonesia are each moving rapidly to establish anti-access/area-denial (A2/AD) postures. For "
         },
         {
+          "id": "6b6e1cd603c6",
+          "title": "Rethinking Sea Basing in East Sabah – Understanding Malaysia’s Strategic Shift to Mobile Maritime Platforms",
+          "url": "https://amti.csis.org/rethinking-sea-basing-in-east-sabah-understanding-malaysias-strategic-shift-to-mobile-maritime-platforms/",
+          "originalUrl": "https://amti.csis.org/rethinking-sea-basing-in-east-sabah-understanding-malaysias-strategic-shift-to-mobile-maritime-platforms/",
+          "verifiedUrl": "https://amti.csis.org/rethinking-sea-basing-in-east-sabah-understanding-malaysias-strategic-shift-to-mobile-maritime-platforms/",
+          "publisher": "AMTI - CSIS",
+          "publishedAt": "2025-06-24",
+          "sourcePublishedAt": "2025-06-24",
+          "source": "AMTI - CSIS",
+          "sector": "Maritime Security",
+          "country": "malaysia",
+          "snippet": "In early May this year, the Malaysian government considered replacing the Tun Sharifah Rodziah static offshore forward operating base with a Mobile Offshore Base (MOB). This shift in thinking is not merely a logistical upgrade but a timely and strategic recalibration of the country’s maritime security architecture. Def"
+        },
+        {
           "id": "dc899fca7d98",
           "title": "The Consequences of Shelving the South China Sea Disputes",
           "url": "https://amti.csis.org/the-consequences-of-shelving-the-south-china-sea-disputes/",
@@ -99,20 +212,6 @@
           "snippet": "Introduction On September 10, China approved the establishment of a nature reserve at Scarborough Shoal, also known as Bajo de Masinloc in Tagalog or Huangyan Dao in Chinese, a coral atoll whose sovereignty is under dispute between China and the Philippines. According to Beijing, the reserve covers approximately one ac"
         },
         {
-          "id": "6b6e1cd603c6",
-          "title": "Rethinking Sea Basing in East Sabah – Understanding Malaysia’s Strategic Shift to Mobile Maritime Platforms",
-          "url": "https://amti.csis.org/rethinking-sea-basing-in-east-sabah-understanding-malaysias-strategic-shift-to-mobile-maritime-platforms/",
-          "originalUrl": "https://amti.csis.org/rethinking-sea-basing-in-east-sabah-understanding-malaysias-strategic-shift-to-mobile-maritime-platforms/",
-          "verifiedUrl": "https://amti.csis.org/rethinking-sea-basing-in-east-sabah-understanding-malaysias-strategic-shift-to-mobile-maritime-platforms/",
-          "publisher": "AMTI - CSIS",
-          "publishedAt": "2025-06-24",
-          "sourcePublishedAt": "2025-06-24",
-          "source": "AMTI - CSIS",
-          "sector": "Maritime Security",
-          "country": "malaysia",
-          "snippet": "In early May this year, the Malaysian government considered replacing the Tun Sharifah Rodziah static offshore forward operating base with a Mobile Offshore Base (MOB). This shift in thinking is not merely a logistical upgrade but a timely and strategic recalibration of the country’s maritime security architecture. Def"
-        },
-        {
           "id": "a03972fac9d3",
           "title": "Conceptualizing Indonesia’s Strategic Thinking in the Maritime Domain: Strategy as a Spectrum and a Process",
           "url": "https://amti.csis.org/conceptualizing-indonesias-strategic-thinking-in-the-maritime-domain-strategy-as-a-spectrum-and-a-process/",
@@ -139,6 +238,20 @@
           "sector": "Maritime Security",
           "country": "philippines",
           "snippet": "The Philippines and the United States need to think about deterrence – as an Alliance – as President Donald Trump’s government lays out its future Indo-Pacific Strategy. The Philippines is likely to be in solidarity with how the second Trump administration will approach China. The Philippines also has room to be more p"
+        },
+        {
+          "id": "b0646358bbc6",
+          "title": "The Influence of the Philippine Archipelagic Sea Lanes Act on Navigation Rights",
+          "url": "https://amti.csis.org/the-influence-of-the-philippine-archipelagic-sea-lanes-act-on-navigation-rights/",
+          "originalUrl": "https://amti.csis.org/the-influence-of-the-philippine-archipelagic-sea-lanes-act-on-navigation-rights/",
+          "verifiedUrl": "https://amti.csis.org/the-influence-of-the-philippine-archipelagic-sea-lanes-act-on-navigation-rights/",
+          "publisher": "AMTI - CSIS",
+          "publishedAt": "2024-11-14",
+          "sourcePublishedAt": "2024-11-14",
+          "source": "AMTI - CSIS",
+          "sector": "Maritime Security",
+          "country": "philippines",
+          "snippet": "On November 9, 2024, Philippine president Ferdinand Marcos Jr. signed into law both the Philippine Maritime Zones Act and the Philippine Archipelagic Sea Lanes (ASL Act). Observers have been particularly focused on the Philippine Maritime Zones Act for intensifying the dispute between China and the Philippines, but it "
         }
       ]
     },
@@ -164,18 +277,18 @@
           "snippet": "Wastewater from mines has heavily contained both rivers, according to Karenni State’s resistance-run civilian authority"
         },
         {
-          "id": "7c9722358285",
-          "title": "Deadly landfill collapse exposes risks faced by Philippines’ waste pickers Michael Beltran 2 Mar 2026",
+          "id": "54727a295fe7",
+          "title": "Deadly landfill collapse exposes risks faced by Philippines’ waste pickers",
           "url": "https://news.mongabay.com/2026/03/deadly-landfill-collapse-exposes-risks-faced-by-philippines-waste-pickers/",
           "originalUrl": "https://news.mongabay.com/2026/03/deadly-landfill-collapse-exposes-risks-faced-by-philippines-waste-pickers/",
           "verifiedUrl": "https://news.mongabay.com/2026/03/deadly-landfill-collapse-exposes-risks-faced-by-philippines-waste-pickers/",
-          "publisher": "news.mongabay.com",
-          "publishedAt": "",
-          "sourcePublishedAt": "",
-          "source": "Mongabay - Asia",
+          "publisher": "Mongabay",
+          "publishedAt": "2026-03-02",
+          "sourcePublishedAt": "2026-03-02",
+          "source": "Mongabay",
           "sector": "Marine Pollution",
           "country": "philippines",
-          "snippet": "The report indicates that Deadly landfill collapse exposes risks faced by Philippines’ waste pickers Michael Beltran 2 Mar 2026."
+          "snippet": "RODRIGUEZ, Philippines — Lenny* recalled freezing when he saw the first heap of garbage collapse underneath the feet of his fellow scavengers on the afternoon of Feb. 20, at a landfill in the town of Rodriguez, in the Philippines’ Rizal province. Moments later, a larger perimeter caved. In an instant, a crater of trash"
         }
       ]
     }
@@ -187,7 +300,8 @@
       "url": "https://www.adb.org/work-with-us/procurement",
       "source": "ADB",
       "country": "regional",
-      "type": "Portal"
+      "type": "Portal",
+      "deadline": "Rolling / check notice"
     },
     {
       "id": "ungm-notices",
@@ -195,7 +309,8 @@
       "url": "https://www.ungm.org/Public/Notice",
       "source": "UNGM",
       "country": "regional",
-      "type": "Tender Portal"
+      "type": "Tender Portal",
+      "deadline": "Varies by notice"
     },
     {
       "id": "undp-proc",
@@ -203,7 +318,8 @@
       "url": "https://procurement-notices.undp.org/",
       "source": "UNDP",
       "country": "regional",
-      "type": "Solicitations"
+      "type": "Solicitations",
+      "deadline": "Varies by notice"
     },
     {
       "id": "worldbank-proc",
@@ -211,7 +327,53 @@
       "url": "https://projects.worldbank.org/en/projects-operations/procurement",
       "source": "World Bank",
       "country": "regional",
-      "type": "Procurement"
+      "type": "Procurement",
+      "deadline": "Varies by notice"
+    },
+    {
+      "id": "reliefweb-asia-updates",
+      "title": "ReliefWeb Asia Updates",
+      "url": "https://reliefweb.int/updates?advanced-search=%28PC385%29",
+      "source": "ReliefWeb",
+      "country": "regional",
+      "type": "Funding/Calls",
+      "deadline": "Varies by posting"
+    },
+    {
+      "id": "reliefweb-asia-jobs",
+      "title": "ReliefWeb Asia Jobs",
+      "url": "https://reliefweb.int/jobs?advanced-search=%28PC385%29",
+      "source": "ReliefWeb",
+      "country": "regional",
+      "type": "Consultancies/Jobs",
+      "deadline": "Varies by posting"
+    },
+    {
+      "id": "thaingo-board",
+      "title": "ThaiNGO Network Opportunities",
+      "url": "https://www.thaingo.org/",
+      "source": "ThaiNGO",
+      "country": "thailand",
+      "type": "NGO Opportunities",
+      "deadline": "Check latest posts"
+    },
+    {
+      "id": "fundsforngos",
+      "title": "FundsforNGOs Opportunities",
+      "url": "https://www2.fundsforngos.org/",
+      "source": "FundsforNGOs",
+      "country": "regional",
+      "type": "Grant Calls",
+      "deadline": "Varies by call"
+    },
+    {
+      "id": "devex-funding",
+      "title": "Devex Funding Overview",
+      "url": "https://www.devex.com/funding-overview",
+      "source": "Devex",
+      "country": "regional",
+      "type": "Funding Tracker",
+      "deadline": "Varies by call"
     },
     {
       "id": "vn-eproc",
@@ -219,7 +381,8 @@
       "url": "https://muasamcong.mpi.gov.vn/",
       "source": "Government",
       "country": "vietnam",
-      "type": "RFP/RFQ"
+      "type": "RFP/RFQ",
+      "deadline": "Varies by tender"
     },
     {
       "id": "th-egp",
@@ -227,7 +390,8 @@
       "url": "https://www.gprocurement.go.th/",
       "source": "Government",
       "country": "thailand",
-      "type": "RFP/RFQ"
+      "type": "RFP/RFQ",
+      "deadline": "Varies by tender"
     },
     {
       "id": "ph-philgeps",
@@ -235,7 +399,8 @@
       "url": "https://notices.philgeps.gov.ph/",
       "source": "Government",
       "country": "philippines",
-      "type": "Bids"
+      "type": "Bids",
+      "deadline": "Varies by bid"
     },
     {
       "id": "id-lpse",
@@ -243,7 +408,8 @@
       "url": "https://lpse.lkpp.go.id/eproc4",
       "source": "Government",
       "country": "indonesia",
-      "type": "RFP/RFQ"
+      "type": "RFP/RFQ",
+      "deadline": "Varies by tender"
     },
     {
       "id": "my-eperolehan",
@@ -251,7 +417,8 @@
       "url": "https://www.eperolehan.gov.my/",
       "source": "Government",
       "country": "malaysia",
-      "type": "Tenders"
+      "type": "Tenders",
+      "deadline": "Varies by tender"
     },
     {
       "id": "sg-gebiz",
@@ -259,7 +426,8 @@
       "url": "https://www.gebiz.gov.sg/",
       "source": "Government",
       "country": "singapore",
-      "type": "Quotations/Tenders"
+      "type": "Quotations/Tenders",
+      "deadline": "Varies by tender"
     },
     {
       "id": "search-vietnam",
@@ -267,7 +435,8 @@
       "url": "https://www.google.com/search?q=Vietnam+coastal+community+marine+fisheries+climate+adaptation+RFP+RFQ+tender+solicitation",
       "source": "Search",
       "country": "vietnam",
-      "type": "Live Search"
+      "type": "Live Search",
+      "deadline": "Rolling"
     },
     {
       "id": "search-thailand",
@@ -275,7 +444,8 @@
       "url": "https://www.google.com/search?q=Thailand+coastal+community+marine+fisheries+climate+adaptation+RFP+RFQ+tender+solicitation",
       "source": "Search",
       "country": "thailand",
-      "type": "Live Search"
+      "type": "Live Search",
+      "deadline": "Rolling"
     },
     {
       "id": "search-philippines",
@@ -283,7 +453,8 @@
       "url": "https://www.google.com/search?q=Philippines+coastal+community+marine+fisheries+climate+adaptation+RFP+RFQ+tender+solicitation",
       "source": "Search",
       "country": "philippines",
-      "type": "Live Search"
+      "type": "Live Search",
+      "deadline": "Rolling"
     },
     {
       "id": "search-indonesia",
@@ -291,7 +462,8 @@
       "url": "https://www.google.com/search?q=Indonesia+coastal+community+marine+fisheries+climate+adaptation+RFP+RFQ+tender+solicitation",
       "source": "Search",
       "country": "indonesia",
-      "type": "Live Search"
+      "type": "Live Search",
+      "deadline": "Rolling"
     },
     {
       "id": "search-malaysia",
@@ -299,7 +471,8 @@
       "url": "https://www.google.com/search?q=Malaysia+coastal+community+marine+fisheries+climate+adaptation+RFP+RFQ+tender+solicitation",
       "source": "Search",
       "country": "malaysia",
-      "type": "Live Search"
+      "type": "Live Search",
+      "deadline": "Rolling"
     },
     {
       "id": "search-myanmar",
@@ -307,7 +480,8 @@
       "url": "https://www.google.com/search?q=Myanmar+coastal+community+marine+fisheries+climate+adaptation+RFP+RFQ+tender+solicitation",
       "source": "Search",
       "country": "myanmar",
-      "type": "Live Search"
+      "type": "Live Search",
+      "deadline": "Rolling"
     },
     {
       "id": "search-cambodia",
@@ -315,7 +489,8 @@
       "url": "https://www.google.com/search?q=Cambodia+coastal+community+marine+fisheries+climate+adaptation+RFP+RFQ+tender+solicitation",
       "source": "Search",
       "country": "cambodia",
-      "type": "Live Search"
+      "type": "Live Search",
+      "deadline": "Rolling"
     },
     {
       "id": "search-singapore",
@@ -323,7 +498,8 @@
       "url": "https://www.google.com/search?q=Singapore+coastal+community+marine+fisheries+climate+adaptation+RFP+RFQ+tender+solicitation",
       "source": "Search",
       "country": "singapore",
-      "type": "Live Search"
+      "type": "Live Search",
+      "deadline": "Rolling"
     },
     {
       "id": "search-brunei",
@@ -331,7 +507,8 @@
       "url": "https://www.google.com/search?q=Brunei+coastal+community+marine+fisheries+climate+adaptation+RFP+RFQ+tender+solicitation",
       "source": "Search",
       "country": "brunei",
-      "type": "Live Search"
+      "type": "Live Search",
+      "deadline": "Rolling"
     },
     {
       "id": "search-regional",
@@ -339,7 +516,8 @@
       "url": "https://www.google.com/search?q=Southeast+Asia+coastal+marine+community+RFP+RFQ+tender+solicitation",
       "source": "Search",
       "country": "regional",
-      "type": "Live Search"
+      "type": "Live Search",
+      "deadline": "Rolling"
     }
   ]
 }

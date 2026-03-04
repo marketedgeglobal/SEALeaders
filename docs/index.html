@@ -386,7 +386,7 @@
           ? filteredOpportunities.slice(0, 8).map((item) => `
               <article class="item-card">
                 <h5><a href="${esc(item.url || "#")}" target="_blank" rel="noopener">${esc(item.title || "Opportunity")}</a></h5>
-                <p class="item-meta">Type: ${esc(item.type || "Opportunity")} · Source: ${esc(item.source || "Unknown")}</p>
+                <p class="item-meta">Type: ${esc(item.type || "Opportunity")} · Source: ${esc(item.source || "Unknown")} · Deadline: ${esc(item.deadline || "Check notice")}</p>
               </article>
             `).join("")
           : "<article class=\"item-card\"><p class=\"item-desc\">No opportunities found for this country yet.</p></article>";
