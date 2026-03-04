@@ -7,7 +7,7 @@ import hashlib
 import json
 import os
 import re
-from datetime import datetime, timezone
+from datetime import datetime, timedelta, timezone
 from email.utils import parsedate_to_datetime
 from html import unescape
 from pathlib import Path
@@ -342,6 +342,7 @@ SECTOR_KEYWORDS = {
 MAX_ITEMS_PER_SECTOR = min(int(os.getenv("MAX_ITEMS_PER_SECTOR", "6")), 6)
 MAX_ITEMS_PER_PUBLISHER = int(os.getenv("MAX_ITEMS_PER_PUBLISHER", "3"))
 MAX_ITEMS_PER_COUNTRY = int(os.getenv("MAX_ITEMS_PER_COUNTRY", "6"))
+MAX_ITEM_AGE_DAYS = int(os.getenv("MAX_ITEM_AGE_DAYS", "120"))
 MAX_FEED_ENTRIES_PER_SOURCE = int(os.getenv("MAX_FEED_ENTRIES_PER_SOURCE", "36"))
 ENABLE_ARTICLE_EXCERPT_FETCH = os.getenv("ENABLE_ARTICLE_EXCERPT_FETCH", "1") == "1"
 ENABLE_URL_RESOLVE = os.getenv("ENABLE_URL_RESOLVE", "1") == "1"
@@ -774,6 +775,18 @@ def _to_date_string(value: str) -> str:
             return dt.date().isoformat()
         except Exception:
             return value[:10]
+
+
+def _is_within_recent_window(date_value: str, max_age_days: int = MAX_ITEM_AGE_DAYS) -> bool:
+    if not date_value:
+        return False
+    try:
+        published_date = datetime.fromisoformat(str(date_value)[:10]).date()
+    except Exception:
+        return False
+
+    cutoff_date = (datetime.now(timezone.utc) - timedelta(days=max_age_days)).date()
+    return published_date >= cutoff_date
 
 
 def _clean_text(value: str) -> str:
@@ -1320,7 +1333,13 @@ def build_latest_json() -> dict:
             seen_title_signatures.add(title_signature)
             all_items.append(item)
 
-    all_items.sort(key=lambda i: (i.get("publishedAt") or ""), reverse=True)
+    all_items = [
+        item
+        for item in all_items
+        if _is_within_recent_window(str(item.get("publishedAt") or item.get("sourcePublishedAt") or ""))
+    ]
+
+    all_items.sort(key=lambda i: (i.get("publishedAt") or i.get("sourcePublishedAt") or ""), reverse=True)
 
     sectors_payload = []
     total = 0
@@ -1421,92 +1440,11 @@ def build_latest_json() -> dict:
         )
 
     if total == 0:
-        fallback = [
-            {
-                "name": "Blue Economy",
-                "items": [
-                    {
-                        "id": "placeholder-blue",
-                        "title": "Southeast Asia blue economy initiatives for grassroots groups",
-                        "url": "#",
-                        "publisher": "placeholder",
-                        "publishedAt": datetime.now(timezone.utc).date().isoformat(),
-                        "sourcePublishedAt": datetime.now(timezone.utc).date().isoformat(),
-                        "source": "Placeholder",
-                        "sector": "Blue Economy",
-                        "snippet": "Placeholder story shown because no live items passed filters.",
-                    }
-                ],
-            },
-            {
-                "name": "Sustainable Fisheries",
-                "items": [
-                    {
-                        "id": "placeholder-fish",
-                        "title": "ASEAN fisheries cooperation updates for coastal communities",
-                        "url": "#",
-                        "publisher": "placeholder",
-                        "publishedAt": datetime.now(timezone.utc).date().isoformat(),
-                        "sourcePublishedAt": datetime.now(timezone.utc).date().isoformat(),
-                        "source": "Placeholder",
-                        "sector": "Sustainable Fisheries",
-                        "snippet": "Placeholder story shown because no live items passed filters.",
-                    }
-                ],
-            },
-            {
-                "name": "Climate Change",
-                "items": [
-                    {
-                        "id": "placeholder-climate",
-                        "title": "Southeast Asia climate resilience planning for coastal zones",
-                        "url": "#",
-                        "publisher": "placeholder",
-                        "publishedAt": datetime.now(timezone.utc).date().isoformat(),
-                        "sourcePublishedAt": datetime.now(timezone.utc).date().isoformat(),
-                        "source": "Placeholder",
-                        "sector": "Climate Change",
-                        "snippet": "Placeholder story shown because no live items passed filters.",
-                    }
-                ],
-            },
-            {
-                "name": "Maritime Security",
-                "items": [
-                    {
-                        "id": "placeholder-security",
-                        "title": "Maritime Security coordination in Southeast Asia waters",
-                        "url": "#",
-                        "publisher": "placeholder",
-                        "publishedAt": datetime.now(timezone.utc).date().isoformat(),
-                        "sourcePublishedAt": datetime.now(timezone.utc).date().isoformat(),
-                        "source": "Placeholder",
-                        "sector": "Maritime Security",
-                        "snippet": "Placeholder story shown because no live items passed filters.",
-                    }
-                ],
-            },
-            {
-                "name": "Marine Pollution",
-                "items": [
-                    {
-                        "id": "placeholder-pollution",
-                        "title": "Marine Pollution response initiatives across ASEAN",
-                        "url": "#",
-                        "publisher": "placeholder",
-                        "publishedAt": datetime.now(timezone.utc).date().isoformat(),
-                        "sourcePublishedAt": datetime.now(timezone.utc).date().isoformat(),
-                        "source": "Placeholder",
-                        "sector": "Marine Pollution",
-                        "snippet": "Placeholder story shown because no live items passed filters.",
-                    }
-                ],
-            },
-        ]
+        fallback = [{"name": sector, "items": []} for sector in SECTORS]
 
         return {
             "runAt": datetime.now(timezone.utc).isoformat(),
-            "totalItems": 5,
+            "totalItems": 0,
             "sectors": fallback,
             "opportunities": _build_opportunities(),
         }
