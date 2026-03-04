@@ -1,25 +1,10 @@
 {
-  "runAt": "2026-03-04T00:49:52.056659+00:00",
-  "totalItems": 15,
+  "runAt": "2026-03-04T00:55:53.039792+00:00",
+  "totalItems": 11,
   "sectors": [
     {
       "name": "Sustainable Blue Economy",
-      "items": [
-        {
-          "id": "28a45b9a6b0c",
-          "title": "Empty shelves across Myanmar as Thai imports disappear",
-          "url": "https://myanmar-now.org/en/news/empty-shelves-across-myanmar-as-thai-imports-disappear/",
-          "originalUrl": "https://myanmar-now.org/en/news/empty-shelves-across-myanmar-as-thai-imports-disappear/",
-          "verifiedUrl": "https://myanmar-now.org/en/news/empty-shelves-across-myanmar-as-thai-imports-disappear/",
-          "publisher": "Myanmar Now",
-          "publishedAt": "2026-02-26",
-          "sourcePublishedAt": "2026-02-26",
-          "source": "Myanmar Now",
-          "sector": "Sustainable Blue Economy",
-          "country": "thailand",
-          "snippet": "From snacks to medicine, goods once trucked across the Thai border have vanished following tightened import controls, border gate closures, and a crackdown on “illegal” trade"
-        }
-      ]
+      "items": []
     },
     {
       "name": "Climate Change",
@@ -51,34 +36,6 @@
           "sector": "Climate Change",
           "country": "regional",
           "snippet": "Across the world, farmland is replacing some of our most important ecosystems."
-        },
-        {
-          "id": "078a4fc2e68c",
-          "title": "What's the Climate Cost of Growing Crops?",
-          "url": "https://www.nature.com/articles/s41558-026-02558-4",
-          "originalUrl": "https://www.wri.org/insights/climate-emissions-growing-crops",
-          "verifiedUrl": "https://www.nature.com/articles/s41558-026-02558-4",
-          "publisher": "WRI - Insights",
-          "publishedAt": "2026-02-13",
-          "sourcePublishedAt": "2026-02-13",
-          "source": "WRI - Insights",
-          "sector": "Climate Change",
-          "country": "regional",
-          "snippet": "Emissions from land used to grow crops for food, animal feed, fiber, fuel and more, known as croplands, are often overlooked. But they are far from insignificant. New maps of crop emissions from a global collaboration of universities and international research institutions, led by Cornell University and Land & Carbon L"
-        },
-        {
-          "id": "ce25583d12dd",
-          "title": "Climate Action Can Be One of the World’s Biggest Job Creators",
-          "url": "https://www.wri.org/research/jobs-skills-new-economy-action-agenda",
-          "originalUrl": "https://www.wri.org/insights/climate-action-job-creation",
-          "verifiedUrl": "https://www.wri.org/research/jobs-skills-new-economy-action-agenda",
-          "publisher": "WRI - Insights",
-          "publishedAt": "2026-02-12",
-          "sourcePublishedAt": "2026-02-12",
-          "source": "WRI - Insights",
-          "sector": "Climate Change",
-          "country": "regional",
-          "snippet": "We are in the midst of a great economic shift — one that will shape livelihoods and growth for decades to come."
         }
       ]
     },
@@ -182,20 +139,6 @@
           "sector": "Maritime Security",
           "country": "philippines",
           "snippet": "The Philippines and the United States need to think about deterrence – as an Alliance – as President Donald Trump’s government lays out its future Indo-Pacific Strategy. The Philippines is likely to be in solidarity with how the second Trump administration will approach China. The Philippines also has room to be more p"
-        },
-        {
-          "id": "b0646358bbc6",
-          "title": "The Influence of the Philippine Archipelagic Sea Lanes Act on Navigation Rights",
-          "url": "https://amti.csis.org/the-influence-of-the-philippine-archipelagic-sea-lanes-act-on-navigation-rights/",
-          "originalUrl": "https://amti.csis.org/the-influence-of-the-philippine-archipelagic-sea-lanes-act-on-navigation-rights/",
-          "verifiedUrl": "https://amti.csis.org/the-influence-of-the-philippine-archipelagic-sea-lanes-act-on-navigation-rights/",
-          "publisher": "AMTI - CSIS",
-          "publishedAt": "2024-11-14",
-          "sourcePublishedAt": "2024-11-14",
-          "source": "AMTI - CSIS",
-          "sector": "Maritime Security",
-          "country": "philippines",
-          "snippet": "On November 9, 2024, Philippine president Ferdinand Marcos Jr. signed into law both the Philippine Maritime Zones Act and the Philippine Archipelagic Sea Lanes (ASL Act). Observers have been particularly focused on the Philippine Maritime Zones Act for intensifying the dispute between China and the Philippines, but it "
         }
       ]
     },
@@ -235,6 +178,168 @@
           "snippet": "The report indicates that Deadly landfill collapse exposes risks faced by Philippines’ waste pickers Michael Beltran 2 Mar 2026."
         }
       ]
+    }
+  ],
+  "opportunities": [
+    {
+      "id": "adb-proc",
+      "title": "ADB Procurement Opportunities",
+      "url": "https://www.adb.org/work-with-us/procurement",
+      "source": "ADB",
+      "country": "regional",
+      "type": "Portal"
+    },
+    {
+      "id": "ungm-notices",
+      "title": "UNGM Tender Notices",
+      "url": "https://www.ungm.org/Public/Notice",
+      "source": "UNGM",
+      "country": "regional",
+      "type": "Tender Portal"
+    },
+    {
+      "id": "undp-proc",
+      "title": "UNDP Procurement Notices",
+      "url": "https://procurement-notices.undp.org/",
+      "source": "UNDP",
+      "country": "regional",
+      "type": "Solicitations"
+    },
+    {
+      "id": "worldbank-proc",
+      "title": "World Bank Procurement",
+      "url": "https://projects.worldbank.org/en/projects-operations/procurement",
+      "source": "World Bank",
+      "country": "regional",
+      "type": "Procurement"
+    },
+    {
+      "id": "vn-eproc",
+      "title": "Vietnam e-Procurement Portal",
+      "url": "https://muasamcong.mpi.gov.vn/",
+      "source": "Government",
+      "country": "vietnam",
+      "type": "RFP/RFQ"
+    },
+    {
+      "id": "th-egp",
+      "title": "Thailand e-GP",
+      "url": "https://www.gprocurement.go.th/",
+      "source": "Government",
+      "country": "thailand",
+      "type": "RFP/RFQ"
+    },
+    {
+      "id": "ph-philgeps",
+      "title": "PhilGEPS Opportunities",
+      "url": "https://notices.philgeps.gov.ph/",
+      "source": "Government",
+      "country": "philippines",
+      "type": "Bids"
+    },
+    {
+      "id": "id-lpse",
+      "title": "Indonesia LPSE e-Procurement",
+      "url": "https://lpse.lkpp.go.id/eproc4",
+      "source": "Government",
+      "country": "indonesia",
+      "type": "RFP/RFQ"
+    },
+    {
+      "id": "my-eperolehan",
+      "title": "Malaysia ePerolehan",
+      "url": "https://www.eperolehan.gov.my/",
+      "source": "Government",
+      "country": "malaysia",
+      "type": "Tenders"
+    },
+    {
+      "id": "sg-gebiz",
+      "title": "Singapore GeBIZ",
+      "url": "https://www.gebiz.gov.sg/",
+      "source": "Government",
+      "country": "singapore",
+      "type": "Quotations/Tenders"
+    },
+    {
+      "id": "search-vietnam",
+      "title": "Vietnam: Coastal & Marine RFP/RFQ Search",
+      "url": "https://www.google.com/search?q=Vietnam+coastal+community+marine+fisheries+climate+adaptation+RFP+RFQ+tender+solicitation",
+      "source": "Search",
+      "country": "vietnam",
+      "type": "Live Search"
+    },
+    {
+      "id": "search-thailand",
+      "title": "Thailand: Coastal & Marine RFP/RFQ Search",
+      "url": "https://www.google.com/search?q=Thailand+coastal+community+marine+fisheries+climate+adaptation+RFP+RFQ+tender+solicitation",
+      "source": "Search",
+      "country": "thailand",
+      "type": "Live Search"
+    },
+    {
+      "id": "search-philippines",
+      "title": "Philippines: Coastal & Marine RFP/RFQ Search",
+      "url": "https://www.google.com/search?q=Philippines+coastal+community+marine+fisheries+climate+adaptation+RFP+RFQ+tender+solicitation",
+      "source": "Search",
+      "country": "philippines",
+      "type": "Live Search"
+    },
+    {
+      "id": "search-indonesia",
+      "title": "Indonesia: Coastal & Marine RFP/RFQ Search",
+      "url": "https://www.google.com/search?q=Indonesia+coastal+community+marine+fisheries+climate+adaptation+RFP+RFQ+tender+solicitation",
+      "source": "Search",
+      "country": "indonesia",
+      "type": "Live Search"
+    },
+    {
+      "id": "search-malaysia",
+      "title": "Malaysia: Coastal & Marine RFP/RFQ Search",
+      "url": "https://www.google.com/search?q=Malaysia+coastal+community+marine+fisheries+climate+adaptation+RFP+RFQ+tender+solicitation",
+      "source": "Search",
+      "country": "malaysia",
+      "type": "Live Search"
+    },
+    {
+      "id": "search-myanmar",
+      "title": "Myanmar: Coastal & Marine RFP/RFQ Search",
+      "url": "https://www.google.com/search?q=Myanmar+coastal+community+marine+fisheries+climate+adaptation+RFP+RFQ+tender+solicitation",
+      "source": "Search",
+      "country": "myanmar",
+      "type": "Live Search"
+    },
+    {
+      "id": "search-cambodia",
+      "title": "Cambodia: Coastal & Marine RFP/RFQ Search",
+      "url": "https://www.google.com/search?q=Cambodia+coastal+community+marine+fisheries+climate+adaptation+RFP+RFQ+tender+solicitation",
+      "source": "Search",
+      "country": "cambodia",
+      "type": "Live Search"
+    },
+    {
+      "id": "search-singapore",
+      "title": "Singapore: Coastal & Marine RFP/RFQ Search",
+      "url": "https://www.google.com/search?q=Singapore+coastal+community+marine+fisheries+climate+adaptation+RFP+RFQ+tender+solicitation",
+      "source": "Search",
+      "country": "singapore",
+      "type": "Live Search"
+    },
+    {
+      "id": "search-brunei",
+      "title": "Brunei: Coastal & Marine RFP/RFQ Search",
+      "url": "https://www.google.com/search?q=Brunei+coastal+community+marine+fisheries+climate+adaptation+RFP+RFQ+tender+solicitation",
+      "source": "Search",
+      "country": "brunei",
+      "type": "Live Search"
+    },
+    {
+      "id": "search-regional",
+      "title": "Southeast Asia: Coastal & Marine Opportunities",
+      "url": "https://www.google.com/search?q=Southeast+Asia+coastal+marine+community+RFP+RFQ+tender+solicitation",
+      "source": "Search",
+      "country": "regional",
+      "type": "Live Search"
     }
   ]
 }

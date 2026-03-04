@@ -241,6 +241,7 @@
         if (Array.isArray(raw.sectors)) {
           return {
             runAt: raw.runAt || raw.generated_at || "",
+            opportunities: Array.isArray(raw.opportunities) ? raw.opportunities : [],
             sectors: raw.sectors.map((sector) => ({
               name: sector.name,
               items: Array.isArray(sector.items) ? sector.items : [],
@@ -255,11 +256,12 @@
           }));
           return {
             runAt: raw.runAt || raw.generated_at || "",
+            opportunities: Array.isArray(raw.opportunities) ? raw.opportunities : [],
             sectors,
           };
         }
 
-        return { runAt: "", sectors: [] };
+        return { runAt: "", sectors: [], opportunities: [] };
       }
 
       function formatDate(raw) {
@@ -367,6 +369,37 @@
         `;
       }
 
+      function buildBusinessDevelopmentCard(data) {
+        const selectedCountry = COUNTRY_FILTERS.find((entry) => entry.key === activeCountryFilter);
+        const countryLabel = selectedCountry && selectedCountry.key !== "all"
+          ? selectedCountry.label
+          : "Southeast Asia";
+
+        const opportunities = Array.isArray(data.opportunities) ? data.opportunities : [];
+        const filteredOpportunities = opportunities.filter((item) => {
+          if (activeCountryFilter === "all") return true;
+          const itemCountry = String(item.country || "regional").toLowerCase();
+          return itemCountry === activeCountryFilter || itemCountry === "regional";
+        });
+
+        const cards = filteredOpportunities.length
+          ? filteredOpportunities.slice(0, 8).map((item) => `
+              <article class="item-card">
+                <h5><a href="${esc(item.url || "#")}" target="_blank" rel="noopener">${esc(item.title || "Opportunity")}</a></h5>
+                <p class="item-meta">Type: ${esc(item.type || "Opportunity")} · Source: ${esc(item.source || "Unknown")}</p>
+              </article>
+            `).join("")
+          : "<article class=\"item-card\"><p class=\"item-desc\">No opportunities found for this country yet.</p></article>";
+
+        return `
+          <section class="sector-block">
+            <h3>Business Development Opportunities</h3>
+            <p class="panel-sub">Live procurement and proposal pathways for ${esc(countryLabel)}. Use these to find current tenders, RFPs, RFQs, and solicitations aligned to coastal and marine priorities.</p>
+            <div class="items-grid" style="margin-top:10px;">${cards}</div>
+          </section>
+        `;
+      }
+
       function itemMatchesCountry(item, countryKey) {
         if (countryKey === "all") return true;
         const normalized = String(item.country || "regional").toLowerCase().replace(/\s+/g, "_");
@@ -433,7 +466,9 @@
 
         const controls = renderControls(counts);
 
-        root.innerHTML = `${summaryCard}${controls}${sectorsHtml}`;
+        const businessDevCard = buildBusinessDevelopmentCard(data);
+
+        root.innerHTML = `${summaryCard}${controls}${sectorsHtml}${businessDevCard}`;
       }
 
       async function loadData() {

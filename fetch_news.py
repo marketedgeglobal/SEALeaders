@@ -457,6 +457,64 @@ COUNTRY_MAX_CAPS = {
     "vietnam": int(os.getenv("MAX_ITEMS_VIETNAM", "3")),
 }
 
+OPPORTUNITY_PORTALS = [
+    {"id": "adb-proc", "title": "ADB Procurement Opportunities", "url": "https://www.adb.org/work-with-us/procurement", "source": "ADB", "country": "regional", "type": "Portal"},
+    {"id": "ungm-notices", "title": "UNGM Tender Notices", "url": "https://www.ungm.org/Public/Notice", "source": "UNGM", "country": "regional", "type": "Tender Portal"},
+    {"id": "undp-proc", "title": "UNDP Procurement Notices", "url": "https://procurement-notices.undp.org/", "source": "UNDP", "country": "regional", "type": "Solicitations"},
+    {"id": "worldbank-proc", "title": "World Bank Procurement", "url": "https://projects.worldbank.org/en/projects-operations/procurement", "source": "World Bank", "country": "regional", "type": "Procurement"},
+    {"id": "vn-eproc", "title": "Vietnam e-Procurement Portal", "url": "https://muasamcong.mpi.gov.vn/", "source": "Government", "country": "vietnam", "type": "RFP/RFQ"},
+    {"id": "th-egp", "title": "Thailand e-GP", "url": "https://www.gprocurement.go.th/", "source": "Government", "country": "thailand", "type": "RFP/RFQ"},
+    {"id": "ph-philgeps", "title": "PhilGEPS Opportunities", "url": "https://notices.philgeps.gov.ph/", "source": "Government", "country": "philippines", "type": "Bids"},
+    {"id": "id-lpse", "title": "Indonesia LPSE e-Procurement", "url": "https://lpse.lkpp.go.id/eproc4", "source": "Government", "country": "indonesia", "type": "RFP/RFQ"},
+    {"id": "my-eperolehan", "title": "Malaysia ePerolehan", "url": "https://www.eperolehan.gov.my/", "source": "Government", "country": "malaysia", "type": "Tenders"},
+    {"id": "sg-gebiz", "title": "Singapore GeBIZ", "url": "https://www.gebiz.gov.sg/", "source": "Government", "country": "singapore", "type": "Quotations/Tenders"},
+]
+
+OPPORTUNITY_SEARCH_COUNTRIES = [
+    ("vietnam", "Vietnam"),
+    ("thailand", "Thailand"),
+    ("philippines", "Philippines"),
+    ("indonesia", "Indonesia"),
+    ("malaysia", "Malaysia"),
+    ("myanmar", "Myanmar"),
+    ("cambodia", "Cambodia"),
+    ("singapore", "Singapore"),
+    ("brunei", "Brunei"),
+]
+
+
+def _build_opportunity_searches() -> list[dict]:
+    items: list[dict] = []
+    for key, label in OPPORTUNITY_SEARCH_COUNTRIES:
+        query = f"{label} coastal community marine fisheries climate adaptation RFP RFQ tender solicitation"
+        encoded = re.sub(r"\s+", "+", query.strip())
+        items.append(
+            {
+                "id": f"search-{key}",
+                "title": f"{label}: Coastal & Marine RFP/RFQ Search",
+                "url": f"https://www.google.com/search?q={encoded}",
+                "source": "Search",
+                "country": key,
+                "type": "Live Search",
+            }
+        )
+
+    items.append(
+        {
+            "id": "search-regional",
+            "title": "Southeast Asia: Coastal & Marine Opportunities",
+            "url": "https://www.google.com/search?q=Southeast+Asia+coastal+marine+community+RFP+RFQ+tender+solicitation",
+            "source": "Search",
+            "country": "regional",
+            "type": "Live Search",
+        }
+    )
+    return items
+
+
+def _build_opportunities() -> list[dict]:
+    return OPPORTUNITY_PORTALS + _build_opportunity_searches()
+
 
 def _to_date_string(value: str) -> str:
     if not value:
@@ -1134,12 +1192,14 @@ def build_latest_json() -> dict:
             "runAt": datetime.now(timezone.utc).isoformat(),
             "totalItems": 5,
             "sectors": fallback,
+            "opportunities": _build_opportunities(),
         }
 
     return {
         "runAt": datetime.now(timezone.utc).isoformat(),
         "totalItems": total,
         "sectors": sectors_payload,
+        "opportunities": _build_opportunities(),
     }
 
 
