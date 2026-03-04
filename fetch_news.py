@@ -435,6 +435,35 @@ COASTAL_COMMUNITY_MARKERS = (
     "delta",
 )
 
+FISHERIES_PRIORITY_MARKERS = (
+    "small-scale",
+    "small scale",
+    "community",
+    "communities",
+    "coastal",
+    "fishers",
+    "fisherfolk",
+    "livelihood",
+    "livelihoods",
+    "aquaculture",
+    "fishery",
+    "fisheries",
+    "fishing",
+    "mangrove",
+    "reef",
+    "seagrass",
+)
+
+FISHERIES_COMMERCIAL_MARKERS = (
+    "export",
+    "exports",
+    "import",
+    "imports",
+    "tariff",
+    "trade",
+    "market",
+)
+
 OUT_OF_SCOPE_GLOBAL_MARKERS = (
     "iran",
     "israel",
@@ -1018,6 +1047,21 @@ def _country_cap(country: str, relaxed: bool = False) -> int:
     return base_cap + 2 if relaxed else base_cap
 
 
+def _fisheries_priority_score(item: dict) -> int:
+    text = f"{item.get('title', '')} {item.get('snippet', '')}".lower()
+    marker_hits = sum(1 for marker in FISHERIES_PRIORITY_MARKERS if marker in text)
+    has_community_context = any(marker in text for marker in COASTAL_COMMUNITY_MARKERS)
+    has_commercial_only = any(marker in text for marker in FISHERIES_COMMERCIAL_MARKERS)
+
+    score = marker_hits
+    if has_community_context:
+        score += 4
+    if has_commercial_only and not has_community_context:
+        score -= 2
+
+    return score
+
+
 def _passes_sow_focus(title: str, summary: str, snippet: str = "") -> bool:
     text = f"{title} {summary} {snippet}".lower()
 
@@ -1131,6 +1175,8 @@ def build_latest_json() -> dict:
 
     for sector in SECTORS:
         candidates = [item for item in all_items if item["sector"] == sector]
+        if sector == "Sustainable Fisheries":
+            candidates = sorted(candidates, key=_fisheries_priority_score, reverse=True)
         selected: list[dict] = []
 
         remaining = list(candidates)
@@ -1140,6 +1186,7 @@ def build_latest_json() -> dict:
                 key=lambda item: (
                     country_usage.get(str(item.get("country") or "regional").lower(), 0)
                     / max(_country_weight(str(item.get("country") or "regional").lower()), 0.1),
+                    -_fisheries_priority_score(item) if sector == "Sustainable Fisheries" else 0,
                     publisher_usage.get(str(item.get("publisher") or "unknown").lower(), 0),
                 ),
             )
