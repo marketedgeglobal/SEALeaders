@@ -215,6 +215,11 @@ FEEDS = [
         "mode": "web",
     },
     {
+        "name": "UNEP FI - Blue Finance (Web)",
+        "url": "https://www.unepfi.org/blue-finance/",
+        "mode": "web",
+    },
+    {
         "name": "Google News - ASEAN Fisheries",
         "url": "https://news.google.com/rss/search?q=ASEAN+fisheries+aquaculture+Southeast+Asia&hl=en-US&gl=US&ceid=US:en",
     },
@@ -421,6 +426,7 @@ REGIONAL_CONTEXT_FEEDS = {
     "Mongabay - Fisheries (Web)",
     "SEAFDEC - News (Web)",
     "ADB - Ocean Health & Blue Economy (Web)",
+    "UNEP FI - Blue Finance (Web)",
     "Google News - ASEAN Fisheries",
     "Google News - SEA Coastal Fisheries",
     "Google News - SEA Seafood Trade",
@@ -595,6 +601,24 @@ BLUE_ECONOMY_ECONOMIC_MARKERS = (
     "ocean economy",
     "investment",
     "finance",
+    "blue finance",
+    "ocean finance",
+    "marine finance",
+    "blue bond",
+    "blue bonds",
+    "sustainable bond",
+    "sustainable bonds",
+    "blended finance",
+    "green finance",
+    "impact investment",
+    "impact investing",
+    "debt-for-nature",
+    "debt for nature",
+    "debt swap",
+    "debt swaps",
+    "conservation finance",
+    "insurance",
+    "resilience bond",
     "trade",
     "export",
     "exports",
@@ -612,6 +636,49 @@ BLUE_ECONOMY_ECONOMIC_MARKERS = (
     "plastic reduction",
     "resource efficiency",
 )
+
+BLUE_FINANCE_MARKERS = (
+    "blue finance",
+    "ocean finance",
+    "marine finance",
+    "blue bond",
+    "blue bonds",
+    "sustainable bond",
+    "sustainable bonds",
+    "blended finance",
+    "green finance",
+    "impact investment",
+    "impact investing",
+    "debt-for-nature",
+    "debt for nature",
+    "debt swap",
+    "debt swaps",
+    "conservation finance",
+    "resilience bond",
+    "bond issuance",
+)
+
+BLUE_FINANCE_COUNTRY_MARKERS = (
+    "vietnam",
+    "thailand",
+    "philippines",
+    "indonesia",
+    "malaysia",
+    "myanmar",
+    "cambodia",
+    "singapore",
+    "brunei",
+    "timor leste",
+    "asean",
+    "southeast asia",
+    "asia pacific",
+    "asia-pacific",
+)
+
+BLUE_FINANCE_CONTEXT_FEEDS = {
+    "ADB - Ocean Health & Blue Economy (Web)",
+    "UNEP FI - Blue Finance (Web)",
+}
 
 OUT_OF_SCOPE_GLOBAL_MARKERS = (
     "iran",
@@ -672,6 +739,7 @@ FEED_COUNTRY_HINTS = {
     "Mongabay - Fisheries (Web)": "regional",
     "SEAFDEC - News (Web)": "regional",
     "ADB - Ocean Health & Blue Economy (Web)": "regional",
+    "UNEP FI - Blue Finance (Web)": "regional",
     "Google News - ASEAN Fisheries": "regional",
     "Google News - SEA Coastal Fisheries": "regional",
     "Google News - SEA Seafood Trade": "regional",
@@ -1211,7 +1279,7 @@ def _extract_items_from_web_page(feed_name: str, source_url: str) -> list[dict]:
             continue
         summary = snippet or ""
 
-        if not _passes_sow_focus(title, summary, snippet):
+        if not _passes_sow_focus(title, summary, snippet, feed_name):
             continue
 
         sector = _categorize(title, summary)
@@ -1220,7 +1288,7 @@ def _extract_items_from_web_page(feed_name: str, source_url: str) -> list[dict]:
 
         is_valid, _, _ = is_relevant(title, summary)
         if not is_valid:
-            is_direct_context_match = feed_name in REGIONAL_CONTEXT_FEEDS and _passes_sow_focus(title, summary, snippet)
+            is_direct_context_match = feed_name in REGIONAL_CONTEXT_FEEDS and _passes_sow_focus(title, summary, snippet, feed_name)
             if not is_direct_context_match:
                 continue
 
@@ -1305,6 +1373,8 @@ def _fisheries_priority_score(item: dict) -> int:
 def _blue_economy_priority_score(item: dict) -> int:
     text = f"{item.get('title', '')} {item.get('snippet', '')}".lower()
     economic_hits = sum(1 for marker in BLUE_ECONOMY_ECONOMIC_MARKERS if marker in text)
+    blue_finance_hits = sum(1 for marker in BLUE_FINANCE_MARKERS if marker in text)
+    country_hits = sum(1 for marker in BLUE_FINANCE_COUNTRY_MARKERS if marker in text)
     has_marine_anchor = bool(BLUE_ECONOMY_MARINE_ANCHOR_PATTERN.search(text))
     community_hits = sum(1 for marker in COASTAL_COMMUNITY_MARKERS if marker in text)
     fisheries_hits = sum(1 for marker in FISHERIES_PRIORITY_MARKERS if marker in text)
@@ -1315,7 +1385,9 @@ def _blue_economy_priority_score(item: dict) -> int:
     if economic_hits == 0 and community_hits == 0 and fisheries_hits == 0:
         return 0
 
-    score = economic_hits * 3 + min(community_hits, 2) + min(fisheries_hits, 2)
+    score = economic_hits * 3 + blue_finance_hits * 5 + min(community_hits, 2) + min(fisheries_hits, 2)
+    if country_hits:
+        score += min(country_hits, 2)
     if defense_hits and economic_hits == 0:
         score -= min(defense_hits, 2)
     return max(score, 0)
@@ -1340,14 +1412,19 @@ def _maritime_priority_score(item: dict) -> int:
     return score
 
 
-def _passes_sow_focus(title: str, summary: str, snippet: str = "") -> bool:
+def _passes_sow_focus(title: str, summary: str, snippet: str = "", source: str = "") -> bool:
     text = f"{title} {summary} {snippet}".lower()
 
     has_geo_marker = any(marker in text for marker in SEA_CONTEXT_MARKERS)
     has_marine_marker = any(marker in text for marker in MARINE_CONTEXT_MARKERS)
     has_community_marker = any(marker in text for marker in COASTAL_COMMUNITY_MARKERS)
+    has_blue_finance_marker = any(marker in text for marker in BLUE_FINANCE_MARKERS)
+    is_blue_finance_context_feed = source in BLUE_FINANCE_CONTEXT_FEEDS
 
-    if not has_geo_marker or not has_marine_marker:
+    if not has_marine_marker:
+        return False
+
+    if not has_geo_marker and not (is_blue_finance_context_feed and has_blue_finance_marker):
         return False
 
     has_out_of_scope_global = any(marker in text for marker in OUT_OF_SCOPE_GLOBAL_MARKERS)
@@ -1375,7 +1452,7 @@ def _extract_items(feed_name: str, feed_url: str, mode: str = "feed") -> list[di
         if not title or not link:
             continue
 
-        if not _passes_sow_focus(title, summary, context_snippet):
+        if not _passes_sow_focus(title, summary, context_snippet, feed_name):
             continue
 
         sector = _categorize(title, summary)
@@ -1384,7 +1461,7 @@ def _extract_items(feed_name: str, feed_url: str, mode: str = "feed") -> list[di
 
         is_valid, _, _ = is_relevant(title, summary)
         if not is_valid:
-            is_direct_context_match = feed_name in REGIONAL_CONTEXT_FEEDS and _passes_sow_focus(title, summary, context_snippet)
+            is_direct_context_match = feed_name in REGIONAL_CONTEXT_FEEDS and _passes_sow_focus(title, summary, context_snippet, feed_name)
             if not is_direct_context_match:
                 continue
 

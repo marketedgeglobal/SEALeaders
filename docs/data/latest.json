@@ -1,6 +1,6 @@
 {
-  "runAt": "2026-03-04T02:54:01.241727+00:00",
-  "totalItems": 16,
+  "runAt": "2026-03-04T03:02:19.613417+00:00",
+  "totalItems": 17,
   "sectors": [
     {
       "name": "Blue Economy",
@@ -24,6 +24,20 @@
     {
       "name": "Sustainable Fisheries",
       "items": [
+        {
+          "id": "347b80e10480",
+          "title": "Singapore to inject S$70 million over five years to boost local farm output",
+          "url": "https://www.channelnewsasia.com/singapore/local-farms-output-production-act-fund-5966671",
+          "originalUrl": "https://www.channelnewsasia.com/singapore/local-farms-output-production-act-fund-5966671",
+          "verifiedUrl": "https://www.channelnewsasia.com/singapore/local-farms-output-production-act-fund-5966671",
+          "publisher": "Channel News Asia - Asia",
+          "publishedAt": "2026-03-04",
+          "sourcePublishedAt": "2026-03-04",
+          "source": "Channel News Asia - Asia",
+          "sector": "Sustainable Fisheries",
+          "country": "singapore",
+          "snippet": "New measures include an expanded national breeding programme and fresh hatchery support for the aquaculture sector."
+        },
         {
           "id": "47700b88212a",
           "title": "Migrant fishers’ deaths at sea tied to unchecked captain power, study shows Basten Gokkon 20 Feb 2026",
