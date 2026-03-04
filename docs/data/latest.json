@@ -1,10 +1,25 @@
 {
-  "runAt": "2026-03-04T02:19:34.492088+00:00",
-  "totalItems": 14,
+  "runAt": "2026-03-04T02:54:01.241727+00:00",
+  "totalItems": 16,
   "sectors": [
     {
       "name": "Blue Economy",
-      "items": []
+      "items": [
+        {
+          "id": "47700b88212a",
+          "title": "Migrant fishers’ deaths at sea tied to unchecked captain power, study shows Basten Gokkon 20 Feb 2026",
+          "url": "https://news.mongabay.com/2026/02/migrant-fishers-deaths-at-sea-tied-to-unchecked-captain-power-study-shows/",
+          "originalUrl": "https://news.mongabay.com/2026/02/migrant-fishers-deaths-at-sea-tied-to-unchecked-captain-power-study-shows/",
+          "verifiedUrl": "https://news.mongabay.com/2026/02/migrant-fishers-deaths-at-sea-tied-to-unchecked-captain-power-study-shows/",
+          "publisher": "news.mongabay.com",
+          "publishedAt": "2026-02-20",
+          "sourcePublishedAt": "2026-02-20",
+          "source": "Mongabay - Fisheries (Web)",
+          "sector": "Blue Economy",
+          "country": "indonesia",
+          "snippet": "The deaths of migrant fishers at sea are largely driven by structural labor and governance failures, rather than by safety or compliance issues alone, a new study shows. Migrant sea workers, especially those recruited from low-wage Southeast Asian countries such as Indonesia, often experience violence and fatal abuse w"
+        }
+      ]
     },
     {
       "name": "Sustainable Fisheries",
@@ -57,20 +72,6 @@
           "snippet": "Forest management and protection of natural habitats are being promoted, combined with ecosystem restoration and the development of nature reserves."
         },
         {
-          "id": "6fd827286c5a",
-          "title": "Myanmar elections marked by fear as UN warns civilians are coerced from all sides",
-          "url": "https://news.un.org/feed/view/en/story/2025/12/1166662",
-          "originalUrl": "https://news.un.org/feed/view/en/story/2025/12/1166662",
-          "verifiedUrl": "https://news.un.org/feed/view/en/story/2025/12/1166662",
-          "publisher": "UN News Asia Pacific",
-          "publishedAt": "2025-12-23",
-          "sourcePublishedAt": "2025-12-23",
-          "source": "UN News Asia Pacific",
-          "sector": "Climate Change",
-          "country": "myanmar",
-          "snippet": "As Myanmar approaches elections scheduled for 28 December, the UN’s top human rights official has said that civilians are being coerced from all sides – forced by the military to vote and threatened by armed opposition groups to boycott – in a climate of fear, violence and mass repression."
-        },
-        {
           "id": "6962f27b04e1",
           "title": "Malaysia to integrate water pricing into national adaptation plan, says environment ministry",
           "url": "https://www.eco-business.com/news/malaysia-to-integrate-water-pricing-into-national-adaptation-plan-says-environment-ministry/",
@@ -99,24 +100,52 @@
           "snippet": "According to a landmark new study, 102 million hectares (Mha) (252 million acres) of land — an area the size of Egypt — have been converted to crops since the start of the 21st century. To put this into perspective, while it took more than 8,000 years for humanity to convert 1.1 billion hectares (2.8 billion acres) of "
         },
         {
-          "id": "402cb687ddde",
-          "title": "Decades of gains overshadowed as Asia-Pacific falls behind on sustainable development targets",
-          "url": "https://news.un.org/feed/view/en/story/2026/02/1166993",
-          "originalUrl": "https://news.un.org/feed/view/en/story/2026/02/1166993",
-          "verifiedUrl": "https://news.un.org/feed/view/en/story/2026/02/1166993",
-          "publisher": "UN News Asia Pacific",
-          "publishedAt": "2026-02-18",
-          "sourcePublishedAt": "2026-02-18",
-          "source": "UN News Asia Pacific",
+          "id": "078a4fc2e68c",
+          "title": "What's the Climate Cost of Growing Crops?",
+          "url": "https://www.nature.com/articles/s41558-026-02558-4",
+          "originalUrl": "https://www.wri.org/insights/climate-emissions-growing-crops",
+          "verifiedUrl": "https://www.nature.com/articles/s41558-026-02558-4",
+          "publisher": "WRI - Insights",
+          "publishedAt": "2026-02-13",
+          "sourcePublishedAt": "2026-02-13",
+          "source": "WRI - Insights",
           "sector": "Climate Change",
           "country": "regional",
-          "snippet": "Climate inaction, biodiversity loss and rising emissions are pushing Asia and the Pacific further off course on the Sustainable Development Goals (SDGs), with the region set to miss nearly nine out of ten targets by 2030, the United Nations has warned."
+          "snippet": "Emissions from croplands are an important source of GHG emissions that can be shaped by management. This study presents maps of emissions globally for different crops, showing that drained peatlands, rice paddies and fertilizer were the main drivers, and highlights differences in emission intensity."
+        },
+        {
+          "id": "ce25583d12dd",
+          "title": "Climate Action Can Be One of the World’s Biggest Job Creators",
+          "url": "https://www.wri.org/research/jobs-skills-new-economy-action-agenda",
+          "originalUrl": "https://www.wri.org/insights/climate-action-job-creation",
+          "verifiedUrl": "https://www.wri.org/research/jobs-skills-new-economy-action-agenda",
+          "publisher": "WRI - Insights",
+          "publishedAt": "2026-02-12",
+          "sourcePublishedAt": "2026-02-12",
+          "source": "WRI - Insights",
+          "sector": "Climate Change",
+          "country": "regional",
+          "snippet": "A new economy is unfolding, one with profound implications for people’s jobs and livelihoods. Against wider trends of digitalization, demographic shifts, and geopolitics, the climate transition is an increasingly important element shaping this new economy. Yet appreciation of the impacts of the transition on people and"
         }
       ]
     },
     {
       "name": "Maritime Security",
       "items": [
+        {
+          "id": "c23c6e51bf51",
+          "title": "Karenni IEC warns of ‘toxic’ levels of arsenic in Salween River and Molo Creek",
+          "url": "https://myanmar-now.org/en/news/karenni-iec-warns-of-toxic-levels-of-arsenic-in-salween-river-and-molo-creek/",
+          "originalUrl": "https://myanmar-now.org/en/news/karenni-iec-warns-of-toxic-levels-of-arsenic-in-salween-river-and-molo-creek/",
+          "verifiedUrl": "https://myanmar-now.org/en/news/karenni-iec-warns-of-toxic-levels-of-arsenic-in-salween-river-and-molo-creek/",
+          "publisher": "Myanmar Now",
+          "publishedAt": "2026-02-27",
+          "sourcePublishedAt": "2026-02-27",
+          "source": "Myanmar Now",
+          "sector": "Maritime Security",
+          "country": "myanmar",
+          "snippet": "Wastewater from mines has heavily contained both rivers, according to Karenni State’s resistance-run civilian authority"
+        },
         {
           "id": "dc899fca7d98",
           "title": "The Consequences of Shelving the South China Sea Disputes",
@@ -130,20 +159,6 @@
           "sector": "Maritime Security",
           "country": "philippines",
           "snippet": "For years, China has promoted the idea of “shelving disputes” in the South China Sea and focusing on areas of cooperation. Southeast Asian claimants—Brunei, Malaysia, the Philippines, and Vietnam—have been receptive to this approach to varying degrees. While this strategy brings significant economic benefits, it carrie"
-        },
-        {
-          "id": "47700b88212a",
-          "title": "Migrant fishers’ deaths at sea tied to unchecked captain power, study shows Basten Gokkon 20 Feb 2026",
-          "url": "https://news.mongabay.com/2026/02/migrant-fishers-deaths-at-sea-tied-to-unchecked-captain-power-study-shows/",
-          "originalUrl": "https://news.mongabay.com/2026/02/migrant-fishers-deaths-at-sea-tied-to-unchecked-captain-power-study-shows/",
-          "verifiedUrl": "https://news.mongabay.com/2026/02/migrant-fishers-deaths-at-sea-tied-to-unchecked-captain-power-study-shows/",
-          "publisher": "news.mongabay.com",
-          "publishedAt": "2026-02-20",
-          "sourcePublishedAt": "2026-02-20",
-          "source": "Mongabay - Fisheries (Web)",
-          "sector": "Maritime Security",
-          "country": "indonesia",
-          "snippet": "The deaths of migrant fishers at sea are largely driven by structural labor and governance failures, rather than by safety or compliance issues alone, a new study shows. Migrant sea workers, especially those recruited from low-wage Southeast Asian countries such as Indonesia, often experience violence and fatal abuse w"
         },
         {
           "id": "6962f27b04e1",
@@ -174,6 +189,20 @@
           "snippet": "Introduction On September 10, China approved the establishment of a nature reserve at Scarborough Shoal, also known as Bajo de Masinloc in Tagalog or Huangyan Dao in Chinese, a coral atoll whose sovereignty is under dispute between China and the Philippines. According to Beijing, the reserve covers approximately one ac"
         },
         {
+          "id": "47700b88212a",
+          "title": "Migrant fishers’ deaths at sea tied to unchecked captain power, study shows Basten Gokkon 20 Feb 2026",
+          "url": "https://news.mongabay.com/2026/02/migrant-fishers-deaths-at-sea-tied-to-unchecked-captain-power-study-shows/",
+          "originalUrl": "https://news.mongabay.com/2026/02/migrant-fishers-deaths-at-sea-tied-to-unchecked-captain-power-study-shows/",
+          "verifiedUrl": "https://news.mongabay.com/2026/02/migrant-fishers-deaths-at-sea-tied-to-unchecked-captain-power-study-shows/",
+          "publisher": "news.mongabay.com",
+          "publishedAt": "2026-02-20",
+          "sourcePublishedAt": "2026-02-20",
+          "source": "Mongabay - Fisheries (Web)",
+          "sector": "Maritime Security",
+          "country": "indonesia",
+          "snippet": "The deaths of migrant fishers at sea are largely driven by structural labor and governance failures, rather than by safety or compliance issues alone, a new study shows. Migrant sea workers, especially those recruited from low-wage Southeast Asian countries such as Indonesia, often experience violence and fatal abuse w"
+        },
+        {
           "id": "ad1f4ff54240",
           "title": "Missiles Over Fleets: How A2/AD is Redefining Maritime Power in Southeast Asia",
           "url": "https://amti.csis.org/missiles-over-fleets-how-a2-ad-is-redefining-maritime-power-in-southeast-asia/",
@@ -186,26 +215,26 @@
           "sector": "Maritime Security",
           "country": "philippines",
           "snippet": "Southeast Asia is quietly entering a new strategic era, one defined not by the size of a navy’s fleet, but by the range of its missiles. Across the region, an emerging pattern is becoming visible. Vietnam, the Philippines, and Indonesia are each moving rapidly to establish anti-access/area-denial (A2/AD) postures. For "
-        },
-        {
-          "id": "ce25583d12dd",
-          "title": "Climate Action Can Be One of the World’s Biggest Job Creators",
-          "url": "https://www.wri.org/research/jobs-skills-new-economy-action-agenda",
-          "originalUrl": "https://www.wri.org/insights/climate-action-job-creation",
-          "verifiedUrl": "https://www.wri.org/research/jobs-skills-new-economy-action-agenda",
-          "publisher": "WRI - Insights",
-          "publishedAt": "2026-02-12",
-          "sourcePublishedAt": "2026-02-12",
-          "source": "WRI - Insights",
-          "sector": "Maritime Security",
-          "country": "regional",
-          "snippet": "A new economy is unfolding, one with profound implications for people’s jobs and livelihoods. Against wider trends of digitalization, demographic shifts, and geopolitics, the climate transition is an increasingly important element shaping this new economy. Yet appreciation of the impacts of the transition on people and"
         }
       ]
     },
     {
       "name": "Marine Pollution",
       "items": [
+        {
+          "id": "c23c6e51bf51",
+          "title": "Karenni IEC warns of ‘toxic’ levels of arsenic in Salween River and Molo Creek",
+          "url": "https://myanmar-now.org/en/news/karenni-iec-warns-of-toxic-levels-of-arsenic-in-salween-river-and-molo-creek/",
+          "originalUrl": "https://myanmar-now.org/en/news/karenni-iec-warns-of-toxic-levels-of-arsenic-in-salween-river-and-molo-creek/",
+          "verifiedUrl": "https://myanmar-now.org/en/news/karenni-iec-warns-of-toxic-levels-of-arsenic-in-salween-river-and-molo-creek/",
+          "publisher": "Myanmar Now",
+          "publishedAt": "2026-02-27",
+          "sourcePublishedAt": "2026-02-27",
+          "source": "Myanmar Now",
+          "sector": "Marine Pollution",
+          "country": "myanmar",
+          "snippet": "Wastewater from mines has heavily contained both rivers, according to Karenni State’s resistance-run civilian authority"
+        },
         {
           "id": "54727a295fe7",
           "title": "Deadly landfill collapse exposes risks faced by Philippines’ waste pickers",

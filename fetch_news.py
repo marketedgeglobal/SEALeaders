@@ -538,6 +538,8 @@ FISHERIES_COMMERCIAL_MARKERS = (
     "market",
 )
 
+FISHERIES_ANCHOR_PATTERN = re.compile(r"\b(fish\w*|fisher\w*|aquaculture|seafood|iuu)\b", re.IGNORECASE)
+
 MARITIME_COMMUNITY_SECURITY_MARKERS = (
     "coastal",
     "community",
@@ -1285,6 +1287,8 @@ def _country_cap(country: str, relaxed: bool = False) -> int:
 
 def _fisheries_priority_score(item: dict) -> int:
     text = f"{item.get('title', '')} {item.get('snippet', '')}".lower()
+    if not FISHERIES_ANCHOR_PATTERN.search(text):
+        return 0
     marker_hits = sum(1 for marker in FISHERIES_PRIORITY_MARKERS if marker in text)
     has_community_context = any(marker in text for marker in COASTAL_COMMUNITY_MARKERS)
     has_commercial_only = any(marker in text for marker in FISHERIES_COMMERCIAL_MARKERS)
@@ -1302,10 +1306,19 @@ def _blue_economy_priority_score(item: dict) -> int:
     text = f"{item.get('title', '')} {item.get('snippet', '')}".lower()
     economic_hits = sum(1 for marker in BLUE_ECONOMY_ECONOMIC_MARKERS if marker in text)
     has_marine_anchor = bool(BLUE_ECONOMY_MARINE_ANCHOR_PATTERN.search(text))
+    community_hits = sum(1 for marker in COASTAL_COMMUNITY_MARKERS if marker in text)
+    fisheries_hits = sum(1 for marker in FISHERIES_PRIORITY_MARKERS if marker in text)
+    defense_hits = sum(1 for marker in MARITIME_DEFENSE_POLICY_MARKERS if marker in text)
 
     if not has_marine_anchor:
         return 0
-    return economic_hits + 2
+    if economic_hits == 0 and community_hits == 0 and fisheries_hits == 0:
+        return 0
+
+    score = economic_hits * 3 + min(community_hits, 2) + min(fisheries_hits, 2)
+    if defense_hits and economic_hits == 0:
+        score -= min(defense_hits, 2)
+    return max(score, 0)
 
 
 def _maritime_priority_score(item: dict) -> int:
@@ -1453,7 +1466,7 @@ def build_latest_json() -> dict:
 
             for item in all_items:
                 score = _blue_economy_priority_score(item)
-                if score < 3:
+                if score < 2:
                     continue
                 item_id = str(item.get("id") or "")
                 if item_id in blue_seen_ids:
@@ -1473,7 +1486,30 @@ def build_latest_json() -> dict:
 
             candidates = sorted(blue_pool, key=_blue_economy_priority_score, reverse=True)
         if sector == "Sustainable Fisheries":
-            candidates = sorted(candidates, key=_fisheries_priority_score, reverse=True)
+            fisheries_pool: list[dict] = []
+            fisheries_seen_ids: set[str] = set()
+
+            for item in all_items:
+                score = _fisheries_priority_score(item)
+                if score < 2:
+                    continue
+                item_id = str(item.get("id") or "")
+                if item_id in fisheries_seen_ids:
+                    continue
+
+                candidate = dict(item)
+                candidate["sector"] = "Sustainable Fisheries"
+                fisheries_pool.append(candidate)
+                fisheries_seen_ids.add(item_id)
+
+            for item in candidates:
+                item_id = str(item.get("id") or "")
+                if item_id in fisheries_seen_ids:
+                    continue
+                fisheries_pool.append(item)
+                fisheries_seen_ids.add(item_id)
+
+            candidates = sorted(fisheries_pool, key=_fisheries_priority_score, reverse=True)
         if sector == "Maritime Security":
             maritime_pool: list[dict] = []
             maritime_seen_ids: set[str] = set()
@@ -1508,6 +1544,7 @@ def build_latest_json() -> dict:
                 key=lambda item: (
                     country_usage.get(str(item.get("country") or "regional").lower(), 0)
                     / max(_country_weight(str(item.get("country") or "regional").lower()), 0.1),
+                    -_blue_economy_priority_score(item) if sector == "Blue Economy" else 0,
                     -_fisheries_priority_score(item) if sector == "Sustainable Fisheries" else 0,
                     -_maritime_priority_score(item) if sector == "Maritime Security" else 0,
                     publisher_usage.get(str(item.get("publisher") or "unknown").lower(), 0),
