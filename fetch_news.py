@@ -206,6 +206,18 @@ FEEDS = [
         "name": "Google News - SEA Seafood Trade",
         "url": "https://news.google.com/rss/search?q=Southeast+Asia+seafood+trade+fisheries&hl=en-US&gl=US&ceid=US:en",
     },
+    {
+        "name": "Google News - ASEAN Blue Economy Finance",
+        "url": "https://news.google.com/rss/search?q=ASEAN+blue+economy+investment+finance+ocean&hl=en-US&gl=US&ceid=US:en",
+    },
+    {
+        "name": "Google News - SEA Marine Ecotourism",
+        "url": "https://news.google.com/rss/search?q=Southeast+Asia+marine+ecotourism+coastal+communities&hl=en-US&gl=US&ceid=US:en",
+    },
+    {
+        "name": "Google News - SEA Ocean Circular Economy",
+        "url": "https://news.google.com/rss/search?q=Southeast+Asia+ocean+circular+economy+plastic+waste+reduction&hl=en-US&gl=US&ceid=US:en",
+    },
 ]
 
 SECTORS = [
@@ -356,6 +368,9 @@ REGIONAL_CONTEXT_FEEDS = {
     "Google News - ASEAN Fisheries",
     "Google News - SEA Coastal Fisheries",
     "Google News - SEA Seafood Trade",
+    "Google News - ASEAN Blue Economy Finance",
+    "Google News - SEA Marine Ecotourism",
+    "Google News - SEA Ocean Circular Economy",
 }
 
 SEA_CONTEXT_MARKERS = (
@@ -464,6 +479,31 @@ FISHERIES_COMMERCIAL_MARKERS = (
     "market",
 )
 
+BLUE_ECONOMY_MARINE_ANCHOR_PATTERN = re.compile(r"\b(ocean|sea|marine|fish\w*|coral|reef)\b", re.IGNORECASE)
+
+BLUE_ECONOMY_ECONOMIC_MARKERS = (
+    "blue economy",
+    "ocean economy",
+    "investment",
+    "finance",
+    "trade",
+    "export",
+    "exports",
+    "value chain",
+    "ecotourism",
+    "circular economy",
+    "innovation",
+    "startup",
+    "technology",
+    "shipping",
+    "port",
+    "ports",
+    "recycling",
+    "waste reduction",
+    "plastic reduction",
+    "resource efficiency",
+)
+
 OUT_OF_SCOPE_GLOBAL_MARKERS = (
     "iran",
     "israel",
@@ -522,6 +562,9 @@ FEED_COUNTRY_HINTS = {
     "Google News - ASEAN Fisheries": "regional",
     "Google News - SEA Coastal Fisheries": "regional",
     "Google News - SEA Seafood Trade": "regional",
+    "Google News - ASEAN Blue Economy Finance": "regional",
+    "Google News - SEA Marine Ecotourism": "regional",
+    "Google News - SEA Ocean Circular Economy": "regional",
 }
 
 WEB_SOURCE_BLOCKLIST = (
@@ -767,7 +810,15 @@ def _categorize(title: str, summary: str = "") -> str | None:
     best_score = 0
 
     for sector, keywords in SECTOR_KEYWORDS.items():
-        score = sum(1 for keyword in keywords if keyword in text)
+        if sector == "Blue Economy":
+            economic_score = sum(1 for marker in BLUE_ECONOMY_ECONOMIC_MARKERS if marker in text)
+            has_marine_anchor = bool(BLUE_ECONOMY_MARINE_ANCHOR_PATTERN.search(text))
+            if economic_score == 0 or not has_marine_anchor:
+                continue
+            score = economic_score
+        else:
+            score = sum(1 for keyword in keywords if keyword in text)
+
         if score > best_score:
             best_sector = sector
             best_score = score
