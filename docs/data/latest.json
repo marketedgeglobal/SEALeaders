@@ -1,117 +1,31 @@
 {
-  "runAt": "2026-03-04T01:39:35.948685+00:00",
-  "totalItems": 19,
+  "runAt": "2026-03-04T01:42:08.608677+00:00",
+  "totalItems": 14,
   "sectors": [
     {
       "name": "Blue Economy",
-      "items": [
-        {
-          "id": "7434d0df2c19",
-          "title": "Indonesia's Blue Economy Push Signals a New Era for ESG Investment, Ocean Innovation, and Regional Trade",
-          "url": "https://news.google.com/rss/articles/CBMixwFBVV95cUxOOEtTY2c4QmIycjBoOUtUVGhSQmlTa2h1dHVQSGZ0dmRST2k1WUQtb2JodzdGeXlqQkpJN2RfcWZUWmpveWk4d2ZEUGlBV3l1c05zb3BNaUQ0V3A2b1ptSE1JeU9xNjRHZTJCZ1ZrRVdhaklVX2U3bEhhZDYtNkY2Q05FUFpZcVd4dGdHd0p0V3NiVDR1NnZFel92dy1sVjJkR01JYy1vZ3ZOclNuS0QyOFBVbm9oTTBKTnExTXlyVk15dHFOcGJv?oc=5&hl=en-US&gl=US&ceid=US:en",
-          "originalUrl": "https://news.google.com/rss/articles/CBMixwFBVV95cUxOOEtTY2c4QmIycjBoOUtUVGhSQmlTa2h1dHVQSGZ0dmRST2k1WUQtb2JodzdGeXlqQkpJN2RfcWZUWmpveWk4d2ZEUGlBV3l1c05zb3BNaUQ0V3A2b1ptSE1JeU9xNjRHZTJCZ1ZrRVdhaklVX2U3bEhhZDYtNkY2Q05FUFpZcVd4dGdHd0p0V3NiVDR1NnZFel92dy1sVjJkR01JYy1vZ3ZOclNuS0QyOFBVbm9oTTBKTnExTXlyVk15dHFOcGJv?oc=5",
-          "verifiedUrl": "https://news.google.com/rss/articles/CBMixwFBVV95cUxOOEtTY2c4QmIycjBoOUtUVGhSQmlTa2h1dHVQSGZ0dmRST2k1WUQtb2JodzdGeXlqQkpJN2RfcWZUWmpveWk4d2ZEUGlBV3l1c05zb3BNaUQ0V3A2b1ptSE1JeU9xNjRHZTJCZ1ZrRVdhaklVX2U3bEhhZDYtNkY2Q05FUFpZcVd4dGdHd0p0V3NiVDR1NnZFel92dy1sVjJkR01JYy1vZ3ZOclNuS0QyOFBVbm9oTTBKTnExTXlyVk15dHFOcGJv?oc=5&hl=en-US&gl=US&ceid=US:en",
-          "publisher": "EBC Financial Group",
-          "publishedAt": "2025-12-05",
-          "sourcePublishedAt": "2025-12-05",
-          "source": "Google News - ASEAN Blue Economy Finance",
-          "sector": "Blue Economy",
-          "country": "indonesia",
-          "snippet": ""
-        },
-        {
-          "id": "d8e86430cb40",
-          "title": "The Triple-Return Ocean Economy",
-          "url": "https://news.google.com/rss/articles/CBMickFVX3lxTE81ak5VYnZydkRtbHpWOWZRR3NCZEdnSW9kd3lVaGthd2MwWXZRT1k4a29GTXNFV1ZUSXRsQm5Udl9IVkdpMjJCcm1neWF6NWp5RHl6UmtXTlZsWDhONjg5elYyeGpoNzh3a3Z4ZjRmZTZoUQ?oc=5&hl=en-US&gl=US&ceid=US:en",
-          "originalUrl": "https://news.google.com/rss/articles/CBMickFVX3lxTE81ak5VYnZydkRtbHpWOWZRR3NCZEdnSW9kd3lVaGthd2MwWXZRT1k4a29GTXNFV1ZUSXRsQm5Udl9IVkdpMjJCcm1neWF6NWp5RHl6UmtXTlZsWDhONjg5elYyeGpoNzh3a3Z4ZjRmZTZoUQ?oc=5",
-          "verifiedUrl": "https://news.google.com/rss/articles/CBMickFVX3lxTE81ak5VYnZydkRtbHpWOWZRR3NCZEdnSW9kd3lVaGthd2MwWXZRT1k4a29GTXNFV1ZUSXRsQm5Udl9IVkdpMjJCcm1neWF6NWp5RHl6UmtXTlZsWDhONjg5elYyeGpoNzh3a3Z4ZjRmZTZoUQ?oc=5&hl=en-US&gl=US&ceid=US:en",
-          "publisher": "Cambodianess",
-          "publishedAt": "2025-12-04",
-          "sourcePublishedAt": "2025-12-04",
-          "source": "Google News - ASEAN Blue Economy Finance",
-          "sector": "Blue Economy",
-          "country": "cambodia",
-          "snippet": ""
-        }
-      ]
+      "items": []
     },
     {
       "name": "Sustainable Fisheries",
-      "items": [
-        {
-          "id": "1c4f7dff7f22",
-          "title": "Southeast Asian Fisheries Development Center (SEAFDEC) Aquaculture Department Chief Dan Baliao voiced support for Senate Bill No. 522, or the proposed Municipal Fisherfolk Protection Act, during a Feb. 18 hearing at the Philippine Senate.",
-          "url": "https://news.google.com/rss/articles/CBMi3gFBVV95cUxQSi1LczRIVlVTRjdXd2tWQlZScnl2VER0RkFRQUlNbFB1YnU1R2J5SFk0NVVtdVh1dGNYMUYwLU85azhKbVdyNlNZVFVmVnF6VmpBT3VzUjdBMlkwUlBpWk9CRjgwV0xMRmhUVWdXTGpHeFF2VElqSnB1STdYZ1ZobG9hQk5PaWlIVU90OW9QLWc5eGxpTU54YkNuQklfR0JZVXJtQzhiM0VpRjc2a2lfRlQ5eFJ0VmxHOGxJMjZHMTJqckNGZ2JZYkE0Rjh6WGFRSkluQzhSNzZWb1dBdnc?oc=5&hl=en-US&gl=US&ceid=US:en",
-          "originalUrl": "https://news.google.com/rss/articles/CBMi3gFBVV95cUxQSi1LczRIVlVTRjdXd2tWQlZScnl2VER0RkFRQUlNbFB1YnU1R2J5SFk0NVVtdVh1dGNYMUYwLU85azhKbVdyNlNZVFVmVnF6VmpBT3VzUjdBMlkwUlBpWk9CRjgwV0xMRmhUVWdXTGpHeFF2VElqSnB1STdYZ1ZobG9hQk5PaWlIVU90OW9QLWc5eGxpTU54YkNuQklfR0JZVXJtQzhiM0VpRjc2a2lfRlQ5eFJ0VmxHOGxJMjZHMTJqckNGZ2JZYkE0Rjh6WGFRSkluQzhSNzZWb1dBdnc?oc=5",
-          "verifiedUrl": "https://news.google.com/rss/articles/CBMi3gFBVV95cUxQSi1LczRIVlVTRjdXd2tWQlZScnl2VER0RkFRQUlNbFB1YnU1R2J5SFk0NVVtdVh1dGNYMUYwLU85azhKbVdyNlNZVFVmVnF6VmpBT3VzUjdBMlkwUlBpWk9CRjgwV0xMRmhUVWdXTGpHeFF2VElqSnB1STdYZ1ZobG9hQk5PaWlIVU90OW9QLWc5eGxpTU54YkNuQklfR0JZVXJtQzhiM0VpRjc2a2lfRlQ5eFJ0VmxHOGxJMjZHMTJqckNGZ2JZYkE0Rjh6WGFRSkluQzhSNzZWb1dBdnc?oc=5&hl=en-US&gl=US&ceid=US:en",
-          "publisher": "Facebook",
-          "publishedAt": "2026-03-03",
-          "sourcePublishedAt": "2026-03-03",
-          "source": "Google News - ASEAN Fisheries",
-          "sector": "Sustainable Fisheries",
-          "country": "philippines",
-          "snippet": ""
-        },
-        {
-          "id": "bae27efe08bc",
-          "title": "Fisheries transparency now: time for Southeast Asia to catch up",
-          "url": "https://news.google.com/rss/articles/CBMisgFBVV95cUxNQThjUDhGX2NjeWp3X2lBbWh5cng0VjRGUUJLbk51MHdveDVyVGlfNERSLVU0MVZHLUY0NDZfRkNPZngxZFRSS1VSZzJDWk9LTFhNaDhIcGpaY0UyNEdnTE9nUEd4cThxQVhZbHQ0Q1hfUkc5WDhqb3hvNTQ2SmJPeUZ1aVRZMTV4akc4NzBod0R1NlhsYmtMVDBaejdma205QU1POGhuNzJSMmRjWkdicHV3?oc=5&hl=en-US&gl=US&ceid=US:en",
-          "originalUrl": "https://news.google.com/rss/articles/CBMisgFBVV95cUxNQThjUDhGX2NjeWp3X2lBbWh5cng0VjRGUUJLbk51MHdveDVyVGlfNERSLVU0MVZHLUY0NDZfRkNPZngxZFRSS1VSZzJDWk9LTFhNaDhIcGpaY0UyNEdnTE9nUEd4cThxQVhZbHQ0Q1hfUkc5WDhqb3hvNTQ2SmJPeUZ1aVRZMTV4akc4NzBod0R1NlhsYmtMVDBaejdma205QU1POGhuNzJSMmRjWkdicHV3?oc=5",
-          "verifiedUrl": "https://news.google.com/rss/articles/CBMisgFBVV95cUxNQThjUDhGX2NjeWp3X2lBbWh5cng0VjRGUUJLbk51MHdveDVyVGlfNERSLVU0MVZHLUY0NDZfRkNPZngxZFRSS1VSZzJDWk9LTFhNaDhIcGpaY0UyNEdnTE9nUEd4cThxQVhZbHQ0Q1hfUkc5WDhqb3hvNTQ2SmJPeUZ1aVRZMTV4akc4NzBod0R1NlhsYmtMVDBaejdma205QU1POGhuNzJSMmRjWkdicHV3?oc=5&hl=en-US&gl=US&ceid=US:en",
-          "publisher": "greenpeace.org",
-          "publishedAt": "2025-11-28",
-          "sourcePublishedAt": "2025-11-28",
-          "source": "Google News - SEA Illegal Fishing Communities",
-          "sector": "Sustainable Fisheries",
-          "country": "regional",
-          "snippet": ""
-        },
-        {
-          "id": "91f027e8e7f2",
-          "title": "Indonesia sets plans to modernize fishing villages, scale up aquaculture to bolster food policy",
-          "url": "https://news.google.com/rss/articles/CBMi2gFBVV95cUxQQXRrT3FSejQ1WGJMYmpnQklGdnFlSUVqNHRhTHJYa0RvU01WdFAtUlQ5ODU3VktnbGlvZUlyYkJSTnpVUTN2TnZaRjg0WVZBUU5tR1A5RmhPMWRUQUcwcXRmbU81Ym5hcjlTWXhSRndKQnBwTGk4b1MxaVhUQm1VWWZ1eWlra1FVOGxGN3F3YlJXNm9IZko5dHVVN1dfbFJWUlREaG9LQnVENUw1Y2xRZmdoRXFBeVBfQlIyMEZkclYtQklMYllDVnFxS0E0UmsySHNPSWNzWGF4dw?oc=5&hl=en-US&gl=US&ceid=US:en",
-          "originalUrl": "https://news.google.com/rss/articles/CBMi2gFBVV95cUxQQXRrT3FSejQ1WGJMYmpnQklGdnFlSUVqNHRhTHJYa0RvU01WdFAtUlQ5ODU3VktnbGlvZUlyYkJSTnpVUTN2TnZaRjg0WVZBUU5tR1A5RmhPMWRUQUcwcXRmbU81Ym5hcjlTWXhSRndKQnBwTGk4b1MxaVhUQm1VWWZ1eWlra1FVOGxGN3F3YlJXNm9IZko5dHVVN1dfbFJWUlREaG9LQnVENUw1Y2xRZmdoRXFBeVBfQlIyMEZkclYtQklMYllDVnFxS0E0UmsySHNPSWNzWGF4dw?oc=5",
-          "verifiedUrl": "https://news.google.com/rss/articles/CBMi2gFBVV95cUxQQXRrT3FSejQ1WGJMYmpnQklGdnFlSUVqNHRhTHJYa0RvU01WdFAtUlQ5ODU3VktnbGlvZUlyYkJSTnpVUTN2TnZaRjg0WVZBUU5tR1A5RmhPMWRUQUcwcXRmbU81Ym5hcjlTWXhSRndKQnBwTGk4b1MxaVhUQm1VWWZ1eWlra1FVOGxGN3F3YlJXNm9IZko5dHVVN1dfbFJWUlREaG9LQnVENUw1Y2xRZmdoRXFBeVBfQlIyMEZkclYtQklMYllDVnFxS0E0UmsySHNPSWNzWGF4dw?oc=5&hl=en-US&gl=US&ceid=US:en",
-          "publisher": "SeafoodSource",
-          "publishedAt": "2026-02-03",
-          "sourcePublishedAt": "2026-02-03",
-          "source": "Google News - SEA Coastal Fisheries",
-          "sector": "Sustainable Fisheries",
-          "country": "indonesia",
-          "snippet": ""
-        }
-      ]
+      "items": []
     },
     {
       "name": "Climate Change",
       "items": [
         {
-          "id": "6962f27b04e1",
-          "title": "Malaysia to integrate water pricing into national adaptation plan, says environment ministry",
-          "url": "https://www.eco-business.com/news/malaysia-to-integrate-water-pricing-into-national-adaptation-plan-says-environment-ministry/",
-          "originalUrl": "https://www.eco-business.com/news/malaysia-to-integrate-water-pricing-into-national-adaptation-plan-says-environment-ministry/",
-          "verifiedUrl": "https://www.eco-business.com/news/malaysia-to-integrate-water-pricing-into-national-adaptation-plan-says-environment-ministry/",
+          "id": "71070ae00275",
+          "title": "Asia Pacific insurers warn climate shocks are becoming a systemic financial threat",
+          "url": "https://www.eco-business.com/news/asia-pacific-insurers-warn-climate-shocks-are-becoming-a-systemic-financial-threat/",
+          "originalUrl": "https://www.eco-business.com/news/asia-pacific-insurers-warn-climate-shocks-are-becoming-a-systemic-financial-threat/",
+          "verifiedUrl": "https://www.eco-business.com/news/asia-pacific-insurers-warn-climate-shocks-are-becoming-a-systemic-financial-threat/",
           "publisher": "Eco-Business - News",
           "publishedAt": "2026-03-02",
           "sourcePublishedAt": "2026-03-02",
           "source": "Eco-Business - News",
           "sector": "Climate Change",
-          "country": "malaysia",
-          "snippet": "The impacts of deforestation must also be counted towards the true cost of water, the ministry’s secretary-general said. The country's first fair share carbon budget report could help strengthen the..."
-        },
-        {
-          "id": "0d575665ab8e",
-          "title": "Low emissions to enhance the value of Vietnamese rice: agriculture experts",
-          "url": "https://vietnamnews.vn/environment/1766567/viet-nam-enhances-conservation-activities-for-world-wildlife-day.html",
-          "originalUrl": "https://vietnamnews.vn/environment/1766357/low-emissions-to-enhance-the-value-of-vietnamese-rice-agriculture-experts.html",
-          "verifiedUrl": "https://vietnamnews.vn/environment/1766567/viet-nam-enhances-conservation-activities-for-world-wildlife-day.html",
-          "publisher": "Vietnam News - Environment",
-          "publishedAt": "2026-02-26",
-          "sourcePublishedAt": "2026-02-26",
-          "source": "Vietnam News - Environment",
-          "sector": "Climate Change",
-          "country": "vietnam",
-          "snippet": "Forest management and protection of natural habitats are being promoted, combined with ecosystem restoration and the development of nature reserves."
+          "country": "regional",
+          "snippet": "Insurance companies increasingly worry that escalating climate extremes could destabilise financial systems, not their balance sheets – an anxiety felt acutely in Asia Pacific, a MSCI study finds."
         },
         {
           "id": "6fd827286c5a",
@@ -128,18 +42,18 @@
           "snippet": "As Myanmar approaches elections scheduled for 28 December, the UN’s top human rights official has said that civilians are being coerced from all sides – forced by the military to vote and threatened by armed opposition groups to boycott – in a climate of fear, violence and mass repression."
         },
         {
-          "id": "4973d75b3157",
-          "title": "Turning the tide: Advancing Indonesia’s blue economy through ocean-based mitigation actions",
-          "url": "https://news.google.com/rss/articles/CBMiygFBVV95cUxQZWQtUUdFb1R5aEFBT0R3RldCVFVZNjM0WGg1YWtac1IzWDBod0s2TG5mUWstR1JNa2U3aU1RWlJ3dXFJbHNrWlBIVVJyTDJRVkRCai01VHpDR01qdS0wdVk1M2Y3OEV5Nk1uNklzQzVsc21vaXhWX0RyemFtYzVyQjlEUllaLTlpX21GN2RSSDYxdDZvRlYtQ0ZWOEFUODdrZURVZmV3UzgtaWJma0JRXzNCbG5sbUtfUWtKMVUtRzVKQVlDRVJ1RW5B?oc=5&hl=en-US&gl=US&ceid=US:en",
-          "originalUrl": "https://news.google.com/rss/articles/CBMiygFBVV95cUxQZWQtUUdFb1R5aEFBT0R3RldCVFVZNjM0WGg1YWtac1IzWDBod0s2TG5mUWstR1JNa2U3aU1RWlJ3dXFJbHNrWlBIVVJyTDJRVkRCai01VHpDR01qdS0wdVk1M2Y3OEV5Nk1uNklzQzVsc21vaXhWX0RyemFtYzVyQjlEUllaLTlpX21GN2RSSDYxdDZvRlYtQ0ZWOEFUODdrZURVZmV3UzgtaWJma0JRXzNCbG5sbUtfUWtKMVUtRzVKQVlDRVJ1RW5B?oc=5",
-          "verifiedUrl": "https://news.google.com/rss/articles/CBMiygFBVV95cUxQZWQtUUdFb1R5aEFBT0R3RldCVFVZNjM0WGg1YWtac1IzWDBod0s2TG5mUWstR1JNa2U3aU1RWlJ3dXFJbHNrWlBIVVJyTDJRVkRCai01VHpDR01qdS0wdVk1M2Y3OEV5Nk1uNklzQzVsc21vaXhWX0RyemFtYzVyQjlEUllaLTlpX21GN2RSSDYxdDZvRlYtQ0ZWOEFUODdrZURVZmV3UzgtaWJma0JRXzNCbG5sbUtfUWtKMVUtRzVKQVlDRVJ1RW5B?oc=5&hl=en-US&gl=US&ceid=US:en",
-          "publisher": "Climateworks Centre",
-          "publishedAt": "2025-11-26",
-          "sourcePublishedAt": "2025-11-26",
-          "source": "Google News - ASEAN Blue Economy Finance",
+          "id": "6962f27b04e1",
+          "title": "Malaysia to integrate water pricing into national adaptation plan, says environment ministry",
+          "url": "https://www.eco-business.com/news/malaysia-to-integrate-water-pricing-into-national-adaptation-plan-says-environment-ministry/",
+          "originalUrl": "https://www.eco-business.com/news/malaysia-to-integrate-water-pricing-into-national-adaptation-plan-says-environment-ministry/",
+          "verifiedUrl": "https://www.eco-business.com/news/malaysia-to-integrate-water-pricing-into-national-adaptation-plan-says-environment-ministry/",
+          "publisher": "Eco-Business - News",
+          "publishedAt": "2026-03-02",
+          "sourcePublishedAt": "2026-03-02",
+          "source": "Eco-Business - News",
           "sector": "Climate Change",
-          "country": "indonesia",
-          "snippet": ""
+          "country": "malaysia",
+          "snippet": "The impacts of deforestation must also be counted towards the true cost of water, the ministry’s secretary-general said. The country's first fair share carbon budget report could help strengthen the..."
         },
         {
           "id": "8460a8e29f30",
@@ -156,18 +70,32 @@
           "snippet": "According to a landmark new study, 102 million hectares (Mha) (252 million acres) of land — an area the size of Egypt — have been converted to crops since the start of the 21st century. To put this into perspective, while it took more than 8,000 years for humanity to convert 1.1 billion hectares (2.8 billion acres) of "
         },
         {
-          "id": "71070ae00275",
-          "title": "Asia Pacific insurers warn climate shocks are becoming a systemic financial threat",
-          "url": "https://www.eco-business.com/news/asia-pacific-insurers-warn-climate-shocks-are-becoming-a-systemic-financial-threat/",
-          "originalUrl": "https://www.eco-business.com/news/asia-pacific-insurers-warn-climate-shocks-are-becoming-a-systemic-financial-threat/",
-          "verifiedUrl": "https://www.eco-business.com/news/asia-pacific-insurers-warn-climate-shocks-are-becoming-a-systemic-financial-threat/",
-          "publisher": "Eco-Business - News",
-          "publishedAt": "2026-03-02",
-          "sourcePublishedAt": "2026-03-02",
-          "source": "Eco-Business - News",
+          "id": "402cb687ddde",
+          "title": "Decades of gains overshadowed as Asia-Pacific falls behind on sustainable development targets",
+          "url": "https://news.un.org/feed/view/en/story/2026/02/1166993",
+          "originalUrl": "https://news.un.org/feed/view/en/story/2026/02/1166993",
+          "verifiedUrl": "https://news.un.org/feed/view/en/story/2026/02/1166993",
+          "publisher": "UN News Asia Pacific",
+          "publishedAt": "2026-02-18",
+          "sourcePublishedAt": "2026-02-18",
+          "source": "UN News Asia Pacific",
           "sector": "Climate Change",
           "country": "regional",
-          "snippet": "Insurance companies increasingly worry that escalating climate extremes could destabilise financial systems, not their balance sheets – an anxiety felt acutely in Asia Pacific, a MSCI study finds."
+          "snippet": "Climate inaction, biodiversity loss and rising emissions are pushing Asia and the Pacific further off course on the Sustainable Development Goals (SDGs), with the region set to miss nearly nine out of ten targets by 2030, the United Nations has warned."
+        },
+        {
+          "id": "078a4fc2e68c",
+          "title": "What's the Climate Cost of Growing Crops?",
+          "url": "https://www.nature.com/articles/s41558-026-02558-4",
+          "originalUrl": "https://www.wri.org/insights/climate-emissions-growing-crops",
+          "verifiedUrl": "https://www.nature.com/articles/s41558-026-02558-4",
+          "publisher": "WRI - Insights",
+          "publishedAt": "2026-02-13",
+          "sourcePublishedAt": "2026-02-13",
+          "source": "WRI - Insights",
+          "sector": "Climate Change",
+          "country": "regional",
+          "snippet": "Emissions from croplands are an important source of GHG emissions that can be shaped by management. This study presents maps of emissions globally for different crops, showing that drained peatlands, rice paddies and fertilizer were the main drivers, and highlights differences in emission intensity."
         }
       ]
     },
@@ -175,18 +103,32 @@
       "name": "Maritime Security",
       "items": [
         {
-          "id": "1c4f7dff7f22",
-          "title": "Southeast Asian Fisheries Development Center (SEAFDEC) Aquaculture Department Chief Dan Baliao voiced support for Senate Bill No. 522, or the proposed Municipal Fisherfolk Protection Act, during a Feb. 18 hearing at the Philippine Senate.",
-          "url": "https://news.google.com/rss/articles/CBMi3gFBVV95cUxQSi1LczRIVlVTRjdXd2tWQlZScnl2VER0RkFRQUlNbFB1YnU1R2J5SFk0NVVtdVh1dGNYMUYwLU85azhKbVdyNlNZVFVmVnF6VmpBT3VzUjdBMlkwUlBpWk9CRjgwV0xMRmhUVWdXTGpHeFF2VElqSnB1STdYZ1ZobG9hQk5PaWlIVU90OW9QLWc5eGxpTU54YkNuQklfR0JZVXJtQzhiM0VpRjc2a2lfRlQ5eFJ0VmxHOGxJMjZHMTJqckNGZ2JZYkE0Rjh6WGFRSkluQzhSNzZWb1dBdnc?oc=5&hl=en-US&gl=US&ceid=US:en",
-          "originalUrl": "https://news.google.com/rss/articles/CBMi3gFBVV95cUxQSi1LczRIVlVTRjdXd2tWQlZScnl2VER0RkFRQUlNbFB1YnU1R2J5SFk0NVVtdVh1dGNYMUYwLU85azhKbVdyNlNZVFVmVnF6VmpBT3VzUjdBMlkwUlBpWk9CRjgwV0xMRmhUVWdXTGpHeFF2VElqSnB1STdYZ1ZobG9hQk5PaWlIVU90OW9QLWc5eGxpTU54YkNuQklfR0JZVXJtQzhiM0VpRjc2a2lfRlQ5eFJ0VmxHOGxJMjZHMTJqckNGZ2JZYkE0Rjh6WGFRSkluQzhSNzZWb1dBdnc?oc=5",
-          "verifiedUrl": "https://news.google.com/rss/articles/CBMi3gFBVV95cUxQSi1LczRIVlVTRjdXd2tWQlZScnl2VER0RkFRQUlNbFB1YnU1R2J5SFk0NVVtdVh1dGNYMUYwLU85azhKbVdyNlNZVFVmVnF6VmpBT3VzUjdBMlkwUlBpWk9CRjgwV0xMRmhUVWdXTGpHeFF2VElqSnB1STdYZ1ZobG9hQk5PaWlIVU90OW9QLWc5eGxpTU54YkNuQklfR0JZVXJtQzhiM0VpRjc2a2lfRlQ5eFJ0VmxHOGxJMjZHMTJqckNGZ2JZYkE0Rjh6WGFRSkluQzhSNzZWb1dBdnc?oc=5&hl=en-US&gl=US&ceid=US:en",
-          "publisher": "Facebook",
-          "publishedAt": "2026-03-03",
-          "sourcePublishedAt": "2026-03-03",
-          "source": "Google News - ASEAN Fisheries",
+          "id": "dc899fca7d98",
+          "title": "The Consequences of Shelving the South China Sea Disputes",
+          "url": "https://amti.csis.org/the-consequences-of-shelving-the-south-china-sea-disputes/",
+          "originalUrl": "https://amti.csis.org/the-consequences-of-shelving-the-south-china-sea-disputes/",
+          "verifiedUrl": "https://amti.csis.org/the-consequences-of-shelving-the-south-china-sea-disputes/",
+          "publisher": "AMTI - CSIS",
+          "publishedAt": "2025-11-25",
+          "sourcePublishedAt": "2025-11-25",
+          "source": "AMTI - CSIS",
           "sector": "Maritime Security",
           "country": "philippines",
-          "snippet": ""
+          "snippet": "For years, China has promoted the idea of “shelving disputes” in the South China Sea and focusing on areas of cooperation. Southeast Asian claimants—Brunei, Malaysia, the Philippines, and Vietnam—have been receptive to this approach to varying degrees. While this strategy brings significant economic benefits, it carrie"
+        },
+        {
+          "id": "0be45ecf8896",
+          "title": "Reassessing the Legal Grounds of Freedom of Navigation in Indonesia’s Archipelagic Waters",
+          "url": "https://amti.csis.org/reassessing-the-legal-grounds-of-freedom-of-navigation-in-indonesias-archipelagic-waters/",
+          "originalUrl": "https://amti.csis.org/reassessing-the-legal-grounds-of-freedom-of-navigation-in-indonesias-archipelagic-waters/",
+          "verifiedUrl": "https://amti.csis.org/reassessing-the-legal-grounds-of-freedom-of-navigation-in-indonesias-archipelagic-waters/",
+          "publisher": "AMTI - CSIS",
+          "publishedAt": "2026-01-22",
+          "sourcePublishedAt": "2026-01-22",
+          "source": "AMTI - CSIS",
+          "sector": "Maritime Security",
+          "country": "indonesia",
+          "snippet": "This article is written in response to Navigating the Divide: Why the U.S. Navy Must Resume FONOPs in Indonesia by Patrick Panjeti, Military Fellow at the CSIS Defence and Security Department. 1. Introduction: Misrepresenting Indonesia’s Legal Commitments In his essay “Navigating the Divide,” Patrick Panjeti presents a"
         },
         {
           "id": "6962f27b04e1",
@@ -203,18 +145,18 @@
           "snippet": "The impacts of deforestation must also be counted towards the true cost of water, the ministry’s secretary-general said. The country's first fair share carbon budget report could help strengthen the..."
         },
         {
-          "id": "dc899fca7d98",
-          "title": "The Consequences of Shelving the South China Sea Disputes",
-          "url": "https://amti.csis.org/the-consequences-of-shelving-the-south-china-sea-disputes/",
-          "originalUrl": "https://amti.csis.org/the-consequences-of-shelving-the-south-china-sea-disputes/",
-          "verifiedUrl": "https://amti.csis.org/the-consequences-of-shelving-the-south-china-sea-disputes/",
+          "id": "436617f90c67",
+          "title": "Scarborough Peace Park: The Road to Peace and Sustainability in the South China Sea",
+          "url": "https://amti.csis.org/scarborough-peace-park-the-road-to-peace-and-sustainability-in-the-south-china-sea/",
+          "originalUrl": "https://amti.csis.org/scarborough-peace-park-the-road-to-peace-and-sustainability-in-the-south-china-sea/",
+          "verifiedUrl": "https://amti.csis.org/scarborough-peace-park-the-road-to-peace-and-sustainability-in-the-south-china-sea/",
           "publisher": "AMTI - CSIS",
-          "publishedAt": "2025-11-25",
-          "sourcePublishedAt": "2025-11-25",
+          "publishedAt": "2025-11-21",
+          "sourcePublishedAt": "2025-11-21",
           "source": "AMTI - CSIS",
           "sector": "Maritime Security",
           "country": "philippines",
-          "snippet": "For years, China has promoted the idea of “shelving disputes” in the South China Sea and focusing on areas of cooperation. Southeast Asian claimants—Brunei, Malaysia, the Philippines, and Vietnam—have been receptive to this approach to varying degrees. While this strategy brings significant economic benefits, it carrie"
+          "snippet": "Introduction On September 10, China approved the establishment of a nature reserve at Scarborough Shoal, also known as Bajo de Masinloc in Tagalog or Huangyan Dao in Chinese, a coral atoll whose sovereignty is under dispute between China and the Philippines. According to Beijing, the reserve covers approximately one ac"
         },
         {
           "id": "c23c6e51bf51",
@@ -231,32 +173,18 @@
           "snippet": "Wastewater from mines has heavily contained both rivers, according to Karenni State’s resistance-run civilian authority"
         },
         {
-          "id": "91f027e8e7f2",
-          "title": "Indonesia sets plans to modernize fishing villages, scale up aquaculture to bolster food policy",
-          "url": "https://news.google.com/rss/articles/CBMi2gFBVV95cUxQQXRrT3FSejQ1WGJMYmpnQklGdnFlSUVqNHRhTHJYa0RvU01WdFAtUlQ5ODU3VktnbGlvZUlyYkJSTnpVUTN2TnZaRjg0WVZBUU5tR1A5RmhPMWRUQUcwcXRmbU81Ym5hcjlTWXhSRndKQnBwTGk4b1MxaVhUQm1VWWZ1eWlra1FVOGxGN3F3YlJXNm9IZko5dHVVN1dfbFJWUlREaG9LQnVENUw1Y2xRZmdoRXFBeVBfQlIyMEZkclYtQklMYllDVnFxS0E0UmsySHNPSWNzWGF4dw?oc=5&hl=en-US&gl=US&ceid=US:en",
-          "originalUrl": "https://news.google.com/rss/articles/CBMi2gFBVV95cUxQQXRrT3FSejQ1WGJMYmpnQklGdnFlSUVqNHRhTHJYa0RvU01WdFAtUlQ5ODU3VktnbGlvZUlyYkJSTnpVUTN2TnZaRjg0WVZBUU5tR1A5RmhPMWRUQUcwcXRmbU81Ym5hcjlTWXhSRndKQnBwTGk4b1MxaVhUQm1VWWZ1eWlra1FVOGxGN3F3YlJXNm9IZko5dHVVN1dfbFJWUlREaG9LQnVENUw1Y2xRZmdoRXFBeVBfQlIyMEZkclYtQklMYllDVnFxS0E0UmsySHNPSWNzWGF4dw?oc=5",
-          "verifiedUrl": "https://news.google.com/rss/articles/CBMi2gFBVV95cUxQQXRrT3FSejQ1WGJMYmpnQklGdnFlSUVqNHRhTHJYa0RvU01WdFAtUlQ5ODU3VktnbGlvZUlyYkJSTnpVUTN2TnZaRjg0WVZBUU5tR1A5RmhPMWRUQUcwcXRmbU81Ym5hcjlTWXhSRndKQnBwTGk4b1MxaVhUQm1VWWZ1eWlra1FVOGxGN3F3YlJXNm9IZko5dHVVN1dfbFJWUlREaG9LQnVENUw1Y2xRZmdoRXFBeVBfQlIyMEZkclYtQklMYllDVnFxS0E0UmsySHNPSWNzWGF4dw?oc=5&hl=en-US&gl=US&ceid=US:en",
-          "publisher": "SeafoodSource",
-          "publishedAt": "2026-02-03",
-          "sourcePublishedAt": "2026-02-03",
-          "source": "Google News - SEA Coastal Fisheries",
+          "id": "ce25583d12dd",
+          "title": "Climate Action Can Be One of the World’s Biggest Job Creators",
+          "url": "https://www.wri.org/research/jobs-skills-new-economy-action-agenda",
+          "originalUrl": "https://www.wri.org/insights/climate-action-job-creation",
+          "verifiedUrl": "https://www.wri.org/research/jobs-skills-new-economy-action-agenda",
+          "publisher": "WRI - Insights",
+          "publishedAt": "2026-02-12",
+          "sourcePublishedAt": "2026-02-12",
+          "source": "WRI - Insights",
           "sector": "Maritime Security",
-          "country": "indonesia",
-          "snippet": ""
-        },
-        {
-          "id": "436617f90c67",
-          "title": "Scarborough Peace Park: The Road to Peace and Sustainability in the South China Sea",
-          "url": "https://amti.csis.org/scarborough-peace-park-the-road-to-peace-and-sustainability-in-the-south-china-sea/",
-          "originalUrl": "https://amti.csis.org/scarborough-peace-park-the-road-to-peace-and-sustainability-in-the-south-china-sea/",
-          "verifiedUrl": "https://amti.csis.org/scarborough-peace-park-the-road-to-peace-and-sustainability-in-the-south-china-sea/",
-          "publisher": "AMTI - CSIS",
-          "publishedAt": "2025-11-21",
-          "sourcePublishedAt": "2025-11-21",
-          "source": "AMTI - CSIS",
-          "sector": "Maritime Security",
-          "country": "philippines",
-          "snippet": "Introduction On September 10, China approved the establishment of a nature reserve at Scarborough Shoal, also known as Bajo de Masinloc in Tagalog or Huangyan Dao in Chinese, a coral atoll whose sovereignty is under dispute between China and the Philippines. According to Beijing, the reserve covers approximately one ac"
+          "country": "regional",
+          "snippet": "A new economy is unfolding, one with profound implications for people’s jobs and livelihoods. Against wider trends of digitalization, demographic shifts, and geopolitics, the climate transition is an increasingly important element shaping this new economy. Yet appreciation of the impacts of the transition on people and"
         }
       ]
     },

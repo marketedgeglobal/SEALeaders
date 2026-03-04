@@ -1001,6 +1001,17 @@ def _best_snippet(summary: str, title: str, publisher: str = "", allow_fallback:
     return cleaned
 
 
+def _has_supporting_detail(text: str) -> bool:
+    cleaned = _clean_text(text)
+    if not cleaned:
+        return False
+    if len(cleaned) < 60:
+        return False
+    if len(cleaned.split()) < 10:
+        return False
+    return True
+
+
 def _extract_feed_summary_excerpt(summary_html: str) -> str:
     if not summary_html:
         return ""
@@ -1120,6 +1131,8 @@ def _extract_items_from_web_page(feed_name: str, source_url: str) -> list[dict]:
         if ENABLE_ARTICLE_EXCERPT_FETCH and index < 8:
             excerpt = _extract_article_excerpt(article_url, title, publisher)
         snippet = excerpt or ""
+        if not _has_supporting_detail(snippet):
+            continue
         summary = snippet or ""
 
         if not _passes_sow_focus(title, summary, snippet):
@@ -1284,6 +1297,8 @@ def _extract_items(feed_name: str, feed_url: str, mode: str = "feed") -> list[di
         if ENABLE_ARTICLE_EXCERPT_FETCH:
             excerpt = _extract_article_excerpt(verified_url, title, clean_publisher)
         snippet = excerpt or ""
+        if not _has_supporting_detail(snippet):
+            continue
         country = _detect_country(title, context_snippet or summary, feed_name, clean_publisher, verified_url)
 
         results.append(
