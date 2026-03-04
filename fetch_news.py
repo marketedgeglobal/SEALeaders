@@ -1,4 +1,4 @@
-https://www.mangrovealliance.org/newsroom#!/usr/bin/env python3
+#!/usr/bin/env python3
 """Fetch Southeast Asia coastal news and write docs/data/latest.json."""
 
 from __future__ import annotations
@@ -11,7 +11,7 @@ from datetime import datetime, timezone
 from email.utils import parsedate_to_datetime
 from html import unescape
 from pathlib import Path
-from urllib.parse import urlparse
+from urllib.parse import urljoin, urlparse
 from urllib.request import Request, urlopen
 
 import feedparser
@@ -19,6 +19,11 @@ import feedparser
 from fetch_news_seasia import is_relevant
 
 FEEDS = [
+    {
+        "name": "AP News ASEAN Hub",
+        "url": "https://apnews.com/hub/association-of-southeast-asian-nations",
+        "mode": "web",
+    },
     {
         "name": "Channel News Asia - Asia",
         "url": "https://www.channelnewsasia.com/rssfeeds/8395986",
@@ -28,12 +33,27 @@ FEEDS = [
         "url": "https://www.straitstimes.com/news/asia/rss.xml",
     },
     {
+        "name": "The Straits Times - Global",
+        "url": "https://www.straitstimes.com/global",
+        "mode": "web",
+    },
+    {
         "name": "Bangkok Post",
         "url": "https://www.bangkokpost.com/rss/data/topstories.xml",
     },
     {
+        "name": "Nation Thailand",
+        "url": "https://www.nationthailand.com/",
+        "mode": "web",
+    },
+    {
         "name": "BenarNews - English",
         "url": "https://www.benarnews.org/english/rss.xml",
+    },
+    {
+        "name": "The Jakarta Post",
+        "url": "https://www.thejakartapost.com/",
+        "mode": "web",
     },
     {
         "name": "Rappler",
@@ -62,6 +82,11 @@ FEEDS = [
     {
         "name": "Mongabay",
         "url": "https://news.mongabay.com/feed/",
+    },
+    {
+        "name": "Mongabay - Asia",
+        "url": "https://news.mongabay.com/list/asia/",
+        "mode": "web",
     },
     {
         "name": "East Asia Forum",
@@ -96,6 +121,24 @@ FEEDS = [
         "url": "https://www.adb.org/news/rss.xml",
     },
     {
+        "name": "IUCN - Asia",
+        "url": "https://iucn.org/our-work/region/asia",
+        "mode": "web",
+    },
+    {
+        "name": "WWF Asia Pacific - Newsroom",
+        "url": "https://asiapacific.panda.org/latest/newsroom/",
+        "mode": "web",
+    },
+    {
+        "name": "Mangrove Alliance - Newsroom",
+        "url": "https://www.mangrovealliance.org/blog-feed.xml",
+    },
+    {
+        "name": "Eco-Business - News",
+        "url": "https://www.eco-business.com/feeds/news/",
+    },
+    {
         "name": "ReliefWeb - Asia Pacific",
         "url": "https://reliefweb.int/updates?advanced-search=%28PC385%29_%28T4596%29&search=%22Southeast%20Asia%22&format=rss",
     },
@@ -126,6 +169,22 @@ FEEDS = [
     {
         "name": "VietnamPlus",
         "url": "https://en.vietnamplus.vn/rss/home.rss",
+    },
+    {
+        "name": "ISEAS Commentaries",
+        "url": "https://www.iseas.edu.sg/category/commentaries/feed/",
+    },
+    {
+        "name": "AMTI - CSIS",
+        "url": "https://amti.csis.org/feed/",
+    },
+    {
+        "name": "Stimson Center",
+        "url": "https://www.stimson.org/feed/",
+    },
+    {
+        "name": "WRI - Insights",
+        "url": "https://www.wri.org/insights/rss.xml",
     },
 ]
 
@@ -179,6 +238,9 @@ SECTOR_KEYWORDS = {
 MAX_ITEMS_PER_SECTOR = int(os.getenv("MAX_ITEMS_PER_SECTOR", "8"))
 MAX_ITEMS_PER_PUBLISHER = int(os.getenv("MAX_ITEMS_PER_PUBLISHER", "3"))
 MAX_ITEMS_PER_COUNTRY = int(os.getenv("MAX_ITEMS_PER_COUNTRY", "6"))
+MAX_FEED_ENTRIES_PER_SOURCE = int(os.getenv("MAX_FEED_ENTRIES_PER_SOURCE", "36"))
+ENABLE_ARTICLE_EXCERPT_FETCH = os.getenv("ENABLE_ARTICLE_EXCERPT_FETCH", "0") == "1"
+ENABLE_URL_RESOLVE = os.getenv("ENABLE_URL_RESOLVE", "0") == "1"
 OUTPUT_PATH = "docs/data/latest.json"
 HTTP_HEADERS = {
     "User-Agent": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/122.0 Safari/537.36"
@@ -190,8 +252,10 @@ EXCERPT_CACHE: dict[str, str] = {}
 REGIONAL_CONTEXT_FEEDS = {
     "Channel News Asia - Asia",
     "The Straits Times - Asia",
+    "The Straits Times - Global",
     "BenarNews - English",
     "Mongabay",
+    "Mongabay - Asia",
     "East Asia Forum",
     "SEAFDEC",
     "Maritime Executive",
@@ -215,6 +279,17 @@ REGIONAL_CONTEXT_FEEDS = {
     "The Star Malaysia",
     "Free Malaysia Today",
     "Bangkok Post",
+    "Nation Thailand",
+    "The Jakarta Post",
+    "AP News ASEAN Hub",
+    "IUCN - Asia",
+    "WWF Asia Pacific - Newsroom",
+    "Mangrove Alliance - Newsroom",
+    "Eco-Business - News",
+    "ISEAS Commentaries",
+    "AMTI - CSIS",
+    "Stimson Center",
+    "WRI - Insights",
 }
 
 SEA_CONTEXT_MARKERS = (
@@ -282,13 +357,46 @@ FEED_COUNTRY_HINTS = {
     "The Star Malaysia": "malaysia",
     "Free Malaysia Today": "malaysia",
     "Bangkok Post": "thailand",
+    "Nation Thailand": "thailand",
     "VietnamPlus": "vietnam",
     "Tatoli": "timor_leste",
     "Myanmar Now": "myanmar",
     "ANTARA Indonesia": "indonesia",
     "Channel News Asia - Asia": "singapore",
     "The Straits Times - Asia": "singapore",
+    "The Straits Times - Global": "singapore",
+    "The Jakarta Post": "indonesia",
+    "Mongabay - Asia": "regional",
+    "AP News ASEAN Hub": "regional",
+    "IUCN - Asia": "regional",
+    "WWF Asia Pacific - Newsroom": "regional",
+    "Mangrove Alliance - Newsroom": "regional",
+    "Eco-Business - News": "regional",
+    "ISEAS Commentaries": "regional",
+    "AMTI - CSIS": "regional",
+    "Stimson Center": "regional",
+    "WRI - Insights": "regional",
 }
+
+WEB_SOURCE_BLOCKLIST = (
+    "/tag/",
+    "/tags/",
+    "/topic/",
+    "/topics/",
+    "/category/",
+    "/categories/",
+    "/author/",
+    "/search",
+    "/about",
+    "/contact",
+    "/privacy",
+    "/terms",
+    "/advert",
+    "/subscribe",
+    "/account",
+)
+
+MAX_WEB_ARTICLES_PER_SOURCE = int(os.getenv("MAX_WEB_ARTICLES_PER_SOURCE", "16"))
 
 COUNTRY_PRIORITY_WEIGHT = {
     "indonesia": 3.0,
@@ -374,9 +482,33 @@ def _resolve_google_news_url(url: str) -> str:
     return resolved
 
 
+def _fetch_url_bytes(url: str, max_bytes: int = 900_000) -> tuple[bytes, str]:
+    request = Request(url, headers=HTTP_HEADERS)
+    with urlopen(request, timeout=8) as response:
+        payload = response.read(max_bytes)
+        final_url = response.geturl() or url
+    return payload, final_url
+
+
+def _parse_feed(feed_url: str):
+    try:
+        payload, _ = _fetch_url_bytes(feed_url)
+        parsed = feedparser.parse(payload)
+        return parsed
+    except Exception:
+        return feedparser.parse(b"")
+
+
 def _resolve_verified_url(feed_url: str, summary: str) -> str:
     candidates = _extract_links_from_summary(summary)
     candidates.append(feed_url)
+
+    if not ENABLE_URL_RESOLVE:
+        for candidate in candidates:
+            candidate = (candidate or "").strip()
+            if candidate and not _is_google_host(candidate):
+                return candidate
+        return feed_url
 
     for candidate in candidates:
         resolved = _resolve_google_news_url(candidate)
@@ -565,6 +697,98 @@ def _extract_article_excerpt(url: str, title: str, publisher: str) -> str:
     return excerpt
 
 
+def _extract_web_candidates(source_url: str, max_links: int = 20) -> list[tuple[str, str]]:
+    try:
+        payload, final_url = _fetch_url_bytes(source_url)
+        html = payload.decode("utf-8", errors="ignore")
+    except Exception:
+        return []
+
+    base_url = final_url or source_url
+    base_host = urlparse(base_url).netloc.lower().replace("www.", "")
+    candidates: list[tuple[str, str]] = []
+    seen_urls: set[str] = set()
+
+    for href, raw_label in re.findall(r"<a[^>]+href=[\"']([^\"']+)[\"'][^>]*>([\s\S]*?)</a>", html, flags=re.IGNORECASE):
+        title = _clean_text(raw_label)
+        if len(title) < 28 or len(title.split()) < 4:
+            continue
+
+        absolute_url = urljoin(base_url, unescape(href).strip())
+        parsed = urlparse(absolute_url)
+        if parsed.scheme not in {"http", "https"}:
+            continue
+
+        host = parsed.netloc.lower().replace("www.", "")
+        if base_host and base_host not in host:
+            continue
+
+        lower_path = f"{parsed.path.lower()} {parsed.query.lower()}"
+        if any(block in lower_path for block in WEB_SOURCE_BLOCKLIST):
+            continue
+
+        canonical_url = _canonical_story_url(absolute_url)
+        if not canonical_url or canonical_url in seen_urls:
+            continue
+
+        seen_urls.add(canonical_url)
+        candidates.append((title, absolute_url))
+
+        if len(candidates) >= max_links:
+            break
+
+    return candidates
+
+
+def _extract_items_from_web_page(feed_name: str, source_url: str) -> list[dict]:
+    results: list[dict] = []
+    candidates = _extract_web_candidates(source_url, MAX_WEB_ARTICLES_PER_SOURCE)
+
+    for index, (title, article_url) in enumerate(candidates):
+        publisher = _publisher_from_url(article_url)
+        excerpt = ""
+        if ENABLE_ARTICLE_EXCERPT_FETCH and index < 8:
+            excerpt = _extract_article_excerpt(article_url, title, publisher)
+        snippet = excerpt or _headline_fallback_summary(title)
+        summary = snippet or ""
+
+        context_text = f"{title} {summary} {article_url}".lower()
+        has_geo_marker = any(marker in context_text for marker in SEA_CONTEXT_MARKERS)
+        has_marine_marker = any(marker in context_text for marker in MARINE_CONTEXT_MARKERS)
+        if not has_geo_marker or not has_marine_marker:
+            continue
+
+        sector = _categorize(title, summary)
+        if not sector:
+            continue
+
+        is_valid, _, _ = is_relevant(title, summary)
+        if not is_valid:
+            is_direct_context_match = feed_name in REGIONAL_CONTEXT_FEEDS and has_marine_marker and has_geo_marker
+            if not is_direct_context_match:
+                continue
+
+        country = _detect_country(title, snippet, feed_name, publisher, article_url)
+        results.append(
+            {
+                "id": _make_id(article_url, title),
+                "title": title,
+                "url": article_url,
+                "originalUrl": article_url,
+                "verifiedUrl": article_url,
+                "publisher": publisher,
+                "publishedAt": "",
+                "sourcePublishedAt": "",
+                "source": feed_name,
+                "sector": sector,
+                "country": country,
+                "snippet": snippet[:320],
+            }
+        )
+
+    return results
+
+
 def _detect_country(title: str, snippet: str, source: str, publisher: str, url: str) -> str:
     source_hint = FEED_COUNTRY_HINTS.get(source)
     if source_hint:
@@ -587,26 +811,25 @@ def _country_weight(country: str) -> float:
     return float(COUNTRY_PRIORITY_WEIGHT.get(country, 1.0))
 
 
-def _extract_items(feed_name: str, feed_url: str) -> list[dict]:
-    parsed = feedparser.parse(feed_url)
+def _extract_items(feed_name: str, feed_url: str, mode: str = "feed") -> list[dict]:
+    if mode == "web":
+        return _extract_items_from_web_page(feed_name, feed_url)
+
+    parsed = _parse_feed(feed_url)
     results: list[dict] = []
-    for entry in parsed.entries:
+    for entry in list(parsed.entries)[:MAX_FEED_ENTRIES_PER_SOURCE]:
         raw_title = (entry.get("title") or "").strip()
         link = (entry.get("link") or "").strip()
         summary = (entry.get("summary") or entry.get("description") or "").strip()
         published = (entry.get("published") or entry.get("updated") or "").strip()
         title, publisher = _split_title_and_publisher(raw_title, feed_name)
-        verified_url = _resolve_verified_url(link, summary)
-        excerpt = _extract_article_excerpt(verified_url, title, publisher)
         feed_excerpt = _extract_feed_summary_excerpt(summary)
-        snippet = excerpt or _best_snippet(feed_excerpt or summary, title, publisher)
-        clean_publisher = publisher or _publisher_from_url(verified_url)
-        country = _detect_country(title, snippet, feed_name, clean_publisher, verified_url)
+        snippet = _best_snippet(feed_excerpt or summary, title, publisher)
 
         if not title or not link:
             continue
 
-        context_text = f"{title} {summary} {verified_url}".lower()
+        context_text = f"{title} {summary} {link}".lower()
         has_geo_marker = any(marker in context_text for marker in SEA_CONTEXT_MARKERS)
         has_marine_marker = any(marker in context_text for marker in MARINE_CONTEXT_MARKERS)
         if not has_geo_marker or not has_marine_marker:
@@ -621,6 +844,15 @@ def _extract_items(feed_name: str, feed_url: str) -> list[dict]:
             is_direct_context_match = feed_name in REGIONAL_CONTEXT_FEEDS and has_marine_marker and has_geo_marker
             if not is_direct_context_match:
                 continue
+
+        verified_url = _resolve_verified_url(link, summary)
+        clean_publisher = publisher or _publisher_from_url(verified_url)
+        excerpt = ""
+        if ENABLE_ARTICLE_EXCERPT_FETCH:
+            excerpt = _extract_article_excerpt(verified_url, title, clean_publisher)
+        if excerpt:
+            snippet = excerpt
+        country = _detect_country(title, snippet, feed_name, clean_publisher, verified_url)
 
         results.append(
             {
@@ -649,7 +881,7 @@ def build_latest_json() -> dict:
     for feed in FEEDS:
         print(f"Fetching {feed['name']} …")
         try:
-            items = _extract_items(feed["name"], feed["url"])
+            items = _extract_items(feed["name"], feed["url"], str(feed.get("mode", "feed")))
         except Exception as exc:  # noqa: BLE001
             print(f"  [WARN] Failed: {type(exc).__name__}: {exc}")
             items = []
