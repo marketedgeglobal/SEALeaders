@@ -1033,9 +1033,9 @@ def _has_supporting_detail(text: str) -> bool:
     cleaned = _clean_text(text)
     if not cleaned:
         return False
-    if len(cleaned) < 60:
+    if len(cleaned) < 45:
         return False
-    if len(cleaned.split()) < 10:
+    if len(cleaned.split()) < 7:
         return False
     return True
 
@@ -1298,6 +1298,16 @@ def _fisheries_priority_score(item: dict) -> int:
     return score
 
 
+def _blue_economy_priority_score(item: dict) -> int:
+    text = f"{item.get('title', '')} {item.get('snippet', '')}".lower()
+    economic_hits = sum(1 for marker in BLUE_ECONOMY_ECONOMIC_MARKERS if marker in text)
+    has_marine_anchor = bool(BLUE_ECONOMY_MARINE_ANCHOR_PATTERN.search(text))
+
+    if not has_marine_anchor:
+        return 0
+    return economic_hits + 2
+
+
 def _maritime_priority_score(item: dict) -> int:
     text = f"{item.get('title', '')} {item.get('snippet', '')}".lower()
     source_text = f"{item.get('source', '')} {item.get('publisher', '')}".lower()
@@ -1370,7 +1380,7 @@ def _extract_items(feed_name: str, feed_url: str, mode: str = "feed") -> list[di
         excerpt = ""
         if ENABLE_ARTICLE_EXCERPT_FETCH:
             excerpt = _extract_article_excerpt(verified_url, title, clean_publisher)
-        snippet = excerpt or ""
+        snippet = excerpt if _has_supporting_detail(excerpt) else context_snippet
         if not _has_supporting_detail(snippet):
             continue
         country = _detect_country(title, context_snippet or summary, feed_name, clean_publisher, verified_url)
@@ -1437,6 +1447,31 @@ def build_latest_json() -> dict:
 
     for sector in SECTORS:
         candidates = [item for item in all_items if item["sector"] == sector]
+        if sector == "Blue Economy":
+            blue_pool: list[dict] = []
+            blue_seen_ids: set[str] = set()
+
+            for item in all_items:
+                score = _blue_economy_priority_score(item)
+                if score < 3:
+                    continue
+                item_id = str(item.get("id") or "")
+                if item_id in blue_seen_ids:
+                    continue
+
+                candidate = dict(item)
+                candidate["sector"] = "Blue Economy"
+                blue_pool.append(candidate)
+                blue_seen_ids.add(item_id)
+
+            for item in candidates:
+                item_id = str(item.get("id") or "")
+                if item_id in blue_seen_ids:
+                    continue
+                blue_pool.append(item)
+                blue_seen_ids.add(item_id)
+
+            candidates = sorted(blue_pool, key=_blue_economy_priority_score, reverse=True)
         if sector == "Sustainable Fisheries":
             candidates = sorted(candidates, key=_fisheries_priority_score, reverse=True)
         if sector == "Maritime Security":

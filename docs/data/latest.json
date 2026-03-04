@@ -1,6 +1,6 @@
 {
-  "runAt": "2026-03-04T01:47:36.463972+00:00",
-  "totalItems": 15,
+  "runAt": "2026-03-04T02:17:44.306655+00:00",
+  "totalItems": 14,
   "sectors": [
     {
       "name": "Blue Economy",
@@ -45,16 +45,16 @@
         {
           "id": "0d575665ab8e",
           "title": "Low emissions to enhance the value of Vietnamese rice: agriculture experts",
-          "url": "https://vietnamnews.vn/environment/1766567/viet-nam-enhances-conservation-activities-for-world-wildlife-day.html",
+          "url": "https://vietnamnews.vn/environment/1766673/positive-activities-set-to-protect-endangered-langurs-species.html",
           "originalUrl": "https://vietnamnews.vn/environment/1766357/low-emissions-to-enhance-the-value-of-vietnamese-rice-agriculture-experts.html",
-          "verifiedUrl": "https://vietnamnews.vn/environment/1766567/viet-nam-enhances-conservation-activities-for-world-wildlife-day.html",
+          "verifiedUrl": "https://vietnamnews.vn/environment/1766673/positive-activities-set-to-protect-endangered-langurs-species.html",
           "publisher": "Vietnam News - Environment",
           "publishedAt": "2026-02-26",
           "sourcePublishedAt": "2026-02-26",
           "source": "Vietnam News - Environment",
           "sector": "Climate Change",
           "country": "vietnam",
-          "snippet": "Forest management and protection of natural habitats are being promoted, combined with ecosystem restoration and the development of nature reserves."
+          "snippet": "Illegal hunting, forest encroachment for farming and rapid infrastructure development are threatening the survival of the grey-shanked douc langur (Pygathrix cinerea), classified as Critically Endangered by the International Union for Conservation of Nature, conservationists said after 2024–25 surveys in the province."
         },
         {
           "id": "6fd827286c5a",
@@ -188,18 +188,18 @@
           "snippet": "Southeast Asia is quietly entering a new strategic era, one defined not by the size of a navy’s fleet, but by the range of its missiles. Across the region, an emerging pattern is becoming visible. Vietnam, the Philippines, and Indonesia are each moving rapidly to establish anti-access/area-denial (A2/AD) postures. For "
         },
         {
-          "id": "c23c6e51bf51",
-          "title": "Karenni IEC warns of ‘toxic’ levels of arsenic in Salween River and Molo Creek",
-          "url": "https://myanmar-now.org/en/news/karenni-iec-warns-of-toxic-levels-of-arsenic-in-salween-river-and-molo-creek/",
-          "originalUrl": "https://myanmar-now.org/en/news/karenni-iec-warns-of-toxic-levels-of-arsenic-in-salween-river-and-molo-creek/",
-          "verifiedUrl": "https://myanmar-now.org/en/news/karenni-iec-warns-of-toxic-levels-of-arsenic-in-salween-river-and-molo-creek/",
-          "publisher": "Myanmar Now",
-          "publishedAt": "2026-02-27",
-          "sourcePublishedAt": "2026-02-27",
-          "source": "Myanmar Now",
+          "id": "ce25583d12dd",
+          "title": "Climate Action Can Be One of the World’s Biggest Job Creators",
+          "url": "https://www.wri.org/research/jobs-skills-new-economy-action-agenda",
+          "originalUrl": "https://www.wri.org/insights/climate-action-job-creation",
+          "verifiedUrl": "https://www.wri.org/research/jobs-skills-new-economy-action-agenda",
+          "publisher": "WRI - Insights",
+          "publishedAt": "2026-02-12",
+          "sourcePublishedAt": "2026-02-12",
+          "source": "WRI - Insights",
           "sector": "Maritime Security",
-          "country": "myanmar",
-          "snippet": "Wastewater from mines has heavily contained both rivers, according to Karenni State’s resistance-run civilian authority"
+          "country": "regional",
+          "snippet": "A new economy is unfolding, one with profound implications for people’s jobs and livelihoods. Against wider trends of digitalization, demographic shifts, and geopolitics, the climate transition is an increasingly important element shaping this new economy. Yet appreciation of the impacts of the transition on people and"
         }
       ]
     },
@@ -219,20 +219,6 @@
           "sector": "Marine Pollution",
           "country": "philippines",
           "snippet": "RODRIGUEZ, Philippines — Lenny* recalled freezing when he saw the first heap of garbage collapse underneath the feet of his fellow scavengers on the afternoon of Feb. 20, at a landfill in the town of Rodriguez, in the Philippines’ Rizal province. Moments later, a larger perimeter caved. In an instant, a crater of trash"
-        },
-        {
-          "id": "c23c6e51bf51",
-          "title": "Karenni IEC warns of ‘toxic’ levels of arsenic in Salween River and Molo Creek",
-          "url": "https://myanmar-now.org/en/news/karenni-iec-warns-of-toxic-levels-of-arsenic-in-salween-river-and-molo-creek/",
-          "originalUrl": "https://myanmar-now.org/en/news/karenni-iec-warns-of-toxic-levels-of-arsenic-in-salween-river-and-molo-creek/",
-          "verifiedUrl": "https://myanmar-now.org/en/news/karenni-iec-warns-of-toxic-levels-of-arsenic-in-salween-river-and-molo-creek/",
-          "publisher": "Myanmar Now",
-          "publishedAt": "2026-02-27",
-          "sourcePublishedAt": "2026-02-27",
-          "source": "Myanmar Now",
-          "sector": "Marine Pollution",
-          "country": "myanmar",
-          "snippet": "Wastewater from mines has heavily contained both rivers, according to Karenni State’s resistance-run civilian authority"
         }
       ]
     }
