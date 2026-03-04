@@ -229,16 +229,16 @@
       <section class="page-head">
         <div class="eyebrow">SEA Leaders · Coastal Intelligence</div>
         <h1>PartnerAI: Southeast Asia Coastal Insights</h1>
-        <p class="subtitle">Sustainable Fisheries · Climate Change · Maritime Security · Sustainable Blue Economy · Marine Pollution</p>
+        <p class="subtitle">Sustainable Blue Economy · Climate Change · Maritime Security · Sustainable Fisheries · Marine Pollution</p>
       </section>
       <div id="app-root" class="sea-app">Loading intelligence dashboard…</div>
     </main>
     <script>
       const CATEGORY_ORDER = [
-        "Sustainable Fisheries",
+        "Sustainable Blue Economy",
         "Climate Change",
         "Maritime Security",
-        "Sustainable Blue Economy",
+        "Sustainable Fisheries",
         "Marine Pollution",
       ];
       const COUNTRY_FILTERS = [
@@ -418,10 +418,8 @@
 
       function itemMatchesCountry(item, countryKey) {
         if (countryKey === "all") return true;
-        const country = COUNTRY_FILTERS.find((entry) => entry.key === countryKey);
-        if (!country) return true;
-        const text = `${item.title || ""} ${item.snippet || ""} ${item.publisher || ""} ${item.source || ""} ${item.url || ""}`.toLowerCase();
-        return country.patterns.some((pattern) => text.includes(pattern));
+        const normalized = String(item.country || "regional").toLowerCase().replace(/\s+/g, "_");
+        return normalized === countryKey;
       }
 
       function filterItemsByCountry(items) {

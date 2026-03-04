@@ -189,10 +189,10 @@ FEEDS = [
 ]
 
 SECTORS = [
-    "Sustainable Fisheries",
+    "Sustainable Blue Economy",
     "Climate Change",
     "Maritime Security",
-    "Sustainable Blue Economy",
+    "Sustainable Fisheries",
     "Marine Pollution",
 ]
 
@@ -410,6 +410,10 @@ COUNTRY_PRIORITY_WEIGHT = {
     "brunei": 1.2,
     "cambodia": 1.0,
     "regional": 1.0,
+}
+
+COUNTRY_MAX_CAPS = {
+    "vietnam": int(os.getenv("MAX_ITEMS_VIETNAM", "3")),
 }
 
 
@@ -790,11 +794,7 @@ def _extract_items_from_web_page(feed_name: str, source_url: str) -> list[dict]:
 
 
 def _detect_country(title: str, snippet: str, source: str, publisher: str, url: str) -> str:
-    source_hint = FEED_COUNTRY_HINTS.get(source)
-    if source_hint:
-        return source_hint
-
-    text = f"{title} {snippet} {source} {publisher} {url}".lower()
+    text = f"{title} {snippet}".lower()
     best_country = "regional"
     best_score = 0
 
@@ -804,11 +804,33 @@ def _detect_country(title: str, snippet: str, source: str, publisher: str, url: 
             best_country = country
             best_score = score
 
-    return best_country if best_score > 0 else "regional"
+    if best_score > 0:
+        return best_country
+
+    url_text = f"{title} {snippet} {url}".lower()
+    for country, hints in COUNTRY_HINTS.items():
+        score = sum(1 for hint in hints if hint in url_text)
+        if score > best_score:
+            best_country = country
+            best_score = score
+
+    if best_score > 0:
+        return best_country
+
+    source_hint = FEED_COUNTRY_HINTS.get(source)
+    if source_hint:
+        return source_hint
+
+    return "regional"
 
 
 def _country_weight(country: str) -> float:
     return float(COUNTRY_PRIORITY_WEIGHT.get(country, 1.0))
+
+
+def _country_cap(country: str, relaxed: bool = False) -> int:
+    base_cap = int(COUNTRY_MAX_CAPS.get(country, MAX_ITEMS_PER_COUNTRY))
+    return base_cap + 2 if relaxed else base_cap
 
 
 def _extract_items(feed_name: str, feed_url: str, mode: str = "feed") -> list[dict]:
@@ -929,7 +951,7 @@ def build_latest_json() -> dict:
 
             if publisher_usage.get(publisher, 0) >= MAX_ITEMS_PER_PUBLISHER:
                 continue
-            if country_usage.get(country, 0) >= MAX_ITEMS_PER_COUNTRY:
+            if country_usage.get(country, 0) >= _country_cap(country):
                 continue
 
             selected.append(item)
@@ -944,7 +966,7 @@ def build_latest_json() -> dict:
                 country = str(item.get("country") or "regional").lower()
                 if publisher_usage.get(publisher, 0) >= MAX_ITEMS_PER_PUBLISHER + 2:
                     continue
-                if country_usage.get(country, 0) >= MAX_ITEMS_PER_COUNTRY + 2:
+                if country_usage.get(country, 0) >= _country_cap(country, relaxed=True):
                     continue
                 selected.append(item)
                 publisher_usage[publisher] = publisher_usage.get(publisher, 0) + 1

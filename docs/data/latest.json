@@ -1,28 +1,99 @@
 {
-  "runAt": "2026-03-04T00:19:42.262236+00:00",
+  "runAt": "2026-03-04T00:24:25.863142+00:00",
   "totalItems": 20,
   "sectors": [
     {
-      "name": "Sustainable Fisheries",
-      "items": []
+      "name": "Sustainable Blue Economy",
+      "items": [
+        {
+          "id": "f96facbc7230",
+          "title": "Iran conflict could push up costs, govt’s fuel subsidy bill, say economists",
+          "url": "https://www.freemalaysiatoday.com/category/nation/2026/03/04/iran-conflict-could-push-up-costs-govts-fuel-subsidy-bill-say-economists",
+          "originalUrl": "https://www.freemalaysiatoday.com/category/nation/2026/03/04/iran-conflict-could-push-up-costs-govts-fuel-subsidy-bill-say-economists",
+          "verifiedUrl": "https://www.freemalaysiatoday.com/category/nation/2026/03/04/iran-conflict-could-push-up-costs-govts-fuel-subsidy-bill-say-economists",
+          "publisher": "Free Malaysia Today",
+          "publishedAt": "2026-03-03",
+          "sourcePublishedAt": "2026-03-03",
+          "source": "Free Malaysia Today",
+          "sector": "Sustainable Blue Economy",
+          "country": "malaysia",
+          "snippet": "Sunway University’s Yeah Kim Leng says disruptions in shipping due to the ongoing war will have cascading impacts."
+        },
+        {
+          "id": "751478b3670f",
+          "title": "Fuel shortage hits Shan State as imports from Thailand halt over Iran conflict",
+          "url": "https://myanmar-now.org/en/news/fuel-shortage-hits-shan-state-as-imports-from-thailand-halt-over-iran-conflict/",
+          "originalUrl": "https://myanmar-now.org/en/news/fuel-shortage-hits-shan-state-as-imports-from-thailand-halt-over-iran-conflict/",
+          "verifiedUrl": "https://myanmar-now.org/en/news/fuel-shortage-hits-shan-state-as-imports-from-thailand-halt-over-iran-conflict/",
+          "publisher": "Myanmar Now",
+          "publishedAt": "2026-03-03",
+          "sourcePublishedAt": "2026-03-03",
+          "source": "Myanmar Now",
+          "sector": "Sustainable Blue Economy",
+          "country": "thailand",
+          "snippet": "A protracted war in the Middle East could have a severe impact on energy supplies in Myanmar and the rest of the region"
+        },
+        {
+          "id": "cd6c8dd6587b",
+          "title": "Strait of Hormuz: why it matters to global shipping and energy",
+          "url": "https://www.nationthailand.com/news/world/40063181",
+          "originalUrl": "https://www.nationthailand.com/news/world/40063181",
+          "verifiedUrl": "https://www.nationthailand.com/news/world/40063181",
+          "publisher": "nationthailand.com",
+          "publishedAt": "",
+          "sourcePublishedAt": "",
+          "source": "Nation Thailand",
+          "sector": "Sustainable Blue Economy",
+          "country": "thailand",
+          "snippet": "The report indicates that why it matters to global shipping and energy."
+        },
+        {
+          "id": "28a45b9a6b0c",
+          "title": "Empty shelves across Myanmar as Thai imports disappear",
+          "url": "https://myanmar-now.org/en/news/empty-shelves-across-myanmar-as-thai-imports-disappear/",
+          "originalUrl": "https://myanmar-now.org/en/news/empty-shelves-across-myanmar-as-thai-imports-disappear/",
+          "verifiedUrl": "https://myanmar-now.org/en/news/empty-shelves-across-myanmar-as-thai-imports-disappear/",
+          "publisher": "Myanmar Now",
+          "publishedAt": "2026-02-26",
+          "sourcePublishedAt": "2026-02-26",
+          "source": "Myanmar Now",
+          "sector": "Sustainable Blue Economy",
+          "country": "thailand",
+          "snippet": "From snacks to medicine, goods once trucked across the Thai border have vanished following tightened import controls, border gate closures, and a crackdown on “illegal” trade"
+        },
+        {
+          "id": "a41fce7b07f8",
+          "title": "Thai exports to Iran face disruption risk as conflict escalates; fruit, rubber shipments most exposed",
+          "url": "https://www.nationthailand.com/business/trade/40063158",
+          "originalUrl": "https://www.nationthailand.com/business/trade/40063158",
+          "verifiedUrl": "https://www.nationthailand.com/business/trade/40063158",
+          "publisher": "nationthailand.com",
+          "publishedAt": "",
+          "sourcePublishedAt": "",
+          "source": "Nation Thailand",
+          "sector": "Sustainable Blue Economy",
+          "country": "thailand",
+          "snippet": "The report indicates that Thai exports to Iran face disruption risk as conflict escalates; fruit, rubber shipments most exposed."
+        },
+        {
+          "id": "ba5b4e1f5b5f",
+          "title": "Israel strikes Iran’s Assembly of Experts site as succession vote looms March 03, 2026 Israel struck a site tied to Iran’s Assembly of Experts in Qom, with reports conflicting over whether clerics were meeting to pick a new leader",
+          "url": "https://www.nationthailand.com/news/world/40063265",
+          "originalUrl": "https://www.nationthailand.com/news/world/40063265",
+          "verifiedUrl": "https://www.nationthailand.com/news/world/40063265",
+          "publisher": "nationthailand.com",
+          "publishedAt": "",
+          "sourcePublishedAt": "",
+          "source": "Nation Thailand",
+          "sector": "Sustainable Blue Economy",
+          "country": "thailand",
+          "snippet": "The report indicates that Israel strikes Iran’s Assembly of Experts site as succession vote looms March 03, 2026 Israel struck a site tied to Iran’s Assembly of Experts in Qom, with reports conflicting over whether clerics were meeting to pick a new leader."
+        }
+      ]
     },
     {
       "name": "Climate Change",
       "items": [
-        {
-          "id": "6962f27b04e1",
-          "title": "Malaysia to integrate water pricing into national adaptation plan, says environment ministry",
-          "url": "https://www.eco-business.com/news/malaysia-to-integrate-water-pricing-into-national-adaptation-plan-says-environment-ministry/",
-          "originalUrl": "https://www.eco-business.com/news/malaysia-to-integrate-water-pricing-into-national-adaptation-plan-says-environment-ministry/",
-          "verifiedUrl": "https://www.eco-business.com/news/malaysia-to-integrate-water-pricing-into-national-adaptation-plan-says-environment-ministry/",
-          "publisher": "Eco-Business - News",
-          "publishedAt": "2026-03-02",
-          "sourcePublishedAt": "2026-03-02",
-          "source": "Eco-Business - News",
-          "sector": "Climate Change",
-          "country": "regional",
-          "snippet": "The impacts of deforestation must also be counted towards the true cost of water, the ministry’s secretary-general said. The country's first fair share carbon budget report could help strengthen the government’s forest conservation efforts."
-        },
         {
           "id": "8460a8e29f30",
           "title": "Agriculture Is Taking Over Grasslands, Wetlands and Other Overlooked Ecosystems",
@@ -36,6 +107,20 @@
           "sector": "Climate Change",
           "country": "regional",
           "snippet": "Across the world, farmland is replacing some of our most important ecosystems."
+        },
+        {
+          "id": "6962f27b04e1",
+          "title": "Malaysia to integrate water pricing into national adaptation plan, says environment ministry",
+          "url": "https://www.eco-business.com/news/malaysia-to-integrate-water-pricing-into-national-adaptation-plan-says-environment-ministry/",
+          "originalUrl": "https://www.eco-business.com/news/malaysia-to-integrate-water-pricing-into-national-adaptation-plan-says-environment-ministry/",
+          "verifiedUrl": "https://www.eco-business.com/news/malaysia-to-integrate-water-pricing-into-national-adaptation-plan-says-environment-ministry/",
+          "publisher": "Eco-Business - News",
+          "publishedAt": "2026-03-02",
+          "sourcePublishedAt": "2026-03-02",
+          "source": "Eco-Business - News",
+          "sector": "Climate Change",
+          "country": "malaysia",
+          "snippet": "The impacts of deforestation must also be counted towards the true cost of water, the ministry’s secretary-general said. The country's first fair share carbon budget report could help strengthen the government’s forest conservation efforts."
         },
         {
           "id": "078a4fc2e68c",
@@ -81,7 +166,7 @@
           "sourcePublishedAt": "2026-01-22",
           "source": "AMTI - CSIS",
           "sector": "Maritime Security",
-          "country": "regional",
+          "country": "indonesia",
           "snippet": "This article is written in response to Navigating the Divide: Why the U.S. Navy Must Resume FONOPs in Indonesia by Patrick Panjeti, Military Fellow at the CSIS Defence and Security Department. 1. Introduction: Misrepresenting Indonesia’s Legal Commitments In his essay “Navigating the Divide,” Patrick Panjeti presents a"
         },
         {
@@ -95,7 +180,7 @@
           "sourcePublishedAt": "2026-01-21",
           "source": "AMTI - CSIS",
           "sector": "Maritime Security",
-          "country": "regional",
+          "country": "philippines",
           "snippet": "Southeast Asia is quietly entering a new strategic era, one defined not by the size of a navy’s fleet, but by the range of its missiles. Across the region, an emerging pattern is becoming visible. Vietnam, the Philippines, and Indonesia are each moving rapidly to establish anti-access/area-denial (A2/AD) postures. For "
         },
         {
@@ -109,7 +194,7 @@
           "sourcePublishedAt": "2025-11-25",
           "source": "AMTI - CSIS",
           "sector": "Maritime Security",
-          "country": "regional",
+          "country": "philippines",
           "snippet": "For years, China has promoted the idea of “shelving disputes” in the South China Sea and focusing on areas of cooperation. Southeast Asian claimants—Brunei, Malaysia, the Philippines, and Vietnam—have been receptive to this approach to varying degrees. While this strategy brings significant economic benefits, it carrie"
         },
         {
@@ -123,7 +208,7 @@
           "sourcePublishedAt": "2025-11-21",
           "source": "AMTI - CSIS",
           "sector": "Maritime Security",
-          "country": "regional",
+          "country": "philippines",
           "snippet": "Introduction On September 10, China approved the establishment of a nature reserve at Scarborough Shoal, also known as Bajo de Masinloc in Tagalog or Huangyan Dao in Chinese, a coral atoll whose sovereignty is under dispute between China and the Philippines. According to Beijing, the reserve covers approximately one ac"
         },
         {
@@ -137,7 +222,7 @@
           "sourcePublishedAt": "2025-06-24",
           "source": "AMTI - CSIS",
           "sector": "Maritime Security",
-          "country": "regional",
+          "country": "malaysia",
           "snippet": "In early May this year, the Malaysian government considered replacing the Tun Sharifah Rodziah static offshore forward operating base with a Mobile Offshore Base (MOB). This shift in thinking is not merely a logistical upgrade but a timely and strategic recalibration of the country’s maritime security architecture. Def"
         },
         {
@@ -151,7 +236,7 @@
           "sourcePublishedAt": "2025-03-20",
           "source": "AMTI - CSIS",
           "sector": "Maritime Security",
-          "country": "regional",
+          "country": "indonesia",
           "snippet": "Does Indonesia have a maritime strategy? There are two ways to approach this question: First, Jakarta does not have universally agreed national guidelines on maritime strategy. However, it consistently refers to three historical reference points: the Struggle for Independence (1945–49), the Djuanda Declaration (1957), "
         },
         {
@@ -165,7 +250,7 @@
           "sourcePublishedAt": "2025-03-03",
           "source": "AMTI - CSIS",
           "sector": "Maritime Security",
-          "country": "regional",
+          "country": "philippines",
           "snippet": "The Philippines and the United States need to think about deterrence – as an Alliance – as President Donald Trump’s government lays out its future Indo-Pacific Strategy. The Philippines is likely to be in solidarity with how the second Trump administration will approach China. The Philippines also has room to be more p"
         },
         {
@@ -179,99 +264,14 @@
           "sourcePublishedAt": "2024-11-14",
           "source": "AMTI - CSIS",
           "sector": "Maritime Security",
-          "country": "regional",
+          "country": "philippines",
           "snippet": "On November 9, 2024, Philippine president Ferdinand Marcos Jr. signed into law both the Philippine Maritime Zones Act and the Philippine Archipelagic Sea Lanes (ASL Act). Observers have been particularly focused on the Philippine Maritime Zones Act for intensifying the dispute between China and the Philippines, but it "
         }
       ]
     },
     {
-      "name": "Sustainable Blue Economy",
-      "items": [
-        {
-          "id": "f96facbc7230",
-          "title": "Iran conflict could push up costs, govt’s fuel subsidy bill, say economists",
-          "url": "https://www.freemalaysiatoday.com/category/nation/2026/03/04/iran-conflict-could-push-up-costs-govts-fuel-subsidy-bill-say-economists",
-          "originalUrl": "https://www.freemalaysiatoday.com/category/nation/2026/03/04/iran-conflict-could-push-up-costs-govts-fuel-subsidy-bill-say-economists",
-          "verifiedUrl": "https://www.freemalaysiatoday.com/category/nation/2026/03/04/iran-conflict-could-push-up-costs-govts-fuel-subsidy-bill-say-economists",
-          "publisher": "Free Malaysia Today",
-          "publishedAt": "2026-03-03",
-          "sourcePublishedAt": "2026-03-03",
-          "source": "Free Malaysia Today",
-          "sector": "Sustainable Blue Economy",
-          "country": "malaysia",
-          "snippet": "Sunway University’s Yeah Kim Leng says disruptions in shipping due to the ongoing war will have cascading impacts."
-        },
-        {
-          "id": "751478b3670f",
-          "title": "Fuel shortage hits Shan State as imports from Thailand halt over Iran conflict",
-          "url": "https://myanmar-now.org/en/news/fuel-shortage-hits-shan-state-as-imports-from-thailand-halt-over-iran-conflict/",
-          "originalUrl": "https://myanmar-now.org/en/news/fuel-shortage-hits-shan-state-as-imports-from-thailand-halt-over-iran-conflict/",
-          "verifiedUrl": "https://myanmar-now.org/en/news/fuel-shortage-hits-shan-state-as-imports-from-thailand-halt-over-iran-conflict/",
-          "publisher": "Myanmar Now",
-          "publishedAt": "2026-03-03",
-          "sourcePublishedAt": "2026-03-03",
-          "source": "Myanmar Now",
-          "sector": "Sustainable Blue Economy",
-          "country": "myanmar",
-          "snippet": "A protracted war in the Middle East could have a severe impact on energy supplies in Myanmar and the rest of the region"
-        },
-        {
-          "id": "cd6c8dd6587b",
-          "title": "Strait of Hormuz: why it matters to global shipping and energy",
-          "url": "https://www.nationthailand.com/news/world/40063181",
-          "originalUrl": "https://www.nationthailand.com/news/world/40063181",
-          "verifiedUrl": "https://www.nationthailand.com/news/world/40063181",
-          "publisher": "nationthailand.com",
-          "publishedAt": "",
-          "sourcePublishedAt": "",
-          "source": "Nation Thailand",
-          "sector": "Sustainable Blue Economy",
-          "country": "thailand",
-          "snippet": "The report indicates that why it matters to global shipping and energy."
-        },
-        {
-          "id": "a41fce7b07f8",
-          "title": "Thai exports to Iran face disruption risk as conflict escalates; fruit, rubber shipments most exposed",
-          "url": "https://www.nationthailand.com/business/trade/40063158",
-          "originalUrl": "https://www.nationthailand.com/business/trade/40063158",
-          "verifiedUrl": "https://www.nationthailand.com/business/trade/40063158",
-          "publisher": "nationthailand.com",
-          "publishedAt": "",
-          "sourcePublishedAt": "",
-          "source": "Nation Thailand",
-          "sector": "Sustainable Blue Economy",
-          "country": "thailand",
-          "snippet": "The report indicates that Thai exports to Iran face disruption risk as conflict escalates; fruit, rubber shipments most exposed."
-        },
-        {
-          "id": "28a45b9a6b0c",
-          "title": "Empty shelves across Myanmar as Thai imports disappear",
-          "url": "https://myanmar-now.org/en/news/empty-shelves-across-myanmar-as-thai-imports-disappear/",
-          "originalUrl": "https://myanmar-now.org/en/news/empty-shelves-across-myanmar-as-thai-imports-disappear/",
-          "verifiedUrl": "https://myanmar-now.org/en/news/empty-shelves-across-myanmar-as-thai-imports-disappear/",
-          "publisher": "Myanmar Now",
-          "publishedAt": "2026-02-26",
-          "sourcePublishedAt": "2026-02-26",
-          "source": "Myanmar Now",
-          "sector": "Sustainable Blue Economy",
-          "country": "myanmar",
-          "snippet": "From snacks to medicine, goods once trucked across the Thai border have vanished following tightened import controls, border gate closures, and a crackdown on “illegal” trade"
-        },
-        {
-          "id": "ba5b4e1f5b5f",
-          "title": "Israel strikes Iran’s Assembly of Experts site as succession vote looms March 03, 2026 Israel struck a site tied to Iran’s Assembly of Experts in Qom, with reports conflicting over whether clerics were meeting to pick a new leader",
-          "url": "https://www.nationthailand.com/news/world/40063265",
-          "originalUrl": "https://www.nationthailand.com/news/world/40063265",
-          "verifiedUrl": "https://www.nationthailand.com/news/world/40063265",
-          "publisher": "nationthailand.com",
-          "publishedAt": "",
-          "sourcePublishedAt": "",
-          "source": "Nation Thailand",
-          "sector": "Sustainable Blue Economy",
-          "country": "thailand",
-          "snippet": "The report indicates that Israel strikes Iran’s Assembly of Experts site as succession vote looms March 03, 2026 Israel struck a site tied to Iran’s Assembly of Experts in Qom, with reports conflicting over whether clerics were meeting to pick a new leader."
-        }
-      ]
+      "name": "Sustainable Fisheries",
+      "items": []
     },
     {
       "name": "Marine Pollution",
@@ -301,7 +301,7 @@
           "sourcePublishedAt": "",
           "source": "Mongabay - Asia",
           "sector": "Marine Pollution",
-          "country": "regional",
+          "country": "philippines",
           "snippet": "The report indicates that Deadly landfill collapse exposes risks faced by Philippines’ waste pickers Michael Beltran 2 Mar 2026."
         }
       ]
