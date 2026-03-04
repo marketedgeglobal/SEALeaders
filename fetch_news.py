@@ -344,7 +344,7 @@ MAX_ITEMS_PER_PUBLISHER = int(os.getenv("MAX_ITEMS_PER_PUBLISHER", "3"))
 MAX_ITEMS_PER_COUNTRY = int(os.getenv("MAX_ITEMS_PER_COUNTRY", "6"))
 MAX_FEED_ENTRIES_PER_SOURCE = int(os.getenv("MAX_FEED_ENTRIES_PER_SOURCE", "36"))
 ENABLE_ARTICLE_EXCERPT_FETCH = os.getenv("ENABLE_ARTICLE_EXCERPT_FETCH", "1") == "1"
-ENABLE_URL_RESOLVE = os.getenv("ENABLE_URL_RESOLVE", "0") == "1"
+ENABLE_URL_RESOLVE = os.getenv("ENABLE_URL_RESOLVE", "1") == "1"
 OUTPUT_PATH = "docs/data/latest.json"
 HTTP_HEADERS = {
     "User-Agent": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/122.0 Safari/537.36"
@@ -1247,12 +1247,12 @@ def _extract_items(feed_name: str, feed_url: str, mode: str = "feed") -> list[di
         published = (entry.get("published") or entry.get("updated") or "").strip()
         title, publisher = _split_title_and_publisher(raw_title, feed_name)
         feed_excerpt = _extract_feed_summary_excerpt(summary)
-        snippet = _best_snippet(feed_excerpt or summary, title, publisher)
+        context_snippet = _best_snippet(feed_excerpt or summary, title, publisher)
 
         if not title or not link:
             continue
 
-        if not _passes_sow_focus(title, summary, snippet):
+        if not _passes_sow_focus(title, summary, context_snippet):
             continue
 
         sector = _categorize(title, summary)
@@ -1261,7 +1261,7 @@ def _extract_items(feed_name: str, feed_url: str, mode: str = "feed") -> list[di
 
         is_valid, _, _ = is_relevant(title, summary)
         if not is_valid:
-            is_direct_context_match = feed_name in REGIONAL_CONTEXT_FEEDS and _passes_sow_focus(title, summary, snippet)
+            is_direct_context_match = feed_name in REGIONAL_CONTEXT_FEEDS and _passes_sow_focus(title, summary, context_snippet)
             if not is_direct_context_match:
                 continue
 
@@ -1270,9 +1270,8 @@ def _extract_items(feed_name: str, feed_url: str, mode: str = "feed") -> list[di
         excerpt = ""
         if ENABLE_ARTICLE_EXCERPT_FETCH:
             excerpt = _extract_article_excerpt(verified_url, title, clean_publisher)
-        if excerpt:
-            snippet = excerpt
-        country = _detect_country(title, snippet, feed_name, clean_publisher, verified_url)
+        snippet = excerpt or ""
+        country = _detect_country(title, context_snippet or summary, feed_name, clean_publisher, verified_url)
 
         results.append(
             {
