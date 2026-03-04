@@ -194,10 +194,22 @@ FEEDS = [
         "name": "WRI - Insights",
         "url": "https://www.wri.org/insights/rss.xml",
     },
+    {
+        "name": "Google News - ASEAN Fisheries",
+        "url": "https://news.google.com/rss/search?q=ASEAN+fisheries+aquaculture+Southeast+Asia&hl=en-US&gl=US&ceid=US:en",
+    },
+    {
+        "name": "Google News - SEA Coastal Fisheries",
+        "url": "https://news.google.com/rss/search?q=Southeast+Asia+coastal+fisheries+community&hl=en-US&gl=US&ceid=US:en",
+    },
+    {
+        "name": "Google News - SEA Seafood Trade",
+        "url": "https://news.google.com/rss/search?q=Southeast+Asia+seafood+trade+fisheries&hl=en-US&gl=US&ceid=US:en",
+    },
 ]
 
 SECTORS = [
-    "Sustainable Blue Economy",
+    "Blue Economy",
     "Climate Change",
     "Maritime Security",
     "Sustainable Fisheries",
@@ -205,7 +217,28 @@ SECTORS = [
 ]
 
 SECTOR_KEYWORDS = {
-    "Sustainable Fisheries": ["fisheries", "fishery", "fishing", "aquaculture", "fish stocks"],
+    "Sustainable Fisheries": [
+        "fisheries",
+        "fishery",
+        "fishing",
+        "aquaculture",
+        "fish stocks",
+        "fishers",
+        "fisherfolk",
+        "small-scale fishers",
+        "seafood",
+        "seafood trade",
+        "fish landing",
+        "fish catch",
+        "fish market",
+        "fish supply chain",
+        "hatchery",
+        "tuna",
+        "shrimp",
+        "illegal fishing",
+        "iuu",
+        "stock assessment",
+    ],
     "Climate Change": [
         "climate",
         "sea level",
@@ -224,7 +257,27 @@ SECTOR_KEYWORDS = {
         "storm surge",
     ],
     "Maritime Security": ["maritime", "security", "sovereignty", "navy", "patrol", "piracy", "south china sea"],
-    "Sustainable Blue Economy": ["blue economy", "shipping", "ports", "coastal livelihoods", "ocean economy"],
+    "Blue Economy": [
+        "blue economy",
+        "ocean economy",
+        "coastal livelihoods",
+        "investment",
+        "finance",
+        "trade",
+        "exports",
+        "value chain",
+        "ecotourism",
+        "circular economy",
+        "innovation",
+        "startup",
+        "technology",
+        "shipping",
+        "ports",
+        "plastic reduction",
+        "waste reduction",
+        "recycling",
+        "resource efficiency",
+    ],
     "Marine Pollution": [
         "marine pollution",
         "pollution",
@@ -300,11 +353,19 @@ REGIONAL_CONTEXT_FEEDS = {
     "AMTI - CSIS",
     "Stimson Center",
     "WRI - Insights",
+    "Google News - ASEAN Fisheries",
+    "Google News - SEA Coastal Fisheries",
+    "Google News - SEA Seafood Trade",
 }
 
 SEA_CONTEXT_MARKERS = (
     "southeast asia",
     "asean",
+    "asia pacific",
+    "asia-pacific",
+    "indo-pacific",
+    "mekong",
+    "south china sea",
     "vietnam",
     "thailand",
     "philippines",
@@ -429,6 +490,9 @@ FEED_COUNTRY_HINTS = {
     "AMTI - CSIS": "regional",
     "Stimson Center": "regional",
     "WRI - Insights": "regional",
+    "Google News - ASEAN Fisheries": "regional",
+    "Google News - SEA Coastal Fisheries": "regional",
+    "Google News - SEA Seafood Trade": "regional",
 }
 
 WEB_SOURCE_BLOCKLIST = (
@@ -1180,7 +1244,7 @@ def build_latest_json() -> dict:
                 ],
             },
             {
-                "name": "Sustainable Blue Economy",
+                "name": "Blue Economy",
                 "items": [
                     {
                         "id": "placeholder-blue",
@@ -1190,7 +1254,7 @@ def build_latest_json() -> dict:
                         "publishedAt": datetime.now(timezone.utc).date().isoformat(),
                         "sourcePublishedAt": datetime.now(timezone.utc).date().isoformat(),
                         "source": "Placeholder",
-                        "sector": "Sustainable Blue Economy",
+                        "sector": "Blue Economy",
                         "snippet": "Placeholder story shown because no live items passed filters.",
                     }
                 ],

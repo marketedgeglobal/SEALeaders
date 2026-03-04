@@ -1,9 +1,9 @@
 {
-  "runAt": "2026-03-04T01:04:43.203870+00:00",
-  "totalItems": 19,
+  "runAt": "2026-03-04T01:09:21.373615+00:00",
+  "totalItems": 29,
   "sectors": [
     {
-      "name": "Sustainable Blue Economy",
+      "name": "Blue Economy",
       "items": [
         {
           "id": "28a45b9a6b0c",
@@ -15,9 +15,23 @@
           "publishedAt": "2026-02-26",
           "sourcePublishedAt": "2026-02-26",
           "source": "Myanmar Now",
-          "sector": "Sustainable Blue Economy",
+          "sector": "Blue Economy",
           "country": "thailand",
           "snippet": "From snacks to medicine, goods once trucked across the Thai border have vanished following tightened import controls, border gate closures, and a crackdown on “illegal” trade"
+        },
+        {
+          "id": "f89a2b52891a",
+          "title": "Academia The information technology stakes in the US-Indonesia trade deal",
+          "url": "https://www.thejakartapost.com/opinion/2026/03/04/the-information-technology-stakes-in-the-us-indonesia-trade-deal.html?utm_source=(direct)&utm_medium=home_latest",
+          "originalUrl": "https://www.thejakartapost.com/opinion/2026/03/04/the-information-technology-stakes-in-the-us-indonesia-trade-deal.html?utm_source=(direct)&utm_medium=home_latest",
+          "verifiedUrl": "https://www.thejakartapost.com/opinion/2026/03/04/the-information-technology-stakes-in-the-us-indonesia-trade-deal.html?utm_source=(direct)&utm_medium=home_latest",
+          "publisher": "thejakartapost.com",
+          "publishedAt": "",
+          "sourcePublishedAt": "",
+          "source": "The Jakarta Post",
+          "sector": "Blue Economy",
+          "country": "indonesia",
+          "snippet": "The report indicates that Academia The information technology stakes in the US-Indonesia trade deal."
         }
       ]
     },
@@ -39,18 +53,18 @@
           "snippet": "[Updated March 3, 2026, 7:32 p.m.] MANILA, Philippines — The El Niño phenomenon may start developing by August to October this year, according to the Philippine Atmospheric, Geophysical and Astronomical Services Administration (Pagasa). In an interview with the INQUIRER, Pagasa Climate Monitoring and Prediction Section"
         },
         {
-          "id": "6962f27b04e1",
-          "title": "Malaysia to integrate water pricing into national adaptation plan, says environment ministry",
-          "url": "https://www.eco-business.com/news/malaysia-to-integrate-water-pricing-into-national-adaptation-plan-says-environment-ministry/",
-          "originalUrl": "https://www.eco-business.com/news/malaysia-to-integrate-water-pricing-into-national-adaptation-plan-says-environment-ministry/",
-          "verifiedUrl": "https://www.eco-business.com/news/malaysia-to-integrate-water-pricing-into-national-adaptation-plan-says-environment-ministry/",
+          "id": "71070ae00275",
+          "title": "Asia Pacific insurers warn climate shocks are becoming a systemic financial threat",
+          "url": "https://www.eco-business.com/news/asia-pacific-insurers-warn-climate-shocks-are-becoming-a-systemic-financial-threat/",
+          "originalUrl": "https://www.eco-business.com/news/asia-pacific-insurers-warn-climate-shocks-are-becoming-a-systemic-financial-threat/",
+          "verifiedUrl": "https://www.eco-business.com/news/asia-pacific-insurers-warn-climate-shocks-are-becoming-a-systemic-financial-threat/",
           "publisher": "Eco-Business - News",
           "publishedAt": "2026-03-02",
           "sourcePublishedAt": "2026-03-02",
           "source": "Eco-Business - News",
           "sector": "Climate Change",
-          "country": "malaysia",
-          "snippet": "The impacts of deforestation must also be counted towards the true cost of water, the ministry’s secretary-general said. The country's first fair share carbon budget report could help strengthen the government’s forest conservation efforts."
+          "country": "regional",
+          "snippet": "Insurance companies increasingly worry that escalating climate extremes could destabilise financial systems, not their balance sheets – an anxiety felt acutely in Asia Pacific, a MSCI study finds."
         },
         {
           "id": "0d575665ab8e",
@@ -67,20 +81,6 @@
           "snippet": "The programme receives technical support from the Fertilise Right project funded by the United States Department of Agriculture (USDA)."
         },
         {
-          "id": "8460a8e29f30",
-          "title": "Agriculture Is Taking Over Grasslands, Wetlands and Other Overlooked Ecosystems",
-          "url": "https://www.wri.org/insights/cropland-expansion-impacts-people-planet",
-          "originalUrl": "https://www.wri.org/insights/global-ecosystem-conversion-grassland-wetland-savanna-to-agriculture",
-          "verifiedUrl": "https://www.wri.org/insights/cropland-expansion-impacts-people-planet",
-          "publisher": "WRI - Insights",
-          "publishedAt": "2026-02-25",
-          "sourcePublishedAt": "2026-02-25",
-          "source": "WRI - Insights",
-          "sector": "Climate Change",
-          "country": "regional",
-          "snippet": "Across the world, farmland is replacing some of our most important ecosystems."
-        },
-        {
           "id": "6fd827286c5a",
           "title": "Myanmar elections marked by fear as UN warns civilians are coerced from all sides",
           "url": "https://news.un.org/feed/view/en/story/2025/12/1166662",
@@ -93,6 +93,20 @@
           "sector": "Climate Change",
           "country": "myanmar",
           "snippet": "As Myanmar approaches elections scheduled for 28 December, the UN’s top human rights official has said that civilians are being coerced from all sides – forced by the military to vote and threatened by armed opposition groups to boycott – in a climate of fear, violence and mass repression."
+        },
+        {
+          "id": "6962f27b04e1",
+          "title": "Malaysia to integrate water pricing into national adaptation plan, says environment ministry",
+          "url": "https://www.eco-business.com/news/malaysia-to-integrate-water-pricing-into-national-adaptation-plan-says-environment-ministry/",
+          "originalUrl": "https://www.eco-business.com/news/malaysia-to-integrate-water-pricing-into-national-adaptation-plan-says-environment-ministry/",
+          "verifiedUrl": "https://www.eco-business.com/news/malaysia-to-integrate-water-pricing-into-national-adaptation-plan-says-environment-ministry/",
+          "publisher": "Eco-Business - News",
+          "publishedAt": "2026-03-02",
+          "sourcePublishedAt": "2026-03-02",
+          "source": "Eco-Business - News",
+          "sector": "Climate Change",
+          "country": "malaysia",
+          "snippet": "The impacts of deforestation must also be counted towards the true cost of water, the ministry’s secretary-general said. The country's first fair share carbon budget report could help strengthen the government’s forest conservation efforts."
         },
         {
           "id": "4f4a891b8dad",
@@ -109,52 +123,38 @@
           "snippet": "The report indicates that Indonesia faces scrutiny over permit revocations following deadly floods and landslides Hans Nicholas Jong 20 Feb 2026."
         },
         {
-          "id": "078a4fc2e68c",
-          "title": "What's the Climate Cost of Growing Crops?",
-          "url": "https://www.nature.com/articles/s41558-026-02558-4",
-          "originalUrl": "https://www.wri.org/insights/climate-emissions-growing-crops",
-          "verifiedUrl": "https://www.nature.com/articles/s41558-026-02558-4",
+          "id": "8460a8e29f30",
+          "title": "Agriculture Is Taking Over Grasslands, Wetlands and Other Overlooked Ecosystems",
+          "url": "https://www.wri.org/insights/cropland-expansion-impacts-people-planet",
+          "originalUrl": "https://www.wri.org/insights/global-ecosystem-conversion-grassland-wetland-savanna-to-agriculture",
+          "verifiedUrl": "https://www.wri.org/insights/cropland-expansion-impacts-people-planet",
           "publisher": "WRI - Insights",
-          "publishedAt": "2026-02-13",
-          "sourcePublishedAt": "2026-02-13",
+          "publishedAt": "2026-02-25",
+          "sourcePublishedAt": "2026-02-25",
           "source": "WRI - Insights",
           "sector": "Climate Change",
           "country": "regional",
-          "snippet": "Emissions from land used to grow crops for food, animal feed, fiber, fuel and more, known as croplands, are often overlooked. But they are far from insignificant. New maps of crop emissions from a global collaboration of universities and international research institutions, led by Cornell University and Land & Carbon L"
+          "snippet": "Across the world, farmland is replacing some of our most important ecosystems."
         },
         {
-          "id": "ce25583d12dd",
-          "title": "Climate Action Can Be One of the World’s Biggest Job Creators",
-          "url": "https://www.wri.org/research/jobs-skills-new-economy-action-agenda",
-          "originalUrl": "https://www.wri.org/insights/climate-action-job-creation",
-          "verifiedUrl": "https://www.wri.org/research/jobs-skills-new-economy-action-agenda",
-          "publisher": "WRI - Insights",
-          "publishedAt": "2026-02-12",
-          "sourcePublishedAt": "2026-02-12",
-          "source": "WRI - Insights",
+          "id": "72b2f2237568",
+          "title": "Southeast Asian countries advance climate-smart agriculture through regional cooperation",
+          "url": "https://news.google.com/rss/articles/CBMi1wFBVV95cUxPZVJaZkI2UUtKdU5XSTA5LWdWVWpoS2xqMFNFSnBUb001WXlzYkVfdG9ySndtVkZUYWRkaXByLWV0ckdoTjFVM3hoeDkyUXFYN0xhcUJ1Q2ljeUhpMDVMRXJ0aU84YUphNExEUUNXdi1Dd2lESkNXNlE4VTI0M29FQWhGdFBNQVdtblZWZk9kd28zRF9jS2RVTmxickJodzJEbzltU2pXN3d2Z2t5bU9mUnAzakFmblZPMXVlQ2lBSkh0SjdhdnlFc2Q2ek9hODhTTnEwNGtZYw?oc=5",
+          "originalUrl": "https://news.google.com/rss/articles/CBMi1wFBVV95cUxPZVJaZkI2UUtKdU5XSTA5LWdWVWpoS2xqMFNFSnBUb001WXlzYkVfdG9ySndtVkZUYWRkaXByLWV0ckdoTjFVM3hoeDkyUXFYN0xhcUJ1Q2ljeUhpMDVMRXJ0aU84YUphNExEUUNXdi1Dd2lESkNXNlE4VTI0M29FQWhGdFBNQVdtblZWZk9kd28zRF9jS2RVTmxickJodzJEbzltU2pXN3d2Z2t5bU9mUnAzakFmblZPMXVlQ2lBSkh0SjdhdnlFc2Q2ek9hODhTTnEwNGtZYw?oc=5",
+          "verifiedUrl": "https://news.google.com/rss/articles/CBMi1wFBVV95cUxPZVJaZkI2UUtKdU5XSTA5LWdWVWpoS2xqMFNFSnBUb001WXlzYkVfdG9ySndtVkZUYWRkaXByLWV0ckdoTjFVM3hoeDkyUXFYN0xhcUJ1Q2ljeUhpMDVMRXJ0aU84YUphNExEUUNXdi1Dd2lESkNXNlE4VTI0M29FQWhGdFBNQVdtblZWZk9kd28zRF9jS2RVTmxickJodzJEbzltU2pXN3d2Z2t5bU9mUnAzakFmblZPMXVlQ2lBSkh0SjdhdnlFc2Q2ek9hODhTTnEwNGtZYw?oc=5",
+          "publisher": "Food and Agriculture Organization",
+          "publishedAt": "2025-01-24",
+          "sourcePublishedAt": "2025-01-24",
+          "source": "Google News - ASEAN Fisheries",
           "sector": "Climate Change",
           "country": "regional",
-          "snippet": "We are in the midst of a great economic shift — one that will shape livelihoods and growth for decades to come."
+          "snippet": "The report indicates that Southeast Asian countries advance climate-smart agriculture through regional cooperation."
         }
       ]
     },
     {
       "name": "Maritime Security",
       "items": [
-        {
-          "id": "0be45ecf8896",
-          "title": "Reassessing the Legal Grounds of Freedom of Navigation in Indonesia’s Archipelagic Waters",
-          "url": "https://amti.csis.org/reassessing-the-legal-grounds-of-freedom-of-navigation-in-indonesias-archipelagic-waters/",
-          "originalUrl": "https://amti.csis.org/reassessing-the-legal-grounds-of-freedom-of-navigation-in-indonesias-archipelagic-waters/",
-          "verifiedUrl": "https://amti.csis.org/reassessing-the-legal-grounds-of-freedom-of-navigation-in-indonesias-archipelagic-waters/",
-          "publisher": "AMTI - CSIS",
-          "publishedAt": "2026-01-22",
-          "sourcePublishedAt": "2026-01-22",
-          "source": "AMTI - CSIS",
-          "sector": "Maritime Security",
-          "country": "indonesia",
-          "snippet": "This article is written in response to Navigating the Divide: Why the U.S. Navy Must Resume FONOPs in Indonesia by Patrick Panjeti, Military Fellow at the CSIS Defence and Security Department. 1. Introduction: Misrepresenting Indonesia’s Legal Commitments In his essay “Navigating the Divide,” Patrick Panjeti presents a"
-        },
         {
           "id": "ad1f4ff54240",
           "title": "Missiles Over Fleets: How A2/AD is Redefining Maritime Power in Southeast Asia",
@@ -182,6 +182,48 @@
           "sector": "Maritime Security",
           "country": "malaysia",
           "snippet": "In early May this year, the Malaysian government considered replacing the Tun Sharifah Rodziah static offshore forward operating base with a Mobile Offshore Base (MOB). This shift in thinking is not merely a logistical upgrade but a timely and strategic recalibration of the country’s maritime security architecture. Def"
+        },
+        {
+          "id": "0be45ecf8896",
+          "title": "Reassessing the Legal Grounds of Freedom of Navigation in Indonesia’s Archipelagic Waters",
+          "url": "https://amti.csis.org/reassessing-the-legal-grounds-of-freedom-of-navigation-in-indonesias-archipelagic-waters/",
+          "originalUrl": "https://amti.csis.org/reassessing-the-legal-grounds-of-freedom-of-navigation-in-indonesias-archipelagic-waters/",
+          "verifiedUrl": "https://amti.csis.org/reassessing-the-legal-grounds-of-freedom-of-navigation-in-indonesias-archipelagic-waters/",
+          "publisher": "AMTI - CSIS",
+          "publishedAt": "2026-01-22",
+          "sourcePublishedAt": "2026-01-22",
+          "source": "AMTI - CSIS",
+          "sector": "Maritime Security",
+          "country": "indonesia",
+          "snippet": "This article is written in response to Navigating the Divide: Why the U.S. Navy Must Resume FONOPs in Indonesia by Patrick Panjeti, Military Fellow at the CSIS Defence and Security Department. 1. Introduction: Misrepresenting Indonesia’s Legal Commitments In his essay “Navigating the Divide,” Patrick Panjeti presents a"
+        },
+        {
+          "id": "6d1e4ed3fc6a",
+          "title": "IP23004 | The Maritime Security Roles of the Fishing Industry in Southeast Asia",
+          "url": "https://news.google.com/rss/articles/CBMivAFBVV95cUxORFpFNXJxQ2wtek5IVU40cEJpY1FLcGwxMmZQVVRSZkhHSGNHalFvZVFpUmhnMXdPZVZIcXhfOXd1Mm5uZVBCNDE2ZE0xY1c4TllidUVfWEhPc2c4RmFib0czZ0RORHdSMHlQY25KR1U4YVVmQ0F3UUp2YmxXbVRmak15cXRta3lPSFRoQkdMLXduSzlqZGVHRG15UzRtN0wxUENDTzd1dVpMeTFxR2V0NTIyR3lfS3g3Q1ViUQ?oc=5",
+          "originalUrl": "https://news.google.com/rss/articles/CBMivAFBVV95cUxORFpFNXJxQ2wtek5IVU40cEJpY1FLcGwxMmZQVVRSZkhHSGNHalFvZVFpUmhnMXdPZVZIcXhfOXd1Mm5uZVBCNDE2ZE0xY1c4TllidUVfWEhPc2c4RmFib0czZ0RORHdSMHlQY25KR1U4YVVmQ0F3UUp2YmxXbVRmak15cXRta3lPSFRoQkdMLXduSzlqZGVHRG15UzRtN0wxUENDTzd1dVpMeTFxR2V0NTIyR3lfS3g3Q1ViUQ?oc=5",
+          "verifiedUrl": "https://news.google.com/rss/articles/CBMivAFBVV95cUxORFpFNXJxQ2wtek5IVU40cEJpY1FLcGwxMmZQVVRSZkhHSGNHalFvZVFpUmhnMXdPZVZIcXhfOXd1Mm5uZVBCNDE2ZE0xY1c4TllidUVfWEhPc2c4RmFib0czZ0RORHdSMHlQY25KR1U4YVVmQ0F3UUp2YmxXbVRmak15cXRta3lPSFRoQkdMLXduSzlqZGVHRG15UzRtN0wxUENDTzd1dVpMeTFxR2V0NTIyR3lfS3g3Q1ViUQ?oc=5",
+          "publisher": "S. Rajaratnam School of International Studies (RSIS)",
+          "publishedAt": "2023-01-09",
+          "sourcePublishedAt": "2023-01-09",
+          "source": "Google News - ASEAN Fisheries",
+          "sector": "Maritime Security",
+          "country": "regional",
+          "snippet": "The report indicates that IP23004 | The Maritime Security Roles of the Fishing Industry in Southeast Asia."
+        },
+        {
+          "id": "6bee27ad6836",
+          "title": "Oceans of Opportunity: Southeast Asia’s Shared Maritime Challenges",
+          "url": "https://news.google.com/rss/articles/CBMilgFBVV95cUxQV0RLdEJpWjNLVVpLeXpvaGo4UWRQSHh5RkZ5emFmd0ctdWMtajQ3VWV4cGRBR05ZY0ZpbF9FN1g5RnJ6eVNwemtGaFpJbTNaOWhyVnpMY093YVhNOTRtMWRueXFxZHVqRmpDZFBBUERjRjRYNmthYUx6VERmTTJjQXZRcWNLYVU5MERKSG5yM3RGRWpSV0E?oc=5",
+          "originalUrl": "https://news.google.com/rss/articles/CBMilgFBVV95cUxQV0RLdEJpWjNLVVpLeXpvaGo4UWRQSHh5RkZ5emFmd0ctdWMtajQ3VWV4cGRBR05ZY0ZpbF9FN1g5RnJ6eVNwemtGaFpJbTNaOWhyVnpMY093YVhNOTRtMWRueXFxZHVqRmpDZFBBUERjRjRYNmthYUx6VERmTTJjQXZRcWNLYVU5MERKSG5yM3RGRWpSV0E?oc=5",
+          "verifiedUrl": "https://news.google.com/rss/articles/CBMilgFBVV95cUxQV0RLdEJpWjNLVVpLeXpvaGo4UWRQSHh5RkZ5emFmd0ctdWMtajQ3VWV4cGRBR05ZY0ZpbF9FN1g5RnJ6eVNwemtGaFpJbTNaOWhyVnpMY093YVhNOTRtMWRueXFxZHVqRmpDZFBBUERjRjRYNmthYUx6VERmTTJjQXZRcWNLYVU5MERKSG5yM3RGRWpSV0E?oc=5",
+          "publisher": "CSIS | Center for Strategic and International Studies",
+          "publishedAt": "2021-09-10",
+          "sourcePublishedAt": "2021-09-10",
+          "source": "Google News - SEA Coastal Fisheries",
+          "sector": "Maritime Security",
+          "country": "regional",
+          "snippet": "The report indicates that Southeast Asia’s Shared Maritime Challenges."
         },
         {
           "id": "dc899fca7d98",
@@ -212,56 +254,155 @@
           "snippet": "Introduction On September 10, China approved the establishment of a nature reserve at Scarborough Shoal, also known as Bajo de Masinloc in Tagalog or Huangyan Dao in Chinese, a coral atoll whose sovereignty is under dispute between China and the Philippines. According to Beijing, the reserve covers approximately one ac"
         },
         {
-          "id": "a03972fac9d3",
-          "title": "Conceptualizing Indonesia’s Strategic Thinking in the Maritime Domain: Strategy as a Spectrum and a Process",
-          "url": "https://amti.csis.org/conceptualizing-indonesias-strategic-thinking-in-the-maritime-domain-strategy-as-a-spectrum-and-a-process/",
-          "originalUrl": "https://amti.csis.org/conceptualizing-indonesias-strategic-thinking-in-the-maritime-domain-strategy-as-a-spectrum-and-a-process/",
-          "verifiedUrl": "https://amti.csis.org/conceptualizing-indonesias-strategic-thinking-in-the-maritime-domain-strategy-as-a-spectrum-and-a-process/",
+          "id": "3c8c1c469b81",
+          "title": "Seabed Critical Infrastructure Protection: Resilience vs. Connectivity",
+          "url": "https://amti.csis.org/seabed-critical-infrastructure-protection-resilience-vs-connectivity/",
+          "originalUrl": "https://amti.csis.org/seabed-critical-infrastructure-protection-resilience-vs-connectivity/",
+          "verifiedUrl": "https://amti.csis.org/seabed-critical-infrastructure-protection-resilience-vs-connectivity/",
           "publisher": "AMTI - CSIS",
-          "publishedAt": "2025-03-20",
-          "sourcePublishedAt": "2025-03-20",
+          "publishedAt": "2025-05-14",
+          "sourcePublishedAt": "2025-05-14",
           "source": "AMTI - CSIS",
           "sector": "Maritime Security",
-          "country": "indonesia",
-          "snippet": "Does Indonesia have a maritime strategy? There are two ways to approach this question: First, Jakarta does not have universally agreed national guidelines on maritime strategy. However, it consistently refers to three historical reference points: the Struggle for Independence (1945–49), the Djuanda Declaration (1957), "
-        },
-        {
-          "id": "ff9283280d0e",
-          "title": "The U.S.-Philippine Alliance in 2025",
-          "url": "https://amti.csis.org/the-u-s-philippine-alliance-in-2025/",
-          "originalUrl": "https://amti.csis.org/the-u-s-philippine-alliance-in-2025/",
-          "verifiedUrl": "https://amti.csis.org/the-u-s-philippine-alliance-in-2025/",
-          "publisher": "AMTI - CSIS",
-          "publishedAt": "2025-03-03",
-          "sourcePublishedAt": "2025-03-03",
-          "source": "AMTI - CSIS",
-          "sector": "Maritime Security",
-          "country": "philippines",
-          "snippet": "The Philippines and the United States need to think about deterrence – as an Alliance – as President Donald Trump’s government lays out its future Indo-Pacific Strategy. The Philippines is likely to be in solidarity with how the second Trump administration will approach China. The Philippines also has room to be more p"
-        },
-        {
-          "id": "b0646358bbc6",
-          "title": "The Influence of the Philippine Archipelagic Sea Lanes Act on Navigation Rights",
-          "url": "https://amti.csis.org/the-influence-of-the-philippine-archipelagic-sea-lanes-act-on-navigation-rights/",
-          "originalUrl": "https://amti.csis.org/the-influence-of-the-philippine-archipelagic-sea-lanes-act-on-navigation-rights/",
-          "verifiedUrl": "https://amti.csis.org/the-influence-of-the-philippine-archipelagic-sea-lanes-act-on-navigation-rights/",
-          "publisher": "AMTI - CSIS",
-          "publishedAt": "2024-11-14",
-          "sourcePublishedAt": "2024-11-14",
-          "source": "AMTI - CSIS",
-          "sector": "Maritime Security",
-          "country": "philippines",
-          "snippet": "On November 9, 2024, Philippine president Ferdinand Marcos Jr. signed into law both the Philippine Maritime Zones Act and the Philippine Archipelagic Sea Lanes (ASL Act). Observers have been particularly focused on the Philippine Maritime Zones Act for intensifying the dispute between China and the Philippines, but it "
+          "country": "regional",
+          "snippet": "Europe and the Indo-Pacific may be connected by global data flows, but their submarine cable policies reflect vastly different priorities. In Europe, concerns over hostile state interference—particularly from Russia—have put resilience, redundancy, and rapid response at the center of policy frameworks. In contrast, Ind"
         }
       ]
     },
     {
       "name": "Sustainable Fisheries",
-      "items": []
+      "items": [
+        {
+          "id": "62786dd28908",
+          "title": "Strengthening a blue economy after habitat loss: assessing anti-trawling structures and small-scale fisheries impacts in Cambodia’s Mission Blue Hope Spot",
+          "url": "https://news.google.com/rss/articles/CBMilwFBVV95cUxPbm0tS1FiZGwzSmhWZVRyR211a2RHRDNXMlJDNnJuRnRYdjdLSkYwNTNFdU1VUmV1RWlzeU5rbTVUWmtvY3JlcE0zVXYzNGZBbjhGVTlwcVItVTBaZFJXZklNSldUcXNTd0VURzB0MHNCWERCdXRlS0JiaTdlZk9GdmN2MkRUTkJsTHVTR3hQbDlaYlNiZW5Z?oc=5",
+          "originalUrl": "https://news.google.com/rss/articles/CBMilwFBVV95cUxPbm0tS1FiZGwzSmhWZVRyR211a2RHRDNXMlJDNnJuRnRYdjdLSkYwNTNFdU1VUmV1RWlzeU5rbTVUWmtvY3JlcE0zVXYzNGZBbjhGVTlwcVItVTBaZFJXZklNSldUcXNTd0VURzB0MHNCWERCdXRlS0JiaTdlZk9GdmN2MkRUTkJsTHVTR3hQbDlaYlNiZW5Z?oc=5",
+          "verifiedUrl": "https://news.google.com/rss/articles/CBMilwFBVV95cUxPbm0tS1FiZGwzSmhWZVRyR211a2RHRDNXMlJDNnJuRnRYdjdLSkYwNTNFdU1VUmV1RWlzeU5rbTVUWmtvY3JlcE0zVXYzNGZBbjhGVTlwcVItVTBaZFJXZklNSldUcXNTd0VURzB0MHNCWERCdXRlS0JiaTdlZk9GdmN2MkRUTkJsTHVTR3hQbDlaYlNiZW5Z?oc=5",
+          "publisher": "Frontiers",
+          "publishedAt": "2025-10-01",
+          "sourcePublishedAt": "2025-10-01",
+          "source": "Google News - SEA Coastal Fisheries",
+          "sector": "Sustainable Fisheries",
+          "country": "cambodia",
+          "snippet": "The report indicates that assessing anti-trawling structures and small-scale fisheries impacts in Cambodia’s Mission Blue Hope Spot."
+        },
+        {
+          "id": "e436b17be73b",
+          "title": "Vietnam Urges US to Rethink Seafood Ban as Trade Talks Grind On",
+          "url": "https://news.google.com/rss/articles/CBMitAFBVV95cUxPaFNHakJTR3hldjhLX2dpc1pZaVYwNWlfd084SkFkbmc0M0dDS3p1NzEzWXhwUzFNNlFMVEVjUXV2bHdzWlhHZnlnajlQcmMxYU1CLUFHX3pGZXYyS0JZNmVmcVBkUko4Zl9QRmowU0tySWpaaENzdy1SQV9ucFZQaDZaQnVpUDY3b2N0MlFSY1FRYU44T2RPRmhVTURfNHhoUTNoMHRURWo4eUoxLUtnUDhjOHc?oc=5",
+          "originalUrl": "https://news.google.com/rss/articles/CBMitAFBVV95cUxPaFNHakJTR3hldjhLX2dpc1pZaVYwNWlfd084SkFkbmc0M0dDS3p1NzEzWXhwUzFNNlFMVEVjUXV2bHdzWlhHZnlnajlQcmMxYU1CLUFHX3pGZXYyS0JZNmVmcVBkUko4Zl9QRmowU0tySWpaaENzdy1SQV9ucFZQaDZaQnVpUDY3b2N0MlFSY1FRYU44T2RPRmhVTURfNHhoUTNoMHRURWo4eUoxLUtnUDhjOHc?oc=5",
+          "verifiedUrl": "https://news.google.com/rss/articles/CBMitAFBVV95cUxPaFNHakJTR3hldjhLX2dpc1pZaVYwNWlfd084SkFkbmc0M0dDS3p1NzEzWXhwUzFNNlFMVEVjUXV2bHdzWlhHZnlnajlQcmMxYU1CLUFHX3pGZXYyS0JZNmVmcVBkUko4Zl9QRmowU0tySWpaaENzdy1SQV9ucFZQaDZaQnVpUDY3b2N0MlFSY1FRYU44T2RPRmhVTURfNHhoUTNoMHRURWo4eUoxLUtnUDhjOHc?oc=5",
+          "publisher": "Bloomberg.com",
+          "publishedAt": "2025-09-15",
+          "sourcePublishedAt": "2025-09-15",
+          "source": "Google News - SEA Seafood Trade",
+          "sector": "Sustainable Fisheries",
+          "country": "vietnam",
+          "snippet": "The report indicates that Vietnam Urges US to Rethink Seafood Ban as Trade Talks Grind On."
+        },
+        {
+          "id": "0589dc1dc8e2",
+          "title": "Bill that would roll back Thailand’s fisheries reforms stalls in parliament, set to undergo further consideration",
+          "url": "https://news.google.com/rss/articles/CBMi8gFBVV95cUxPdUtOcGJncnYxVlp3WF9EYjdIbmFCVUQzUE1TRVVnRHRTYXE2RWtmR05zVFZDV0sydVhzS19NZjEwQmxUall6MFVVcnp6RlBQaFBFcDFkSGlOQTQxczNvREF3Y0FCd3AtcWhpWm5vWlZhdEltMkJlZmZDdmlBaWpwRTlXUlhyRTBUbU9haHRCSVFzN0tSMmNjMVBzTHJlaXBLR1BZVHZ0WnNvaUhzbE12QVFnVUFtb1NmRE9rSUpLR1hxQ2poSTFDSTZKeFVNMnppT3Eta1BMNHN6UWRFTndSa0kzTnhZS0tXYXZUcjFFNExSQQ?oc=5",
+          "originalUrl": "https://news.google.com/rss/articles/CBMi8gFBVV95cUxPdUtOcGJncnYxVlp3WF9EYjdIbmFCVUQzUE1TRVVnRHRTYXE2RWtmR05zVFZDV0sydVhzS19NZjEwQmxUall6MFVVcnp6RlBQaFBFcDFkSGlOQTQxczNvREF3Y0FCd3AtcWhpWm5vWlZhdEltMkJlZmZDdmlBaWpwRTlXUlhyRTBUbU9haHRCSVFzN0tSMmNjMVBzTHJlaXBLR1BZVHZ0WnNvaUhzbE12QVFnVUFtb1NmRE9rSUpLR1hxQ2poSTFDSTZKeFVNMnppT3Eta1BMNHN6UWRFTndSa0kzTnhZS0tXYXZUcjFFNExSQQ?oc=5",
+          "verifiedUrl": "https://news.google.com/rss/articles/CBMi8gFBVV95cUxPdUtOcGJncnYxVlp3WF9EYjdIbmFCVUQzUE1TRVVnRHRTYXE2RWtmR05zVFZDV0sydVhzS19NZjEwQmxUall6MFVVcnp6RlBQaFBFcDFkSGlOQTQxczNvREF3Y0FCd3AtcWhpWm5vWlZhdEltMkJlZmZDdmlBaWpwRTlXUlhyRTBUbU9haHRCSVFzN0tSMmNjMVBzTHJlaXBLR1BZVHZ0WnNvaUhzbE12QVFnVUFtb1NmRE9rSUpLR1hxQ2poSTFDSTZKeFVNMnppT3Eta1BMNHN6UWRFTndSa0kzTnhZS0tXYXZUcjFFNExSQQ?oc=5",
+          "publisher": "SeafoodSource",
+          "publishedAt": "2025-04-02",
+          "sourcePublishedAt": "2025-04-02",
+          "source": "Google News - SEA Seafood Trade",
+          "sector": "Sustainable Fisheries",
+          "country": "thailand",
+          "snippet": "The report indicates that Bill that would roll back Thailand’s fisheries reforms stalls in parliament, set to undergo further consideration."
+        },
+        {
+          "id": "c76b124624ae",
+          "title": "Malaysia moves to toughen fisheries law, minimize IUU losses",
+          "url": "https://news.google.com/rss/articles/CBMiqwFBVV95cUxPUkxJbDZuN3p3R1lFcDNRYlhrNGo2Q0RYakE1NmRhVW54bnM2RHF3QndEX1JhRW5YS0NYTGxJX3dkaWRfUFZNaVByR1pWc01TT191NHpWYzg2dzhNQmpWZU9HZVhpVTFrQXB3dDlVT3daOTdWTk4xckhjZWlCWFQyV2tHLTctQzB3SktldWJWbXB2SjFucXlDZGFEMWcwRjZXY1VTZS1NaHNGcTA?oc=5",
+          "originalUrl": "https://news.google.com/rss/articles/CBMiqwFBVV95cUxPUkxJbDZuN3p3R1lFcDNRYlhrNGo2Q0RYakE1NmRhVW54bnM2RHF3QndEX1JhRW5YS0NYTGxJX3dkaWRfUFZNaVByR1pWc01TT191NHpWYzg2dzhNQmpWZU9HZVhpVTFrQXB3dDlVT3daOTdWTk4xckhjZWlCWFQyV2tHLTctQzB3SktldWJWbXB2SjFucXlDZGFEMWcwRjZXY1VTZS1NaHNGcTA?oc=5",
+          "verifiedUrl": "https://news.google.com/rss/articles/CBMiqwFBVV95cUxPUkxJbDZuN3p3R1lFcDNRYlhrNGo2Q0RYakE1NmRhVW54bnM2RHF3QndEX1JhRW5YS0NYTGxJX3dkaWRfUFZNaVByR1pWc01TT191NHpWYzg2dzhNQmpWZU9HZVhpVTFrQXB3dDlVT3daOTdWTk4xckhjZWlCWFQyV2tHLTctQzB3SktldWJWbXB2SjFucXlDZGFEMWcwRjZXY1VTZS1NaHNGcTA?oc=5",
+          "publisher": "SeafoodSource",
+          "publishedAt": "2025-08-11",
+          "sourcePublishedAt": "2025-08-11",
+          "source": "Google News - SEA Seafood Trade",
+          "sector": "Sustainable Fisheries",
+          "country": "malaysia",
+          "snippet": "The report indicates that Malaysia moves to toughen fisheries law, minimize IUU losses."
+        },
+        {
+          "id": "f0bfd511b33b",
+          "title": "Myanmar experiences Q2 2025 seafood export dip, even with shortened fishing ban",
+          "url": "https://news.google.com/rss/articles/CBMixAFBVV95cUxOaHI4elFoWkYwRm5JQWUwUkwxZEhMZ2U5Y2lqaW9NbVFWYlFkNmw3RnJpdE5WTVJFTFZVQTl0OE9KWmR1WjMtbkpPYU41VTJVNzN0d2xsX1RMVGNsaVI4OEREbWZvbkEyVUJUdkV6U3M3aVlKV3F5Y1BJZHJsaTBianlabTBxYmJFX1lRb2plUXlFZ2g2QWVqbklQbnYyWmpmWVl1WXdTVENxS2FjekYtalk0cXhXS2hXeTZaMW5UVTlsbkJE?oc=5",
+          "originalUrl": "https://news.google.com/rss/articles/CBMixAFBVV95cUxOaHI4elFoWkYwRm5JQWUwUkwxZEhMZ2U5Y2lqaW9NbVFWYlFkNmw3RnJpdE5WTVJFTFZVQTl0OE9KWmR1WjMtbkpPYU41VTJVNzN0d2xsX1RMVGNsaVI4OEREbWZvbkEyVUJUdkV6U3M3aVlKV3F5Y1BJZHJsaTBianlabTBxYmJFX1lRb2plUXlFZ2g2QWVqbklQbnYyWmpmWVl1WXdTVENxS2FjekYtalk0cXhXS2hXeTZaMW5UVTlsbkJE?oc=5",
+          "verifiedUrl": "https://news.google.com/rss/articles/CBMixAFBVV95cUxOaHI4elFoWkYwRm5JQWUwUkwxZEhMZ2U5Y2lqaW9NbVFWYlFkNmw3RnJpdE5WTVJFTFZVQTl0OE9KWmR1WjMtbkpPYU41VTJVNzN0d2xsX1RMVGNsaVI4OEREbWZvbkEyVUJUdkV6U3M3aVlKV3F5Y1BJZHJsaTBianlabTBxYmJFX1lRb2plUXlFZ2g2QWVqbklQbnYyWmpmWVl1WXdTVENxS2FjekYtalk0cXhXS2hXeTZaMW5UVTlsbkJE?oc=5",
+          "publisher": "SeafoodSource",
+          "publishedAt": "2025-08-01",
+          "sourcePublishedAt": "2025-08-01",
+          "source": "Google News - SEA Seafood Trade",
+          "sector": "Sustainable Fisheries",
+          "country": "myanmar",
+          "snippet": "The report indicates that Myanmar experiences Q2 2025 seafood export dip, even with shortened fishing ban."
+        },
+        {
+          "id": "dbd88854909e",
+          "title": "Climate change and overfishing hit Indonesia tuna catch",
+          "url": "https://news.google.com/rss/articles/CBMilAFBVV95cUxPX0tMbmlJd1dwN0RpcHVBZ1MwSUt1d0hvamdlMUFTREpkbEFvaDdfdUxMQUlzbzZWQkRiV3RSRWctVEFrRHRBeF9jcmZoYTFydVg5Qjh0UHZnSS1lZjVLU1IyTktpTzRGN01kSWg5ZERBWW1qeHpHamtLQ3gzUTd6cm1EcTdBWnBfelVwRkl1bW5LS2lO?oc=5",
+          "originalUrl": "https://news.google.com/rss/articles/CBMilAFBVV95cUxPX0tMbmlJd1dwN0RpcHVBZ1MwSUt1d0hvamdlMUFTREpkbEFvaDdfdUxMQUlzbzZWQkRiV3RSRWctVEFrRHRBeF9jcmZoYTFydVg5Qjh0UHZnSS1lZjVLU1IyTktpTzRGN01kSWg5ZERBWW1qeHpHamtLQ3gzUTd6cm1EcTdBWnBfelVwRkl1bW5LS2lO?oc=5",
+          "verifiedUrl": "https://news.google.com/rss/articles/CBMilAFBVV95cUxPX0tMbmlJd1dwN0RpcHVBZ1MwSUt1d0hvamdlMUFTREpkbEFvaDdfdUxMQUlzbzZWQkRiV3RSRWctVEFrRHRBeF9jcmZoYTFydVg5Qjh0UHZnSS1lZjVLU1IyTktpTzRGN01kSWg5ZERBWW1qeHpHamtLQ3gzUTd6cm1EcTdBWnBfelVwRkl1bW5LS2lO?oc=5",
+          "publisher": "Eco-Business",
+          "publishedAt": "2025-02-12",
+          "sourcePublishedAt": "2025-02-12",
+          "source": "Google News - SEA Coastal Fisheries",
+          "sector": "Sustainable Fisheries",
+          "country": "indonesia",
+          "snippet": "The report indicates that Climate change and overfishing hit Indonesia tuna catch."
+        },
+        {
+          "id": "036d1c9f6cf8",
+          "title": "Illegal fishing and land grabs push Cambodian coastal communities to the brink",
+          "url": "https://news.google.com/rss/articles/CBMisAFBVV95cUxOR01WTHJ3dFhfS3E3ODEwZzhQSFJNNmhrUzludWRwOURYZDE1SkRESUN3V0pDU3JZOEtnQUN3Z184bDVPZ2FQai1wNU5tUm44cS1tVS1UVGh0Qmt1cFBWUmt0YVBRRl91M2lUM041Z2xvTVJuOTVFWUlfajVocEVSbjRuR1R6bWVrbUJtSElucE9UbWVuOE83cnlDUDBCT1JHMzM0dVpHSXJ5WURkbVdIbw?oc=5",
+          "originalUrl": "https://news.google.com/rss/articles/CBMisAFBVV95cUxOR01WTHJ3dFhfS3E3ODEwZzhQSFJNNmhrUzludWRwOURYZDE1SkRESUN3V0pDU3JZOEtnQUN3Z184bDVPZ2FQai1wNU5tUm44cS1tVS1UVGh0Qmt1cFBWUmt0YVBRRl91M2lUM041Z2xvTVJuOTVFWUlfajVocEVSbjRuR1R6bWVrbUJtSElucE9UbWVuOE83cnlDUDBCT1JHMzM0dVpHSXJ5WURkbVdIbw?oc=5",
+          "verifiedUrl": "https://news.google.com/rss/articles/CBMisAFBVV95cUxOR01WTHJ3dFhfS3E3ODEwZzhQSFJNNmhrUzludWRwOURYZDE1SkRESUN3V0pDU3JZOEtnQUN3Z184bDVPZ2FQai1wNU5tUm44cS1tVS1UVGh0Qmt1cFBWUmt0YVBRRl91M2lUM041Z2xvTVJuOTVFWUlfajVocEVSbjRuR1R6bWVrbUJtSElucE9UbWVuOE83cnlDUDBCT1JHMzM0dVpHSXJ5WURkbVdIbw?oc=5",
+          "publisher": "Mongabay",
+          "publishedAt": "2024-08-13",
+          "sourcePublishedAt": "2024-08-13",
+          "source": "Google News - SEA Coastal Fisheries",
+          "sector": "Sustainable Fisheries",
+          "country": "cambodia",
+          "snippet": "The report indicates that Illegal fishing and land grabs push Cambodian coastal communities to the brink."
+        },
+        {
+          "id": "df998f707467",
+          "title": "“We were born by the sea and want to die by the sea”: Meet the “aunties” who are leading Thailand’s fishing communities",
+          "url": "https://news.google.com/rss/articles/CBMi-wFBVV95cUxQYTRHZG1wbmJwclVwWjRFX0JtUDNHY0NfcF9xbXZEc3ZvV2x6eGVsMUZLUldCVTRBZEZOYVloUzFOenhsdzNyeGFSNkpyb0NXcW1LMkJGTzdJaExWSnNLalVOVTlldzVNckFfVU1PeEoyd253RHZQdTNKRWZnQWVYaXV0TU9OTUdzRUExTFRNU0JRU0R4bXZneHBpdUwtZnJBQW9DeEI5OXNvSUFFOGJ6QWhhYzRBNjVvRWFOTU5KanYxbTBRX3hpN3NNT1U1WHkxSlpEVlNNUTBSdHRRV0FFZVFPUEJIWTNkS094enZqMjRkbTc3U2kyYk40cw?oc=5",
+          "originalUrl": "https://news.google.com/rss/articles/CBMi-wFBVV95cUxQYTRHZG1wbmJwclVwWjRFX0JtUDNHY0NfcF9xbXZEc3ZvV2x6eGVsMUZLUldCVTRBZEZOYVloUzFOenhsdzNyeGFSNkpyb0NXcW1LMkJGTzdJaExWSnNLalVOVTlldzVNckFfVU1PeEoyd253RHZQdTNKRWZnQWVYaXV0TU9OTUdzRUExTFRNU0JRU0R4bXZneHBpdUwtZnJBQW9DeEI5OXNvSUFFOGJ6QWhhYzRBNjVvRWFOTU5KanYxbTBRX3hpN3NNT1U1WHkxSlpEVlNNUTBSdHRRV0FFZVFPUEJIWTNkS094enZqMjRkbTc3U2kyYk40cw?oc=5",
+          "verifiedUrl": "https://news.google.com/rss/articles/CBMi-wFBVV95cUxQYTRHZG1wbmJwclVwWjRFX0JtUDNHY0NfcF9xbXZEc3ZvV2x6eGVsMUZLUldCVTRBZEZOYVloUzFOenhsdzNyeGFSNkpyb0NXcW1LMkJGTzdJaExWSnNLalVOVTlldzVNckFfVU1PeEoyd253RHZQdTNKRWZnQWVYaXV0TU9OTUdzRUExTFRNU0JRU0R4bXZneHBpdUwtZnJBQW9DeEI5OXNvSUFFOGJ6QWhhYzRBNjVvRWFOTU5KanYxbTBRX3hpN3NNT1U1WHkxSlpEVlNNUTBSdHRRV0FFZVFPUEJIWTNkS094enZqMjRkbTc3U2kyYk40cw?oc=5",
+          "publisher": "greenpeace.org",
+          "publishedAt": "2023-10-18",
+          "sourcePublishedAt": "2023-10-18",
+          "source": "Google News - SEA Coastal Fisheries",
+          "sector": "Sustainable Fisheries",
+          "country": "thailand",
+          "snippet": "The report indicates that Meet the “aunties” who are leading Thailand’s fishing communities."
+        }
+      ]
     },
     {
       "name": "Marine Pollution",
       "items": [
+        {
+          "id": "54727a295fe7",
+          "title": "Deadly landfill collapse exposes risks faced by Philippines’ waste pickers",
+          "url": "https://news.mongabay.com/2026/03/deadly-landfill-collapse-exposes-risks-faced-by-philippines-waste-pickers/",
+          "originalUrl": "https://news.mongabay.com/2026/03/deadly-landfill-collapse-exposes-risks-faced-by-philippines-waste-pickers/",
+          "verifiedUrl": "https://news.mongabay.com/2026/03/deadly-landfill-collapse-exposes-risks-faced-by-philippines-waste-pickers/",
+          "publisher": "Mongabay",
+          "publishedAt": "2026-03-02",
+          "sourcePublishedAt": "2026-03-02",
+          "source": "Mongabay",
+          "sector": "Marine Pollution",
+          "country": "philippines",
+          "snippet": "RODRIGUEZ, Philippines — Lenny* recalled freezing when he saw the first heap of garbage collapse underneath the feet of his fellow scavengers on the afternoon of Feb. 20, at a landfill in the town of Rodriguez, in the Philippines’ Rizal province. Moments later, a larger perimeter caved. In an instant, a crater of trash"
+        },
         {
           "id": "c23c6e51bf51",
           "title": "Karenni IEC warns of ‘toxic’ levels of arsenic in Salween River and Molo Creek",
@@ -277,18 +418,18 @@
           "snippet": "Wastewater from mines has heavily contained both rivers, according to Karenni State’s resistance-run civilian authority"
         },
         {
-          "id": "54727a295fe7",
-          "title": "Deadly landfill collapse exposes risks faced by Philippines’ waste pickers",
-          "url": "https://news.mongabay.com/2026/03/deadly-landfill-collapse-exposes-risks-faced-by-philippines-waste-pickers/",
-          "originalUrl": "https://news.mongabay.com/2026/03/deadly-landfill-collapse-exposes-risks-faced-by-philippines-waste-pickers/",
-          "verifiedUrl": "https://news.mongabay.com/2026/03/deadly-landfill-collapse-exposes-risks-faced-by-philippines-waste-pickers/",
-          "publisher": "Mongabay",
-          "publishedAt": "2026-03-02",
-          "sourcePublishedAt": "2026-03-02",
-          "source": "Mongabay",
+          "id": "b55cc0419c24",
+          "title": "Transforming food systems in Southeast Asia: the challenge of food loss and waste",
+          "url": "https://news.google.com/rss/articles/CBMickFVX3lxTE5nRi1LNUZJSEhGTXFYel9Cc3ZNR19iV1hqMnR0ME11S2ZrSU5jZHBMYWZkM3FtZ0hDMDllaFRvQ192ZXdRRWdlSkJhWVpKOG01cHFvUWRtUl9KSHVBaFFST2I5LVFpaS1ZS3NQMGlLVXp1QQ?oc=5",
+          "originalUrl": "https://news.google.com/rss/articles/CBMickFVX3lxTE5nRi1LNUZJSEhGTXFYel9Cc3ZNR19iV1hqMnR0ME11S2ZrSU5jZHBMYWZkM3FtZ0hDMDllaFRvQ192ZXdRRWdlSkJhWVpKOG01cHFvUWRtUl9KSHVBaFFST2I5LVFpaS1ZS3NQMGlLVXp1QQ?oc=5",
+          "verifiedUrl": "https://news.google.com/rss/articles/CBMickFVX3lxTE5nRi1LNUZJSEhGTXFYel9Cc3ZNR19iV1hqMnR0ME11S2ZrSU5jZHBMYWZkM3FtZ0hDMDllaFRvQ192ZXdRRWdlSkJhWVpKOG01cHFvUWRtUl9KSHVBaFFST2I5LVFpaS1ZS3NQMGlLVXp1QQ?oc=5",
+          "publisher": "Stockholm Environment Institute",
+          "publishedAt": "2025-08-15",
+          "sourcePublishedAt": "2025-08-15",
+          "source": "Google News - ASEAN Fisheries",
           "sector": "Marine Pollution",
-          "country": "philippines",
-          "snippet": "RODRIGUEZ, Philippines — Lenny* recalled freezing when he saw the first heap of garbage collapse underneath the feet of his fellow scavengers on the afternoon of Feb. 20, at a landfill in the town of Rodriguez, in the Philippines’ Rizal province. Moments later, a larger perimeter caved. In an instant, a crater of trash"
+          "country": "regional",
+          "snippet": "The report indicates that the challenge of food loss and waste."
         }
       ]
     }
