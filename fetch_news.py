@@ -337,6 +337,47 @@ MARINE_CONTEXT_MARKERS = (
     "limbah",
 )
 
+COASTAL_COMMUNITY_MARKERS = (
+    "coastal",
+    "community",
+    "communities",
+    "grassroots",
+    "livelihood",
+    "livelihoods",
+    "small-scale",
+    "fishers",
+    "fisherfolk",
+    "fisheries",
+    "fishing",
+    "aquaculture",
+    "mangrove",
+    "reef",
+    "seagrass",
+    "marine pollution",
+    "plastic",
+    "wastewater",
+    "sea level",
+    "erosion",
+    "adaptation",
+    "resilience",
+    "island",
+    "delta",
+)
+
+OUT_OF_SCOPE_GLOBAL_MARKERS = (
+    "iran",
+    "israel",
+    "gaza",
+    "tehran",
+    "qom",
+    "ukraine",
+    "russia",
+    "persian gulf",
+    "middle east",
+    "hormuz",
+    "assembly of experts",
+)
+
 COUNTRY_HINTS = {
     "vietnam": ["vietnam", "vietnamplus.vn", "vnanet", "hanoi", "ho chi minh"],
     "thailand": ["thailand", "bangkok", "thai"],
@@ -756,10 +797,7 @@ def _extract_items_from_web_page(feed_name: str, source_url: str) -> list[dict]:
         snippet = excerpt or _headline_fallback_summary(title)
         summary = snippet or ""
 
-        context_text = f"{title} {summary} {article_url}".lower()
-        has_geo_marker = any(marker in context_text for marker in SEA_CONTEXT_MARKERS)
-        has_marine_marker = any(marker in context_text for marker in MARINE_CONTEXT_MARKERS)
-        if not has_geo_marker or not has_marine_marker:
+        if not _passes_sow_focus(title, summary, snippet):
             continue
 
         sector = _categorize(title, summary)
@@ -768,7 +806,7 @@ def _extract_items_from_web_page(feed_name: str, source_url: str) -> list[dict]:
 
         is_valid, _, _ = is_relevant(title, summary)
         if not is_valid:
-            is_direct_context_match = feed_name in REGIONAL_CONTEXT_FEEDS and has_marine_marker and has_geo_marker
+            is_direct_context_match = feed_name in REGIONAL_CONTEXT_FEEDS and _passes_sow_focus(title, summary, snippet)
             if not is_direct_context_match:
                 continue
 
@@ -833,6 +871,23 @@ def _country_cap(country: str, relaxed: bool = False) -> int:
     return base_cap + 2 if relaxed else base_cap
 
 
+def _passes_sow_focus(title: str, summary: str, snippet: str = "") -> bool:
+    text = f"{title} {summary} {snippet}".lower()
+
+    has_geo_marker = any(marker in text for marker in SEA_CONTEXT_MARKERS)
+    has_marine_marker = any(marker in text for marker in MARINE_CONTEXT_MARKERS)
+    has_community_marker = any(marker in text for marker in COASTAL_COMMUNITY_MARKERS)
+
+    if not has_geo_marker or not has_marine_marker:
+        return False
+
+    has_out_of_scope_global = any(marker in text for marker in OUT_OF_SCOPE_GLOBAL_MARKERS)
+    if has_out_of_scope_global and not has_community_marker:
+        return False
+
+    return True
+
+
 def _extract_items(feed_name: str, feed_url: str, mode: str = "feed") -> list[dict]:
     if mode == "web":
         return _extract_items_from_web_page(feed_name, feed_url)
@@ -851,10 +906,7 @@ def _extract_items(feed_name: str, feed_url: str, mode: str = "feed") -> list[di
         if not title or not link:
             continue
 
-        context_text = f"{title} {summary} {link}".lower()
-        has_geo_marker = any(marker in context_text for marker in SEA_CONTEXT_MARKERS)
-        has_marine_marker = any(marker in context_text for marker in MARINE_CONTEXT_MARKERS)
-        if not has_geo_marker or not has_marine_marker:
+        if not _passes_sow_focus(title, summary, snippet):
             continue
 
         sector = _categorize(title, summary)
@@ -863,7 +915,7 @@ def _extract_items(feed_name: str, feed_url: str, mode: str = "feed") -> list[di
 
         is_valid, _, _ = is_relevant(title, summary)
         if not is_valid:
-            is_direct_context_match = feed_name in REGIONAL_CONTEXT_FEEDS and has_marine_marker and has_geo_marker
+            is_direct_context_match = feed_name in REGIONAL_CONTEXT_FEEDS and _passes_sow_focus(title, summary, snippet)
             if not is_direct_context_match:
                 continue
 

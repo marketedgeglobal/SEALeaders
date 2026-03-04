@@ -1,52 +1,10 @@
 {
-  "runAt": "2026-03-04T00:24:25.863142+00:00",
-  "totalItems": 20,
+  "runAt": "2026-03-04T00:49:52.056659+00:00",
+  "totalItems": 15,
   "sectors": [
     {
       "name": "Sustainable Blue Economy",
       "items": [
-        {
-          "id": "f96facbc7230",
-          "title": "Iran conflict could push up costs, govt’s fuel subsidy bill, say economists",
-          "url": "https://www.freemalaysiatoday.com/category/nation/2026/03/04/iran-conflict-could-push-up-costs-govts-fuel-subsidy-bill-say-economists",
-          "originalUrl": "https://www.freemalaysiatoday.com/category/nation/2026/03/04/iran-conflict-could-push-up-costs-govts-fuel-subsidy-bill-say-economists",
-          "verifiedUrl": "https://www.freemalaysiatoday.com/category/nation/2026/03/04/iran-conflict-could-push-up-costs-govts-fuel-subsidy-bill-say-economists",
-          "publisher": "Free Malaysia Today",
-          "publishedAt": "2026-03-03",
-          "sourcePublishedAt": "2026-03-03",
-          "source": "Free Malaysia Today",
-          "sector": "Sustainable Blue Economy",
-          "country": "malaysia",
-          "snippet": "Sunway University’s Yeah Kim Leng says disruptions in shipping due to the ongoing war will have cascading impacts."
-        },
-        {
-          "id": "751478b3670f",
-          "title": "Fuel shortage hits Shan State as imports from Thailand halt over Iran conflict",
-          "url": "https://myanmar-now.org/en/news/fuel-shortage-hits-shan-state-as-imports-from-thailand-halt-over-iran-conflict/",
-          "originalUrl": "https://myanmar-now.org/en/news/fuel-shortage-hits-shan-state-as-imports-from-thailand-halt-over-iran-conflict/",
-          "verifiedUrl": "https://myanmar-now.org/en/news/fuel-shortage-hits-shan-state-as-imports-from-thailand-halt-over-iran-conflict/",
-          "publisher": "Myanmar Now",
-          "publishedAt": "2026-03-03",
-          "sourcePublishedAt": "2026-03-03",
-          "source": "Myanmar Now",
-          "sector": "Sustainable Blue Economy",
-          "country": "thailand",
-          "snippet": "A protracted war in the Middle East could have a severe impact on energy supplies in Myanmar and the rest of the region"
-        },
-        {
-          "id": "cd6c8dd6587b",
-          "title": "Strait of Hormuz: why it matters to global shipping and energy",
-          "url": "https://www.nationthailand.com/news/world/40063181",
-          "originalUrl": "https://www.nationthailand.com/news/world/40063181",
-          "verifiedUrl": "https://www.nationthailand.com/news/world/40063181",
-          "publisher": "nationthailand.com",
-          "publishedAt": "",
-          "sourcePublishedAt": "",
-          "source": "Nation Thailand",
-          "sector": "Sustainable Blue Economy",
-          "country": "thailand",
-          "snippet": "The report indicates that why it matters to global shipping and energy."
-        },
         {
           "id": "28a45b9a6b0c",
           "title": "Empty shelves across Myanmar as Thai imports disappear",
@@ -60,54 +18,12 @@
           "sector": "Sustainable Blue Economy",
           "country": "thailand",
           "snippet": "From snacks to medicine, goods once trucked across the Thai border have vanished following tightened import controls, border gate closures, and a crackdown on “illegal” trade"
-        },
-        {
-          "id": "a41fce7b07f8",
-          "title": "Thai exports to Iran face disruption risk as conflict escalates; fruit, rubber shipments most exposed",
-          "url": "https://www.nationthailand.com/business/trade/40063158",
-          "originalUrl": "https://www.nationthailand.com/business/trade/40063158",
-          "verifiedUrl": "https://www.nationthailand.com/business/trade/40063158",
-          "publisher": "nationthailand.com",
-          "publishedAt": "",
-          "sourcePublishedAt": "",
-          "source": "Nation Thailand",
-          "sector": "Sustainable Blue Economy",
-          "country": "thailand",
-          "snippet": "The report indicates that Thai exports to Iran face disruption risk as conflict escalates; fruit, rubber shipments most exposed."
-        },
-        {
-          "id": "ba5b4e1f5b5f",
-          "title": "Israel strikes Iran’s Assembly of Experts site as succession vote looms March 03, 2026 Israel struck a site tied to Iran’s Assembly of Experts in Qom, with reports conflicting over whether clerics were meeting to pick a new leader",
-          "url": "https://www.nationthailand.com/news/world/40063265",
-          "originalUrl": "https://www.nationthailand.com/news/world/40063265",
-          "verifiedUrl": "https://www.nationthailand.com/news/world/40063265",
-          "publisher": "nationthailand.com",
-          "publishedAt": "",
-          "sourcePublishedAt": "",
-          "source": "Nation Thailand",
-          "sector": "Sustainable Blue Economy",
-          "country": "thailand",
-          "snippet": "The report indicates that Israel strikes Iran’s Assembly of Experts site as succession vote looms March 03, 2026 Israel struck a site tied to Iran’s Assembly of Experts in Qom, with reports conflicting over whether clerics were meeting to pick a new leader."
         }
       ]
     },
     {
       "name": "Climate Change",
       "items": [
-        {
-          "id": "8460a8e29f30",
-          "title": "Agriculture Is Taking Over Grasslands, Wetlands and Other Overlooked Ecosystems",
-          "url": "https://www.wri.org/insights/cropland-expansion-impacts-people-planet",
-          "originalUrl": "https://www.wri.org/insights/global-ecosystem-conversion-grassland-wetland-savanna-to-agriculture",
-          "verifiedUrl": "https://www.wri.org/insights/cropland-expansion-impacts-people-planet",
-          "publisher": "WRI - Insights",
-          "publishedAt": "2026-02-25",
-          "sourcePublishedAt": "2026-02-25",
-          "source": "WRI - Insights",
-          "sector": "Climate Change",
-          "country": "regional",
-          "snippet": "Across the world, farmland is replacing some of our most important ecosystems."
-        },
         {
           "id": "6962f27b04e1",
           "title": "Malaysia to integrate water pricing into national adaptation plan, says environment ministry",
@@ -121,6 +37,20 @@
           "sector": "Climate Change",
           "country": "malaysia",
           "snippet": "The impacts of deforestation must also be counted towards the true cost of water, the ministry’s secretary-general said. The country's first fair share carbon budget report could help strengthen the government’s forest conservation efforts."
+        },
+        {
+          "id": "8460a8e29f30",
+          "title": "Agriculture Is Taking Over Grasslands, Wetlands and Other Overlooked Ecosystems",
+          "url": "https://www.wri.org/insights/cropland-expansion-impacts-people-planet",
+          "originalUrl": "https://www.wri.org/insights/global-ecosystem-conversion-grassland-wetland-savanna-to-agriculture",
+          "verifiedUrl": "https://www.wri.org/insights/cropland-expansion-impacts-people-planet",
+          "publisher": "WRI - Insights",
+          "publishedAt": "2026-02-25",
+          "sourcePublishedAt": "2026-02-25",
+          "source": "WRI - Insights",
+          "sector": "Climate Change",
+          "country": "regional",
+          "snippet": "Across the world, farmland is replacing some of our most important ecosystems."
         },
         {
           "id": "078a4fc2e68c",
