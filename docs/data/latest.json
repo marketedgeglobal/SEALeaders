@@ -1,6 +1,6 @@
 {
-  "runAt": "2026-03-04T03:05:38.893989+00:00",
-  "totalItems": 17,
+  "runAt": "2026-03-04T03:13:38.572773+00:00",
+  "totalItems": 14,
   "sectors": [
     {
       "name": "Blue Economy",
@@ -37,20 +37,6 @@
           "sector": "Sustainable Fisheries",
           "country": "singapore",
           "snippet": "New measures include an expanded national breeding programme and fresh hatchery support for the aquaculture sector."
-        },
-        {
-          "id": "47700b88212a",
-          "title": "Migrant fishers’ deaths at sea tied to unchecked captain power, study shows Basten Gokkon 20 Feb 2026",
-          "url": "https://news.mongabay.com/2026/02/migrant-fishers-deaths-at-sea-tied-to-unchecked-captain-power-study-shows/",
-          "originalUrl": "https://news.mongabay.com/2026/02/migrant-fishers-deaths-at-sea-tied-to-unchecked-captain-power-study-shows/",
-          "verifiedUrl": "https://news.mongabay.com/2026/02/migrant-fishers-deaths-at-sea-tied-to-unchecked-captain-power-study-shows/",
-          "publisher": "news.mongabay.com",
-          "publishedAt": "2026-02-20",
-          "sourcePublishedAt": "2026-02-20",
-          "source": "Mongabay - Fisheries (Web)",
-          "sector": "Sustainable Fisheries",
-          "country": "indonesia",
-          "snippet": "The deaths of migrant fishers at sea are largely driven by structural labor and governance failures, rather than by safety or compliance issues alone, a new study shows. Migrant sea workers, especially those recruited from low-wage Southeast Asian countries such as Indonesia, often experience violence and fatal abuse w"
         }
       ]
     },
@@ -83,7 +69,7 @@
           "source": "Vietnam News - Environment",
           "sector": "Climate Change",
           "country": "vietnam",
-          "snippet": "Forest management and protection of natural habitats are being promoted, combined with ecosystem restoration and the development of nature reserves."
+          "snippet": "The programme receives technical support from the Fertilise Right project funded by the United States Department of Agriculture (USDA)."
         },
         {
           "id": "6962f27b04e1",
@@ -175,20 +161,6 @@
           "snippet": "For years, China has promoted the idea of “shelving disputes” in the South China Sea and focusing on areas of cooperation. Southeast Asian claimants—Brunei, Malaysia, the Philippines, and Vietnam—have been receptive to this approach to varying degrees. While this strategy brings significant economic benefits, it carrie"
         },
         {
-          "id": "6962f27b04e1",
-          "title": "Malaysia to integrate water pricing into national adaptation plan, says environment ministry",
-          "url": "https://www.eco-business.com/news/malaysia-to-integrate-water-pricing-into-national-adaptation-plan-says-environment-ministry/",
-          "originalUrl": "https://www.eco-business.com/news/malaysia-to-integrate-water-pricing-into-national-adaptation-plan-says-environment-ministry/",
-          "verifiedUrl": "https://www.eco-business.com/news/malaysia-to-integrate-water-pricing-into-national-adaptation-plan-says-environment-ministry/",
-          "publisher": "Eco-Business - News",
-          "publishedAt": "2026-03-02",
-          "sourcePublishedAt": "2026-03-02",
-          "source": "Eco-Business - News",
-          "sector": "Maritime Security",
-          "country": "malaysia",
-          "snippet": "The impacts of deforestation must also be counted towards the true cost of water, the ministry’s secretary-general said. The country's first fair share carbon budget report could help strengthen the..."
-        },
-        {
           "id": "436617f90c67",
           "title": "Scarborough Peace Park: The Road to Peace and Sustainability in the South China Sea",
           "url": "https://amti.csis.org/scarborough-peace-park-the-road-to-peace-and-sustainability-in-the-south-china-sea/",
@@ -203,18 +175,18 @@
           "snippet": "Introduction On September 10, China approved the establishment of a nature reserve at Scarborough Shoal, also known as Bajo de Masinloc in Tagalog or Huangyan Dao in Chinese, a coral atoll whose sovereignty is under dispute between China and the Philippines. According to Beijing, the reserve covers approximately one ac"
         },
         {
-          "id": "47700b88212a",
-          "title": "Migrant fishers’ deaths at sea tied to unchecked captain power, study shows Basten Gokkon 20 Feb 2026",
-          "url": "https://news.mongabay.com/2026/02/migrant-fishers-deaths-at-sea-tied-to-unchecked-captain-power-study-shows/",
-          "originalUrl": "https://news.mongabay.com/2026/02/migrant-fishers-deaths-at-sea-tied-to-unchecked-captain-power-study-shows/",
-          "verifiedUrl": "https://news.mongabay.com/2026/02/migrant-fishers-deaths-at-sea-tied-to-unchecked-captain-power-study-shows/",
-          "publisher": "news.mongabay.com",
-          "publishedAt": "2026-02-20",
-          "sourcePublishedAt": "2026-02-20",
-          "source": "Mongabay - Fisheries (Web)",
+          "id": "0be45ecf8896",
+          "title": "Reassessing the Legal Grounds of Freedom of Navigation in Indonesia’s Archipelagic Waters",
+          "url": "https://amti.csis.org/reassessing-the-legal-grounds-of-freedom-of-navigation-in-indonesias-archipelagic-waters/",
+          "originalUrl": "https://amti.csis.org/reassessing-the-legal-grounds-of-freedom-of-navigation-in-indonesias-archipelagic-waters/",
+          "verifiedUrl": "https://amti.csis.org/reassessing-the-legal-grounds-of-freedom-of-navigation-in-indonesias-archipelagic-waters/",
+          "publisher": "AMTI - CSIS",
+          "publishedAt": "2026-01-22",
+          "sourcePublishedAt": "2026-01-22",
+          "source": "AMTI - CSIS",
           "sector": "Maritime Security",
           "country": "indonesia",
-          "snippet": "The deaths of migrant fishers at sea are largely driven by structural labor and governance failures, rather than by safety or compliance issues alone, a new study shows. Migrant sea workers, especially those recruited from low-wage Southeast Asian countries such as Indonesia, often experience violence and fatal abuse w"
+          "snippet": "This article is written in response to Navigating the Divide: Why the U.S. Navy Must Resume FONOPs in Indonesia by Patrick Panjeti, Military Fellow at the CSIS Defence and Security Department. 1. Introduction: Misrepresenting Indonesia’s Legal Commitments In his essay “Navigating the Divide,” Patrick Panjeti presents a"
         },
         {
           "id": "ad1f4ff54240",
@@ -235,20 +207,6 @@
     {
       "name": "Marine Pollution",
       "items": [
-        {
-          "id": "c23c6e51bf51",
-          "title": "Karenni IEC warns of ‘toxic’ levels of arsenic in Salween River and Molo Creek",
-          "url": "https://myanmar-now.org/en/news/karenni-iec-warns-of-toxic-levels-of-arsenic-in-salween-river-and-molo-creek/",
-          "originalUrl": "https://myanmar-now.org/en/news/karenni-iec-warns-of-toxic-levels-of-arsenic-in-salween-river-and-molo-creek/",
-          "verifiedUrl": "https://myanmar-now.org/en/news/karenni-iec-warns-of-toxic-levels-of-arsenic-in-salween-river-and-molo-creek/",
-          "publisher": "Myanmar Now",
-          "publishedAt": "2026-02-27",
-          "sourcePublishedAt": "2026-02-27",
-          "source": "Myanmar Now",
-          "sector": "Marine Pollution",
-          "country": "myanmar",
-          "snippet": "Wastewater from mines has heavily contained both rivers, according to Karenni State’s resistance-run civilian authority"
-        },
         {
           "id": "54727a295fe7",
           "title": "Deadly landfill collapse exposes risks faced by Philippines’ waste pickers",

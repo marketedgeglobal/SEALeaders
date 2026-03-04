@@ -368,6 +368,7 @@ MAX_ITEMS_PER_SECTOR = min(int(os.getenv("MAX_ITEMS_PER_SECTOR", "6")), 6)
 MAX_ITEMS_PER_PUBLISHER = int(os.getenv("MAX_ITEMS_PER_PUBLISHER", "3"))
 MAX_ITEMS_PER_COUNTRY = int(os.getenv("MAX_ITEMS_PER_COUNTRY", "6"))
 MAX_ITEM_AGE_DAYS = int(os.getenv("MAX_ITEM_AGE_DAYS", "120"))
+MAX_ITEM_AGE_DAYS_BLUE = int(os.getenv("MAX_ITEM_AGE_DAYS_BLUE", "180"))
 MAX_FEED_ENTRIES_PER_SOURCE = int(os.getenv("MAX_FEED_ENTRIES_PER_SOURCE", "36"))
 ENABLE_ARTICLE_EXCERPT_FETCH = os.getenv("ENABLE_ARTICLE_EXCERPT_FETCH", "1") == "1"
 ENABLE_URL_RESOLVE = os.getenv("ENABLE_URL_RESOLVE", "1") == "1"
@@ -900,6 +901,13 @@ def _is_within_recent_window(date_value: str, max_age_days: int = MAX_ITEM_AGE_D
 
     cutoff_date = (datetime.now(timezone.utc) - timedelta(days=max_age_days)).date()
     return published_date >= cutoff_date
+
+
+def _is_within_sector_window(item: dict, sector: str) -> bool:
+    item_date = str(item.get("publishedAt") or item.get("sourcePublishedAt") or "")
+    if sector == "Blue Economy":
+        return _is_within_recent_window(item_date, MAX_ITEM_AGE_DAYS_BLUE)
+    return _is_within_recent_window(item_date, MAX_ITEM_AGE_DAYS)
 
 
 def _clean_text(value: str) -> str:
@@ -1567,10 +1575,11 @@ def build_latest_json() -> dict:
             seen_title_signatures.add(title_signature)
             all_items.append(item)
 
+    max_age_window = max(MAX_ITEM_AGE_DAYS, MAX_ITEM_AGE_DAYS_BLUE)
     all_items = [
         item
         for item in all_items
-        if _is_within_recent_window(str(item.get("publishedAt") or item.get("sourcePublishedAt") or ""))
+        if _is_within_recent_window(str(item.get("publishedAt") or item.get("sourcePublishedAt") or ""), max_age_window)
     ]
 
     all_items.sort(key=lambda i: (i.get("publishedAt") or i.get("sourcePublishedAt") or ""), reverse=True)
@@ -1579,14 +1588,17 @@ def build_latest_json() -> dict:
     total = 0
     publisher_usage: dict[str, int] = {}
     country_usage: dict[str, int] = {}
+    selected_story_ids: set[str] = set()
 
     for sector in SECTORS:
-        candidates = [item for item in all_items if item["sector"] == sector]
+        candidates = [item for item in all_items if item["sector"] == sector and _is_within_sector_window(item, sector)]
         if sector == "Blue Economy":
             blue_pool: list[dict] = []
             blue_seen_ids: set[str] = set()
 
             for item in all_items:
+                if not _is_within_sector_window(item, "Blue Economy"):
+                    continue
                 score = _blue_economy_priority_score(item)
                 if score < 2:
                     continue
@@ -1612,6 +1624,8 @@ def build_latest_json() -> dict:
             fisheries_seen_ids: set[str] = set()
 
             for item in all_items:
+                if not _is_within_sector_window(item, "Sustainable Fisheries"):
+                    continue
                 score = _fisheries_priority_score(item)
                 if score < 2:
                     continue
@@ -1637,6 +1651,8 @@ def build_latest_json() -> dict:
             maritime_seen_ids: set[str] = set()
 
             for item in all_items:
+                if not _is_within_sector_window(item, "Maritime Security"):
+                    continue
                 score = _maritime_priority_score(item)
                 if score < 2:
                     continue
@@ -1673,9 +1689,13 @@ def build_latest_json() -> dict:
                 ),
             )
             item = ranked[0]
+            item_id = str(item.get("id") or "")
             publisher = str(item.get("publisher") or "unknown").lower()
             country = str(item.get("country") or "regional").lower()
             remaining.remove(item)
+
+            if item_id in selected_story_ids:
+                continue
 
             if publisher_usage.get(publisher, 0) >= MAX_ITEMS_PER_PUBLISHER:
                 continue
@@ -1683,12 +1703,16 @@ def build_latest_json() -> dict:
                 continue
 
             selected.append(item)
+            selected_story_ids.add(item_id)
             publisher_usage[publisher] = publisher_usage.get(publisher, 0) + 1
             country_usage[country] = country_usage.get(country, 0) + 1
 
         if len(selected) < MAX_ITEMS_PER_SECTOR:
             for item in candidates:
                 if item in selected:
+                    continue
+                item_id = str(item.get("id") or "")
+                if item_id in selected_story_ids:
                     continue
                 publisher = str(item.get("publisher") or "unknown").lower()
                 country = str(item.get("country") or "regional").lower()
@@ -1697,6 +1721,7 @@ def build_latest_json() -> dict:
                 if country_usage.get(country, 0) >= _country_cap(country, relaxed=True):
                     continue
                 selected.append(item)
+                selected_story_ids.add(item_id)
                 publisher_usage[publisher] = publisher_usage.get(publisher, 0) + 1
                 country_usage[country] = country_usage.get(country, 0) + 1
                 if len(selected) >= MAX_ITEMS_PER_SECTOR:
@@ -1706,7 +1731,11 @@ def build_latest_json() -> dict:
             for item in candidates:
                 if item in selected:
                     continue
+                item_id = str(item.get("id") or "")
+                if item_id in selected_story_ids:
+                    continue
                 selected.append(item)
+                selected_story_ids.add(item_id)
                 publisher = str(item.get("publisher") or "unknown").lower()
                 country = str(item.get("country") or "regional").lower()
                 publisher_usage[publisher] = publisher_usage.get(publisher, 0) + 1
@@ -1746,6 +1775,9 @@ def build_latest_json() -> dict:
         vietnam_candidates.sort(key=lambda i: (i.get("publishedAt") or ""), reverse=True)
 
         for candidate in vietnam_candidates:
+            candidate_id = str(candidate.get("id") or "")
+            if candidate_id in selected_story_ids:
+                continue
             sector_name = candidate.get("sector")
             target_sector = next((s for s in sectors_payload if s.get("name") == sector_name), None)
             if not target_sector:
@@ -1757,6 +1789,7 @@ def build_latest_json() -> dict:
 
             if len(target_items) < MAX_ITEMS_PER_SECTOR:
                 target_items.append(candidate)
+                selected_story_ids.add(candidate_id)
                 total += 1
                 break
 
@@ -1769,7 +1802,11 @@ def build_latest_json() -> dict:
                 None,
             )
             if replace_index is not None:
+                replaced_id = str(target_items[replace_index].get("id") or "")
+                if replaced_id in selected_story_ids:
+                    selected_story_ids.remove(replaced_id)
                 target_items[replace_index] = candidate
+                selected_story_ids.add(candidate_id)
                 break
 
     return {
