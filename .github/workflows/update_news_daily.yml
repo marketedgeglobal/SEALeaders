@@ -21,21 +21,21 @@ jobs:
         run: echo "hour=$(TZ=America/New_York date +%H)" >> "$GITHUB_OUTPUT"
 
       - name: Set up Python
-        if: steps.et_hour.outputs.hour == '02'
+        if: github.event_name == 'workflow_dispatch' || steps.et_hour.outputs.hour == '02'
         uses: actions/setup-python@v5
         with:
           python-version: "3.11"
 
       - name: Install dependencies
-        if: steps.et_hour.outputs.hour == '02'
+        if: github.event_name == 'workflow_dispatch' || steps.et_hour.outputs.hour == '02'
         run: pip install -r requirements.txt
 
       - name: Generate latest news dataset
-        if: steps.et_hour.outputs.hour == '02'
+        if: github.event_name == 'workflow_dispatch' || steps.et_hour.outputs.hour == '02'
         run: python3 fetch_news.py
 
       - name: Commit and push if changed
-        if: steps.et_hour.outputs.hour == '02'
+        if: github.event_name == 'workflow_dispatch' || steps.et_hour.outputs.hour == '02'
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
@@ -48,5 +48,5 @@ jobs:
           fi
 
       - name: Skip message outside ET target hour
-        if: steps.et_hour.outputs.hour != '02'
+        if: github.event_name != 'workflow_dispatch' && steps.et_hour.outputs.hour != '02'
         run: echo "Skipping run because current ET hour is ${{ steps.et_hour.outputs.hour }} (target: 02)."
