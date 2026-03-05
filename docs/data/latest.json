@@ -1,10 +1,24 @@
 {
-  "runAt": "2026-03-04T03:13:38.572773+00:00",
-  "totalItems": 14,
+  "runAt": "2026-03-05T14:11:22.819305+00:00",
+  "totalItems": 17,
   "sectors": [
     {
       "name": "Blue Economy",
       "items": [
+        {
+          "id": "6f531cd3645f",
+          "title": "Southeast Asia’s blue economy programmes unaffected by reported UK climate aid cuts, say project leads",
+          "url": "https://www.eco-business.com/news/southeast-asias-blue-economy-programmes-unaffected-by-reported-uk-climate-aid-cuts-say-project-leads/",
+          "originalUrl": "https://www.eco-business.com/news/southeast-asias-blue-economy-programmes-unaffected-by-reported-uk-climate-aid-cuts-say-project-leads/",
+          "verifiedUrl": "https://www.eco-business.com/news/southeast-asias-blue-economy-programmes-unaffected-by-reported-uk-climate-aid-cuts-say-project-leads/",
+          "publisher": "Eco-Business - News",
+          "publishedAt": "2026-03-05",
+          "sourcePublishedAt": "2026-03-05",
+          "source": "Eco-Business - News",
+          "sector": "Blue Economy",
+          "country": "philippines",
+          "snippet": "The United Kingdom’s flagship £500 million Blue Planet Fund, which supports marine environment programmes in developing countries like the Philippines, Indonesia and Vietnam, is in question, following news of a planned slash in budget."
+        },
         {
           "id": "47700b88212a",
           "title": "Migrant fishers’ deaths at sea tied to unchecked captain power, study shows Basten Gokkon 20 Feb 2026",
@@ -23,53 +37,38 @@
     },
     {
       "name": "Sustainable Fisheries",
-      "items": [
-        {
-          "id": "347b80e10480",
-          "title": "Singapore to inject S$70 million over five years to boost local farm output",
-          "url": "https://www.channelnewsasia.com/singapore/local-farms-output-production-act-fund-5966671",
-          "originalUrl": "https://www.channelnewsasia.com/singapore/local-farms-output-production-act-fund-5966671",
-          "verifiedUrl": "https://www.channelnewsasia.com/singapore/local-farms-output-production-act-fund-5966671",
-          "publisher": "Channel News Asia - Asia",
-          "publishedAt": "2026-03-04",
-          "sourcePublishedAt": "2026-03-04",
-          "source": "Channel News Asia - Asia",
-          "sector": "Sustainable Fisheries",
-          "country": "singapore",
-          "snippet": "New measures include an expanded national breeding programme and fresh hatchery support for the aquaculture sector."
-        }
-      ]
+      "items": []
     },
     {
       "name": "Climate Change",
       "items": [
         {
-          "id": "71070ae00275",
-          "title": "Asia Pacific insurers warn climate shocks are becoming a systemic financial threat",
-          "url": "https://www.eco-business.com/news/asia-pacific-insurers-warn-climate-shocks-are-becoming-a-systemic-financial-threat/",
-          "originalUrl": "https://www.eco-business.com/news/asia-pacific-insurers-warn-climate-shocks-are-becoming-a-systemic-financial-threat/",
-          "verifiedUrl": "https://www.eco-business.com/news/asia-pacific-insurers-warn-climate-shocks-are-becoming-a-systemic-financial-threat/",
-          "publisher": "Eco-Business - News",
-          "publishedAt": "2026-03-02",
-          "sourcePublishedAt": "2026-03-02",
-          "source": "Eco-Business - News",
+          "id": "05361191fdaa",
+          "title": "Singapore to invest $630M in emission reduction",
+          "url": "https://e.vnexpress.net/news/news/environment/singapore-to-invest-630m-in-emission-reduction-5046140.html",
+          "originalUrl": "https://e.vnexpress.net/news/news/environment/singapore-to-invest-630m-in-emission-reduction-5046140.html",
+          "verifiedUrl": "https://e.vnexpress.net/news/news/environment/singapore-to-invest-630m-in-emission-reduction-5046140.html",
+          "publisher": "VNExpress International",
+          "publishedAt": "2026-03-04",
+          "sourcePublishedAt": "2026-03-04",
+          "source": "VNExpress International",
           "sector": "Climate Change",
-          "country": "regional",
-          "snippet": "Insurance companies increasingly worry that escalating climate extremes could destabilise financial systems, not their balance sheets – an anxiety felt acutely in Asia Pacific, a MSCI study finds."
+          "country": "singapore",
+          "snippet": "Singapore has pledged to invest SG$800 million (US$630 million) over the next five years to support efforts to reduce carbon dioxide emissions, reinforcing its long-term climate ambitions."
         },
         {
-          "id": "0d575665ab8e",
-          "title": "Low emissions to enhance the value of Vietnamese rice: agriculture experts",
-          "url": "https://vietnamnews.vn/environment/1766567/viet-nam-enhances-conservation-activities-for-world-wildlife-day.html",
-          "originalUrl": "https://vietnamnews.vn/environment/1766357/low-emissions-to-enhance-the-value-of-vietnamese-rice-agriculture-experts.html",
-          "verifiedUrl": "https://vietnamnews.vn/environment/1766567/viet-nam-enhances-conservation-activities-for-world-wildlife-day.html",
-          "publisher": "Vietnam News - Environment",
-          "publishedAt": "2026-02-26",
-          "sourcePublishedAt": "2026-02-26",
-          "source": "Vietnam News - Environment",
+          "id": "8460a8e29f30",
+          "title": "Agriculture Is Taking Over Grasslands, Wetlands and Other Overlooked Ecosystems",
+          "url": "https://www.wri.org/insights/cropland-expansion-impacts-people-planet",
+          "originalUrl": "https://www.wri.org/insights/global-ecosystem-conversion-grassland-wetland-savanna-to-agriculture",
+          "verifiedUrl": "https://www.wri.org/insights/cropland-expansion-impacts-people-planet",
+          "publisher": "WRI - Insights",
+          "publishedAt": "2026-02-25",
+          "sourcePublishedAt": "2026-02-25",
+          "source": "WRI - Insights",
           "sector": "Climate Change",
-          "country": "vietnam",
-          "snippet": "The programme receives technical support from the Fertilise Right project funded by the United States Department of Agriculture (USDA)."
+          "country": "regional",
+          "snippet": "According to a landmark new study, 102 million hectares (Mha) (252 million acres) of land — an area the size of Egypt — have been converted to crops since the start of the 21st century. To put this into perspective, while it took more than 8,000 years for humanity to convert 1.1 billion hectares (2.8 billion acres) of "
         },
         {
           "id": "6962f27b04e1",
@@ -86,18 +85,18 @@
           "snippet": "The impacts of deforestation must also be counted towards the true cost of water, the ministry’s secretary-general said. The country's first fair share carbon budget report could help strengthen the..."
         },
         {
-          "id": "8460a8e29f30",
-          "title": "Agriculture Is Taking Over Grasslands, Wetlands and Other Overlooked Ecosystems",
-          "url": "https://www.wri.org/insights/cropland-expansion-impacts-people-planet",
-          "originalUrl": "https://www.wri.org/insights/global-ecosystem-conversion-grassland-wetland-savanna-to-agriculture",
-          "verifiedUrl": "https://www.wri.org/insights/cropland-expansion-impacts-people-planet",
-          "publisher": "WRI - Insights",
-          "publishedAt": "2026-02-25",
-          "sourcePublishedAt": "2026-02-25",
-          "source": "WRI - Insights",
+          "id": "5683a48ce6ec",
+          "title": "Singapore outlines first national climate adaptation plan",
+          "url": "https://www.eco-business.com/news/singapore-outlines-first-national-climate-adaptation-plan/",
+          "originalUrl": "https://www.eco-business.com/news/singapore-outlines-first-national-climate-adaptation-plan/",
+          "verifiedUrl": "https://www.eco-business.com/news/singapore-outlines-first-national-climate-adaptation-plan/",
+          "publisher": "Eco-Business - News",
+          "publishedAt": "2026-03-05",
+          "sourcePublishedAt": "2026-03-05",
+          "source": "Eco-Business - News",
           "sector": "Climate Change",
-          "country": "regional",
-          "snippet": "According to a landmark new study, 102 million hectares (Mha) (252 million acres) of land — an area the size of Egypt — have been converted to crops since the start of the 21st century. To put this into perspective, while it took more than 8,000 years for humanity to convert 1.1 billion hectares (2.8 billion acres) of "
+          "country": "singapore",
+          "snippet": "Singapore's draft adaptation plan will address heat resilience, coastal defence, and water security. Climate scientists and NGOs say the plan must also include nature and the most vulnerable to..."
         },
         {
           "id": "078a4fc2e68c",
@@ -133,18 +132,46 @@
       "name": "Maritime Security",
       "items": [
         {
-          "id": "c23c6e51bf51",
-          "title": "Karenni IEC warns of ‘toxic’ levels of arsenic in Salween River and Molo Creek",
-          "url": "https://myanmar-now.org/en/news/karenni-iec-warns-of-toxic-levels-of-arsenic-in-salween-river-and-molo-creek/",
-          "originalUrl": "https://myanmar-now.org/en/news/karenni-iec-warns-of-toxic-levels-of-arsenic-in-salween-river-and-molo-creek/",
-          "verifiedUrl": "https://myanmar-now.org/en/news/karenni-iec-warns-of-toxic-levels-of-arsenic-in-salween-river-and-molo-creek/",
-          "publisher": "Myanmar Now",
-          "publishedAt": "2026-02-27",
-          "sourcePublishedAt": "2026-02-27",
-          "source": "Myanmar Now",
+          "id": "da50282a212e",
+          "title": "Aboitiz adds personnel to oversee vehicle flow at Laguindingan Airport",
+          "url": "https://newsinfo.inquirer.net/2191225/aboitiz-adds-personnel-to-oversee-vehicle-flow-at-laguindingan-airport",
+          "originalUrl": "https://newsinfo.inquirer.net/2191225/aboitiz-adds-personnel-to-oversee-vehicle-flow-at-laguindingan-airport",
+          "verifiedUrl": "https://newsinfo.inquirer.net/2191225/aboitiz-adds-personnel-to-oversee-vehicle-flow-at-laguindingan-airport",
+          "publisher": "Inquirer",
+          "publishedAt": "2026-03-05",
+          "sourcePublishedAt": "2026-03-05",
+          "source": "Inquirer",
           "sector": "Maritime Security",
-          "country": "myanmar",
-          "snippet": "Wastewater from mines has heavily contained both rivers, according to Karenni State’s resistance-run civilian authority"
+          "country": "philippines",
+          "snippet": "CAGAYAN DE ORO CITY, Philippines — Aboitiz InfraCapital Airports, the operator of Laguindingan Airport in Misamis Oriental, has deployed additional security personnel and parking attendants at the premier airport in Northern Mindanao after receiving complaints from commuters about the management of the congested traffi"
+        },
+        {
+          "id": "0be45ecf8896",
+          "title": "Reassessing the Legal Grounds of Freedom of Navigation in Indonesia’s Archipelagic Waters",
+          "url": "https://amti.csis.org/reassessing-the-legal-grounds-of-freedom-of-navigation-in-indonesias-archipelagic-waters/",
+          "originalUrl": "https://amti.csis.org/reassessing-the-legal-grounds-of-freedom-of-navigation-in-indonesias-archipelagic-waters/",
+          "verifiedUrl": "https://amti.csis.org/reassessing-the-legal-grounds-of-freedom-of-navigation-in-indonesias-archipelagic-waters/",
+          "publisher": "AMTI - CSIS",
+          "publishedAt": "2026-01-22",
+          "sourcePublishedAt": "2026-01-22",
+          "source": "AMTI - CSIS",
+          "sector": "Maritime Security",
+          "country": "indonesia",
+          "snippet": "This article is written in response to Navigating the Divide: Why the U.S. Navy Must Resume FONOPs in Indonesia by Patrick Panjeti, Military Fellow at the CSIS Defence and Security Department. 1. Introduction: Misrepresenting Indonesia’s Legal Commitments In his essay “Navigating the Divide,” Patrick Panjeti presents a"
+        },
+        {
+          "id": "8cb42227e809",
+          "title": "Meeting with frat leaders over hazing death set on Friday — DILG chief",
+          "url": "https://newsinfo.inquirer.net/2191083/meeting-with-frat-leaders-over-hazing-death-set-on-friday-dilg-chief",
+          "originalUrl": "https://newsinfo.inquirer.net/2191083/meeting-with-frat-leaders-over-hazing-death-set-on-friday-dilg-chief",
+          "verifiedUrl": "https://newsinfo.inquirer.net/2191083/meeting-with-frat-leaders-over-hazing-death-set-on-friday-dilg-chief",
+          "publisher": "Inquirer",
+          "publishedAt": "2026-03-05",
+          "sourcePublishedAt": "2026-03-05",
+          "source": "Inquirer",
+          "sector": "Maritime Security",
+          "country": "philippines",
+          "snippet": "MANILA, Philippines — Interior and Local Government Secretary Jonvic Remulla will be meeting with the leaders of the Tau Gamma Phi fraternity amid the alleged fatal hazing of 19-year-old maritime student Kenneth Alcedo. In a briefing in Quezon City Thursday, Remulla was asked whether he had already scheduled a meeting "
         },
         {
           "id": "dc899fca7d98",
@@ -175,20 +202,6 @@
           "snippet": "Introduction On September 10, China approved the establishment of a nature reserve at Scarborough Shoal, also known as Bajo de Masinloc in Tagalog or Huangyan Dao in Chinese, a coral atoll whose sovereignty is under dispute between China and the Philippines. According to Beijing, the reserve covers approximately one ac"
         },
         {
-          "id": "0be45ecf8896",
-          "title": "Reassessing the Legal Grounds of Freedom of Navigation in Indonesia’s Archipelagic Waters",
-          "url": "https://amti.csis.org/reassessing-the-legal-grounds-of-freedom-of-navigation-in-indonesias-archipelagic-waters/",
-          "originalUrl": "https://amti.csis.org/reassessing-the-legal-grounds-of-freedom-of-navigation-in-indonesias-archipelagic-waters/",
-          "verifiedUrl": "https://amti.csis.org/reassessing-the-legal-grounds-of-freedom-of-navigation-in-indonesias-archipelagic-waters/",
-          "publisher": "AMTI - CSIS",
-          "publishedAt": "2026-01-22",
-          "sourcePublishedAt": "2026-01-22",
-          "source": "AMTI - CSIS",
-          "sector": "Maritime Security",
-          "country": "indonesia",
-          "snippet": "This article is written in response to Navigating the Divide: Why the U.S. Navy Must Resume FONOPs in Indonesia by Patrick Panjeti, Military Fellow at the CSIS Defence and Security Department. 1. Introduction: Misrepresenting Indonesia’s Legal Commitments In his essay “Navigating the Divide,” Patrick Panjeti presents a"
-        },
-        {
           "id": "ad1f4ff54240",
           "title": "Missiles Over Fleets: How A2/AD is Redefining Maritime Power in Southeast Asia",
           "url": "https://amti.csis.org/missiles-over-fleets-how-a2-ad-is-redefining-maritime-power-in-southeast-asia/",
@@ -207,6 +220,34 @@
     {
       "name": "Marine Pollution",
       "items": [
+        {
+          "id": "7e4830f0485e",
+          "title": "Regional cooperation takes centre stage at Southeast Asia Pollution Forum",
+          "url": "https://vietnamnews.vn/environment/1766673/positive-activities-set-to-protect-endangered-langurs-species.html",
+          "originalUrl": "https://vietnamnews.vn/environment/1766701/regional-cooperation-takes-centre-stage-at-southeast-asia-pollution-forum.html",
+          "verifiedUrl": "https://vietnamnews.vn/environment/1766673/positive-activities-set-to-protect-endangered-langurs-species.html",
+          "publisher": "Vietnam News - Environment",
+          "publishedAt": "2026-03-02",
+          "sourcePublishedAt": "2026-03-02",
+          "source": "Vietnam News - Environment",
+          "sector": "Marine Pollution",
+          "country": "vietnam",
+          "snippet": "Illegal hunting, forest encroachment for farming and rapid infrastructure development are threatening the survival of the grey-shanked douc langur (Pygathrix cinerea), classified as Critically Endangered by the International Union for Conservation of Nature, conservationists said after 2024–25 surveys in the province."
+        },
+        {
+          "id": "008df333a19c",
+          "title": "Tons of debris dumped at Vietnamese beach that draws 2 million tourists a year",
+          "url": "https://e.vnexpress.net/news/news/environment/tons-of-debris-dumped-at-vietnamese-beach-that-draws-2-million-tourists-a-year-5046660.html",
+          "originalUrl": "https://e.vnexpress.net/news/news/environment/tons-of-debris-dumped-at-vietnamese-beach-that-draws-2-million-tourists-a-year-5046660.html",
+          "verifiedUrl": "https://e.vnexpress.net/news/news/environment/tons-of-debris-dumped-at-vietnamese-beach-that-draws-2-million-tourists-a-year-5046660.html",
+          "publisher": "VNExpress International",
+          "publishedAt": "2026-03-05",
+          "sourcePublishedAt": "2026-03-05",
+          "source": "VNExpress International",
+          "sector": "Marine Pollution",
+          "country": "vietnam",
+          "snippet": "A Vietnamese beach shop owner had tons of storm debris dumped into the sea, turning a local waste problem into open-water pollution."
+        },
         {
           "id": "54727a295fe7",
           "title": "Deadly landfill collapse exposes risks faced by Philippines’ waste pickers",
